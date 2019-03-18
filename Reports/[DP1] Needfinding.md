@@ -23,13 +23,13 @@ This is the summary of our interviewees.
 
 > 1. Vanilla Latte - Worked at Tous Les Jours (less than 1 month) (Extreme User) - By Sihyun yu
 > 2. Chamomile - Worked at Cafe (2 months)
-> 3. Americano - Worked at Dunkin Donuts (3 months) - By Sihyun yu
+> 3. Americano - Worked at Dunkin Donuts (3 months) - By Sihyun Yu
 > 4. Earl Grey- Worked at Dunkin Donuts (8 months)
-> 5. Cold Brew - Worked at Tous Les Jours (6 months), Lotteria (3 months)
+> 5. Cold Brew - Worked at Tous Les Jours (6 months), Lotteria (3 months) - By Yoonseo Kim
 > 6. Espresso - Worked at Tous Les Jours (5 months), Ogada (7 months)
 > 7. Ice Tea - Worked at Angel-in-us (4 months), Ogada (9 months)
-> 8. Grapefruit Tea - Worked at 2 Cafes (14 months) - By Sihyun yu
-> 9. 1837 Black Tea - Worked at 2 cafes (16 months, 1 month respectively)
+> 8. Grapefruit Tea - Worked at 2 Cafes (14 months) - By Sihyun Yu
+> 9. 1837 Black Tea - Worked at 2 cafes (16 months, 1 month respectively) - By Yoonseo Kim
 
 #### 1. Vanilla Latte - Worked at Tous Les Jours (less than 1 month)  (Extreme User) - By Sihyun Yu
 ![](./Images/sihyun_1.png)
@@ -52,6 +52,13 @@ This is the summary of our interviewees.
 * Too many orders at the same time makes her to forget some lists, or forget to putting something while making the drink
 * Feel difference between real experience and verval/text guides
 
+#### 5. Cold Brew - Worked at Tous Les Jours (6 months), Lotteria (3 months) - By Yoonseo Kim
+![](./Images/yoonseo_1.jpeg)
+* AA
+* *
+* *
+* *
+
 #### 8. Grapefruit Tea - Worked at 2 Cafes (14 months) - By Sihyun Yu
 ![](./Images/sihyun_3.png)
 
@@ -61,6 +68,11 @@ This is the summary of our interviewees.
 * Recipe mistake disappeared as doing the part-time job for a long time
 * Learned most things from the cafe manager 
 
+#### 9. 1837 Black Tea - Worked at 2 cafes (16 months, 1 month respectively) - By Yoonseo Kim
+![](./Images/yoonseo_2.jpeg)
+* a
+* b 
+* c
 
 #### Interesting Moments
 
