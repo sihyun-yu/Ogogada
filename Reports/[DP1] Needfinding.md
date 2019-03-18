@@ -69,11 +69,12 @@ Based on interviews and observation, we found some interesting moments about our
 * POS uncomfortable for payment & revision
 
 >> ![](./Images/pos1.png)
->> so many buttons in POS UI
+>> There are so many buttons in POS UI
 >> ![](./Images/pos2.png)
->> hard to know the meaning of each button
+>> Therefore, it is hard to know the meaning of each button
 >> ![](./Images/pos3.png)
->> need to add additional post-it to justify these 
+>> 
+>> Usually, workers need to add additional post-it to justify these 
 
 * Buy when they made wrong menus
 * Be tested for studying menus with homepage or videos
