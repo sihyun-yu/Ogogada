@@ -76,7 +76,6 @@ Based on interviews and observation, we found some interesting moments about our
 > need to add additional post-it to justify these 
 
 * Buy when they made wrong menus
-
 * Be tested for studying menus with homepage or videos
 
 > ![](./Images/hp1.png)
@@ -89,45 +88,27 @@ Based on interviews and observation, we found some interesting moments about our
 
 ### Needs
 * Look up what to do if they do not know at a certain situation
-
 * Practice POS even if no people are ordering the menu
-
 * Do not miss the list of orders while making menus
-
 * Match the correct menu for every customer
-
 * Give a list of recommendations to users 
-
 * Provide a priority of menus to be made
-
 * Know how much cups can be made at once for each menu
-
 * Check all of the questions while taking the order
-
 * Memorize all of the recipes of the menus
-
 * Do not want to be embarrassed while facing various types of people
 
 ### Insights 
 
 * There are many non-specific instructions and even some parts are omitted.
-
 * Each store has different education method.
-
 * Remembering the location of the material on the first day is still confusing, even if they have previous experience at another cafe.
-
 * The experienced people are better able to respond to sudden situations
-
 * Learn POS first, when they start a part-time job.
-
 * Unlike bakery, they can work without memorizing all the menus.
-
 * It is not easy to practice every menu because of monetary problems and time problems.
-
 * A variety of situations occurs.
-
 * Depending on the type of job, it may be better to do the job with the written recipe or may be better to learn by doing.
-
 * Beginners are embarrassed when a lot of menus are ordered at once.
 
 ### Studio Reflections
