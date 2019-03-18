@@ -52,7 +52,7 @@ We want to edesign experiences of training for new cafe part-time job workers.
 * Beginners are embarrassed when a lot of menus are ordered at once.
 
 ### Studio Reflections (Need to be summarized)
-####I like …
+#### I like …
 15SQuad / Eunho: I like that you find many interviewees with variety.
 WARdrobe/Vagif: I very much like the presentation. Lots of pictures with a nice reference makes it interesting and easily understandable 
 
