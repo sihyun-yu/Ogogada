@@ -68,20 +68,20 @@ Based on interviews and observation, we found some interesting moments about our
 
 * POS uncomfortable for payment & revision
 
-> ![](./Images/pos1.png)
-> so many buttons in POS UI
-> ![](./Images/pos2.png)
-> hard to know the meaning of each button
-> ![](./Images/pos3.png)
-> need to add additional post-it to justify these 
+>> ![](./Images/pos1.png)
+>> so many buttons in POS UI
+>> ![](./Images/pos2.png)
+>> hard to know the meaning of each button
+>> ![](./Images/pos3.png)
+>> need to add additional post-it to justify these 
 
 * Buy when they made wrong menus
 * Be tested for studying menus with homepage or videos
 
-> ![](./Images/hp1.png)
-> need to memorize all of information in the webpage
-> ![](./Images/hp2.png)
-> sometimes, still hard to distinguish menus since they have similar appearance in real 
+>> ![](./Images/hp1.png)
+>> need to memorize all of information in the webpage
+>> ![](./Images/hp2.png)
+>> sometimes, still hard to distinguish menus since they have similar appearance in real 
 
 * Managers watch workers through CCTVs
 * Not only managers but also proficient part-time workers educate new part-time workers
