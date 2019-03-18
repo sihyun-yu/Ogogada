@@ -4,18 +4,49 @@
 Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
 ### Experience
-We want to edesign experiences of training for new cafe part-time job workers.
+We want to redesign experiences of training for new cafe part-time job workers.
 
 ### Observation & Interviews
 
+#### 1. Vanilla Latte - Worked at Tous Les Jours (less than 1 month)  (Extreme User) - By Sihyun Yu
+![](./images/sihyun_1.png)
+
+* Used Facetalk for interview
+* Very new part-time job worker
+* Had trouble to memorize so many types of breads and beverages 
+* Hard to get used of the position of drinks at POS 
+* Always think POS is too complicated to easily use
+* Too many people at the same time make she so embarassed and lead some mistakes: did not check the expire date of coupon, ot Americano to ice Americano, entered wrong menu at POS...
+
+
+#### 2. Grapefruit Tea - Worked at 2 Cafes (14 months) - By Sihyun Yu
+![](./images/sihyun_3.png)
+
+* Due to the distance limitation, used Facebook messanger for interview
+* Feel difference between paper recipe and doing the recipe in real
+* Has experience mismatching the menu because of recipe confusion
+* Recipe mistake disappeared as doing the part-time job for a long time
+* Learned most things from the cafe manager 
+
+#### 3. Americano - Worked at Dunkin Donuts (3 months) - By Sihyun Yu
+
+* Used Kakaotalk for interview
+* Work with the POS at the first time, since not familiar with making drinks
+* POS was so complicated and confused at the first time
+* Often forget some questions to ask such as point collection
+* Cannot ask at question of customers like menu recommodations, since she don't know either
+* Too many orders at the same time makes her to forget some lists, or forget to putting something while making the drink
+* Feel difference between real experience and verval/text guides
+
+
 ### Needs
-* Look up what to do if they do not know at the certain situation
+* Look up what to do if they do not know at a certain situation
 
 * Practice POS even if no people are ordering the menu
 
 * Do not miss the list of orders while making menus
 
-* Match a correct menu for every customer
+* Match the correct menu for every customer
 
 * Give a list of recommendations to users 
 
@@ -23,9 +54,9 @@ We want to edesign experiences of training for new cafe part-time job workers.
 
 * Know how much cups can be made at once for each menu
 
-* Check all of questions while taking the order
+* Check all of the questions while taking the order
 
-* Memorize all of recipes of the menus
+* Memorize all of the recipes of the menus
 
 * Do not want to be embarrassed while facing various types of people
 
@@ -39,7 +70,7 @@ We want to edesign experiences of training for new cafe part-time job workers.
 
 * The experienced people are better able to respond to sudden situations
 
-* Learn POS first, when they start part-time job.
+* Learn POS first, when they start a part-time job.
 
 * Unlike bakery, they can work without memorizing all the menus.
 
@@ -47,32 +78,24 @@ We want to edesign experiences of training for new cafe part-time job workers.
 
 * A variety of situations occurs.
 
-* Depending on the type of job, it may be better to do job with written recipe or may be better to learn by doing.
+* Depending on the type of job, it may be better to do the job with the written recipe or may be better to learn by doing.
 
 * Beginners are embarrassed when a lot of menus are ordered at once.
 
-### Studio Reflections (Need to be summarized)
-#### I like …
-15SQuad / Eunho: I like that you find many interviewees with variety.
-WARdrobe/Vagif: I very much like the presentation. Lots of pictures with a nice reference makes it interesting and easily understandable 
+### Studio Reflections
 
-Gimme/Lixia: I like how you interviewed many different experienced people and showing all different kinds of the photos.
+- There are many good comments about our presentation. First of all, many people noted that we tried to find and analyze the situation and information deeply, and tried to point out notable, important points among these. 
 
-JAKY/Seonghyeon: I like that you highlighted some key words from the slide. 
+> We thought this is our team's strength and we will try to keep this strength for further design project milestones. 
 
-Wardrobe/Kamal: I liked the depth of the research meaning the wide range of cafes
+- In contrast, there were also some comments about specifying the type of cafe. Since each cafe has different characteristics (like includes/not includes bakery), so someone points out that it will be better to specify this for later milestones. 
 
-#### I wish ...
-15SQuad / Taehyung: I wish you talk more slowly in the beginning of presentation(interesting mment part). It was little bit hard to follow. 
+> We also agree with this. For real implementation and testing for further process, it will be so hard to generalize all the cafes in one semester. Based on the information we got, we are planning to specify the cafe for making lofi or midfi prototype. 
 
-> Ogogada/sungha: Oh that part was mine, sorry for that :)
+- There also was a question that whether the structure of POS UI is different for each cafe even if the cafe is the same franchise. 
 
-> Ogogada/Sihyun: We will consider more about this for further presenatations. Sorry for that T.T
+> We haven't considered about this and considering and knowing this will be helpful to our design project. We will ask more various people from other regions to check this. 
 
-15SQuad/Doheon: I wish your team can specify the type of cafe; bakery, coffee, or cafes that serve both.
-Ogogada/Sihyun : Thank you good comment ! 
+- For minor comment, someone commented that some parts of our presentation were a little bit fast so that hard to follow. 
 
-#### Others
-
-15SQuad / Eunho: I have some concern that the UI - the format or structure of POS might be different for each cafe, even if the cafe is franchise. I am so curious that how do you solve this problem if you give some kind of guide for this POS UI.
-
+> We realized this, and will more try to present with listener's perspective. 
