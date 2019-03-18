@@ -57,6 +57,7 @@ We want to edesign experiences of training for new cafe part-time job workers.
 WARdrobe/Vagif: I very much like the presentation. Lots of pictures with a nice reference makes it interesting and easily understandable 
 
 Gimme/Lixia: I like how you interviewed many different experienced people and showing all different kinds of the photos.
+
 JAKY/Seonghyeon: I like that you highlighted some key words from the slide. 
 
 Wardrobe/Kamal: I liked the depth of the research meaning the wide range of cafes
