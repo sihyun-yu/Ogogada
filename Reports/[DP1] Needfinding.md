@@ -22,12 +22,12 @@ This is the summary of our interviewees.
 (sorted with the duration and the number of cafe, 1~5 are people who worked at only one cafe, 6~9 worked at more than 1 cafe).
 
 > 1. Vanilla Latte - Worked at Tous Les Jours (less than 1 month) (Extreme User) - By Sihyun yu
-> 2. Chamomile - Worked at Cafe (2 months)
+> 2. Chamomile - Worked at Cafe (2 months) - By Sangmin Lee
 > 3. Americano - Worked at Dunkin Donuts (3 months) - By Sihyun Yu
-> 4. Earl Grey- Worked at Dunkin Donuts (8 months)
+> 4. Earl Grey- Worked at Dunkin Donuts (8 months) - By Sangmin Lee
 > 5. Cold Brew - Worked at Tous Les Jours (6 months), Lotteria (3 months) - By Yoonseo Kim
-> 6. Espresso - Worked at Tous Les Jours (5 months), Ogada (7 months)
-> 7. Ice Tea - Worked at Angel-in-us (4 months), Ogada (9 months)
+> 6. Espresso - Worked at Tous Les Jours (5 months), Ogada (7 months) - By Sungha Eom
+> 7. Ice Tea - Worked at Angel-in-us (4 months), Ogada (9 months) - By Sungha Eom
 > 8. Grapefruit Tea - Worked at 2 Cafes (14 months) - By Sihyun Yu
 > 9. 1837 Black Tea - Worked at 2 cafes (16 months, 1 month respectively) - By Yoonseo Kim
 
@@ -41,6 +41,14 @@ This is the summary of our interviewees.
 * Always think POS is too complicated to easily use
 * Too many people at the same time make she so embarassed and lead some mistakes: did not check the expire date of coupon, ot Americano to ice Americano, entered wrong menu at POS...
 
+#### 2. Chamomile - Worked at Cafe (2 months) - By Sangmin Lee
+![](./Images/sangmin_1.jpeg)
+* Used Kakaotalk for interview
+* Too many menus at POS machines make him hard to find some menu
+* The discount rate is different for each card, but he didn't know that. So the guests were informed to him.
+* Place recipe nearby, but it takes a long time to make menu with it
+* Gap between education and experience
+
 #### 3. Americano - Worked at Dunkin Donuts (3 months) - By Sihyun Yu
 ![](./Images/sihyun_2.png)
 
@@ -52,6 +60,14 @@ This is the summary of our interviewees.
 * Too many orders at the same time makes her to forget some lists, or forget to putting something while making the drink
 * Feel difference between real experience and verval/text guides
 
+#### 4. Earl Grey- Worked at Dunkin Donuts (8 months) - By Sangmin Lee
+![](./Images/sangmin_2.jpeg)
+* Used Kakaotalk for interview
+* Have problem with using gifticon
+* Find materials for drinks make her difficult
+* Hard to handle detailed order such as using tumbler or KAIST discount
+* Too many customers make her embarrassed
+
 #### 5. Cold Brew - Worked at Tous Les Jours (6 months), Lotteria (3 months) - By Yoonseo Kim
 ![](./Images/yoonseo_1.jpeg)
 * Face to face interview 
@@ -62,6 +78,10 @@ This is the summary of our interviewees.
 * Memorize all the names of breads when she starts working, but it’s confusing
 * Have to buy it if she make a wrong menu 
   * Feel it's cold-hearted, but she understand it because many part-time workers make lots of mistakes 
+
+#### 6. Espresso - Worked at Tous Les Jours (5 months), Ogada (7 months) - By Sungha Eom
+
+#### 7. Ice Tea - Worked at Angel-in-us (4 months), Ogada (9 months) - By Sungha Eom
 
 #### 8. Grapefruit Tea - Worked at 2 Cafes (14 months) - By Sihyun Yu
 ![](./Images/sihyun_3.png)
