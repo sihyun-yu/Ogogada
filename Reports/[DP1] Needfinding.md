@@ -19,7 +19,7 @@ We asked the following questions to the people who have an experience working at
 
 This is the summary of our interviewees. 
 
-(sorted with the duration and the number of cafe, 1~4 are people who worked at only one cafe, 5~9 worked at more than 1 cafe).
+(sorted with the duration and the number of cafe, 1~5 are people who worked at only one cafe, 6~9 worked at more than 1 cafe).
 
 > 1. Vanilla Latte - Worked at Tous Les Jours (less than 1 month) (Extreme User) - By Sihyun yu
 > 2. Chamomile - Worked at Cafe (2 months)
@@ -54,10 +54,14 @@ This is the summary of our interviewees.
 
 #### 5. Cold Brew - Worked at Tous Les Jours (6 months), Lotteria (3 months) - By Yoonseo Kim
 ![](./Images/yoonseo_1.jpeg)
-* AA
-* *
-* *
-* *
+* Face to face interview 
+* Take a long time making many menus at once because she don’t know efficient sequence of making various menus at once
+* Difficult to cancel and re-order all the orders after POS mistakes
+* Want to have an encyclopedia of all situations while working in the cafe
+* Have Watched 10~20 minutes of video and took the written test when she starts working
+* Memorize all the names of breads when she starts working, but it’s confusing
+* Have to buy it if she make a wrong menu 
+  * Feel it's cold-hearted, but she understand it because many part-time workers make lots of mistakes 
 
 #### 8. Grapefruit Tea - Worked at 2 Cafes (14 months) - By Sihyun Yu
 ![](./Images/sihyun_3.png)
