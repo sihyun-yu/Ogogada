@@ -11,11 +11,25 @@ We want to redesign experiences of training for new cafe part-time job workers.
 We asked the following questions to the people who have an experience working at cafe. We tried to vary the duration, the number of worked cafes  for each interviewees.
 
 > 1. How long did you work at the cafe?
-> 2. Do you have experience to teach someone with working at cafe?
+> 2. Do you have any experience to teach someone with working at cafe?
 > 3. Any experience to be embarassed while working at the cafe at the first time?
 > 4. What was the method for you to learn how to work at the cafe?
 > 5. Do you have any mistakes while working at the cafe? Why?
 > 6. How did you do for the mistake? Any good way to prevent the similar mistake?
+
+This is the summary of our interviewees. 
+
+(sorted with the duration and the number of cafe, 1~4 are people who worked at only one cafe, 5~9 worked at more than 1 cafe).
+
+> 1. Vanilla Latte - Worked at Tous Les Jours (less than 1 month) (Extreme User) - By Sihyun yu
+> 2. Chamomile - Worked at Cafe (2 months)
+> 3. Americano - Worked at Dunkin Donuts (3 months) - By Sihyun yu
+> 4. Earl Grey- Worked at Dunkin Donuts (8 months)
+> 5. Cold Brew - Worked at Tous Les Jours (6 months), Lotteria (3 months)
+> 6. Espresso - Worked at Tous Les Jours (5 months), Ogada (7 months)
+> 7. Ice Tea - Worked at Angel-in-us (4 months), Ogada (9 months)
+> 8. Grapefruit Tea - Worked at 2 Cafes (14 months) - By Sihyun yu
+> 9. 1837 Black Tea - Worked at 2 cafes (16 months, 1 month respectively)
 
 #### 1. Vanilla Latte - Worked at Tous Les Jours (less than 1 month)  (Extreme User) - By Sihyun Yu
 ![](./Images/sihyun_1.png)
@@ -27,16 +41,6 @@ We asked the following questions to the people who have an experience working at
 * Always think POS is too complicated to easily use
 * Too many people at the same time make she so embarassed and lead some mistakes: did not check the expire date of coupon, ot Americano to ice Americano, entered wrong menu at POS...
 
-
-#### 2. Grapefruit Tea - Worked at 2 Cafes (14 months) - By Sihyun Yu
-![](./Images/sihyun_3.png)
-
-* Due to the distance limitation, used Facebook messanger for interview
-* Feel difference between paper recipe and doing the recipe in real
-* Has experience mismatching the menu because of recipe confusion
-* Recipe mistake disappeared as doing the part-time job for a long time
-* Learned most things from the cafe manager 
-
 #### 3. Americano - Worked at Dunkin Donuts (3 months) - By Sihyun Yu
 ![](./Images/sihyun_2.png)
 
@@ -47,6 +51,16 @@ We asked the following questions to the people who have an experience working at
 * Cannot ask at question of customers like menu recommodations, since she don't know either
 * Too many orders at the same time makes her to forget some lists, or forget to putting something while making the drink
 * Feel difference between real experience and verval/text guides
+
+#### 8. Grapefruit Tea - Worked at 2 Cafes (14 months) - By Sihyun Yu
+![](./Images/sihyun_3.png)
+
+* Due to the distance limitation, used Facebook messanger for interview
+* Feel difference between paper recipe and doing the recipe in real
+* Has experience mismatching the menu because of recipe confusion
+* Recipe mistake disappeared as doing the part-time job for a long time
+* Learned most things from the cafe manager 
+
 
 #### Interesting Moments
 
