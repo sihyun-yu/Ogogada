@@ -94,9 +94,14 @@ This is the summary of our interviewees.
 
 #### 9. 1837 Black Tea - Worked at 2 cafes (16 months, 1 month respectively) - By Yoonseo Kim
 ![](./Images/yoonseo_2.jpeg)
-* a
-* b 
-* c
+* Due to the distacne limitation, used Facetalk for interview
+* Uncomfortable with the explaination only in oral not by paper instructions
+* Difficult and embarrassing to cancel everything and reorder when customer wants to change one menu
+* Many implicit and omitted instructions make it hard to learn
+* First day, working with a person who worked before
+  * Too short for people who starts cafe part-time first time
+* Easy to starting work in second cafe, but it seems to be too difficult for the people who starts cafe part-time first time
+* Have printed the instructions to a new part-time worker
 
 #### Interesting Moments
 
