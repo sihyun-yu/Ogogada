@@ -80,9 +80,9 @@ Based on interviews and observation, we found some interesting moments about our
 * Be tested for studying menus with homepage or videos
 
 >> ![](./Images/hp1.png)
->> need to memorize all of information in the webpage
+>> New workers need to memorize all of information in the webpage
 >> ![](./Images/hp2.png)
->> sometimes, still hard to distinguish menus since they have similar appearance in real 
+>> Sometimes, it is still hard to distinguish menus since they have similar appearance in real 
 
 * Managers watch workers through CCTVs
 * Not only managers but also proficient part-time workers educate new part-time workers
