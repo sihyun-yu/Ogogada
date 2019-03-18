@@ -8,6 +8,15 @@ We want to redesign experiences of training for new cafe part-time job workers.
 
 ### Observation & Interviews
 
+We asked the following questions to the people who have an experience working at cafe. We tried to vary the duration, the number of worked cafes  for each interviewees.
+
+> 1. How long did you work at the cafe?
+> 2. Do you have experience to teach someone with working at cafe?
+> 3. Any experience to be embarassed while working at the cafe at the first time?
+> 4. What was the method for you to learn how to work at the cafe?
+> 5. Do you have any mistakes while working at the cafe? Why?
+> 6. How did you do for the mistake? Any good way to prevent the similar mistake?
+
 #### 1. Vanilla Latte - Worked at Tous Les Jours (less than 1 month)  (Extreme User) - By Sihyun Yu
 ![](./Images/sihyun_1.png)
 
@@ -39,6 +48,30 @@ We want to redesign experiences of training for new cafe part-time job workers.
 * Too many orders at the same time makes her to forget some lists, or forget to putting something while making the drink
 * Feel difference between real experience and verval/text guides
 
+#### Interesting Moments
+
+Based on interviews and observation, we found some interesting moments about our problem.
+
+* POS uncomfortable for payment & revision
+
+> ![](./Images/pos1.png)
+> so many buttons in POS UI
+> ![](./Images/pos2.png)
+> hard to know the meaning of each button
+> ![](./Images/pos3.png)
+> need to add additional post-it to justify these 
+
+* Buy when they made wrong menus
+
+* Be tested for studying menus with homepage or videos
+
+> ![](./Images/hp1.png)
+> need to memorize all of information in the webpage
+> ![](./Images/hp2.png)
+> sometimes, still hard to distinguish menus since they have similar appearance in real 
+
+* Managers watch workers through CCTVs
+* Not only managers but also proficient part-time workers educate new part-time workers
 
 ### Needs
 * Look up what to do if they do not know at a certain situation
