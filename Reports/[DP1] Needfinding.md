@@ -9,7 +9,7 @@ We want to redesign experiences of training for new cafe part-time job workers.
 ### Observation & Interviews
 
 #### 1. Vanilla Latte - Worked at Tous Les Jours (less than 1 month)  (Extreme User) - By Sihyun Yu
-![](./images/sihyun_1.png)
+![](./Images/sihyun_1.png)
 
 * Used Facetalk for interview
 * Very new part-time job worker
@@ -20,7 +20,7 @@ We want to redesign experiences of training for new cafe part-time job workers.
 
 
 #### 2. Grapefruit Tea - Worked at 2 Cafes (14 months) - By Sihyun Yu
-![](./images/sihyun_3.png)
+![](./Images/sihyun_3.png)
 
 * Due to the distance limitation, used Facebook messanger for interview
 * Feel difference between paper recipe and doing the recipe in real
@@ -29,6 +29,7 @@ We want to redesign experiences of training for new cafe part-time job workers.
 * Learned most things from the cafe manager 
 
 #### 3. Americano - Worked at Dunkin Donuts (3 months) - By Sihyun Yu
+![](./Images/sihyun_2.png)
 
 * Used Kakaotalk for interview
 * Work with the POS at the first time, since not familiar with making drinks
