@@ -19,7 +19,7 @@ We asked the following questions to the people who have an experience working at
 
 This is the summary of our interviewees. 
 
-(sorted with the duration and the number of cafe, 1~5 are people who worked at only one cafe, 6~9 worked at more than 1 cafe).
+(sorted with the duration and the number of cafe, 1\~5 are people who worked at only one cafe, 6\~9 worked at more than 1 cafe).
 
 > 1. Vanilla Latte - Worked at Tous Les Jours (less than 1 month) (Extreme User) - By Sihyun yu
 > 2. Chamomile - Worked at Cafe (2 months) - By Sangmin Lee
