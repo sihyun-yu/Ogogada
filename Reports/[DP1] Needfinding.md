@@ -80,12 +80,14 @@ This is the summary of our interviewees.
   * Feel it's cold-hearted, but she understand it because many part-time workers make lots of mistakes 
 
 #### 6. Espresso - Worked at Tous Les Jours (5 months), Ogada (7 months) - By Sungha Eom
+![](./Images/sungha_1.png)
 * Face to face interview
 * When working in Tous-Les-Jours, he had to ask for saving up points. He felt anxious when foreign students replied with question “What is CJ point?”.
 * When he was new and orders were full, he was asked to get some ingredients from refrigerator. But the location changed without any notifications, so he felt anxious.
 * When working in Tous-Les-Jours, he had to memorize all bread by looking up homepage.
   
 #### 7. Ice Tea - Worked at Angel-in-us (4 months), Ogada (9 months) - By Sungha Eom
+![](./Images/sungha_2.png)
 * Face to face interview
 * The education policy was well not documented.
 * Was confused when co-worker is making with changed recipes. Because the notification for changes are not clarified officially.
