@@ -31,8 +31,10 @@ This is the summary of our interviewees.
 > 8. Grapefruit Tea - Worked at 2 Cafes (14 months) - By Sihyun Yu
 > 9. 1837 Black Tea - Worked at 2 cafes (16 months, 1 month respectively) - By Yoonseo Kim
 
-We also observed a person who is working at the cafe, Ogada.
+We also observed people, like who is working at the cafe, Ogada.
 ![](./Images/interview.png)
+
+Below is the people that we interviewed and observed. 
 
 
 #### 1. Vanilla Latte - Worked at Tous Les Jours (less than 1 month)  (Extreme User) - By Sihyun Yu
