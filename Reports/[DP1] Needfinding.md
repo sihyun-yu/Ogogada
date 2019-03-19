@@ -131,7 +131,6 @@ Based on interviews and observation, we found some interesting moments about our
 >> ![](./Images/pos2.png)
 >> Therefore, it is hard to know the meaning of each button
 >> ![](./Images/pos3.png)
->> 
 >> Usually, workers need to add additional post-it to justify these 
 
 * Buy when they made wrong menus
