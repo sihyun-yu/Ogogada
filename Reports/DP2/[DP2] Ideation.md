@@ -104,12 +104,12 @@ We tried to make approximately 10 solution ideas for each chosed HWM questions. 
 * HMW make learning POS like a game? (Create an analogy from need or context)
 
 > 1. Time limit for the step and record for finishing the learning process
-> 2.  Give score and answer after one round
+> 2.  Give score and answer for the learning process
 > 3.  Various difficulty level based game
 > 4.  Simulate complicated situations that frequently occur at the cafe
 > 5.  Mangers give a deadline to finish a specific round of game
 > 6.  Quiz related to the information for working
-> 7.  Show rankings for workers or for specific round of a game
+> 7.  Show rankings for workers or for specific learning process
 > 8.  Show game achievement rate
 > 9.  Give mission to game users(workers)
 > 10. Narrative story based game
@@ -119,14 +119,14 @@ We tried to make approximately 10 solution ideas for each chosed HWM questions. 
 > 1. Make a list of common mistakes and upload it
 > 2. Indicate what should be done in order
 > 3. Share tips like community
-> 4. POS histories which show nice answer of some situations
+> 4. POS histories which show nice answer of certain special situations
 > 5. Statistics like which menu is popular in such time
-> 6. Questions and anwers like perusall
+> 6. Questions and anwers like Perusall
 > 7. Video lecture for workers
 > 8. Cafe encyclopedia making together like wiki
-> 9. Message function
-> 10. In embarrassed situation, could ask the manager and experienced workers for help and get answers
-> 11. notice function
+> 9. Message function 
+> 10. In embarrassed situation, ask the manager and experienced workers for help and get answers
+> 11. Notification for the things to be announced
 
 * HMW make convenient POS? (Remove the bad)
 
@@ -142,21 +142,26 @@ We tried to make approximately 10 solution ideas for each chosed HWM questions. 
 > 10. Bookmark for frequently ordered menus
 > 11. Show by red mark what is predicted in the next step or recommendation
 
-After this, we picked 3 solution ideas with a few criteria. Here are our criteria for choosing solution ideas.
+After this, we picked top 3 solutions ideas with a few criteria. Here are our criteria for choosing solution ideas.
 
-* Makes sense
-* Makes fun
+* Make sense
+* Have fun
 * Not bothering workers
 * More related with POV and also with Soojung's story
 
 Through those criteria, we selected these 3 solution ideas. We denote how these solution ideas fit well with our criteria. 
 
-* Simulate complicated situations that frequently occur at the cafe
+* Simulate complicated situations that frequently occur at the cafe 
+
 > * Workers can practice a lot without being embarrassed and get familiar with POS
-* Show rankings for workers or for specific round of a game
-> * Workers make fun through competition with others 
-* POS histories which show nice answer of some situations
-> * By knowing the nice structured answers to the difficult situations, workers can cope in real sudden situations.
+
+* Show rankings for workers or for specific learning process
+
+> * Workers have fun through competition with others 
+
+* POS histories which show nice answer of certain special situations
+
+> * By knowing the nice structured answers to the difficult situations, workers can cope with real sudden situations.
 
 ### Storyboards
 
@@ -172,14 +177,14 @@ Storyboard 1 is about first solution
 > ![](./Images/storyboard2.jpg)
 
 Storyboard 2 is about second solution
-"Show rankings for workers or for specific round of a game"
+"Show rankings for workers or for specific learning process"
 
 * Storyboard 3
 
 > ![](./Images/storyboard3.jpg)
 
 Storyboard 3 is about third solution
-"POS histories which show nice answer of some situations"
+"POS histories which show nice answer of certain special situations"
 
 ### Studio Reflections
 
