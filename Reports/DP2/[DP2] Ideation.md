@@ -8,7 +8,7 @@ We want to redesign experiences of training for new cafe part-time job workers.
 
 ### POV : Point of View
 
-Based on needs and insights from DP1 and in-class-activity, we have decided our one most compelling POV
+Based on needs and insights from DP1 and in-class-activity, we have decided our one most compelling POV.
 
 > **A new cafe part-time job worker** needs to 
 **practice a lot and quickly get familiar with POS** because **most new workers are at the complex device POS, but there’s no explicit instructions or guides for that and she doesn’t want to be embarrassed at sudden situations.**
@@ -26,15 +26,12 @@ To help with prototyping and specifc implementation, we have picked one persona.
 * EXPERIENCE: 2 weeks
 
 * STORY
-
 > Soojung Lee is a university student who moved a house a few months ago. During the summer break, she tries to save the money for the trip with her friends. Therefore, she decides to earn money by doing cafe part-time job. Since she moved her house a few months ago, a cafe that she works is very new for her and of course there’s no friends at the cafe. Plus, it was the first time for her working at the cafe. She makes a lot of mistake at POS while working, and this makes her so stressful. 
 
 * MOTIVATION
-
 > She needs money for travel, wants to make a new friend at the new place, and she thought cafe part-time job looks so fun.
 
 * BELIEF
-
 > Practice makes perfect. 
 > I must be perfect at any situation.
 
@@ -60,7 +57,7 @@ To help with prototyping and specifc implementation, we have picked one persona.
    
 
 ### HMW : How might we...
-Based on POV, persona, and the method cards at the course website, we wrote down 10 HMW questions for our problem redesign. We also denoted how these questions are driven. 
+Based on POV, persona, and the method card at the course website, we wrote down 10 HMW questions for our problem redesign. We also denoted how these questions are driven. 
 
 * HMW make learning POS like a game? (Create an analogy from need or context)
 * HMW make all pre-worked workers and managers be able to educate new part-time workers with POS? (ID unexpected resources)
@@ -84,7 +81,7 @@ Using these, we selected these 3 questions. We denote how these questions fit we
 
 * HMW make learning working at POS like a game? (Create an analogy from need or context)
 
-> 1. Game is definitely not stressful, and our persona likes fun things.
+> 1. Game is definitely not stressful.
 > 2. It helps more focusing on learning, can leads to fast, efficient training for new workers. 
 
 * HMW make all pre-worked workers and managers be able to educate new part-time workers with POS (ID unexpected resources)
@@ -142,20 +139,18 @@ We tried to make approximately 10 solution ideas for each chosed HWM questions. 
 > 10. Bookmark for frequently ordered menus
 > 11. Show by red mark what is predicted in the next step or recommendation
 
-After this, we picked top 3 solutions ideas with a few criteria. Here are our criteria for choosing solution ideas.
+After this, we picked top 3 solutions ideas with ㄹa few criteria. Here are our criteria for choosing solution ideas.
 
 * Make sense
 * Be useful
 * Provide interest
 * Not bothering workers and managers
-* More related with POV and also with Soojeong's story
 
 Through those criteria, we selected these 3 solution ideas. We denote how these solution ideas fit well with our criteria. 
 
 * Simulate complicated situations that frequently occur at the cafe 
 
 > * Workers can practice a lot without being embarrassed and get familiar with POS by simulating situations.
-> * Since Soojeong wants to be perfect at any sudden situations, this solution is a good option for her.
 
 * Show rankings for workers or for specific learning process
 
