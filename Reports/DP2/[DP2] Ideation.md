@@ -53,14 +53,14 @@ To help with prototyping and specifc implementation, we have picked one persona.
 > 
 > Eating sweets / Sleeping a lot
 > 
-> buying a new cloth     
+> Buying a new cloth     
 
 * Dislike
 >Action Movie, Washing Dishes  
    
 
 ### HMW : How might we...
-Based on POV, persona, and the method card at the course website, we wrote down 10 HMW questions for our problem redesign. We also denoted how these questions are driven. 
+Based on POV, persona, and the method cards at the course website, we wrote down 10 HMW questions for our problem redesign. We also denoted how these questions are driven. 
 
 * HMW make learning POS like a game? (Create an analogy from need or context)
 * HMW make all pre-worked workers and managers be able to educate new part-time workers with POS? (ID unexpected resources)
@@ -77,20 +77,20 @@ Based on POV, persona, and the method card at the course website, we wrote down 
 After this, we picked top 3 HMW questions with a few criteria. Here are our criteria for choosing top 3 questions.
 
 * Fits to the persona we set?
-* Encourages users easy, fast learning?
+* Encourages users for easy, fast learning?
 * Makes the user not stressful?
 
 Using these, we selected these 3 questions. We denote how these questions fit well with our criteria. 
 
 * HMW make learning working at POS like a game? (Create an analogy from need or context)
 
-> 1. Game is definitely not stressful.
+> 1. Game is definitely not stressful, and our persona likes fun things.
 > 2. It helps more focusing on learning, can leads to fast, efficient training for new workers. 
 
 * HMW make all pre-worked workers and managers be able to educate new part-time workers with POS (ID unexpected resources)
 
-> 1. There was no official way for them to teach POS to new workers. (From insight we found)
-> 2. Many new workers also have no one to learn POS.
+> 1. From insights we have found, there was no official way for them to teach POS to new workers.
+> 2. Many new workers have no one to learn POS.
 > 3. Direct help will help workers for efficient learning. 
 
 * HMW make convenient POS? (Remove the bad)
@@ -145,24 +145,27 @@ We tried to make approximately 10 solution ideas for each chosed HWM questions. 
 After this, we picked top 3 solutions ideas with a few criteria. Here are our criteria for choosing solution ideas.
 
 * Make sense
-* Have fun
-* Not bothering workers
-* More related with POV and also with Soojung's story
+* Be useful
+* Provide interest
+* Not bothering workers and managers
+* More related with POV and also with Soojeong's story
 
 Through those criteria, we selected these 3 solution ideas. We denote how these solution ideas fit well with our criteria. 
 
 * Simulate complicated situations that frequently occur at the cafe 
 
-> * Workers can practice a lot without being embarrassed and get familiar with POS by simulating situations
+> * Workers can practice a lot without being embarrassed and get familiar with POS by simulating situations.
+> * Since Soojeong wants to be perfect at any sudden situations, this solution is a good option for her.
 
 * Show rankings for workers or for specific learning process
 
 > * Workers have fun through competition with others 
-> * Workers are motivated practicing POS through seeing their rankings 
+> * Workers are motivated practicing POS through seeing their rankings
 
 * POS histories which show nice answer of certain special situations
 
 > * By knowing the nice structured answers to the difficult situations, workers can cope with real sudden situations
+> * With stored histories, workers don't feel burdened or embarrassed of asking trivial things to managers.
 
 ### Storyboards
 
