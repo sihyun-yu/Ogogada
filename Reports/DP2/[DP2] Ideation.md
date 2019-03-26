@@ -100,7 +100,9 @@ Using these, we selected these 3 questions. We denote how these questions fit we
 
 ### Solution Ideas
 We tried to make approximately 10 solution ideas for each chosed HWM questions. And we came out with total 32 solutions. 
+
 * HMW make learning POS like a game? (Create an analogy from need or context)
+
 > 1. Time limit for the step and record for finishing the learning process
 > 2.  Give score and answer after one round
 > 3.  Various difficulty level based game
@@ -111,7 +113,9 @@ We tried to make approximately 10 solution ideas for each chosed HWM questions. 
 > 8.  Show game achievement rate
 > 9.  Give mission to game users(workers)
 > 10. Narrative story based game
+
 * HMW make all pre-worked workers and managers be able to educate new part-time workers with POS (ID unexpected resources)
+
 > 1. Make a list of common mistakes and upload it
 > 2. Indicate what should be done in order
 > 3. Share tips like community
@@ -123,7 +127,9 @@ We tried to make approximately 10 solution ideas for each chosed HWM questions. 
 > 9. Message function
 > 10. In embarrassed situation, could ask the manager and experienced workers for help and get answers
 > 11. notice function
+
 * HMW make convenient POS? (Remove the bad)
+
 > 1. Remove unfrequently used buttons(functions)
 > 2. Use image instead of name
 > 3. Colorful POS
@@ -135,7 +141,23 @@ We tried to make approximately 10 solution ideas for each chosed HWM questions. 
 > 9. Add/delete freely
 > 10. Bookmark for frequently ordered menus
 > 11. Show by red mark what is predicted in the next step or recommendation
-> 
+
+After this, we picked 3 solution ideas with a few criteria. Here are our criteria for choosing solution ideas.
+
+* Makes sense
+* Makes fun
+* Not bothering workers
+* More related with POV and also with Soojung's story
+
+Through those criteria, we selected these 3 solution ideas. We denote how these solution ideas fit well with our criteria. 
+
+* Simulate complicated situations that frequently occur at the cafe
+> * Workers can practice a lot without being embarrassed and get familiar with POS
+* Show rankings for workers or for specific round of a game
+> * Workers make fun through competition with others 
+* POS histories which show nice answer of some situations
+> * By knowing the nice structured answers to the difficult situations, workers can cope in real sudden situations.
+
 ### Storyboards
 
 ### Studio Reflections
