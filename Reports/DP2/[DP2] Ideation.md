@@ -94,7 +94,7 @@ Using these, we selected these 3 questions. We denote how these questions fit we
 > 3. Direct help will help workers for efficient learning. 
 
 * HMW make convenient POS? (Remove the bad)
-
+  
 > 1. Convenient, less complicated POS structure definitely make user less stressful. 
 > 2. Easy to follow to learn the POS
 
