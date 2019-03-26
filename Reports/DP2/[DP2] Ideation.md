@@ -153,15 +153,16 @@ Through those criteria, we selected these 3 solution ideas. We denote how these 
 
 * Simulate complicated situations that frequently occur at the cafe 
 
-> * Workers can practice a lot without being embarrassed and get familiar with POS
+> * Workers can practice a lot without being embarrassed and get familiar with POS by simulating situations
 
 * Show rankings for workers or for specific learning process
 
 > * Workers have fun through competition with others 
+> * Workers are motivated practicing POS through seeing their rankings 
 
 * POS histories which show nice answer of certain special situations
 
-> * By knowing the nice structured answers to the difficult situations, workers can cope with real sudden situations.
+> * By knowing the nice structured answers to the difficult situations, workers can cope with real sudden situations
 
 ### Storyboards
 
@@ -194,11 +195,11 @@ Storyboard 3 is about third solution
 
 - In contrast, there were also some comments about specifying the solutions. And one peer actually made a suggestion for one of our 3 solutions, which is 'visualizing past history'. 
 
-> When we were thinking of the second solution, which is 'showing POS history for some situations', we talked about that as well, which just came out of our mind. For real implementation and testing for further process, we also think it is a great idea and as far as nothing changes we look forward to trying implementing it.
+> When we were thinking of the third solution, which is 'POS histories which show nice answer of certain special situations', we talked about that as well, which just came out of our mind. For real implementation and testing for further process, we also think it is a great idea and as far as nothing changes we look forward to trying implementing it.
 
-- The third solution, which is 'Showing ranks of specific rounds' was questioned by one of our peers. He is worring about whether it actually can motivate new part-time workers to practice. He also mentioned Korea education system, which emphasizes rankings but deters the motives for studying.
+- The second solution, which is 'Showing ranks of specific rounds' was questioned by one of our peers. He is worring about whether it actually can motivate new part-time workers to practice. He also mentioned Korea education system, which emphasizes rankings but deters the motives for studying.
 
-> Our intention was to encourage new part-time workers. Because even if they don't play well at first, they don't lose anything or get punished. But they would feel great when they finally play well. But we realized that the point given is still a crucial point that we have to care about until implementing the solution.
+> Our intention was to encourage new part-time workers. Because even if they don't play well at first, they don't lose anything or get punished. But they would feel great when they finally play well and rank on higher place. However, we realized that the point given is still a crucial point that we have to care about until implementing the solution.
 
 - For minor comment, some liked the storyboards and how we approached the HMW questions.
 
