@@ -160,6 +160,24 @@ Through those criteria, we selected these 3 solution ideas. We denote how these 
 
 ### Storyboards
 
+* Storyboard 1
+> ![](./Images/storyboard1.png)
+
+Storyboard 1 is about first solution
+"Simulate complicated situations that frequently occur at the cafe"
+
+* Storyboard 2
+> ![](./Images/storyboard2.jpg)
+
+Storyboard 2 is about second solution
+"Show rankings for workers or for specific round of a game"
+
+* Storyboard 3
+> ![](./Images/storyboard3.jpg)
+
+Storyboard 3 is about third solution
+"POS histories which show nice answer of some situations"
+
 ### Studio Reflections
 
 - There are many good comments about our presentation. First of all, many people noted that they liked the details of our persona. Those specific details made the persona more realistic.
