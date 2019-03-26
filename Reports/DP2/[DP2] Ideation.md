@@ -98,10 +98,44 @@ Using these, we selected these 3 questions. We denote how these questions fit we
 > 1. Convenient, less complicated POS structure definitely make user less stressful. 
 > 2. Easy to follow to learn the POS
 
-
-
 ### Solution Ideas
-
+We tried to make approximately 10 solution ideas for each chosed HWM questions. And we came out with total 32 solutions. 
+* HMW make learning POS like a game? (Create an analogy from need or context)
+> 1. Time limit for the step and record for finishing the learning process
+> 2.  Give score and answer after one round
+> 3.  Various difficulty level based game
+> 4.  Simulate complicated situations that frequently occur at the cafe
+> 5.  Mangers give a deadline to finish a specific round of game
+> 6.  Quiz related to the information for working
+> 7.  Show rankings for workers or for specific round of a game
+> 8.  Show game achievement rate
+> 9.  Give mission to game users(workers)
+> 10. Narrative story based game
+* HMW make all pre-worked workers and managers be able to educate new part-time workers with POS (ID unexpected resources)
+> 1. Make a list of common mistakes and upload it
+> 2. Indicate what should be done in order
+> 3. Share tips like community
+> 4. POS histories which show nice answer of some situations
+> 5. Statistics like which menu is popular in such time
+> 6. Questions and anwers like perusall
+> 7. Video lecture for workers
+> 8. Cafe encyclopedia making together like wiki
+> 9. Message function
+> 10. In embarrassed situation, could ask the manager and experienced workers for help and get answers
+> 11. notice function
+* HMW make convenient POS? (Remove the bad)
+> 1. Remove unfrequently used buttons(functions)
+> 2. Use image instead of name
+> 3. Colorful POS
+> 4. Like trackpad with motion recognition
+> 5. Voice recognition instead of touching POS
+> 6. Searchable POS
+> 7. POS shows instruction when ordering
+> 8. Undo instructions in POS
+> 9. Add/delete freely
+> 10. Bookmark for frequently ordered menus
+> 11. Show by red mark what is predicted in the next step or recommendation
+> 
 ### Storyboards
 
 * Storyboard 1
