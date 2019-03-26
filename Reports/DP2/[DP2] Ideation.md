@@ -142,19 +142,19 @@ We tried to make approximately 10 solution ideas for each chosed HWM questions. 
 > ![](./Images/storyboard1.png)
 
 Storyboard 1 is about first solution
-"soooooolution 1"
+"Simulate complicated situations that frequently occur at the cafe"
 
 * Storyboard 2
 > ![](./Images/storyboard2.jpg)
 
 Storyboard 2 is about second solution
-"soooolution 2"
+"Show rankings for workers or for specific round of a game"
 
 * Storyboard 3
 > ![](./Images/storyboard3.jpg)
 
 Storyboard 3 is about third solution
-"sooooooolution 3"
+"POS histories which show nice answer of some situations"
 
 ### Studio Reflections
 
