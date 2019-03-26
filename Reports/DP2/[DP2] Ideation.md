@@ -104,6 +104,24 @@ Using these, we selected these 3 questions. We denote how these questions fit we
 
 ### Storyboards
 
+* Storyboard 1
+> ![](./Images/storyboard1.png)
+
+Storyboard 1 is about first solution
+"soooooolution 1"
+
+* Storyboard 2
+> ![](./Images/storyboard2.jpg)
+
+Storyboard 2 is about second solution
+"soooolution 2"
+
+* Storyboard 3
+> ![](./Images/storyboard3.jpg)
+
+Storyboard 3 is about third solution
+"sooooooolution 3"
+
 ### Studio Reflections
 
 - There are many good comments about our presentation. First of all, many people noted that they liked the details of our persona. Those specific details made the persona more realistic.
