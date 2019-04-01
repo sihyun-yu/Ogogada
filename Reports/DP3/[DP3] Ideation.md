@@ -22,6 +22,8 @@ We want to redesign experiences of training for new cafe part-time job workers.
 * TODO
 ![](./Images/prototype7.png)
 
+### Participants 
+
 ### Briefing
 
 ### Tasks
