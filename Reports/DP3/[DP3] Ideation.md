@@ -55,6 +55,51 @@ Dear user, thank you for being a test user of our team Ogogada. This is our pape
 
 ### Observations
 
+- Task 1
+    - Colors of menu buttons at UI are all same that hard to distinguish and remember the position of menus for new workers (P2, P5)
+    - Hard to find some buttons such as switching menu button on the POS for no experienced users (P2, P3)
+    - Do not care about showing time limit about the task on UI (P1, P2, P3, P4, P5)
+
+- Task 2
+    - Users cannot use hint since they immediately close it and no way to recheck the hint at after closing the popup (P3, P5)
+    - Instruction popup page at task 2 are so long that they are not readable, so hard to realize what they have to do (P1, P3, P5)
+    - Pressing all buttons if he/she doesn’t know what to do next are inconvenient (P2, P3, P4, P5)
+    - Confused with the number button at keyboard and number button at POS display (P3)
+
+- Task 3
+    - It is hard to realize the purpose of hand cursor is to suggest users to follow the instruction. (P1, P3)
+    - Immediately forget what he/she need to do at that situation after seeing the history at current UI system (P1, P2)
+    - Hard to find “Show the next step” button while checking the history (P2, P3)
+
+We reclassify observations into 3 themes
+
+- Affordance
+    - Task 2 - Users cannot use hint since they immediately close it and no way to recheck the hint after closing the popup (P3, P5): High
+        - Need to add re-popup the menu button on UI
+    - Task 3 - It is hard to realize that the purpose of hand cursor is to suggest users to follow the instruction. (P1, P3): Medium
+        - Can add ‘click me’ text on the finger icon
+    - Task 2 - Users get confused with the number button at keyboard and number button at POS display (P3): Low
+        - We can give hint to use which buttons should be used on UI for very first learning POS
+    - Task 1,2 - Users don’t care about showing time limit about the task on UI (P1, P2, P3, P4, P5): Low
+        - Users already enough focus on the task
+        - With ranking system among people, we expect they care about the time
+
+- Visibility
+    - Task 2 - Instruction popup page is so long that they are not readable, so it is hard to realize what they have to do (P1, P3, P5): High
+        - Need to use a lot of images to visualize the task
+    - Task 1 - It is hard to find some buttons for switching menus on the POS for no experienced users (P2, P3): Medium
+        - Can add some one line text description at important buttons
+    - Task 1 - Colors of menu buttons at UI are all same, so it’s hard to distinguish and remember the position of menus for new workers  (P2, P5): Medium
+        - We cannot change the position of menu (since the purpose is educational), but we can differentiate the color for users to remember the position easily at our UI
+    - Task 3 - It is hard to find “Show the next step” button while checking the history (P2, P3): Medium
+        - We will add ‘Click me’ text near to the button at the first time the button appeared
+
+- Efficiency
+    - Task 2 - Pressing all buttons if he/she doesn’t know what to do next is inconvenient (P2, P3, P4, P5): High
+        - After a few second, add guide that which button should be clicked
+    - Task 3 - Users immediately forget what he/she needs to do right after seeing the history at current UI system (P1, P2): Medium
+        - Gives opportunity to repeat the process after seeing the history
+
 ### Individual Reflections
 - Sangmin Lee
 > AAA
