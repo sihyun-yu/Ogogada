@@ -31,7 +31,14 @@ We want to redesign experiences of training for new cafe part-time job workers.
 ### Observations
 
 ### Individual Reflections
-
+- Sangmin Lee
+> AAA
+- Yoonseo Kim
+> BBB
+- Sungha Eom
+> CCC
+- Sihyun Yu
+> DDD
 ### Studio Reflections
 
 - AAA
