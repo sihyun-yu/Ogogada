@@ -50,7 +50,7 @@ We want to redesign experiences of training for new cafe part-time job workers.
    - Needs money for living expenses
    - Has experienced various tasks related to POS such as using Gifticons and refungins
 ### Briefing
-
+Dear user, thank you for being a test user of our team Ogogada. This is our paper prototype. The goal of the project is to redesign experience of training for new cafe part-time job workers. Think of this paper prototype as a tablet monitor, and the person in front will be a computer and execute the function of it. In addition, the keyboard is replaced by a keyskin, and you can touch the screen with your finger. You should read the 3 given tasks and solve them within the prototype. The computer may be slow.
 ### Tasks
 
 ### Observations
