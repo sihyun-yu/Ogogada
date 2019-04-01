@@ -8,7 +8,7 @@ We want to redesign experiences of training for new cafe part-time job workers.
 
 ### POV : Point of View
 
-Based on needs and insights from DP1 and in-class-activity, we have decided our one most compelling POV
+Based on needs and insights from DP1 and in-class-activity, we have decided our one most compelling POV.
 
 > **A new cafe part-time job worker** needs to 
 **practice a lot and quickly get familiar with POS** because **most new workers are at the complex device POS, but there’s no explicit instructions or guides for that and she doesn’t want to be embarrassed at sudden situations.**
@@ -26,15 +26,12 @@ To help with prototyping and specifc implementation, we have picked one persona.
 * EXPERIENCE: 2 weeks
 
 * STORY
-
 > Soojung Lee is a university student who moved a house a few months ago. During the summer break, she tries to save the money for the trip with her friends. Therefore, she decides to earn money by doing cafe part-time job. Since she moved her house a few months ago, a cafe that she works is very new for her and of course there’s no friends at the cafe. Plus, it was the first time for her working at the cafe. She makes a lot of mistake at POS while working, and this makes her so stressful. 
 
 * MOTIVATION
-
 > She needs money for travel, wants to make a new friend at the new place, and she thought cafe part-time job looks so fun.
 
 * BELIEF
-
 > Practice makes perfect. 
 > I must be perfect at any situation.
 
@@ -53,7 +50,7 @@ To help with prototyping and specifc implementation, we have picked one persona.
 > 
 > Eating sweets / Sleeping a lot
 > 
-> buying a new cloth     
+> Buying a new cloth     
 
 * Dislike
 >Action Movie, Washing Dishes  
@@ -77,7 +74,7 @@ Based on POV, persona, and the method card at the course website, we wrote down 
 After this, we picked top 3 HMW questions with a few criteria. Here are our criteria for choosing top 3 questions.
 
 * Fits to the persona we set?
-* Encourages users easy, fast learning?
+* Encourages users for easy, fast learning?
 * Makes the user not stressful?
 
 Using these, we selected these 3 questions. We denote how these questions fit well with our criteria. 
@@ -89,8 +86,8 @@ Using these, we selected these 3 questions. We denote how these questions fit we
 
 * HMW make all pre-worked workers and managers be able to educate new part-time workers with POS (ID unexpected resources)
 
-> 1. There was no official way for them to teach POS to new workers. (From insight we found)
-> 2. Many new workers also have no one to learn POS.
+> 1. From insights we have found, there was no official way for them to teach POS to new workers.
+> 2. Many new workers have no one to learn POS.
 > 3. Direct help will help workers for efficient learning. 
 
 * HMW make convenient POS? (Remove the bad)
@@ -142,27 +139,28 @@ We tried to make approximately 10 solution ideas for each chosed HWM questions. 
 > 10. Bookmark for frequently ordered menus
 > 11. Show by red mark what is predicted in the next step or recommendation
 
-After this, we picked top 3 solutions ideas with a few criteria. Here are our criteria for choosing solution ideas.
+After this, we picked top 3 solutions ideas with ㄹa few criteria. Here are our criteria for choosing solution ideas.
 
 * Make sense
-* Have fun
-* Not bothering workers
-* More related with POV and also with Soojung's story
+* Be useful
+* Provide interest
+* Not bothering workers and managers
 
 Through those criteria, we selected these 3 solution ideas. We denote how these solution ideas fit well with our criteria. 
 
 * Simulate complicated situations that frequently occur at the cafe 
 
-> * Workers can practice a lot without being embarrassed and get familiar with POS by simulating situations
+> * Workers can practice a lot without being embarrassed and get familiar with POS by simulating situations.
 
 * Show rankings for workers or for specific learning process
 
 > * Workers have fun through competition with others 
-> * Workers are motivated practicing POS through seeing their rankings 
+> * Workers are motivated practicing POS through seeing their rankings
 
 * POS histories which show nice answer of certain special situations
 
 > * By knowing the nice structured answers to the difficult situations, workers can cope with real sudden situations
+> * With stored histories, workers don't feel burdened or embarrassed of asking trivial things to managers.
 
 ### Storyboards
 
