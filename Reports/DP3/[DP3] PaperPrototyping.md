@@ -159,11 +159,18 @@ We reclassify observations into 3 themes
 
 - Yoonseo Kim
 
-> My role was facilitator in testing the paper prototype with 5 participants. I did briefing to each user at first. 
+> My role was facilitator in testing the paper prototype with 5 participants. I did briefing to each user at first. And then explained the tasks one by one with written index cards. I asked the test user if he/she was ready for the task. I tried to not involve in tests as much as I can but since I was a only voice in our team, I spoke little to test users such as "You are doing well right now.", "What are you doing?" and "What part of the problem are you in?". But I was confused what I could say.
+> 
+> I have some difficulties during testing users. 
+> First, I realized that task explanation in English is too long and hard to understand for user because I did a briefing in Korean. Also, writing some parts in English and other parts in Korean is bad decision since it makes users hard to understand our interface.
+> 
+> Second, each user has a different degree and speed of understanding interfaces. This might be happend because we used paper prototype. However, I have learned that almost all of the thoughts and steps that a user can reach are must considered in designing interface. For instance, we expected user will press "주문 내역" in task 2 at first. But experienced user took some time to click that button. Also, in task 2, choosing specific order and refunding that order is quite hard for most users because they don't think that they should click specific order among the list of past orders.
+> 
+> Lastly, the fact that person who played computer and played facilitator(me) should replace the gap between paper prototype and real computer interface. I had some uncomfortable feelings testing user because I thought the prototype is not perfect. Also, it was our fault that we only thought about implementing in paper prototype, not in real interface.
 
 - Sungha Eom
 
-> CCC
+> CC
 
 - Sihyun Yu
 
