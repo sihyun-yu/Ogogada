@@ -126,14 +126,14 @@ We reclassify observations into 3 themes
 - Sangmin Lee
  
 > I played computer when we testing our prototype. I tired to act quickly and correctly, when there are some actions from user.
-&nbsp;
-With the role of computer, I feel confused at the first. I never use POS machine before, so I didn't know how to react at some action of user. I spends some time to practice.
-&nbsp;
-I also have some difficulties during testing. First is reacting time. Because there is so many small paper pieces in front of me, I usually confused which is correct to the situation. Sometimes, it take lot of time to find out the appropriate one. So we made and showing "loading" paper during I found the pieces.
-&nbsp;
-Next is related to the users action. At task 2, we only make '2 Vanilla Latte Hot' pieces, but some users touch Vanilla Latte Hot only one time at the first. We didn't think about this situation, so I have some problem at react. To solve this problem, we made X paper to show the action is wrong.
-&nbsp;
-DP3 was very difficult project to me. I thought that paper prototype has lot of limitation, so it is impossible to make conflict function with paper prototype. However, after presenting project, I notice that this is wrong. For the next project, I will try to be open mind at our project.
+>
+> With the role of computer, I feel confused at the first. I never use POS machine before, so I didn't know how to react at some action of user. I spends some time to practice.
+>
+> I also have some difficulties during testing. First is reacting time. Because there is so many small paper pieces in front of me, I usually confused which is correct to the situation. Sometimes, it take lot of time to find out the appropriate one. So we made and showing "loading" paper during I found the pieces.
+>
+> Next is related to the users action. At task 2, we only make '2 Vanilla Latte Hot' pieces, but some users touch Vanilla Latte Hot only one time at the first. We didn't think about this situation, so I have some problem at react. To solve this problem, we made X paper to show the action is wrong.
+>
+> DP3 was very difficult project to me. I thought that paper prototype has lot of limitation, so it is impossible to make conflict function with paper prototype. However, after presenting project, I notice that this is wrong. For the next project, I will try to be open mind at our project.
 
 - Yoonseo Kim
 
