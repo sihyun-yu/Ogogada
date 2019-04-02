@@ -7,19 +7,19 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 We want to redesign experiences of training for new cafe part-time job workers.
 
 ### Photos of Paper Prototype
-* Paper prototype
+* Paper prototype with keyskin as keyboard and users' finger as mouse
 ![](./Images/prototype1.png)
-* Used the additional paper for menu button switching
+* Additional paper for menu button switching
 ![](./Images/prototype2.png)
-* Used the transparent paper for changing, showing the price 
+* Transparent paper for changing, showing the price 
 ![](./Images/prototype3.png)
-* Used narrow paper for denoting menu list
+* Narrow paper for denoting menu list
 ![](./Images/prototype4.png)
-* TODO
+* Hand shaped icon for following 'history'
 ![](./Images/prototype5.png)
-* TODO
+* Transparent paper for previous/next step button for 'history'
 ![](./Images/prototype6.png)
-* TODO
+* Additional paper for popup window
 ![](./Images/prototype7.png)
 
 ### Participants 
@@ -53,6 +53,26 @@ We want to redesign experiences of training for new cafe part-time job workers.
 ### Briefing
 Dear user, thank you for being a test user of our team Ogogada. This is our paper prototype. The goal of the project is to redesign experience of training for new cafe part-time job workers. Think of this paper prototype as a tablet monitor, and the person in front will be a computer and execute the function of it. In addition, the keyboard is replaced by a keyskin, and you can touch the screen with your finger. You should read the 3 given tasks and solve them within the prototype. The computer may be slow.
 ### Tasks
+- ~~Practice POS game with given simple order~~
+    - ~~Take an order of 1 Americano Ice, 1 Cafe Latte Hot, 1 Greentea Latte Hot and 1 Greentea Latte Ice~~
+
+-  Try our game until leveling up to the highest level
+    - Through DP3 studio reflection, we felt the first task is not a distinct task from the second task. So we decided to emphasize the novelty of our POS practice program which is 'playing like game'.
+    Users start from ground level which is taking order for only Americano's, which is very easy. The locked up images will stimulate curiosity of users and make them engaged into playing more until leveling up.
+     As they level up, some locks are released and the difficulty increases slowly. If they become fully experienced with the first task, they are to play the second task.
+> ![](./Images/novelty1.jpg)
+The user is currently in Lv.1
+> ![](./Images/novelty2.jpg)
+The user played our game and is leveled up to Lv.5
+- Practice POS game with given complex order
+    - If the user got fully leveled up, then the user can play with certain *modes*, such as 'time-attack mode' or 'blank mode'. There's a stack of orders the user should accomplish in short time, or some orders are invisible for short period of time that demand quick glance and remembering, to train in practical busy situations. Below pictures are of *time-attack mode*
+> ![](./Images/task2_1.jpg)
+> ![](./Images/task2_2.jpg)
+- Learn POS by watching history of given situation
+    - You don’t know how to take order of 100 Americano. Find from history list and learn about it.
+
+
+
 
 ### Observations
 
