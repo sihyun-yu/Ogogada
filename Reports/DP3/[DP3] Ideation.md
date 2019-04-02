@@ -49,6 +49,7 @@ We want to redesign experiences of training for new cafe part-time job workers.
    - Has a lot of experiences using POS
    - Needs money for living expenses
    - Has experienced various tasks related to POS such as using Gifticons and refungins
+
 ### Briefing
 Dear user, thank you for being a test user of our team Ogogada. This is our paper prototype. The goal of the project is to redesign experience of training for new cafe part-time job workers. Think of this paper prototype as a tablet monitor, and the person in front will be a computer and execute the function of it. In addition, the keyboard is replaced by a keyskin, and you can touch the screen with your finger. You should read the 3 given tasks and solve them within the prototype. The computer may be slow.
 ### Tasks
@@ -101,16 +102,40 @@ We reclassify observations into 3 themes
         - Gives opportunity to repeat the process after seeing the history
 
 ### Individual Reflections
+
 - Sangmin Lee
+ 
 > AAA
+
 - Yoonseo Kim
+
 > BBB
+
 - Sungha Eom
+
 > CCC
+
 - Sihyun Yu
+
 > DDD
+
+
 ### Studio Reflections
 
-- AAA
+There a lot of comments after the presentation. Because this milestone affects to all of further milestones for prototypes, we concerned more about feedbacks from others compared to before. 
 
-> BBB
+First, there were some feedbacks about the device we should choose for further prototypes and user test. Someone asked, "What if the UI use touch sensor to operate on portable devices like Ipad or phone?" and another person mentioned that there will not be no additional keyboard for users if we select portable devices for making prototype.
+
+> 	We agree with this and selecting portable devices such as iPad are really great idea. Also it is true that for users' perspective, it is hard to have additional keyboard for test, we need to consider a lot for further prototypes.
+
+Also, there are some comments about lack of novelity with our prototype. Someone note that our UI is almost same as the original POS UI, so there's no novelity on our paper prototype. The only new thing is we can see history via our paper prototype. Also, there was a comment that it will be better to add new menus at UI for practice purpose.
+
+> We strongly agree with this. We only thought about "Is it possible to this with paper?". We think this wrong understanding at paper prototyping milestone lead this result. Therefore, based on feedback, we redesigned our paper prototype (added picture at the end of prototype section) and changed the first task (added the new task at the end of task section). Before making lo-fi prototype, we are planning to test our modifed prototype to users and will apply those observations to our lo-fi prototype. 
+
+Someone note that the fact that we added computer loading sign while testing was nice.
+
+> We concerned a lot how our paper prototype looks similar to real computer prototype and this was one of the results. For further milestones, we will consider a lot about many aspects, not only this perspective. 
+
+For the minor comment, there was a comment that instead of skipping slides, just remove it and give information about them.
+
+> We also think this is a good idea. It was hard to present so many slides within 7 minutes. Rather than show many slides for a short time, it might be better to show less slides for a long time and each slide present our main key point efficiently. 
