@@ -53,7 +53,7 @@ We want to redesign experiences of training for new cafe part-time job workers.
 ### Briefing
 Dear user, thank you for being a test user of our team Ogogada. This is our paper prototype. The goal of the project is to redesign experience of training for new cafe part-time job workers. Think of this paper prototype as a tablet monitor, and the person in front will be a computer and execute the function of it. In addition, the keyboard is replaced by a keyskin, and you can touch the screen with your finger. You should read the 3 given tasks and solve them within the prototype. The computer may be slow.
 ### Tasks
-- ~~Practice POS game with given simple order~~
+- ~~ Practice POS game with given simple order ~~
     - ~~Take an order of 1 Americano Ice, 1 Cafe Latte Hot, 1 Greentea Latte Hot and 1 Greentea Latte Ice~~
 
 -  Try our game until leveling up to the highest level
@@ -137,8 +137,19 @@ We reclassify observations into 3 themes
 
 - Sihyun Yu
 
-> DDD
+- Sihyun Yu
 
+> I participated as observer with 5 participants for all 3 tasks. I took some pictures to capture the features of users' behaivior and tried to focus on aspects that users feel difficulty. Below are some comments while I observing others' testing, and picture I took. (To write comments faster, I wrote down it in Korean while testing)
+> ![](./Images/sihyun1.png)
+> ![](./Images/sihyun2.png)
+> 
+> For each participant, I found 6, 9, 6, 4, 5 observations. Then I summarized all of observations, with different participants), shared and discussed with our teammates. 
+> 
+> There are a few difficulties that I could not expect. First of all, users often do many actions within very short time that hard to capture some important features. I needed to observe, write down some features at the same time but there's not enough time due to the user's so fast actions while testing. 
+> 
+> Furthermore, it was quite only 'observe' the user without saying anything. I knew saying something to tester would interrupt them for correct and meaningful testing, but saying nothing even if user has some problem with our UI was really hard thing. 
+> 
+> Even if I took Intro to Social Computing class and tested and observed my lo-fi prototype at previous semester, this was completely new and challenging problem due to the differnec between the test using UI on computer and using very basic prototype using paper. For next testing for our modified paper prototype and further milestone, I'll consider more about this. Maybe we can take a video, and think more carefully say something while testing.
 
 ### Studio Reflections
 
