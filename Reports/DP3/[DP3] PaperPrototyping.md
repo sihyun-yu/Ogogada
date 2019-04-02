@@ -8,7 +8,7 @@ We want to redesign experiences of training for new cafe part-time job workers.
 
 ### Photos of Paper Prototype
 * Paper prototype with keyskin as keyboard and users' finger as mouse
-![](./Images/novelty1.jpg)
+![](./Images/prototype1.png)
 
 * Additional paper for menu button switching
 
@@ -149,13 +149,11 @@ We reclassify observations into 3 themes
 
 - Yoonseo Kim
 
-> BBB
+> My role was facilitator in testing the paper prototype with 5 participants. I did briefing to each user at first. 
 
 - Sungha Eom
 
 > CCC
-
-- Sihyun Yu
 
 - Sihyun Yu
 
