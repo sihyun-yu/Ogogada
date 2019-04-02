@@ -11,21 +11,27 @@ We want to redesign experiences of training for new cafe part-time job workers.
 ![](./Images/novelty1.jpg)
 
 * Additional paper for menu button switching
+
 ![](./Images/prototype2.png)
 
 * Transparent paper for changing, showing the price 
+
 ![](./Images/prototype3.png)
 
 * Narrow paper for denoting menu list
+
 ![](./Images/prototype4.png)
 
 * Hand shaped icon for following 'history'
+
 ![](./Images/prototype5.png)
 
 * Transparent paper for previous/next step button for 'history'
+
 ![](./Images/prototype6.png)
 
 * Additional paper for popup window
+
 ![](./Images/prototype7.png)
 
 ### Participants 
