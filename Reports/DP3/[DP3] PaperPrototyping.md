@@ -76,8 +76,11 @@ Dear user, thank you for being a test user of our team Ogogada. This is our pape
    - We gave users simple orders to get them adapt to ordering. There is timer limit so that they would feel like playing game.
  - Practice POS game with given complex order
     - If the user got fully leveled up, then the user can play with certain *modes*, such as 'time-attack mode' or 'blank mode'. There's a stack of orders the user should accomplish in short time, or some orders are invisible for short period of time that demand quick glance and remembering, to train in practical busy situations. Below pictures are of *time-attack mode*
+ 
  ![](./Images/task2_1.jpg)
+ 
  ![](./Images/task2_2.jpg)
+ 
  - Learn POS by watching history of given situation
     - If users want to find out what other experienced workers do in certain situation, they can look up the history section. Then they follow where hand-shaped icon points. If they want to go back or forward quickly, they can use previous/next step button on right top side.
 
