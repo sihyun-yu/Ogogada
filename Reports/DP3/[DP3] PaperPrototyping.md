@@ -37,7 +37,7 @@ We want to redesign experiences of training for new cafe part-time job workers.
 > * Changed paper prototype after studio feedbacks
 >
 > ![](./Images/novelty1.jpg)
-> Paper prototype has 'level mode' and in 'level mode', some buttons are locked and user can't know which buttons they are. 
+> The paper prototype has 'level mode' and in 'level mode', some buttons are locked and user can't know which buttons they are. 
 > ![](./Images/novelty2.jpg)
 > Some locked buttons are opened when the user became specific level. The picture shown above is UI when the user became level 5 in 'level mode'.
 
