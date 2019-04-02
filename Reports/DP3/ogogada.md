@@ -3,6 +3,8 @@
 ## Team Ogogada
 Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
+**We modified the paper prototype and task1 after studio, so we specified that part the end of each section. We are planning to do user test with modified prototype and tasks.**
+
 ### Experience
 We want to redesign experiences of training for new cafe part-time job workers.
 
@@ -18,7 +20,7 @@ We want to redesign experiences of training for new cafe part-time job workers.
 
 ![](./Images/prototype3.png)
 
-* Narrow paper for denoting menu list
+* Narrow paper for denoting order list
 
 ![](./Images/prototype4.png)
 
@@ -34,12 +36,13 @@ We want to redesign experiences of training for new cafe part-time job workers.
 
 ![](./Images/prototype7.png)
 
-> * Changed paper prototype after studio feedbacks
+We changed paper prototype after studio feedbacks because we recognized that our paper prototype was lack of novelty and no difference with normarl POS UI. Therefore, after studio we added some features in the prototype to get novelty. Below is modified prototype.
 >
 > ![](./Images/novelty1.jpg)
 > The paper prototype has 'level mode' and in 'level mode', some buttons are locked and user can't know which buttons they are. 
 > ![](./Images/novelty2.jpg)
 > Some locked buttons are opened when the user became specific level. The picture shown above is UI when the user became level 5 in 'level mode'.
+> We expect some effects by modifying the prototype. The first thing is, since many buttons are invisible, so users will practice harder to open all of the buttons. Also, since very beginning users only have a few buttons that they can click, so they can easily remember the postion and get used of pressing important and basic buttons at POS UI.
 
 ### Participants 
 - Total 5 participants for testing paper prototyping test
@@ -72,26 +75,33 @@ We want to redesign experiences of training for new cafe part-time job workers.
 ### Briefing
 Dear user, thank you for being a test user of our team Ogogada. This is our paper prototype. The goal of the project is to redesign experience of training for new cafe part-time job workers. Think of this paper prototype as a tablet monitor, and the person in front will be a computer and execute the function of it. In addition, the keyboard is replaced by a keyskin, and you can touch the screen with your finger. You should read the 3 given tasks and solve them within the prototype. The computer may be slow.
 ### Tasks
- - Practice POS game with given simple order
-   - We gave users simple orders to get them adapt to ordering. There is timer limit so that they would feel like playing game.
- - Practice POS game with given complex order
-    - If the user got fully leveled up, then the user can play with certain *modes*, such as 'time-attack mode' or 'blank mode'. There's a stack of orders the user should accomplish in short time, or some orders are invisible for short period of time that demand quick glance and remembering, to train in practical busy situations. Below pictures are of *time-attack mode*
+- Practice POS with given simple order
+  - Take an order of 1 Americano Ice, 1 Cafe Latte Hot, 1 Greentea Latte Hot and 1 Greentea Latte Ice. And pay with card. 
+  - The user should take order with clicking button of menu and finally should click card button.
+- Given complex situation, understand the situation and solve it
+  - A customer ordered 1 Americano Hot, 2 Americano Ice, 2 Vanilla Latte Ice, 1 Earl Grey Hot with card. He/She paid already, but then he/she thought that he/she wants to use a Gifticon. Refund past order, use Gifticon to apply discount and make a payment again with card.
+  - The user should click "주문 내역" first, and should choose past order which should be refund. 
+- Learn POS by watching history of given situation
+  - The user doesn't know how to take order of 100 Americano. Find from history list and learn about it.
+  - The user have two choices of knowing next instructions.
+    - First is clicking the button which hand shaped icon is directing.
+    - Second is clicking triangle on the top right to watch the process.
+  - If users want to find out what other experienced workers do in certain situation, they can look up the history section. Then they follow where hand-shaped icon points. If they want to go back or forward quickly, they can use previous/next step button on right top side.
+![](./Images/task2_1.jpg)
  
- ![](./Images/task2_1.jpg)
- 
- ![](./Images/task2_2.jpg)
- 
- - Learn POS by watching history of given situation
-    - If users want to find out what other experienced workers do in certain situation, they can look up the history section. Then they follow where hand-shaped icon points. If they want to go back or forward quickly, they can use previous/next step button on right top side.
+![](./Images/task2_2.jpg)
 
-> -  Try our game until leveling up to the highest level
->     - Through DP3 studio reflection, we felt the first task is not a distinct task from the second task. So we decided to emphasize the novelty of our POS practice program which is 'playing like game'.
-    Users start from ground level which is taking order for only Americano's, which is very easy. The locked up images will stimulate curiosity of users and make them engaged into playing more until leveling up.
+> 
+> - Practice POS game with given simple order -> Try our game until leveling up to the highest level
+>   - We gave users the simple order (which is same as our original task1) to get them adapt to ordering. There is timer limit so that they would feel like playing game. A big differnece is since user is at the very begining level at our prototype so there are only a few visible buttons that they can click.
+>   - Through DP3 studio reflection, we felt the first task is not a distinct task from the second task. So we decided to emphasize the novelty of our POS practice program which is 'playing like game'.
+    Users start from ground level which is taking order for only Americano's, which is very easy.
      As they level up, some locks are released and the difficulty increases slowly. If they become fully experienced with the first task, they are to play the second task.
  > ![](./Images/novelty1.jpg)
 The user is currently in Lv.1
  > ![](./Images/novelty2.jpg)
 The user played our game and is leveled up to Lv.5
+> - So the things that users should do at the task2 do not change, but the scenario is changed. Users will practice at complex situation when they fully level up by practicing at simple orders. 
 
 
 
@@ -170,7 +180,12 @@ We reclassify observations into 3 themes
 
 - Sungha Eom
 
-> CC
+> I could not participate in actual prototype testing due to family circumstances. My grandmother was suddenly getting worse since Thursday and I had to be ready to go directly to funeral whenever I get the message from my mother. Therefore, I mostly participated actively in making paper prototype and designing PPT for DP3 studio presentation. 
+> 
+>Instead, after the feedback from DP3 studio, I participated in quick testing for a modified task with Sangmin. Sangmin played as computer and I played as facilitator or played both.
+When the user was first given very first task, user did not wait for slow computer.
+In order to prevent the user get bored, I tried to be loud and encourage them to play further, but since this can’t be part of program implementation, this issue should be considered.
+When the user reaches a certain level where they have to start look for menu switch button that makes something unvisible to visible, they have hard time finding the switch button. I thought the reason was users try to be intuitive, so I really wanted to give them hint what was changed, but I tried not to do it. Instead I thought later I should add some UI element emphasizing that menu switch button is unlocked.
 
 - Sihyun Yu
 
