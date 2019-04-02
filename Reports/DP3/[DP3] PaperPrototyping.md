@@ -143,6 +143,17 @@ We reclassify observations into 3 themes
     - Task 3 - Users immediately forget what he/she needs to do right after seeing the history at current UI system (P1, P2): Medium
         - Gives opportunity to repeat the process after seeing the history
 
+>### New Observations
+>This is done with only the new task in very quick and brief way to 2 people, and we will try officially next week.
+>- User totally new at POS wanted something like awards
+>    -  Add some treatment so to make them feel better
+>- Experienced user wanted some limitations to games
+>   - Add some points to encourage there competitive minds
+> - Both users could not directly find things when that was not directly on screen, but had to change the screen by menu buttons
+>    - Emphasize through UI when locks are being released.
+>
+>![](./Images/new.jpeg)
+
 ### Individual Reflections
 
 - Sangmin Lee
@@ -170,7 +181,12 @@ We reclassify observations into 3 themes
 
 - Sungha Eom
 
-> CC
+> I could not participate in actual prototype testing due to family circumstances. My grandmother was suddenly getting worse since Thursday and I had to be ready to go directly to funeral whenever I get the message from my mother. Therefore, I mostly participated actively in making paper prototype and designing PPT for DP3 studio presentation. 
+> 
+>Instead, after the feedback from DP3 studio, I participated in quick testing for a modified task with Sangmin. Sangmin played as computer and I played as facilitator or played both.
+When the user was first given very first task, user did not wait for slow computer.
+In order to prevent the user get bored, I tried to be loud and encourage them to play further, but since this can’t be part of program implementation, this issue should be considered.
+When the user reaches a certain level where they have to start look for menu switch button that makes something unvisible to visible, they have hard time finding the switch button. I thought the reason was users try to be intuitive, so I really wanted to give them hint what was changed, but I tried not to do it. Instead I thought later I should add some UI element emphasizing that menu switch button is unlocked.
 
 - Sihyun Yu
 
