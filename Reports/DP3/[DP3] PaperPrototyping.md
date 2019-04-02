@@ -34,6 +34,13 @@ We want to redesign experiences of training for new cafe part-time job workers.
 
 ![](./Images/prototype7.png)
 
+> * Changed paper prototype after studio feedbacks
+>
+> ![](./Images/novelty1.jpg)
+> Paper prototype has 'level mode' and in 'level mode', some buttons are locked and user can't know which buttons they are. 
+> ![](./Images/novelty2.jpg)
+> Some locked buttons are opened when the user became specific level. The picture shown above is UI when the user became level 5 in 'level mode'.
+
 ### Participants 
 - Total 5 participants for testing paper prototyping test
 - 2 people (completely new at using POS), 1 person (had experience using POS but forgot it), 1 person (have been using POS less than 1 month), 1 person (has a lot of experiences using POS)
