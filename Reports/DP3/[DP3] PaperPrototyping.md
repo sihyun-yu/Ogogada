@@ -176,6 +176,7 @@ We reclassify observations into 3 themes
 
 > I participated as observer with 5 participants for all 3 tasks. I took some pictures to capture the features of users' behaivior and tried to focus on aspects that users feel difficulty. Below are some comments while I observing others' testing, and picture I took. (To write comments faster, I wrote down it in Korean while testing)
 > ![](./Images/sihyun1.png)
+
 > ![](./Images/sihyun2.png)
 > 
 > For each participant, I found 6, 9, 6, 4, 5 observations. Then I summarized all of observations, with different participants), shared and discussed with our teammates. 
@@ -196,9 +197,13 @@ First, there were some feedbacks about the device we should choose for further p
 
 Also, there are some comments about lack of novelty with our prototype. Someone note that our UI is almost same as the original POS UI, so there's no novelty on our paper prototype. The only new thing is we can see history via our paper prototype. Also, there was a comment that it will be better to add new menus at UI for practice purpose.
 
-> We strongly agree with this. We only thought about "Is it possible to this with paper?". We think this wrong understanding at paper prototyping milestone lead this result. Therefore, based on feedback, we redesigned our paper prototype (added picture at the end of prototype section) and changed the first task (added the new task at the end of task section). Before making lo-fi prototype, we are planning to test our modifed prototype to users and will apply those observations to our lo-fi prototype. 
+> We strongly agree with this. We only thought about "Is it possible to this with paper?". We think this wrong understanding at paper prototyping milestone led this result. Therefore, based on feedback, we redesigned our paper prototype (added picture at the end of prototype section) and changed the first task (added the new task at the end of task section). Before making lo-fi prototype, we are planning to test our modifed prototype to users and will apply those observations to our lo-fi prototype.
 
-Someone note that the fact that we added computer loading sign while testing was nice.
+Someone gives us feedback that first and second tasks are not distinct and second task involves first one.
+
+> We think that this is similar with previous comment. Since our paper prototype is almost same with normal POS and there's no novelty, our task selection seems to be similar. As we add new features after studio, we could choose another task.
+
+Someone notes that the fact that we added computer loading sign while testing was nice.
 
 > We concerned a lot how our paper prototype looks similar to real computer prototype and this was one of the results. For further milestones, we will consider a lot about many aspects, not only this perspective. 
 
