@@ -153,6 +153,17 @@ We reclassify observations into 3 themes
     - Task 3 - Users immediately forget what he/she needs to do right after seeing the history at current UI system (P1, P2): Medium
         - Gives opportunity to repeat the process after seeing the history
 
+>### New Observations
+>This is done with only the new task in very quick and brief way to 2 people, and we will try officially next week.
+>- User totally new at POS wanted something like awards
+>    -  Add some treatment so to make them feel better
+>- Experienced user wanted some limitations to games
+>   - Add some points to encourage there competitive minds
+> - Both users could not directly find things when that was not directly on screen, but had to change the screen by menu buttons
+>    - Emphasize through UI when locks are being released.
+>
+>![](./Images/new.jpeg)
+
 ### Individual Reflections
 
 - Sangmin Lee
