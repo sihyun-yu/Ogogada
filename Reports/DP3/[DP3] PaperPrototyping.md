@@ -190,11 +190,11 @@ We reclassify observations into 3 themes
 
 There a lot of comments after the presentation. Because this milestone affects to all of further milestones for prototypes, we concerned more about feedbacks from others compared to before. 
 
-First, there were some feedbacks about the device we should choose for further prototypes and user test. Someone asked, "What if the UI use touch sensor to operate on portable devices like Ipad or phone?" and another person mentioned that there will not be no additional keyboard for users if we select portable devices for making prototype.
+First, there were some feedbacks about the device we should choose for further prototypes and user test. Someone asked, "What if the UI use touch sensor to operate on portable devices like iPad or phone?" and another person mentioned that there will not be no additional keyboard for users if we select portable devices for making prototype.
 
-> 	We agree with this and selecting portable devices such as iPad are really great idea. Also it is true that for users' perspective, it is hard to have additional keyboard for test, we need to consider a lot for further prototypes.
+> 	We agree with this and selecting portable devices such as iPad are really great idea. Also it is true that for users' perspective, it is hard to have additional keyboard for test, we need to consider a lot for further prototypes like just typing in tablet with pop up keyboard.
 
-Also, there are some comments about lack of novelity with our prototype. Someone note that our UI is almost same as the original POS UI, so there's no novelity on our paper prototype. The only new thing is we can see history via our paper prototype. Also, there was a comment that it will be better to add new menus at UI for practice purpose.
+Also, there are some comments about lack of novelty with our prototype. Someone note that our UI is almost same as the original POS UI, so there's no novelty on our paper prototype. The only new thing is we can see history via our paper prototype. Also, there was a comment that it will be better to add new menus at UI for practice purpose.
 
 > We strongly agree with this. We only thought about "Is it possible to this with paper?". We think this wrong understanding at paper prototyping milestone lead this result. Therefore, based on feedback, we redesigned our paper prototype (added picture at the end of prototype section) and changed the first task (added the new task at the end of task section). Before making lo-fi prototype, we are planning to test our modifed prototype to users and will apply those observations to our lo-fi prototype. 
 
