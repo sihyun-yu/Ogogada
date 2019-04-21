@@ -3,7 +3,7 @@
 ## Team Ogogada
 Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
-**We modified the task 3, so we specified that part the end of each section. We are planning to do user test with modified prototype and tasks.**
+**We modified the task 3 and did user testing with modified prototype and tasks.**
 
 ### Experience
 We want to redesign experiences of training for new cafe part-time job workers.
@@ -15,8 +15,8 @@ needs to <strong> practice a lot and quickly get familiar with POS </strong> bec
 ### Tasks
 Since we want to let the user practice POS feeling like playing game, we asked for test users to follow the 3 tasks below.
 
-1. Watch history of how to use POS at level 4 (using Gifticon at the situation)
-2. Do the task at level 4 with a few mistakes (allows low accuracy) and level up to 5 
+1. Watch the history of how to use POS at level 4 (using Gifticon at the situation).
+2. Do the task at level 4 with a few mistakes (allows low accuracy) and level up to 5.
 3. After playing the game, check out your rank at level 4.
 
 ### Prototype
