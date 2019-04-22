@@ -24,8 +24,17 @@ Since we want to let the user practice POS feeling like playing game, we asked f
 
 ### Observations
 
-### Digital
+### Paper vs Digital
 
-We used Sketch and Invision as a prototyping tool.
+We used Sketch and Invision as a digital prototyping tool.
 
-First of all, they provided a familiar platform that we usually have used such as iOS UI or Android UI. Furthermore, the layer system was very similar to the one in Photoshop, so it was quite easy to get used of this platform. Also, the homepages offer detailed instructions. Lastly, we are so fascinated the program visualizes hotspots very well between screen to screen.
+We use this tools because they provided a familiar platform that we usually have used such as iOS UI or Android UI. Furthermore, the layer system was very similar to the one in Photoshop, so it was quite easy to get used of this platform. Also, the homepages offer detailed instructions. Lastly, we are so fascinated the program visualizes hotspots very well between screen to screen.
+
+* Difference in usability issue
+> dd
+
+* Difference in participants' reaction and expectation
+> dd
+
+* Changes from paper to digital
+> dd
