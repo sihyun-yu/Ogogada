@@ -194,17 +194,17 @@ We used Sketch and Invision as a digital prototyping tool.
 We use this tools because they provided a familiar platform that we usually have used such as iOS UI or Android UI. Furthermore, the layer system was very similar to the one in Photoshop, so it was quite easy to get used of this platform. Also, the homepages offer detailed instructions. Lastly, we are so fascinated the program visualizes hotspots very well between screen to screen.
 
 * Difference in usability issue
-> Efficiency: With our lo-fi prototype, when participant doing wrong, then it shows what to do next. It helps reduce time to test prototype.
->
-> Learnability: Our paper prototype has simple UI, so participant easily understand what they are doing. However, with lo-fi prototype, user have problem with new UI. They often confused with meaning of the level select page.
+> Efficiency: With our lo-fi prototype, when participant doing wrong, then it shows what to do next by denoting as different color. It helps reduce time to test prototype compared to our preivous paper prototype testing, which is done by people. Plus, with lo-fi prototype, screen switch is automatically done, which was done by people at paper prototype. 
+>  
+> Learnability: Since it takes some time while swiching the screen and some popup message with paper prototype testing, users often get confused about the order that they should because there were some time blank between user actions. However, with lo-fi prototype, since there was no time blank, people can more easily understand the purpose of our prototype and memorize the instruction. 
 >
 > Safety: With our lo-fi prototype, participants may repeat the same task without going to the next task.
 
 * Difference in participants' reaction and expectation
-> At DP3, our paper prototype UI is almost same as original POS and the tasks are about learning how to manipulate the force like receiving an order, checking history. It is simple and intuitive, so participants easily understand what they are doing. However, with lo-fi prototype, participants are confused at purpose of level select page because of poor explanation. Moreover, due to insufficient explanation and fast loading, participants proceeded with their tasks without knowing what they are doing.
+> At DP3, all of screen switches and lock button open process was done by a person who has a role of computer. Therefore, it takes a lot of time to switch so people feel it is awkward. However, since all of these process was automatically done by our hotspots in lo-fi prototype, users felt more natural about this. Howver, also limitation existed while doing the test using lo-fi prototype. With paper prototype, human computer can make a sound such as error message, or saying the task as real order. However, with lo-fi prototype, this as impossible so people got confused while doing the task. 
 
 * Changes from paper to digital
-> We received some feedback for our paper prototyping. One of the most focused things we have is the novelty of the UI. Our paper prototype UI lacked of novelty. It is almost same as the original POS UI. We try to add more pages such as, level select page, history select page. We also added the ability to show the accuracy in a visible way, and adding a menu showing the accuracy and time-based ranking for each level. 
+> We received some feedback for our paper prototyping. One of the most focused things we have is the novelty of the UI. Our paper prototype UI lacked of novelty. It is almost same as the original POS UI. We try to add more pages such as, level select page, history select page. We also added the ability to show the accuracy in a visible way, and adding a menu showing the accuracy and time-based ranking for each level to emphasize gamification. Plus, we clearly distinguished tasks among them while changing the prototype. 
 
 ### Studio Reflection
 There were many feedbacks after the studio. We summarzied these and some of these are reflected before the user test. 
