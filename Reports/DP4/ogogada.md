@@ -16,11 +16,11 @@ needs to <strong> practice a lot and quickly get familiar with POS </strong> bec
 Since we want to let the user practice POS feeling like playing game, we asked for test users to follow the 3 tasks below.
 
 1. Watch the guide (history) of how to use POS (using Gifticon at the situation).
-   - At the first time, new part-time job worker at the cafe doesn't know how to do something with POS at certain situation, such as using Gifticon, cancel the purchase, and so on. Therefore, we provide the instruction with very basic situations that most workers frequently met while working at the cafe. Since one of our purposes of the prototype was to gamification, we dividied these situations into levels and show these instructions as the user level up at our UI. The first task of our prototype is to check this guide of using Gificon assuming very simple situation.
+   - At the first time, users don't know how to do something with POS at certain situation, such as using Gifticon, cancel the purchase, and so on. Therefore, we provide the instruction with very basic situations that most workers frequently met while working at the cafe. We divided these situations into levels and show these instructions as the user level up at our UI. The first task of our prototype is to check this guide of using Gificon assuming very simple situation. Users will experience and follow how to use Gifticon at very simple situation with the instruction that we provided by red rectangles.
 2. Do the task at level 4 and level up to 5.
-   - aa 
+   - Even if, new part-time job workers watch the guide of using POS, it does not mean they can use the POS correctly in such situation. Moreover, it is quite different in real work. There might be various and complex situations in real world. Therefore, they need practice to be familiar with such functions of POS. By the second task, the user can practice POS with certain situations, and be familier with POS and real world.
 4. See the ranking of doing task at level 4.
-   - Note that our main goal of prototype is to make a learning process like a game to make feel users to fun. Therefore, we added ranking checking system at each level to encourage users to play and learn for using POS at various situation much harder. The third task of our prototype is highly related to this, we ask our prototype users to check the ranking after they completing the stage.   
+   - Note that our main goal of prototype is to make a learning process like a game to make users feel fun. Therefore, we added ranking checking system at each level to encourage users to play and learn for using POS at various situation much harder. The third task of our prototype is highly related to this, users will check the ranking after they completing the stage and can check what is the best time and accuracy at this situation (level).  
 
 ### Prototype
 - Sign in
