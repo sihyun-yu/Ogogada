@@ -36,6 +36,7 @@ The second picture is of level 5.
 - (Task 1) Watch the guide (History List) of how to use POS (using Gifticon at the situation).
 
 ![](./Images/prototype_history.png)
+
 The user can learn using POS with given situations by following tutorial with guidance. The user can enter History List by clicking this button.
 
 ![](./Images/prototype3.png)
