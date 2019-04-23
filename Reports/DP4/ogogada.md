@@ -15,9 +15,9 @@ needs to <strong> practice a lot and quickly get familiar with POS </strong> bec
 ### Tasks
 Since we want to let the user practice POS feeling like playing game, we asked for test users to follow the 3 tasks below.
 
-1. Watch the history of how to use POS at level 4 (using Gifticon at the situation).
-2. Do the task at level 4 with a few mistakes (allows low accuracy) and level up to 5.
-3. After playing the game, check out your rank at level 4.
+1. Watch the guide (history) of how to use POS (using Gifticon at the situation).
+2. Do the task at level 4 and level up to 5.
+3. See the ranking of doing task at level 4.
 
 ### Prototype
 - Sign in 
@@ -46,7 +46,7 @@ Since we want to let the user practice POS feeling like playing game, we asked f
 ![](./Images/prototype8.png)
 ![](./Images/prototype9.png)
 
-- (Task 3)
+- (Task 3) 
   - description  
  
 ![](./Images/prototype11.png)
