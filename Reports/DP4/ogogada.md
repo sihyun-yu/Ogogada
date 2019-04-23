@@ -3,7 +3,7 @@
 ## Team Ogogada
 Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
-**We modified the task 3 and did user testing with modified prototype and tasks.**
+**We modified the task 3 after the studio and did user testing with modified prototype and tasks.**
 
 ### Experience
 We want to redesign experiences of training for new cafe part-time job workers.
@@ -15,12 +15,12 @@ needs to <strong> practice a lot and quickly get familiar with POS </strong> bec
 ### Tasks
 Since we want to let the user practice POS feeling like playing game, we asked for test users to follow the 3 tasks below.
 
-1. Watch the guide (history) of how to use POS (using Gifticon at the situation).
+1. Watch the guide (at History List) of how to use POS (using Gifticon at the situation).
    - At the first time, users don't know how to do something with POS at certain situation, such as using Gifticon, cancel the purchase, and so on. Therefore, we provide the instruction with very basic situations that most workers frequently met while working at the cafe. We divided these situations into levels and show these instructions as the user level up at our UI. The first task of our prototype is to check this guide of using Gificon assuming very simple situation. Users will experience and follow how to use Gifticon at very simple situation with the instruction that we provided by red rectangles.
 2. Do the task at level 4 and level up to 5.
    - Even if, new part-time job workers watch the guide of using POS, it does not mean they can use the POS correctly in such situation. Moreover, it is quite different in real work. There might be various and complex situations in real world. Therefore, they need practice to be familiar with such functions of POS. By the second task, the user can practice POS with certain situations, and be familier with POS and real world.
-4. See the ranking of doing task at level 4.
-   - Note that our main goal of prototype is to make a learning process like a game to make users feel fun. Therefore, we added ranking checking system at each level to encourage users to play and learn for using POS at various situation much harder. The third task of our prototype is highly related to this, users will check the ranking after they completing the stage and can check what is the best time and accuracy at this situation (level).  
+4. See the Ranking of doing task at level 4.
+   - Note that our main goal of prototype is to make a learning process like a game to make users feel fun. Therefore, we added ranking checking system at each level to encourage users to play and learn for using POS at various situation much harder. The third task of our prototype is highly related to this, users will check the Ranking after they completing the stage and can check what is the best time and accuracy at this situation (level).  
 
 ### Prototype
 
@@ -37,10 +37,10 @@ We chose to use Sketch and Invision as lo-fi prototype tool. It worked for us fo
 
 Design choices:
 We chose not to implement..
-1. actual rank that would be stored at database, since actual accuracy and time is not an important issue.
-2. entering actual code for gifticon, since actual number is not an important issue.
-3. motions for card calculation, since a simple image would deliver the meaning enough.
-4. voice sound of imaginary customer order, since we thought implementation effort requires far more than it's intention which is notifying users.
+1. Actual rank that would be stored at database, since actual accuracy and time is not an important issue.
+2. Entering actual code for gifticon, since actual number is not an important issue.
+3. Motions for card calculation, since a simple image would deliver the meaning enough.
+4. Voice sound of imaginary customer order, since we thought implementation effort requires far more than it's intention which is notifying users.
 
 Instead we chose to implement..
 1. POS UI with locks, since the unlocking them step by step is key for learning POS easily.
@@ -55,10 +55,10 @@ The user needs to click 'Sign in' button to move to the home.
 - Home
 
 ![](./Images/prototype2.png)
-The user can check their level and choose to play at certain level. This is of level 4
+The user can check their level and choose to play at certain level. This is page of level 4
 
 ![](./Images/prototype10.png)
-The second picture is of level 5.
+The second picture is page of level 5.
 
 - (Task 1) Watch the guide (History List) of how to use POS (using Gifticon at the situation).
 
@@ -110,6 +110,72 @@ The user can see top 8 players' name, their accuracy and taken time. (S)he can g
 
 
 ### Observations
+We devided the oberservations by three themes, visiblity, affordability and gamification. And we classified them into high, medium, and low based on the correlation with tasks.
+
+- Visibility: Can users find what they have to do easily without additional verbal or textual explanations?
+
+- Affordability: Can users interact with our prototype with enough reactions in both ways?
+
+- Gamification: Do users feel like an actual game? Do users play and expect like any other games?
+
+<strong>Visibility </strong>
+
+High
+
+- The locker image doesn’t give the user any clue what will be next functions, so it doesn’t make users want to unlock it as quickly as possible. (p1)
+  - Make the locked button slightly visible so that the user can get hint what will be shown next.  
+
+
+- Since there were not visible description at the main game mode page, it is hard to know for users what to do at the each level. (P3)
+  - It would be better to add a small window or add some texts on the current popup page about the mission that users should do for further prototype. But we also need to note that in real situation, the order Is not given as text. We need to ask and consider more which selection at real implementation would help users to efficiently learn POS.
+
+
+- Users didn’t know what the coffee on the upper right corner means  (P1, 3)
+  - Add text “accuracy” on the icon or next to the icon
+
+Medium
+
+- Home page (page with Super Mario) does not seem that it related to level system. (P1, P4, P5)
+  - To make our prototype looks like game, we make current level select page with Super Mario stage select page. I might be better to make our own design and state the level at each node.
+
+Low
+
+- The process of increasing the size of the coffee and reducing the amount of coffee annoyed the user. (P1)
+  - Do not increase the size of the coffee, but keep it fixed and just shakes the cup and reduces the amount of coffee.
+
+<strong> Affordability </strong>
+High
+- When following the guide (History), the users want to know clearly what they are practicing about. (P4, P5)
+  - We can emphasize the task title by increasing the size of font or bold it.
+
+- The user didn’t understand what to press on the home page (page with Super Mario) and what the page means. (P1)
+  - Add a small profile on the screen which tells the information of the user such as name  and level.
+  - Add text to each icon such as “Ranking”, “Level (stage) 4”, “History Ranking”
+
+Medium
+
+- Users don’t know how to make move the Super Mario character. (P3)
+  - This occurred since we did not make this point affordable. Maybe using keyboard (if we decide to implement the prototype at PC) or direct moving to the point where the user clicked (touched) even if the character is not there (if we decide to implement the prototype at tablet PCs).
+
+- Pressing buttons doesn’t give the users the feeling of pressing, so they don’t know whether they are clicked or not. (P4)
+  - Give little motion or sound and slightly and shortly change border color of it.
+
+Low
+
+- Some user want to go back, but there is no button. (P2)
+  - When user makes some mistake, they usually find back button to undo their mistake. Add back button at every page might be helpful to user.
+
+<strong> Gamification </strong>
+
+High
+
+- It is hard to know the user got level up after they finishing the level.  (P3)
+  - This is very important for users to know they get level up since our main purpose of the prototype was to make a learning process like a game. And it is certain that level is very important component of the game, so this must be emphasized. We can add more effects and characters if the user finished the stage and get level up. 
+
+Medium
+
+- Some user feels more sense of accomplishment with progress bar than the level system. (P2)
+  - We can use both level and progress bar system. Add progress bar to shows ratio of current level and final level.
 
 ### Paper vs Digital
 
@@ -155,4 +221,4 @@ Also agree with this and we can implement this with further prototype. Visualizi
 
 > How can we know the correct answer for each stage? It will be better with correct instructions which helps users doing his own.
 
-We can check the basic order with given goal at the history list, and the purpose of the real game is to get familiar with more complicated situation compared to showing history. Therefroe, our decision is not to show the answer for the real stage since the purpose of the real stage is get used to POS without real answer. 
+We can check the basic order with given goal at the History List, and the purpose of the real game is to get familiar with more complicated situation compared to showing history. Therefroe, our decision is not to show the answer for the real stage since the purpose of the real stage is get used to POS without real answer. 
