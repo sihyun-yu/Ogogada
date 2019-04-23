@@ -23,6 +23,16 @@ Since we want to let the user practice POS feeling like playing game, we asked f
    - Note that our main goal of prototype is to make a learning process like a game to make users feel fun. Therefore, we added ranking checking system at each level to encourage users to play and learn for using POS at various situation much harder. The third task of our prototype is highly related to this, users will check the ranking after they completing the stage and can check what is the best time and accuracy at this situation (level).  
 
 ### Prototype
+Link: https://projects.invisionapp.com/prototype/Ogogada-cju5mv4bh00m15101z92prxmi/play/22952c42
+
+Prototype Tool: Sketch & Invision
+![](./Images/prototype_digital.png)
+We chose to use Sketch and Invision as lo-fi prototype tool. It worked for us for these reasons below.
+1. They provided a familiar platform that we usually have used such as iOS UI or Android UI.
+2. The system was very similar to the one in Photoshop, so it was quite easy to get used to this platform. 
+3. Both homepages offer detailed instructions. 
+4. Invision visualizes hotspots very well between screen to screen.
+
 - Sign in
 
 ![](./Images/prototype1.png)
