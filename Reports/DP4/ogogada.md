@@ -66,9 +66,21 @@ When the user finishes the task, the level increases, and shows amount of time t
 As the level rises, the available buttons increase, and the UI shows the newly opened button.
 
 - (Task 3) See the ranking of doing task at level 4.
- 
+
+
+![](./Images/prototype_rank.png)
+At Home, user can check their rank by clickling this button.
+
+
 ![](./Images/prototype11.png)
+At Ranking, the user can see a winner of each level.
+The user can select each level to see specific ranks and players' information, or go back to Home.
+
 ![](./Images/prototype12.png)
+The user can see top 8 players' name, their accuracy and taken time. (S)he can go back as well.
+
+
+
 
 
 
