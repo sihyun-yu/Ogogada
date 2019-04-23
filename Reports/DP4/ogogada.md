@@ -37,17 +37,24 @@ Since we want to let the user practice POS feeling like playing game, we asked f
 ![](./Images/prototype3.png)
 ![](./Images/prototype4.png)
 
-- (Task 2)
-  - description
+- (Task 2) Do the task at level 4 and level up to 5.
 
 ![](./Images/prototype5.png)
-![](./Images/prototype7.png)
-![](./Images/prototype6.png)
-![](./Images/prototype8.png)
-![](./Images/prototype9.png)
+The user can listen the task by clicking sound icon which is located right of 'Task1'. We didn't implement the sound function in lo-fi prototype. And the user can start the task by clicking start button.
 
-- (Task 3) 
-  - description  
+![](./Images/prototype7.png)
+When the user clicks the wrong button, the coffee on the upper right corner grows and moves to center.
+
+![](./Images/prototype6.png)
+Since the user clicked the wrong button, the amount of coffee changed from 100% to 90% which indicates accuracy of the player.
+
+![](./Images/prototype8.png)
+When the user finishes the task, the level increases, and shows amount of time the user spent on this task, the best accuracy, and the ranking.
+
+![](./Images/prototype9.png)
+As the level rises, the available buttons increase, and the UI shows the newly opened button.
+
+- (Task 3) See the ranking of doing task at level 4.
  
 ![](./Images/prototype11.png)
 ![](./Images/prototype12.png)
