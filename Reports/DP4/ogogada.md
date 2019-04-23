@@ -69,6 +69,7 @@ As the level rises, the available buttons increase, and the UI shows the newly o
 
 
 ![](./Images/prototype_rank.png)
+
 At Home, user can check their rank by clickling this button.
 
 
