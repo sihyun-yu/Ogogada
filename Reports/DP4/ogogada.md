@@ -28,16 +28,32 @@ Since we want to let the user practice POS feeling like playing game, we asked f
 - Home
   - description
 
-![](./Images/prototype.png)
+![](./Images/prototype2.png)
+![](./Images/prototype10.png)
 
 - (Task 1) Watch history at Lv.4
   - description
 
 ![](./Images/prototype3.png)
 ![](./Images/prototype4.png)
-![](./Images/prototype5.png)
 
-- 
+- (Task 2)
+  - description
+
+![](./Images/prototype5.png)
+![](./Images/prototype7.png)
+![](./Images/prototype6.png)
+![](./Images/prototype8.png)
+![](./Images/prototype9.png)
+
+- (Task 3)
+  - description  
+ 
+![](./Images/prototype11.png)
+![](./Images/prototype12.png)
+
+
+
 ### Observations
 
 ### Paper vs Digital
