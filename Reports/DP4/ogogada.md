@@ -20,8 +20,24 @@ Since we want to let the user practice POS feeling like playing game, we asked f
 3. After playing the game, check out your rank at level 4.
 
 ### Prototype
+- Sign in 
+  - The user needs to click 'Sign in' button to move to the home.
 
+![](./Images/prototype1.png)
 
+- Home
+  - description
+
+![](./Images/prototype.png)
+
+- (Task 1) Watch history at Lv.4
+  - description
+
+![](./Images/prototype3.png)
+![](./Images/prototype4.png)
+![](./Images/prototype5.png)
+
+- 
 ### Observations
 
 ### Paper vs Digital
