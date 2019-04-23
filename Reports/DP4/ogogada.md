@@ -16,10 +16,15 @@ needs to <strong> practice a lot and quickly get familiar with POS </strong> bec
 Since we want to let the user practice POS feeling like playing game, we asked for test users to follow the 3 tasks below.
 
 1. Watch the guide (at History List) of how to use POS (using Gifticon at the situation).
+   
    - At the first time, users don't know how to do something with POS at certain situation, such as using Gifticon, cancel the purchase, and so on. Therefore, we provide the instruction with very basic situations that most workers frequently met while working at the cafe. We divided these situations into levels and show these instructions as the user level up at our UI. The first task of our prototype is to check this guide of using Gificon assuming very simple situation. Users will experience and follow how to use Gifticon at very simple situation with the instruction that we provided by red rectangles.
+
 2. Do the task at level 4 and level up to 5.
+   
    - Even if, new part-time job workers watch the guide of using POS, it does not mean they can use the POS correctly in such situation. Moreover, it is quite different in real work. There might be various and complex situations in real world. Therefore, they need practice to be familiar with such functions of POS. By the second task, the user can practice POS with certain situations, and be familier with POS and real world.
-4. See the Ranking of doing task at level 4.
+  
+3. See the Ranking of doing task at level 4.
+
    - Note that our main goal of prototype is to make a learning process like a game to make users feel fun. Therefore, we added ranking checking system at each level to encourage users to play and learn for using POS at various situation much harder. The third task of our prototype is highly related to this, users will check the Ranking after they completing the stage and can check what is the best time and accuracy at this situation (level).  
 
 ### Prototype
@@ -28,22 +33,32 @@ Link: https://projects.invisionapp.com/prototype/Ogogada-cju5mv4bh00m15101z92prx
 (Please enter this link by Chrome with font size of 67%)
 
 Prototype Tool: Sketch & Invision
+
 ![](./Images/prototype_digital.png)
 We chose to use Sketch and Invision as lo-fi prototype tool. It worked for us for these reasons below.
+
 1. They provided a familiar platform that we usually have used such as iOS UI or Android UI.
+   
 2. The system was very similar to the one in Photoshop, so it was quite easy to get used to this platform. 
+   
 3. Both homepages offer detailed instructions. 
+   
 4. Invision visualizes hotspots very well between screen to screen.
 
 Design choices:
 We chose not to implement..
+
 1. Actual rank that would be stored at database, since actual accuracy and time is not an important issue.
+   
 2. Entering actual code for gifticon, since actual number is not an important issue.
+   
 3. Motions for card calculation, since a simple image would deliver the meaning enough.
+
 4. Voice sound of imaginary customer order, since we thought implementation effort requires far more than it's intention which is notifying users.
 
 Instead we chose to implement..
 1. POS UI with locks, since the unlocking them step by step is key for learning POS easily.
+
 2. Going back and forth from Home screen to Ranking or History List, since we thought users should freely check out.
 
 Representative Screenshots
@@ -91,11 +106,9 @@ As the level rises, the available buttons increase, and the UI shows the newly o
 
 - (Task 3) See the ranking of doing task at level 4.
 
-
 ![](./Images/prototype_rank.png)
 
 At Home, user can check their rank by clickling this button.
-
 
 ![](./Images/prototype11.png)
 At Ranking, the user can see a winner of each level.
@@ -103,11 +116,6 @@ The user can select each level to see specific ranks and players' information, o
 
 ![](./Images/prototype12.png)
 The user can see top 8 players' name, their accuracy and taken time. (S)he can go back as well.
-
-
-
-
-
 
 ### Observations
 We devided the oberservations by three themes, visiblity, affordability and gamification. And we classified them into high, medium, and low based on the correlation with tasks.
@@ -144,7 +152,9 @@ Low
   - Do not increase the size of the coffee, but keep it fixed and just shakes the cup and reduces the amount of coffee.
 
 <strong> Affordability </strong>
+
 High
+
 - When following the guide (History), the users want to know clearly what they are practicing about. (P4, P5)
   - We can emphasize the task title by increasing the size of font or bold it.
 
