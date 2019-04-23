@@ -36,6 +36,7 @@ The second picture is of level 5.
 - (Task 1) Watch the guide (History List) of how to use POS (using Gifticon at the situation).
 
 ![](./Images/prototype_history.png)
+
 The user can learn using POS with given situations by following tutorial with guidance. The user can enter History List by clicking this button.
 
 ![](./Images/prototype3.png)
@@ -44,19 +45,29 @@ If the user enters History List, the user can select tutorial of different level
 ![](./Images/prototype4.png)
 The user can follow the flow with red highlight, showing what (s)he has to click.
 
-- (Task 2)
-  - description
+- (Task 2) Do the task at level 4 and level up to 5.
 
 ![](./Images/prototype5.png)
+The user can listen the task by clicking sound icon which is located right of 'Task1'. We didn't implement the sound function in lo-fi prototype. And the user can start the task by clicking start button.
+
 ![](./Images/prototype7.png)
+When the user clicks the wrong button, the coffee on the upper right corner grows and moves to center.
+
 ![](./Images/prototype6.png)
+Since the user clicked the wrong button, the amount of coffee changed from 100% to 90% which indicates accuracy of the player.
+
 ![](./Images/prototype8.png)
+When the user finishes the task, the level increases, and shows amount of time the user spent on this task, the best accuracy, and the ranking.
+
 ![](./Images/prototype9.png)
+As the level rises, the available buttons increase, and the UI shows the newly opened button.
 
 - (Task 3) See the ranking of doing task at level 4.
 
+
 ![](./Images/prototype_rank.png)
 At Home, user can check their rank by clickling this button.
+
 
 ![](./Images/prototype11.png)
 At Ranking, the user can see a winner of each level.
