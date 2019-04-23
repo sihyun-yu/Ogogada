@@ -53,11 +53,20 @@ The user can follow the flow with red highlight, showing what (s)he has to click
 ![](./Images/prototype8.png)
 ![](./Images/prototype9.png)
 
-- (Task 3) 
-  - description  
- 
+- (Task 3) See the ranking of doing task at level 4.
+
+![](./Images/prototype_rank.png)
+At Home, user can check their rank by clickling this button.
+
 ![](./Images/prototype11.png)
+At Ranking, the user can see a winner of each level.
+The user can select each level to see specific ranks and players' information, or go back to Home.
+
 ![](./Images/prototype12.png)
+The user can see top 8 players' name, their accuracy and taken time. (S)he can go back as well.
+
+
+
 
 
 
