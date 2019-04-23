@@ -195,8 +195,6 @@ Medium
 
 We used Sketch and Invision as a digital prototyping tool.
 
-We use this tools because they provided a familiar platform that we usually have used such as iOS UI or Android UI. Furthermore, the layer system was very similar to the one in Photoshop, so it was quite easy to get used of this platform. Also, the homepages offer detailed instructions. Lastly, we are so fascinated the program visualizes hotspots very well between screen to screen.
-
 * Difference in usability issue
 > Efficiency: With our lo-fi prototype, when participant doing wrong, then it shows what to do next by denoting as different color. It helps reduce time to test prototype compared to our preivous paper prototype testing, which is done by people. Plus, with lo-fi prototype, screen switch is automatically done, which was done by people at paper prototype. 
 >  
