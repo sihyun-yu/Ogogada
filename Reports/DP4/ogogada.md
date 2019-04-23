@@ -130,65 +130,65 @@ We devided the oberservations by three themes, visiblity, affordability and gami
 
 High
 
->- The locker image doesn’t give the user any clue what will be next functions, so it doesn’t make users want to unlock it as quickly as possible. (p1)
->   - Make the locked button slightly visible so that the user can get hint what will be shown next.  
+>The locker image doesn’t give the user any clue what will be next functions, so it doesn’t make users want to unlock it as quickly as possible. (P1)
+>- Make the locked button slightly visible so that the user can get hint what will be shown next.  
 >
 >
->- Since there were not visible description at the main game mode page, it is hard to know for users what to do at the each level. (P3)
->   - It would be better to add a small window or add some texts on the current popup page about the mission that users should do for further prototype. But we also need to note that in real situation, the order Is not given as text. We need to ask and consider more which selection at real implementation would help users to efficiently learn POS.
+>Since there were not visible description at the main game mode page, it is hard to know for users what to do at the each level. (P3)
+>- It would be better to add a small window or add some texts on the current popup page about the mission that users should do for further prototype. But we also need to note that in real situation, the order Is not given as text. We need to ask and consider more which selection at real implementation would help users to efficiently learn POS.
 >
 >
->- Users didn’t know what the coffee on the upper right corner means  (P1, 3)
->   - Add text “accuracy” on the icon or next to the icon
+>Users didn’t know what the coffee on the upper right corner means  (P1, 3)
+>- Add text “accuracy” on the icon or next to the icon
 
 Medium
 
->- Home page (page with Super Mario) does not seem that it related to level system. (P1, P4, P5)
->   - To make our prototype looks like game, we make current level select page with Super Mario stage select page. I might be better to make our own design and state the level at each node.
+>Home page (page with Super Mario) does not seem that it related to level system. (P1, P4, P5)
+>- To make our prototype looks like game, we make current level select page with Super Mario stage select page. I might be better to make our own design and state the level at each node.
 
 Low
 
->- The process of increasing the size of the coffee and reducing the amount of coffee annoyed the user. (P1)
->   - Do not increase the size of the coffee, but keep it fixed and just shakes the cup and reduces the amount of coffee.
+>The process of increasing the size of the coffee and reducing the amount of coffee annoyed the user. (P1)
+>- Do not increase the size of the coffee, but keep it fixed and just shakes the cup and reduces the amount of coffee.
 
 <strong> Affordability </strong>
 
 High
 
->- When following the guide (History), the users want to know clearly what they are practicing about. (P4, P5)
->   - We can emphasize the task title by increasing the size of font or bold it.
+>When following the guide (History), the users want to know clearly what they are practicing about. (P4, P5)
+>- We can emphasize the task title by increasing the size of font or bold it.
 >
->- The user didn’t understand what to press on the home page (page with Super Mario) and what the page means. (P1)
->   - Add a small profile on the screen which tells the information of the user such as name  and level.
->   - Add text to each icon such as “Ranking”, “Level (stage) 4”, “History Ranking”
+>The user didn’t understand what to press on the home page (page with Super Mario) and what the page means. (P1)
+>- Add a small profile on the screen which tells the information of the user such as name  and level.
+>- Add text to each icon such as “Ranking”, “Level (stage) 4”, “History Ranking”
 
 Medium
 
->- Users don’t know how to make move the Super Mario character. (P3)
->   - This occurred since we did not make this point affordable. Maybe using keyboard (if we decide to implement the prototype at PC) or direct moving to the point where the user clicked (touched) even if the character is not there (if we decide to implement the prototype at tablet PCs).
+>Users don’t know how to make move the Super Mario character. (P3)
+>- This occurred since we did not make this point affordable. Maybe using keyboard (if we decide to implement the prototype at PC) or direct moving to the point where the user clicked (touched) even if the character is not there (if we decide to implement the prototype at tablet PCs).
 >
->- Pressing buttons doesn’t give the users the feeling of pressing, so they don’t know whether they are clicked or not. (P4)
->   - Give little motion or sound and slightly and shortly change border color of it.
+>Pressing buttons doesn’t give the users the feeling of pressing, so they don’t know whether they are clicked or not. (P4)
+>- Give little motion or sound and slightly and shortly change border color of it.
 
 Low
 
->- Some user want to go back, but there is no button. (P2)
+>Some user want to go back, but there is no button. (P2)
 >
->   - When user makes some mistake, they usually find back button to undo their mistake. Add back button at every page might be helpful to user.
+>- When user makes some mistake, they usually find back button to undo their mistake. Add back button at every page might be helpful to user.
 
 <strong> Gamification </strong>
 
 High
 
->- It is hard to know the user got level up after they finishing the level.  (P3)
+>It is hard to know the user got level up after they finishing the level.  (P3)
 >
->   - This is very important for users to know they get level up since our main purpose of the prototype was to make a learning process like a game. And it is certain that level is very important component of the game, so this must be emphasized. We can add more effects and characters if the user finished the stage and get level up. 
+>- This is very important for users to know they get level up since our main purpose of the prototype was to make a learning process like a game. And it is certain that level is very important component of the game, so this must be emphasized. We can add more effects and characters if the user finished the stage and get level up. 
 
 Medium
 
->- Some user feels more sense of accomplishment with progress bar than the level system. (P2)
+>Some user feels more sense of accomplishment with progress bar than the level system. (P2)
 >
->   - We can use both level and progress bar system. Add progress bar to shows ratio of current level and final level.
+>- We can use both level and progress bar system. Add progress bar to shows ratio of current level and final level.
 
 ### Paper vs Digital
 
