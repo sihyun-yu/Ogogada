@@ -20,22 +20,29 @@ Since we want to let the user practice POS feeling like playing game, we asked f
 3. See the ranking of doing task at level 4.
 
 ### Prototype
-- Sign in 
-  - The user needs to click 'Sign in' button to move to the home.
+- Sign in
 
 ![](./Images/prototype1.png)
+The user needs to click 'Sign in' button to move to the home.
 
 - Home
-  - The user can check their level and choose to play at certain level. The first picture is of level 4 and the second picture is of level 5.
 
 ![](./Images/prototype2.png)
-![](./Images/prototype10.png)
+The user can check their level and choose to play at certain level. This is of level 4
 
-- (Task 1) 
-  - 
+![](./Images/prototype10.png)
+The second picture is of level 5.
+
+- (Task 1) Watch the guide (History List) of how to use POS (using Gifticon at the situation).
+
+![](./Images/prototype_history.png)
+The user can learn using POS with given situations by following tutorial with guidance. The user can enter History List by clicking this button.
 
 ![](./Images/prototype3.png)
+If the user enters History List, the user can select tutorial of different levels that correspond with game levels.
+
 ![](./Images/prototype4.png)
+The user can follow the flow with red highlight, showing what (s)he has to click.
 
 - (Task 2)
   - description
