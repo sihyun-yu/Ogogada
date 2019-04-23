@@ -26,13 +26,13 @@ Since we want to let the user practice POS feeling like playing game, we asked f
 ![](./Images/prototype1.png)
 
 - Home
-  - description
+  - The user can check their level and choose to play at certain level. The first picture is of level 4 and the second picture is of level 5.
 
 ![](./Images/prototype2.png)
 ![](./Images/prototype10.png)
 
-- (Task 1) Watch history at Lv.4
-  - description
+- (Task 1) 
+  - 
 
 ![](./Images/prototype3.png)
 ![](./Images/prototype4.png)
