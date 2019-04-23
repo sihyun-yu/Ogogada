@@ -73,7 +73,7 @@ The user needs to click 'Sign in' button to move to the home.
 - Home
 
 ![](./Images/prototype2.png)
-The user can check their level and choose to play at certain level. This is page of level 4
+The user can check their level and choose to play at certain level. This is page of level 4.
 
 ![](./Images/prototype10.png)
 The second picture is page of level 5.
