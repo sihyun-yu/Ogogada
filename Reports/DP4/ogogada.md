@@ -35,6 +35,7 @@ Link: https://projects.invisionapp.com/prototype/Ogogada-cju5mv4bh00m15101z92prx
 Prototype Tool: Sketch & Invision
 
 ![](./Images/prototype_digital.png)
+
 We chose to use Sketch and Invision as lo-fi prototype tool. It worked for us for these reasons below.
 
 1. They provided a familiar platform that we usually have used such as iOS UI or Android UI.
