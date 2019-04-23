@@ -29,10 +29,11 @@ Since we want to let the user practice POS feeling like playing game, we asked f
 
 ### Prototype
 
-Link: https://projects.invisionapp.com/prototype/Ogogada-cju5mv4bh00m15101z92prxmi/play/22952c42
+
+<strong> Link</strong>: https://projects.invisionapp.com/prototype/Ogogada-cju5mv4bh00m15101z92prxmi/play/22952c42
 (Please enter this link by Chrome with font size of 67%)
 
-Prototype Tool: Sketch & Invision
+<strong> Prototype Tool: Sketch & Invision </strong>
 
 ![](./Images/prototype_digital.png)
 
@@ -46,7 +47,7 @@ We chose to use Sketch and Invision as lo-fi prototype tool. It worked for us fo
    
 4. Invision visualizes hotspots very well between screen to screen.
 
-Design choices:
+<strong> Design choices</strong>:
 We chose not to implement..
 
 1. Actual rank that would be stored at database, since actual accuracy and time is not an important issue.
@@ -62,7 +63,8 @@ Instead we chose to implement..
 
 2. Going back and forth from Home screen to Ranking or History List, since we thought users should freely check out.
 
-Representative Screenshots
+<strong> Representative Screenshots</strong>
+
 - Sign in
 
 ![](./Images/prototype1.png)
@@ -117,6 +119,46 @@ The user can select each level to see specific ranks and players' information, o
 
 ![](./Images/prototype12.png)
 The user can see top 8 players' name, their accuracy and taken time. (S)he can go back as well.
+
+<strong> Instructions </strong>
+
+1. At Sign-in page, please click green sign in button to start.
+
+2. Click the button at the under right (Question Mark Box) to open a history list. (Task 1)
+   
+3. Click Level 4 to see the history to use Gifticon. (Task 1)
+   
+4. Click the button bordered with the red to see the process to use Gifticon. (Task 1)
+   
+5. If the user want to check the process again, press Again. If not, press Finish button to return back to the history list page. (Task 1)
+   
+6. Click back button on the right above to return back to the main page. 
+   
+7. Click the Super Mario (the man character with the red hat) to do game level 4. (Task 2)
+   
+8. Press Start button do do the task: Purchase 2 Caramel macchiato Hot using Americano Cold Gifticon. (Task 2)
+   
+9.  Press Americano COLD button to make a mistake. Accuracy will be decreased with 10 percent. (Task 2)
+    
+10. Press Caramel Macchiato HOT button twice to add two Caramel Macchiato HOT on the order list. (Task 2)
+    
+11. Click Gifticon button to use Gifticon. (Task 2)
+    
+12. Click Done button to apply the Gifticon. (Task 2)
+    
+13. Click Accept button to apply the Iced Americano Gifticon. (Task 2)
+    
+14. Click Card button to do the purchasing. (Task 2)
+    
+15. Choose Done button to get the credit card. (Task 2)
+    
+16. Check the accuracy and press next button.(Task 2)
+    
+17. Now check the new available buttons then press Done button to return back. (Task 2)
+    
+18. Press the button at the under right (Trophy button) to check the ranking. (Task 3)
+    
+19. Click Level 4 button to check the ranking for game level 4. (Task 3)
 
 ### Observations
 We devided the oberservations by three themes, visiblity, affordability and gamification. And we classified them into high, medium, and low based on the correlation with tasks.
