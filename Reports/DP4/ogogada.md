@@ -21,7 +21,7 @@ Since we want to let the user practice POS feeling like playing game, we asked f
 
 2. Do the task at level 4 and level up to 5.
    
-   - Even if, new part-time job workers watch the guide of using POS, it does not mean they can use the POS correctly in such situation. Moreover, it is quite different in real work. There might be various and complex situations in real world. Therefore, they need practice to be familiar with such functions of POS. By the second task, the user can practice POS with certain situations, and be familiar with POS and real world.
+   - Even if, new part-time job workers watch the guide of using POS, it does not mean they can use the POS correctly in such situation. Moreover, it is quite different in real work. There might be various and complex situations in real world. Therefore, they need practice to be familiar with such functions of POS. By the second task, the user can practice POS with complicated situations, and be familiar with POS and real world without any guide or instructions by red rectangle.
   
 3. See the Ranking of doing task at level 4.
 
