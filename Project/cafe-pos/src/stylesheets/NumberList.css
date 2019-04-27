@@ -1,9 +1,5 @@
 .number-list__container {
-  width: 35%;
-}
-
-.number-list {
-  
+  width:40%;
 }
 
 .number-item {
@@ -11,7 +7,7 @@
   text-align: left;
   font-size: 16px;
   font-weight: 500;
-  width: 30%;
+  width: 33%;
   border-bottom: solid black 1px;
   padding: 8px 0;
 }

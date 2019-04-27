@@ -15,11 +15,13 @@ class App extends React.Component {
     return (
       <Provider inject={[...stores]}>
         <div className="app">
-          <div className="content">
+          <div className="left-content">
             <MenuList />
             <NumberList/>
+            <Payment /> 
+          </div>
+          <div className="right-content">
             <SummaryTable />
-            <Payment />
           </div>
         </div>
       </Provider>

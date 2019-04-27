@@ -12,9 +12,16 @@
 
 
 
-.content {
+.left-content {
+  display: inline-block;
+  width: 65%;
   height: 600px;
   position: relative;
+}
+.right-content {
+  display: inline-block;
+  width:35%;
+  height:600px;
 }
 
 /* https://loading.io/css/ */

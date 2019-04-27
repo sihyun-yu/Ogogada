@@ -1,6 +1,4 @@
 .payment__container {
-  position: absolute;
-  top: 551px;
   width: 100%;
 }
 
@@ -17,7 +15,7 @@
 
 .payment__text {
   width: 80%;
-  text-align: center;
+  text-align: right;
 }
 
 .payment__button-container {
