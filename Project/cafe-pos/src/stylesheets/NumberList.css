@@ -1,31 +1,33 @@
-.menu-list__container {
+.number-list__container {
   width: 35%;
 }
 
-.menu-list {
-  position: relative;
+.number-list {
+  
 }
 
-.menu-item {
+.number-item {
+  display:inline-block;
   text-align: left;
   font-size: 16px;
   font-weight: 500;
-  width: 100%;
+  width: 30%;
   border-bottom: solid black 1px;
   padding: 8px 0;
 }
 
-.menu-item__name {
+
+.number-item__name {
   display: inline-block;
   width: calc(50% - 4px);
   margin-left: 4px;
 }
 
-.menu-item__price {
+.number-item__price {
   display: inline-block;
   width: calc(50% - 69px);
 }
 
-.menu-item__button {
+.number-item__button {
   margin-right: 4px;
 }

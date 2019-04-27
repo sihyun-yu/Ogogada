@@ -1,6 +1,8 @@
 import React from "react";
 
 import MenuList from "./MenuList/MenuListComponent.jsx";
+import NumberList from "./NumberList/NumberListComponent.jsx";
+
 import SummaryTable from "./SummaryTable/SummaryTableComponent.jsx";
 import Payment from "./Payment/PaymentComponent.jsx";
 import { Provider } from "unstated";
@@ -16,6 +18,7 @@ class App extends React.Component {
           <header className="header">Cafe POS</header>
           <div className="content">
             <MenuList />
+            <NumberList/>
             <SummaryTable />
             <Payment />
           </div>

@@ -1,12 +1,11 @@
 .summary-table__container {
-  position: absolute;
+  position: relative;
   width: 35%;
-  right: 0%;
-  height: 100%;
+  float: right;
 }
 
 .summary-table {
-  position: relative;
+  position: rela;
   border-left: solid black 1px;
 }
 
