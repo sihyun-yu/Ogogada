@@ -1,0 +1,65 @@
+.summary-table__container {
+  position: absolute;
+  width: 60%;
+  left: 40%;
+  height: 100%;
+}
+
+.summary-table {
+  position: relative;
+  border-left: solid black 1px;
+}
+
+.summary-total {
+  text-align: center;
+}
+
+.summary-total__label,
+.summary-total__value,
+.summary-coupon__label,
+.summary-coupon__selector,
+.summary-payment-method__radio-group-label,
+.summary-payment-method__radio-group {
+  display: inline-block;
+  padding: 12px 0;
+  border-bottom: solid black 1px;
+}
+
+.summary-total__label,
+.summary-coupon__label,
+.summary-payment-method__radio-group-label {
+  width: calc(70% - 1px);
+}
+
+.summary-total__value,
+.summary-coupon__selector,
+.summary-payment-method__radio-group {
+  width: 30%;
+}
+
+.summary-coupon__select-row,
+.summary-payment-method__radio-group-row {
+  text-align: center;
+  border-bottom: solid lightgrey 1px;
+}
+
+.summary-coupon__label,
+.summary-coupon__selector,
+.summary-payment-method__radio-group-label,
+.summary-payment-method__radio-group {
+  border-bottom: none;
+}
+
+.summary-payment-method__radio-group-row {
+  height: 120px;
+  position: relative;
+}
+
+.summary-payment-method__radio-group-label {
+  position: absolute;
+  top: 38px;
+}
+
+.summary-payment-method__radio-group {
+  margin-left: 70%;
+}
