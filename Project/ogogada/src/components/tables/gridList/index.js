@@ -38,7 +38,7 @@ function TableGridList( props ) {
         {tables.map( table => (
           <GridListTile key={table.id}>
             <GridListTileBar
-              title={`Table ${ table.number }`}
+              title={`Stage ${ table.number }`}
               subtitle={<span>{Math.ceil( Math.random( 1 ) * 10 )} seats</span>}
               actionIcon={
                 <IconButton className={classes.icon}>

@@ -35,7 +35,7 @@ function TableCard( props ) {
         />
         <CardContent>
           <Typography color="primary" variant="headline" component="h2">
-            {`Table ${ table.number }`}
+            {`Stage ${ table.number }`}
           </Typography>
         </CardContent>
       </Card>
