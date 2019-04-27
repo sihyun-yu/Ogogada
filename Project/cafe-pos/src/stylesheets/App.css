@@ -5,19 +5,12 @@
 .app {
   text-align: left;
   margin: auto;
-  background-color: white;
+  background: #8e796d;
   border: solid black 1px;
   height: 100vh;
 }
 
-.header {
-  text-align: center;
-  background-color: #3f51b5;
-  padding: 8px;
-  color: white;
-  font-size: 24px;
-  border-bottom: solid black 1px;
-}
+
 
 .content {
   height: 600px;

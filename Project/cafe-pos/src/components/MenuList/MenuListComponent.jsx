@@ -6,11 +6,12 @@ import { MenuStore } from "../../stores";
 import "../../stylesheets/MenuList.css";
 
 const MenuListComponent = props => {
+  console.log("this is", props);
   return (
-    <div className="menu-list__container">
+    <div className="menus__container">
       <Subscribe to={[MenuStore]}>
-        {menu => (
-          <div className="menu-list">
+        {(menu) => (
+          <div className="menus">
             {menu.state.menus.map((menuItem, index) => (
               <MenuItem
                 key={index}

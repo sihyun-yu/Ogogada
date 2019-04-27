@@ -1,9 +1,13 @@
 const meta = {
   menus: [
-    ["아메리카노(Take out)", 500],
-    ["아메리카노", 1000],
-    ["카페라떼", 1500],
-    ["카라멜 마끼아또", 2000]
+    ["americano HOT", 1500],
+    ["americano ICE", 1800],
+    ["Caffe Latte HOT", 2000],
+    ["Caffe Latte ICE", 2300],
+    ["Caramel macchiato HOT", 2500],
+    ["Caramel macchiato ICE", 2800],
+    ["Caffe Mocha HOT", 2500],
+    ["Caffe MOcha ICE", 2800]
   ],
   coupons: [0, 0.05, 0.1],
   paymentMethods: [

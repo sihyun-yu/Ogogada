@@ -13,7 +13,6 @@ class App extends React.Component {
     return (
       <Provider inject={[...stores]}>
         <div className="app">
-          <header className="header">Cafe POS</header>
           <div className="content">
             <MenuList />
             <SummaryTable />
