@@ -131,7 +131,7 @@ class App extends React.Component {
               <MenuIcon />
             </IconButton>
             <Typography variant="title" color="inherit" noWrap>
-              The Greasy Spoon
+              Ogogada
             </Typography>
           </Toolbar>
         </AppBar>
