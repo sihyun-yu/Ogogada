@@ -13,6 +13,12 @@ const meta = {
   paymentMethods: [
     { type: "card", label: "카드", discount: 0 },
     { type: "cash", label: "현금", discount: 0.05 }
+  ],
+  numbers: [
+  "7", "8", "9",
+  "4", "5", "6",
+  "1", "2", "3",
+  "00", "0", "C"
   ]
 };
 
