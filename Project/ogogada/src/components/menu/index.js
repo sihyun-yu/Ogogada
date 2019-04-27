@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
+import Grid from 'material-ui/Grid'
+import Paper from 'material-ui/Paper'
 import IconButton from 'material-ui/IconButton';
 import AddCircleIcon from 'material-ui-icons/AddCircle';
 
@@ -13,8 +15,8 @@ const styles = theme => ( {
     background: 'none',
   },
   gridList: {
-    width: 500,
-    height: 450,
+    width: 800,
+    height: 500,
   },
   titleBar: {
     fontSize: '8px',
@@ -36,7 +38,28 @@ function Menu( props ) {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={180} className={classes.gridList}>
+      <Grid container spacing={24}>
+        <Grid item xs={3}>
+          <Paper className={classes.paper}>xs=3</Paper>
+        </Grid>
+        <Grid item xs={3}>
+          <Paper className={classes.paper}>xs=3</Paper>
+        </Grid>
+        <Grid item xs={3}>
+          <Paper className={classes.paper}>xs=3</Paper>
+        </Grid>
+        <Grid item xs={3}>
+          <Paper className={classes.paper}>xs=3</Paper>
+        </Grid>
+        <Grid item xs={8}>
+          <Paper className={classes.paper}>xs=8</Paper>
+        </Grid>
+        <Grid item xs={4}>
+          <Paper className={classes.paper}>xs=4</Paper>
+        </Grid>
+      </Grid>
+
+      <GridList cellHeight={120} className={classes.gridList}>
         {menu.map( item => (
           <GridListTile className={classes.gridListTile} key={item.id}>
             <img src="/img/food-placeholder.png" alt={item.name} />
