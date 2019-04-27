@@ -45,7 +45,7 @@ class CheckList extends React.Component {
     return (
       <div className={classes.root}>
         <Typography type="body2" className={classes.primary}>
-          Closed Checks
+          History
         </Typography>
         {checks &&
           checks.length === 0 && (

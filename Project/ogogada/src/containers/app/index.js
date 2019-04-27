@@ -161,7 +161,7 @@ class App extends React.Component {
                 <ListItemIcon>
                   <GroupIcon />
                 </ListItemIcon>
-                <ListItemText primary="Tables" />
+                <ListItemText primary="Stages" />
               </ListItem>
             </Link>
             <Link className={classes.link} key={Math.random()} to="/checks">
@@ -169,7 +169,7 @@ class App extends React.Component {
                 <ListItemIcon>
                   <HistoryIcon />
                 </ListItemIcon>
-                <ListItemText primary="Closed Checks" />
+                <ListItemText primary="History" />
               </ListItem>
             </Link>
           </List>

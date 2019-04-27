@@ -149,7 +149,7 @@ class AppDrawer extends React.Component {
               <ListItemIcon>
                 <LocalLibraryIcon />
               </ListItemIcon>
-              <ListItemText primary="Tables" />
+              <ListItemText primary="Stages" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
@@ -161,7 +161,7 @@ class AppDrawer extends React.Component {
               <ListItemIcon>
                 <HistoryIcon />
               </ListItemIcon>
-              <ListItemText primary="Closed Checks" />
+              <ListItemText primary="History" />
             </ListItem>
           </List>
         </Drawer>
