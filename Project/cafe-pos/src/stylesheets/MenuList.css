@@ -1,35 +1,43 @@
 .menus__container {
   width: 100%;
-  left: 0%;
+  left: 10%;
+  color: white;
 }
 
 .menus {
   position: relative;
+  margin: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
 }
 
 .menu-item {
+  background-color: white;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  position: relative;
-  align-items: center;
+  justify-content: center;
   text-align: center;
+
   font-size: 16px;
   font-weight: 500;
-  height: 200px;
-  width: 25%;
-  border-bottom: solid black 1px;
-  padding: 8px 0;
+  height: 150px;
+  padding: 20px;
 }
 
 .menu-item__name {
-  position: relative;
+
   width: 100%;
   margin-left: 4px;
+  color: black;
 }
 
 .menu-item__price {
-  position: relative;
+
   width: 100%;
+  color: black;
 }
 
 .menu-item__button {

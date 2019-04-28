@@ -3,7 +3,7 @@ import Button from "@material-ui/core/Button";
 
 const MenuItemComponent = props => {
   return (
-    <Button className="menu-item"
+    <div className="menu-item"
       onClick={() => {
         props.handleAddSelectedMenu(props.id);
       }}>
@@ -19,7 +19,7 @@ const MenuItemComponent = props => {
 
 
     
-    </Button>
+    </div>
     
   );
 };
