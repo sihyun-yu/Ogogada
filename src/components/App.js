@@ -9,6 +9,7 @@ import { Provider } from "unstated";
 import * as stores from "../stores";
 
 import "../stylesheets/App.css";
+import 'semantic-ui-css/semantic.min.css';
 
 class App extends React.Component {
   render() {
