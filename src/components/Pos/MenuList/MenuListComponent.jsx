@@ -1,9 +1,9 @@
 import React from "react";
 import { Subscribe } from "unstated";
 import MenuItem from "./MenuItemComponent.jsx";
-import { MenuStore } from "../../stores";
+import { MenuStore } from "../../../stores";
 
-import "../../stylesheets/MenuList.css";
+import "../../../stylesheets/MenuList.css";
 
 const MenuListComponent = props => {
   console.log("this is", props);

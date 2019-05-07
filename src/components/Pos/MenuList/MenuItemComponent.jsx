@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Header, Button } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 //import Button from "@material-ui/core/Button";
 
 const MenuItemComponent = props => {

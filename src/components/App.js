@@ -1,10 +1,11 @@
 import React from "react";
 
-import MenuList from "./MenuList/MenuListComponent.jsx";
-import NumberList from "./NumberList/NumberListComponent.jsx";
+import Home from "./Home/HomeComponent.jsx"
+import MenuList from "./Pos/MenuList/MenuListComponent.jsx";
+import NumberList from "./Pos/NumberList/NumberListComponent.jsx";
 
-import SummaryTable from "./SummaryTable/SummaryTableComponent.jsx";
-import Payment from "./Payment/PaymentComponent.jsx";
+import SummaryTable from "./Pos/SummaryTable/SummaryTableComponent.jsx";
+import Payment from "./Pos/Payment/PaymentComponent.jsx";
 import { Provider } from "unstated";
 import * as stores from "../stores";
 
@@ -16,6 +17,9 @@ class App extends React.Component {
     return (
       <Provider inject={[...stores]}>
         <div className="app">
+          <Home/>
+        </div>
+        {/*<div className="app">
           <div className="left-content">
             <MenuList />
             <NumberList/>
@@ -24,8 +28,8 @@ class App extends React.Component {
           <div className="right-content">
             <SummaryTable />
           </div>
-        </div>
-      </Provider>
+    </div>*/}
+    </Provider>
     );
   }
 }

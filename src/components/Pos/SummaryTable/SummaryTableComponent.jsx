@@ -1,5 +1,5 @@
 import React from "react";
-import "../../stylesheets/SummaryTable.css";
+import "../../../stylesheets/SummaryTable.css";
 
 import SummaryMenuList from "./SummaryMenuListComponent.jsx";
 import SummaryCoupon from "./SummaryCouponComponent.jsx";

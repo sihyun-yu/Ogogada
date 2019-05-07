@@ -1,7 +1,7 @@
 import React from "react";
 import { Subscribe } from "unstated";
-import { MenuStore } from "../../stores/";
-import "../../stylesheets/SummaryMenuList.css";
+import { MenuStore } from "../../../stores/";
+import "../../../stylesheets/SummaryMenuList.css";
 import SummrayMenuItem from "./SummaryMenuItemComponent.jsx";
 import SummrayTotal from "./SummaryTotalComponent.jsx";
 

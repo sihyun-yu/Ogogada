@@ -3,7 +3,7 @@ import { Subscribe } from "unstated";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import SummrayTotal from "./SummaryTotalComponent.jsx";
-import { CouponStore } from "../../stores";
+import { CouponStore } from "../../../stores";
 
 const SummaryCouponComponent = props => {
   return (

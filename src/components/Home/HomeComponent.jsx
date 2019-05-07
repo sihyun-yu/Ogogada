@@ -1,0 +1,17 @@
+import React from "react";
+import { Subscribe } from "unstated";
+import { HomeStore } from "../../stores";
+import { Input } from 'semantic-ui-react';
+
+
+
+const HomeComponent = props => {
+    return (
+        <div>
+            <Input placeholder='Id'/>
+            <Input placeholder='PW'/>
+        </div>
+    );
+};
+
+export default HomeComponent;

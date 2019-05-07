@@ -1,9 +1,9 @@
 import React from "react";
 import { Subscribe } from "unstated";
 import NumberItem from "./NumberItemComponent.jsx";
-import { NumberStore } from "../../stores";
+import { NumberStore } from "../../../stores";
 
-import "../../stylesheets/NumberList.css";
+import "../../../stylesheets/NumberList.css";
 
 const NumberListComponent = props => {
   return (

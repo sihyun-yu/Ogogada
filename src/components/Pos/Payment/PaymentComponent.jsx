@@ -1,10 +1,10 @@
 import React from "react";
-import "../../stylesheets/Payment.css";
+import "../../../stylesheets/Payment.css";
 import { Subscribe } from "unstated";
 import Button from "@material-ui/core/Button";
-import { MenuStore, CouponStore, PaymentMethodStore } from "../../stores";
+import { MenuStore, CouponStore, PaymentMethodStore } from "../../../stores";
 import PaymentDialog from "./PaymentDialogComponent.jsx";
-import { mockCardPayment } from "../../api/paymentAPI.js";
+import { mockCardPayment } from "../../../api/paymentAPI.js";
 
 class PaymentComponent extends React.Component {
   state = {
