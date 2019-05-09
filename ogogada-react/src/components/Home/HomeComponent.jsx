@@ -1,7 +1,8 @@
 import React from "react";
 import { Subscribe } from "unstated";
 import {HomeStore} from "../../stores";
-import { Input, Button } from 'semantic-ui-react';
+import { Input, Button, Image } from 'semantic-ui-react';
+import background from '../../assets/stage.png'
 
 class HomeComponent extends React.Component {
     constructor(props) {
@@ -21,8 +22,8 @@ class HomeComponent extends React.Component {
         return (
             <Subscribe to = {[HomeStore]}>
                 {user => (
-                    <div>          
-                        {user.update(id)}
+                    <div>
+                        <Image src={background} />
                     </div>
                     )
                 }
@@ -42,17 +43,15 @@ const HomeComponent = props => {
     console.log(level);
     return (
         <Subscribe to = {[HomeStore]}>
-        {user => (
-            <div>          
-                user.update(id)
-            </div>
-            
-        )
-
-        }
-            
+            {user => (
+                <div>          
+                    {user.update(id)}
+                </div>
+                
+            )}
         </Subscribe>
     );
-};*/
+};
+*/
 
 export default HomeComponent;
