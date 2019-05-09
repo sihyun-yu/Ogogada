@@ -5,19 +5,6 @@ import { Input, Button, Form } from 'semantic-ui-react';
 import { Redirect, Route, Link, withRouter} from 'react-router-dom';
 import Home from "../Home/HomeComponent.jsx"
 
-const id = "user";
-const pw = "1234";
-
-function signIn(user_id, user_pw) {
-    console.log(user_id, user_pw)
-    if (user_id == id && user_pw == pw) {
-        console.log("true");
-        return true;
-    }
-    else {
-        return false;
-    }
-}
 
 
 
@@ -27,12 +14,20 @@ class SignInComponent extends React.Component {
         this.state = {
             id: '',
             pw: '',
+            level: 1,
         }
         this.routeChange = this.routeChange.bind(this);
     }
 
     routeChange() {
-        this.props.history.push('/home');
+        this.props.history.push({
+            pathname : '/home',
+            state: {
+                id: this.state.id,
+                pw: this.state.pw,
+                level: this.state.level,
+            }
+        });
     }
 
     render() {

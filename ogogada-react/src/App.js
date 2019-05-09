@@ -19,13 +19,13 @@ class App extends React.Component {
       <Provider inject={[...stores]}>
         <div className="app">
           <Switch>
+            <Route exact path="/" component={SignIn} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/signin" component={SignIn} />
             <Route exact path="/history" component={Home} />
             <Route exact path="/pos" component={Pos} />
             <Route exact path="/ranking" component={Home} />
           </Switch>
-          <SignIn/>
         </div>
         {/*<div className="app">
           <div className="left-content">
