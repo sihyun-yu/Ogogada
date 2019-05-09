@@ -19,14 +19,6 @@ function signIn(user_id, user_pw) {
 
 
 const SignInComponent = props => {
-    constructor(props) {
-        super(props)
-        this.state = {
-            id: '',
-            pw: '',
-        }
-    }
-
     return (
         <div>
             <Input placeholder='Id'/>
