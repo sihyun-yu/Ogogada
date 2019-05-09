@@ -8,11 +8,12 @@ class HomeStore extends Container {
         level: "",
      };
      
-     update = (input_id) => {
-         this.setState({
+     update = async (input_id) => {
+        await this.setState({
             ...this.state,
             id: input_id,
         })
+        console.log("done");
      }
 
 
