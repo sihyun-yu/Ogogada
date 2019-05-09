@@ -20,6 +20,17 @@ const MenuListComponent = props => {
                 handleAddSelectedMenu={menu.addSelectedMenu.bind(menu)}
               />
             ))}
+            {/* 여기다가 화살표? 시발? 몰라 */}
+            <MenuItem
+              key={"sibal"}
+              id={"sibal"}
+              menu={"sibal"}
+            />
+            <MenuItem
+              key={"sibal"}
+              id={"sibal"}
+              menu={"sibal"}
+            />
           </div>
         )}
       </Subscribe>
