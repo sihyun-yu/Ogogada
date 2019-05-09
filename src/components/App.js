@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Switch, Route } from 'react-router-dom';
 import Home from "./Home/HomeComponent.jsx"
 import MenuList from "./Pos/MenuList/MenuListComponent.jsx";
 import NumberList from "./Pos/NumberList/NumberListComponent.jsx";
@@ -17,6 +17,13 @@ class App extends React.Component {
     return (
       <Provider inject={[...stores]}>
         <div className="app">
+          <Switch>
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/signup" component={Home} />
+            <Route exact path="/history" component={Home} />
+            <Route exact path="/pos" component={Home} />
+            <Route exact path="/ranking" component={Home} />
+          </Switch>
           <Home/>
         </div>
         {/*<div className="app">
