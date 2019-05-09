@@ -1,6 +1,5 @@
 import React from "react";
-import { Button } from 'semantic-ui-react'
-//import Button from "@material-ui/core/Button";
+import { Image, Button } from 'semantic-ui-react'
 
 const MenuItemComponent = props => {
   return (
@@ -10,6 +9,9 @@ const MenuItemComponent = props => {
           props.handleAddSelectedMenu(props.id);
         }}
       >
+        <div className="menu-item__image">
+          <Image className="menu-item__image__image" src='/images/americano_ice.png' size='tiny' />
+        </div>
         <div className="menu-item__name">{props.menu[0]}</div>
         <div className="menu-item__price">
           <span className="price__value">{props.menu[1]}</span>

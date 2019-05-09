@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
 
   font-size: 16px;
@@ -28,15 +29,28 @@
   padding: 20px;
 }
 
-.menu-item__name {
-
+.menu-item__image {
   width: 100%;
   margin-left: 4px;
+  flex: 0.5;
+  color: black;
+}
+
+.menu-item__image__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+
+.menu-item__name {
+  width: 100%;
+  margin-left: 4px;
+  flex: 0.2;
   color: black;
 }
 
 .menu-item__price {
-
+  flex: 0.1;
   width: 100%;
   color: black;
 }
