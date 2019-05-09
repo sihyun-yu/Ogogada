@@ -1,6 +1,7 @@
 import React from "react";
 import { Subscribe } from "unstated";
 import MenuItem from "./MenuItemComponent.jsx";
+import MenuChangeButton from "./MenuChangeComponent.jsx"
 import { MenuStore } from "../../../stores";
 
 import "../../../stylesheets/MenuList.css";
@@ -21,15 +22,14 @@ const MenuListComponent = props => {
               />
             ))}
             {/* 여기다가 화살표? 시발? 몰라 */}
-            <MenuItem
-              key={"sibal"}
-              id={"sibal"}
-              menu={"sibal"}
+            <MenuChangeButton
+            status={"left"}
+            handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}
             />
-            <MenuItem
-              key={"sibal"}
-              id={"sibal"}
-              menu={"sibal"}
+            <MenuChangeButton
+            status={"right"}
+            handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}
+
             />
           </div>
         )}
