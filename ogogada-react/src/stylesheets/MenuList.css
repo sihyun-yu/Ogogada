@@ -2,6 +2,7 @@
   width: 100%;
   left: 10%;
   color: white;
+  flex: 0.5;
 }
 
 .menus {

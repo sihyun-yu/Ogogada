@@ -1,5 +1,6 @@
 .number-list__container {
   width:40%;
+  flex: 0.5;
 }
 
 .number-item {
