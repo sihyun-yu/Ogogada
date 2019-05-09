@@ -1,9 +1,15 @@
 import React from "react";
 import { Image, Button } from 'semantic-ui-react'
 
+var divStyle = {
+  
+  padding: "1px"
+};
+
 const MenuItemComponent = props => {
   return (
       <Button
+        style={divStyle}
         className="menu-item"
         onClick={() => {
           props.handleAddSelectedMenu(props.id);

@@ -32,8 +32,8 @@
 
   font-size: 16px;
   font-weight: 500;
-  height: 150px;
-  padding: 20px;
+  /* height: 150px; */
+  /* padding: 20px; */
 }
 
 .menu-item__image {
@@ -53,13 +53,14 @@
   width: 100%;
   margin-left: 4px;
   flex: 0.2;
-  font-size: 2px;
+  font-size: 5px;
   color: black;
 }
 
 .menu-item__price {
   flex: 0.1;
   width: 100%;
+  font-size: 5px;
   color: black;
 }
 
