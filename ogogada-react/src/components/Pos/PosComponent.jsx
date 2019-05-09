@@ -15,8 +15,10 @@ const PosComponent = props => {
         <div className="pos">
           <div className="left-content">
             <MenuList />
-            <NumberList/>
-            <Payment /> 
+            <div className="left-below__container">
+              <NumberList/>
+              <Payment /> 
+            </div>
           </div>
           <div className="right-content">
             <Description />

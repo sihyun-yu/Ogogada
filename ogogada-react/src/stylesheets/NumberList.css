@@ -1,6 +1,11 @@
 .number-list__container {
-  width:40%;
+  width: 94%;
+  left: 10%;
   flex: 0.5;
+  margin-left: 4%;
+  margin-right: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .number-item {
