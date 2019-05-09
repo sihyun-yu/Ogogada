@@ -2,28 +2,6 @@
   background-color: lightgrey;
 }
 
-.app {
-  text-align: left;
-  margin: auto;
-  background: #8e796d;
-  border: solid black 1px;
-  height: 100vh;
-}
-
-
-
-.left-content {
-  display: inline-block;
-  width: 65%;
-  height: 600px;
-  position: relative;
-}
-.right-content {
-  display: inline-block;
-  width:35%;
-  height:600px;
-}
-
 /* https://loading.io/css/ */
 
 .lds-ring {
