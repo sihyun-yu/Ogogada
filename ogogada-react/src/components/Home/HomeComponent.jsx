@@ -6,6 +6,7 @@ import { Input, Button } from 'semantic-ui-react';
 
 
 const HomeComponent = props => {
+    console.log("home");
     return (
         <div>
             <Input placeholder='Id'/>
