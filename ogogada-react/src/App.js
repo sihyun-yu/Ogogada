@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom';
 import Home from "./components/Home/HomeComponent.jsx"
+import SignIn from "./components/SignIn/SignInComponent.jsx"
 import MenuList from "./components/Pos/MenuList/MenuListComponent.jsx";
 import NumberList from "./components/Pos/NumberList/NumberListComponent.jsx";
 import Pos from "./components/Pos/PosComponent.jsx"
@@ -19,12 +20,12 @@ class App extends React.Component {
         <div className="app">
           <Switch>
             <Route exact path="/home" component={Home} />
-            <Route exact path="/signup" component={Home} />
+            <Route exact path="/signin" component={SignIn} />
             <Route exact path="/history" component={Home} />
             <Route exact path="/pos" component={Pos} />
             <Route exact path="/ranking" component={Home} />
           </Switch>
-          <Home/>
+          <SignIn/>
         </div>
         {/*<div className="app">
           <div className="left-content">
