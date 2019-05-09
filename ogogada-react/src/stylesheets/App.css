@@ -1,5 +1,14 @@
 #root {
   background-color: lightgrey;
+  height: 100vh;
+}
+
+.app {
+  text-align: left;
+  margin: auto;
+  background: #8e796d;
+  border: solid black 1px;
+  height: 100vh;
 }
 
 /* https://loading.io/css/ */

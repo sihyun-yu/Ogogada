@@ -4,6 +4,7 @@ import { HomeStore } from "../../stores";
 import "../../stylesheets/Pos.css";
 import MenuList from "./MenuList/MenuListComponent.jsx";
 import NumberList from "./NumberList/NumberListComponent.jsx";
+import Description from "./Description/DescriptionComponent.jsx";
 import SummaryTable from "./SummaryTable/SummaryTableComponent.jsx";
 import Payment from "./Payment/PaymentComponent.jsx";
 
@@ -18,6 +19,7 @@ const PosComponent = props => {
             <Payment /> 
           </div>
           <div className="right-content">
+            <Description />
             <SummaryTable />
           </div>
         </div>
