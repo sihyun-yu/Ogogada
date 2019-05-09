@@ -1,10 +1,7 @@
-# Cafe POS
+# Ogogada
 
-# Instruction
-1. Clone the repository
-2. run 
-```sh
-yarn
-yarn start
-```
-3. PLAY
+## CS374 Project Ogogada
+
+Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
+
+* The goal of our project is to redesign experience of training for cafe part-time joyb workers
