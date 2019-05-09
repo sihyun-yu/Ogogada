@@ -7,7 +7,9 @@ const meta = {
     ["Caramel macchiato HOT", 2500],
     ["Caramel macchiato ICE", 2800],
     ["Caffe Mocha HOT", 2500],
-    ["Caffe MOcha ICE", 2800]
+    ["Caffe Mocha ICE", 2800],
+    ["Earl Grey HOT", 3000],
+    ["Earl Grey ICE", 3300]
   ],
   coupons: [0, 0.05, 0.1],
   paymentMethods: [
