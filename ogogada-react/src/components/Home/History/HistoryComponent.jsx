@@ -10,7 +10,7 @@ class HistoryComponent extends React.Component {
         };
         
     }
-
+    
     render () {
 /*
         return (
