@@ -4,6 +4,7 @@ import Home from "./components/Home/HomeComponent.jsx"
 import SignIn from "./components/SignIn/SignInComponent.jsx"
 import MenuList from "./components/Pos/MenuList/MenuListComponent.jsx";
 import NumberList from "./components/Pos/NumberList/NumberListComponent.jsx";
+import History from "./components/Home/History/HistoryComponent.jsx";
 import Pos from "./components/Pos/PosComponent.jsx"
 import SummaryTable from "./components/Pos/SummaryTable/SummaryTableComponent.jsx";
 import Payment from "./components/Pos/Payment/PaymentComponent.jsx";
@@ -22,7 +23,7 @@ class App extends React.Component {
             <Route exact path="/" component={SignIn} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/signin" component={SignIn} />
-            <Route exact path="/history" component={Home} />
+            <Route exact path="/history" component={History} />
             <Route exact path="/pos" component={Pos} />
             <Route exact path="/ranking" component={Home} />
           </Switch>
