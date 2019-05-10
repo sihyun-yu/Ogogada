@@ -2,8 +2,11 @@ import React from "react";
 import { Subscribe } from "unstated";
 import {HomeStore} from "../../stores";
 import { Input, Button, Image } from 'semantic-ui-react';
-import background from '../../assets/stage.png'
+import "../../stylesheets/Home.css"
 
+
+
+var bg = require("../../assets/stage.png")
 class HomeComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -22,10 +25,13 @@ class HomeComponent extends React.Component {
         return (
             <Subscribe to = {[HomeStore]}>
                 {user => (
-                    <div>
-                        <Image src={background} />
+                    <div
+                        className = "stage"
+                    > 
+                    <Button>hellp!</Button>
                     </div>
                     )
+                    
                 }
             </Subscribe>
         )

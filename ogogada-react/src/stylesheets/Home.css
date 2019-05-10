@@ -1,0 +1,7 @@
+.stage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/stage.png");
+    background-size:auto;        /* Sets background image to cover entire element */
+
+}
