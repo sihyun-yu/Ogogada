@@ -28,8 +28,10 @@ const MenuListComponent = props => {
               />
             ))}
             <RefundItem
+            level={level}
             />
             <GifticonItem
+            level={level}
             />
             <MenuChangeItem
             status={"left"}
