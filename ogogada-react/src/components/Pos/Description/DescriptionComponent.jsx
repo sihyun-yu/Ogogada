@@ -6,7 +6,7 @@ import { Button } from 'semantic-ui-react'
 const DescriptionComponent = props => {
   return (
     <div className="description__container">
-    <div className="description" class="ui divider">Level: 4 Use an ice americano Gifticon </div>
+    <div className="description" >Level: 4 Use an ice americano Gifticon </div>
     </div>
     
   );

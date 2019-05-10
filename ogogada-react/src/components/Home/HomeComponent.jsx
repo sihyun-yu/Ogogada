@@ -34,7 +34,7 @@ class HomeComponent extends React.Component {
     
             });
         }
-        if (area.name == "ranking")
+        else if (area.name == "ranking")
         {
             this.props.history.push({
                 pathname : '../ranking',
@@ -48,7 +48,7 @@ class HomeComponent extends React.Component {
         }
         else {
             this.props.history.push({
-                pathname : '../pos' + this.state.id + "/" + area.name,
+                pathname : '../pos/' + this.state.id + "/" + area.name,
                 state: {
                     id: this.state.id,
                     pw: this.state.pw,

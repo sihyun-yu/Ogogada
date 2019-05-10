@@ -1,13 +1,14 @@
 .menus__container {
-  width: 100%;
+  width: 97%;
   left: 10%;
   color: white;
   flex: 0.5;
+  margin: 2% 1% 1% 2%;
 }
 
 .menus {
   position: relative;
-  margin: 10px;
+  margin: 10px 10px 5px 10px;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
@@ -16,28 +17,51 @@
 
 .menu-item {
   background-color: white;
+  /*  */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  margin: 3px;
+  
 
   font-size: 16px;
   font-weight: 500;
-  height: 150px;
-  padding: 20px;
+  /* height: 150px; */
+  /* padding: 20px; */
+}
+
+.menu-item__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  margin-left: 4px;
+  flex: 0.5;
+  color: black;
+}
+
+.menu-item__image__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
 }
 
 .menu-item__name {
-
   width: 100%;
   margin-left: 4px;
+  flex: 0.2;
+  font-size: 5px;
   color: black;
 }
 
 .menu-item__price {
-
+  flex: 0.1;
   width: 100%;
+  font-size: 5px;
   color: black;
 }
 

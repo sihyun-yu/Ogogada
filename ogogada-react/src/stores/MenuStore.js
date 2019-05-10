@@ -2,10 +2,27 @@ import { Container } from "unstated";
 import isInteger from "lodash/isInteger";
 import metaJSON from "../assets/meta.js";
 
+const menus_left = metaJSON.menus_left;
+const menus_right = metaJSON.menus_right;
+
 class MenuStore extends Container {
   state = {
-    menus: metaJSON.menus,
-    selected: {}
+    menus: menus_left,
+    selected: {},
+  };
+
+  changeMenuDisplay = status => {
+    if (status == "left") {
+      this.setState({
+        menus: menus_left
+      });
+    }
+    if (status == "right") {
+      this.setState({
+        menus: menus_right
+      });
+      console.log("right");
+    }
   };
 
   addSelectedMenu = id => {
@@ -49,6 +66,7 @@ class MenuStore extends Container {
       selected: {}
     });
   };
+
 }
 
 export default MenuStore;
