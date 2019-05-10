@@ -8,7 +8,10 @@ import Description from "./Description/DescriptionComponent.jsx";
 import SummaryTable from "./SummaryTable/SummaryTableComponent.jsx";
 import Payment from "./Payment/PaymentComponent.jsx";
 
-
+var divStyle = {
+  background: 'white',
+  padding: "1px"
+};
 
 const PosComponent = props => {
     return (

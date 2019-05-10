@@ -2,9 +2,14 @@ import React from "react";
 import { Image, Button } from 'semantic-ui-react'
 
 var divStyle = {
-  
+  background: 'white',
   padding: "1px"
 };
+
+var imgStyle = {
+  height: "10vh",
+  width: "auto"
+}
 
 const MenuItemComponent = props => {
   return (
@@ -16,7 +21,7 @@ const MenuItemComponent = props => {
         }}
       >
         <div className="menu-item__image">
-          <Image className="menu-item__image__image" src='/images/americano_ice.png' size='tiny' />
+          <Image className="menu-item__image__image" src='/images/americano_ice.png' size='tiny' style={imgStyle}/>
         </div>
         <div className="menu-item__name">{props.menu[0]}</div>
         <div className="menu-item__price">

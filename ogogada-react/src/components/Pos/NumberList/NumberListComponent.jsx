@@ -5,6 +5,11 @@ import { NumberStore } from "../../../stores";
 
 import "../../../stylesheets/NumberList.css";
 
+var divStyle = {
+  background: "#EAD1D1",
+  padding: "1px"
+};
+
 const NumberListComponent = props => {
   return (
     <div className="number-list__container">

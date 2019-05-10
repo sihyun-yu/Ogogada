@@ -6,6 +6,10 @@ import { MenuStore } from "../../../stores";
 
 import "../../../stylesheets/MenuList.css";
 
+var menuchangebutton_style = {
+  background: "#E0E0E0",
+}
+
 const MenuListComponent = props => {
   console.log("this is", props);
   return (
@@ -23,10 +27,12 @@ const MenuListComponent = props => {
             ))}
             {/* 여기다가 화살표? 시발? 몰라 */}
             <MenuChangeButton
+            style={menuchangebutton_style}
             status={"left"}
             handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}
             />
             <MenuChangeButton
+            style={menuchangebutton_style}
             status={"right"}
             handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}
 
