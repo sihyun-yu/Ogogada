@@ -22,9 +22,7 @@ class HomeComponent extends React.Component {
         return (
             <Subscribe to = {[HomeStore]}>
                 {user => (
-                    <div>
-                        <Image src={background} />
-                    </div>
+                    
                     )
                 }
             </Subscribe>
