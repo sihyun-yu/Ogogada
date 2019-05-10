@@ -1,22 +1,32 @@
 import React from "react";
 import { Image, Button } from 'semantic-ui-react'
 
-var divStyle = {
-  
-  padding: "1px"
+var buttonStyle = {
+  background: 'white',
+  padding: "1px",
+  height:"14.5vh"
 };
+
+var imgStyle = {
+  height: "8vh",
+  width: "auto"
+}
 
 const MenuItemComponent = props => {
  if (props.level >= props.menu[2]) {
     return (
         <Button
           className="menu-item"
+          style={buttonStyle}
           onClick={() => {
             props.handleAddSelectedMenu(props.id);
           }}
         >
           <div className="menu-item__image">
-            <Image className="menu-item__image__image" src='/images/americano_ice.png' size='tiny' />
+            <Image className="menu-item__image__image"
+            src='/images/americano_ice.png'
+            style={imgStyle}
+            size='tiny' />
           </div>
           <div className="menu-item__name">{props.menu[0]}</div>
           <div className="menu-item__price">

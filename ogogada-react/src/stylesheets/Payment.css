@@ -6,7 +6,8 @@
 .payment {
   display: flex;
   flex-direction: column;
-  position: relative;
+  
+  
 }
 
 .payment__text,

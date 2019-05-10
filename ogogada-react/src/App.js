@@ -28,7 +28,7 @@ class App extends React.Component {
             <Route exact path="/pos/:id/:level" component={Pos}/>
             <Route exact path="/ranking" component={Home} />
           </Switch>
-          <Home/>
+          
         </div>
         {/*<div className="app">
           <div className="left-content">
