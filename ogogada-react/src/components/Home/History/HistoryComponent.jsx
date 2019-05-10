@@ -8,12 +8,13 @@ class HistoryComponent extends React.Component {
         };
         
     }
-
+    
     render () {
-
+        this.state = this.props.location.state;
+        console.log(this);
         return (
             <div>
-                <button>Hello!</button>
+                <button>h</button>
             </div>
         )
     }

@@ -11,9 +11,12 @@ class HomeComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            id:"",
+            pw:"",
+            level:"",
 
         };
-        //this.routeChange = this.routeChange.bind(this);
+        this.routeChange = this.routeChange.bind(this);
         
     }
     
@@ -21,7 +24,11 @@ class HomeComponent extends React.Component {
         this.props.history.push({
             pathname : '../history',
             state: {
+                id: this.state.id,
+                pw: this.state.pw,
+                level: this.state.level,
             }
+
         });
     }
 
@@ -29,9 +36,9 @@ class HomeComponent extends React.Component {
     render() {
 
         console.log("home", this.props);
-        const id = this.props.location.state.id;
-        const pw = this.props.location.state.pw;
-        const level = this.props.location.state.level;
+        this.state = this.props.location.state;
+
+        //this.setState({id:_id, pw:_pw, level:_level})
 
         var x1 = this.props.windowWidth * 211/1280;
         var y1 = this.props.windowHeight * 114/720;
@@ -56,9 +63,7 @@ class HomeComponent extends React.Component {
         ]
         }
 
-        console.log(id);
-        console.log(pw);
-        console.log(level);
+
         console.log("x1, y1: ", x1.toString() + "," + y1.toString() + ",63");
 
         return (
