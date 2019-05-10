@@ -1,27 +1,23 @@
 const meta = {
   menus_left: [
-    ["americano HOT", 1500],
-    ["americano ICE", 1800],
-    ["Caffe Latte HOT", 2000],
-    ["Caffe Latte ICE", 2300],
-    ["Caramel macchiato HOT", 2500],
-    ["Caramel macchiato ICE", 2800],
-    ["Caffe Mocha HOT", 2500],
-    ["Caffe Mocha ICE", 2800],
-    ["Earl Grey HOT", 3000],
-    ["Earl Grey ICE", 3300]
+    ["americano HOT", 1500, 1],
+    ["americano ICE", 1800, 1],
+    ["Caffe Latte HOT", 2000, 2],
+    ["Caffe Latte ICE", 2300, 2],
+    ["Caramel macchiato HOT", 2500, 2],
+    ["Caramel macchiato ICE", 2800, 2],
+    ["Caffe Mocha HOT", 2500, 2],
+    ["Caffe Mocha ICE", 2800, 2]
   ],
   menus_right: [
-    ["a", 1000],
-    ["b", 1800],
-    ["c", 2000],
-    ["d", 2300],
-    ["e", 2500],
-    ["f", 2800],
-    ["g", 2500],
-    ["h", 2800],
-    ["i", 3000],
-    ["j", 3300]
+    ["a", 1000, 3],
+    ["b", 1800, 3],
+    ["c", 2000, 3],
+    ["d", 2300, 3],
+    ["e", 2500, 4],
+    ["f", 2800, 4],
+    ["g", 2500, 4],
+    ["h", 2800, 4],
   ],
   coupons: [0, 0.05, 0.1],
   paymentMethods: [
@@ -34,6 +30,7 @@ const meta = {
   "1", "2", "3",
   "00", "0", "C"
   ],
+
 };
 
 export default meta;
