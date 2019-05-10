@@ -8,10 +8,10 @@ import Description from "./Description/DescriptionComponent.jsx";
 import SummaryTable from "./SummaryTable/SummaryTableComponent.jsx";
 import Payment from "./Payment/PaymentComponent.jsx";
 
-var divStyle = {
-  background: 'white',
-  padding: "1px"
-};
+import SummaryCoupon from "./SummaryTable/SummaryCouponComponent.jsx";
+import SummaryPaymentMethod from "./SummaryTable/SummaryPaymentMethodComponent.jsx";
+
+
 
 const PosComponent = props => {
     return (
@@ -19,8 +19,15 @@ const PosComponent = props => {
           <div className="left-content">
             <MenuList />
             <div className="left-below__container">
-              <NumberList/>
-              <Payment /> 
+              <div className="left-below-left__contatiner">
+                <NumberList/>
+              </div>
+              <div className="left-below-right__container">
+                <SummaryCoupon />
+                <SummaryPaymentMethod />
+                <Payment />  
+              </div>
+               
             </div>
           </div>
           <div className="right-content">

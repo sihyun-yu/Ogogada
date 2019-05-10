@@ -1,4 +1,11 @@
+.summary-menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+}
+
 .summary-menu__list {
+  flex: 1;
   min-height: 212px;
   border-bottom: solid lightgrey 1px;
 }
