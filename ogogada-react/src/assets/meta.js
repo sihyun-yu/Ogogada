@@ -1,15 +1,15 @@
 const meta = {
   menus_left: [
-    ["americano HOT", 1500],
-    ["americano ICE", 1800],
-    ["Caffe Latte HOT", 2000],
-    ["Caffe Latte ICE", 2300],
-    ["Caramel macchiato HOT", 2500],
-    ["Caramel macchiato ICE", 2800],
-    ["Caffe Mocha HOT", 2500],
-    ["Caffe Mocha ICE", 2800],
-    ["Earl Grey HOT", 3000],
-    ["Earl Grey ICE", 3300]
+    ["americano HOT", 1500, 1],
+    ["americano ICE", 1800, 1],
+    ["Caffe Latte HOT", 2000, 2],
+    ["Caffe Latte ICE", 2300, 2],
+    ["Caramel macchiato HOT", 2500, 2],
+    ["Caramel macchiato ICE", 2800, 2],
+    ["Caffe Mocha HOT", 2500, 2],
+    ["Caffe Mocha ICE", 2800, 2],
+    ["Earl Grey HOT", 3000, 3],
+    ["Earl Grey ICE", 3300, 3]
   ],
   menus_right: [
     ["a", 1000],
@@ -34,6 +34,7 @@ const meta = {
   "1", "2", "3",
   "00", "0", "C"
   ],
+
 };
 
 export default meta;
