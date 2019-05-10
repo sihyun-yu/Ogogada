@@ -31,13 +31,13 @@ class HomeComponent extends React.Component {
         const pw = this.props.location.state.pw;
         const level = this.props.location.state.level;
 
-        var x1 = this.props.windowWidth * 0.5;
-        var y1 = this.props.windowHeight * 0.5;
+        var x1 = this.props.windowWidth * 211/1280;
+        var y1 = this.props.windowHeight * 114/720;
 
         console.log(id);
         console.log(pw);
         console.log(level);
-        console.log("x1, y1: ", x1, y1);
+        console.log("x1, y1: ", x1.toString() + "," + y1.toString() + ",63");
 
         return (
             <Subscribe to = {[HomeStore]}>
@@ -47,7 +47,9 @@ class HomeComponent extends React.Component {
                     > 
                     {(x1 || y1) &&
                         <map name="image-map">
-                        <area id="areas" shape="circle" coords={x1.toString() + "," + y1.toString() + ",5"}/>
+                            <area id="areas" shape="circle" coords={"136" + "," + "1083" + ",63"}
+                                href="../history"
+                            />
                         </map>
 
                     }
