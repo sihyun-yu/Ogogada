@@ -66,6 +66,7 @@ class MenuStore extends Container {
       selected: {}
     });
   };
+
 }
 
 export default MenuStore;

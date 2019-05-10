@@ -14,10 +14,13 @@ import SummaryPaymentMethod from "./SummaryTable/SummaryPaymentMethodComponent.j
 
 
 const PosComponent = props => {
+  console.log(props);
     return (
         <div className="pos">
           <div className="left-content">
-            <MenuList />
+            <MenuList 
+            level={props.match.params.level}
+            username={props.match.params.id}/>
             <div className="left-below__container">
               <div className="left-below-left__contatiner">
                 <NumberList/>

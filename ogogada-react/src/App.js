@@ -12,6 +12,10 @@ import * as stores from "./stores";
 import "./stylesheets/App.css";
 import 'semantic-ui-css/semantic.min.css';
 
+/*Firebase 이용 DB 여기서 받아오기*/
+var id = "sihyun";
+var level = 1;
+
 class App extends React.Component {
   render() {
     return (
@@ -21,7 +25,7 @@ class App extends React.Component {
             <Route exact path="/home" component={Home} />
             <Route exact path="/signup" component={Home} />
             <Route exact path="/history" component={Home} />
-            <Route exact path="/pos" component={Pos} />
+            <Route exact path="/pos/:id/:level" component={Pos}/>
             <Route exact path="/ranking" component={Home} />
           </Switch>
           
