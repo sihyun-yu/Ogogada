@@ -1,8 +1,13 @@
 import React from "react";
 import { Image, Button } from 'semantic-ui-react'
 
+var divStyle = {
+  
+  padding: "1px"
+};
+
 const MenuItemComponent = props => {
-  if (props.level >= props.menu[2]) {
+ if (props.level >= props.menu[2]) {
     return (
         <Button
           className="menu-item"

@@ -1,8 +1,11 @@
 .payment__container {
+  flex: 0.5;
   width: 100%;
 }
 
 .payment {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 

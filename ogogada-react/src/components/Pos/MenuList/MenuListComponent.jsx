@@ -17,7 +17,7 @@ const MenuListComponent = props => {
         {(menu) => (
           <div className="menus">
             {menu.state.menus.map((menuItem, index) => (
-              <MenuItem
+              <MenuItem 
                 key={index}
                 id={index}
                 menu={menuItem}
