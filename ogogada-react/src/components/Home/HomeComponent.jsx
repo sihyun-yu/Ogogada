@@ -46,15 +46,17 @@ class HomeComponent extends React.Component {
     
             });
         }
-        this.props.history.push({
-            pathname : '../pos' + this.state.id + "/" + area.name,
-            state: {
-                id: this.state.id,
-                pw: this.state.pw,
-                level: this.state.level,
-            }
-
-        });
+        else {
+            this.props.history.push({
+                pathname : '../pos' + this.state.id + "/" + area.name,
+                state: {
+                    id: this.state.id,
+                    pw: this.state.pw,
+                    level: this.state.level,
+                }
+    
+            });
+        }
     }
 
 
@@ -80,7 +82,7 @@ class HomeComponent extends React.Component {
         var x_rank = this.props.windowWidth * 134/1280;
         var y_rank = this.props.windowHeight * 588/720;
 
-        var URL = require("../../assets/stage.png")
+        var URL = require("../../assets/home.png")
         var MAP = {
         name: "my-map",
         areas: [
@@ -89,7 +91,7 @@ class HomeComponent extends React.Component {
             { name: "3", shape: "circle", coords: [x3, y3, 63], },
             { name: "4", shape: "circle", coords: [x4, y4, 63], },
             { name: "5", shape: "circle", coords: [x5, y5, 63] },
-            { name: "history", shape: "circle", coords: [x_his, y_his, 63] },
+            { name: "history", shape: "rect", coords: [x_his+63, y_his+63, x_his-63, y_his-63] },
             { name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] },
         ]
         }
