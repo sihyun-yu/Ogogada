@@ -8,11 +8,8 @@ import { MenuStore } from "../../../stores";
 
 import "../../../stylesheets/MenuList.css";
 
-/*여기서 DB 레벨 불러오면 될듯 함*/
-var level = 2;
-
 const MenuListComponent = props => {
-  console.log("this is", props);
+  console.log(props.level);
   return (
     <div className="menus__container">
       <Subscribe to={[MenuStore]}>
@@ -24,14 +21,14 @@ const MenuListComponent = props => {
                 id={index}
                 menu={menuItem}
                 handleAddSelectedMenu={menu.addSelectedMenu.bind(menu)}
-                level={level}
+                level={props.level}
               />
             ))}
             <RefundItem
-            level={level}
+            level={props.level}
             />
             <GifticonItem
-            level={level}
+            level={props.level}
             />
             <MenuChangeItem
             status={"left"}
