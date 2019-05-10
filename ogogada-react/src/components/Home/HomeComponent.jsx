@@ -20,9 +20,34 @@ class HomeComponent extends React.Component {
         
     }
     
-    routeChange() {
+    routeChange(area) {
+        console.log("routeChage", area.name);
+        if (area.name == "history")
+        {
+            this.props.history.push({
+                pathname : '../history',
+                state: {
+                    id: this.state.id,
+                    pw: this.state.pw,
+                    level: this.state.level,
+                }
+    
+            });
+        }
+        if (area.name == "ranking")
+        {
+            this.props.history.push({
+                pathname : '../ranking',
+                state: {
+                    id: this.state.id,
+                    pw: this.state.pw,
+                    level: this.state.level,
+                }
+    
+            });
+        }
         this.props.history.push({
-            pathname : '../history',
+            pathname : '../pos' + this.state.id + "/" + area.name,
             state: {
                 id: this.state.id,
                 pw: this.state.pw,
@@ -50,6 +75,10 @@ class HomeComponent extends React.Component {
         var y4 = this.props.windowHeight * 471/720;
         var x5 = this.props.windowWidth * 1066/1280;
         var y5 = this.props.windowHeight * 593/720;
+        var x_his = this.props.windowWidth * 1148/1280;
+        var y_his = this.props.windowHeight * 134/720;
+        var x_rank = this.props.windowWidth * 134/1280;
+        var y_rank = this.props.windowHeight * 588/720;
 
         var URL = require("../../assets/stage.png")
         var MAP = {
@@ -60,6 +89,8 @@ class HomeComponent extends React.Component {
             { name: "3", shape: "circle", coords: [x3, y3, 63], },
             { name: "4", shape: "circle", coords: [x4, y4, 63], },
             { name: "5", shape: "circle", coords: [x5, y5, 63] },
+            { name: "history", shape: "circle", coords: [x_his, y_his, 63] },
+            { name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] },
         ]
         }
 
@@ -73,7 +104,7 @@ class HomeComponent extends React.Component {
                         className = "stage"
                     > 
                         <ImageMapper src={URL} map={MAP} width={this.props.windowWidth} height={this.props.windowHeight}
-                            onClick={area => this.routeChange()}
+                            onClick={area => this.routeChange(area)}
                         
                         />
 
