@@ -34,8 +34,11 @@
 }
 
 .menu-item__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 12vh;
+  height: 10vh;
   margin-left: 4px;
   flex: 0.5;
   color: black;

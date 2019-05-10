@@ -8,14 +8,11 @@ import { MenuStore } from "../../../stores";
 
 import "../../../stylesheets/MenuList.css";
 
-<<<<<<< HEAD
 var menuchangebutton_style = {
   background: "#E0E0E0",
 }
-=======
 /*여기서 DB 레벨 불러오면 될듯 함*/
 var level = 2;
->>>>>>> 04ef42fd7c397ccead4e4c7c9336a0280a80060e
 
 const MenuListComponent = props => {
   console.log("this is", props);
@@ -33,16 +30,6 @@ const MenuListComponent = props => {
                 level={level}
               />
             ))}
-<<<<<<< HEAD
-            {/* 여기다가 화살표? 시발? 몰라 */}
-            <MenuChangeButton
-            style={menuchangebutton_style}
-            status={"left"}
-            handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}
-            />
-            <MenuChangeButton
-            style={menuchangebutton_style}
-=======
             <RefundItem
             level={level}
             />
@@ -51,11 +38,12 @@ const MenuListComponent = props => {
             />
             <MenuChangeItem
             status={"left"}
+            style={menuchangebutton_style}
             handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}
             />
             <MenuChangeItem
->>>>>>> 04ef42fd7c397ccead4e4c7c9336a0280a80060e
             status={"right"}
+            style={menuchangebutton_style}s
             handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}
             />
           </div>
