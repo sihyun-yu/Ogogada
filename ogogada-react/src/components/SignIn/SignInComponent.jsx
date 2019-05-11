@@ -5,6 +5,7 @@ import { Input, Button, Form, Label } from 'semantic-ui-react';
 import { Redirect, Route, Link, withRouter} from 'react-router-dom';
 import Home from "../Home/HomeComponent.jsx"
 import "../../stylesheets/SignIn.css"
+import {login} from "../../App.js"
 
 
 
@@ -21,14 +22,24 @@ class SignInComponent extends React.Component {
     }
 
     routeChange() {
-        this.props.history.push({
-            pathname : '/home',
-            state: {
-                id: this.state.id,
-                pw: this.state.pw,
-                level: this.state.level,
+        
+        login(this.state.id, this.state.pw).then((aaa)=>{
+            console.log(aaa);
+            if (aaa){
+                this.props.history.push({
+                    pathname : '/home',
+                    state: {
+                        id: this.state.id,
+                        pw: this.state.pw,
+                        level: this.state.level,
+                    }
+                })
             }
-        });
+            else {
+                alert (aaa);
+            }
+        })
+
     }
 
     render() {
@@ -48,7 +59,9 @@ class SignInComponent extends React.Component {
                         <label>PW</label>
                         <input placeholder='Enter your Password' onChange = {(user_pw) => this.setState({pw: user_pw.target.value})}/>
                         </Form.Field>
-                        <Button onClick={()=>{this.state.id == "user" && this.state.pw == "1234" ?  this.routeChange() : alert("Please type again!")}}>LOGIN</Button>
+                        <Button onClick={()=>{this.routeChange()
+                            }}>LOGIN</Button>
+                            
                     </Form>
 
                 </div>

@@ -20,6 +20,56 @@ import firebase from "firebase";
 
 import "./stylesheets/App.css";
 import 'semantic-ui-css/semantic.min.css';
+import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from "constants";
+
+function writeToDatabase(input_id, input_pw, input_level) {
+  //console.log("writeToDatabase",stack);
+
+    firebase.database().ref('/accounts/'+input_id).set({
+      "id": input_id,
+      "pw": input_pw,
+      "level": input_level,
+    });
+
+
+
+}
+
+function checkNewRecord (user_level, user_id, user_time) {
+  return firebase.database().ref('/records/'+user_level.toString()).once('value', function(snapshot){
+    var records = snapshot.val()
+    var user_rank = 9;
+    for (var idx in records){
+      if (records[idx]["record"] > user_time && user_rank > records[idx]["rank"]){
+        user_rank = records[idx]["rank"];
+        firebase.database().ref('/records/' + user_level.toString()+'/'+idx.toString()).
+          update({"id": user_id, "record": user_time})
+      }
+    }
+  })
+
+}
+
+function login (user_id, user_pw) {
+  return new Promise(function(resolve, reject){
+    firebase.database().ref('/accounts/').once('value', function(snapshot){
+      var accounts = snapshot.val()
+      for (var idx in accounts){
+        if (user_id == idx && user_pw == accounts[idx]["pw"]){
+          console.log("login!");
+          return  resolve(true);
+        }
+        else if (user_id == idx && user_pw != accounts[idx]["pw"]){
+          console.log("have accounts but wrong pw!");
+          return resolve(false);
+        }
+      }
+      
+      return resolve(false);
+    })
+  })
+}
+
 
 /*Firebase 이용 DB 여기서 받아오기*/
 var firebaseConfig = {
@@ -34,10 +84,40 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-var database = firebase.database();
+firebase.database().ref('/records/').set({
+  "1": [{"id":"seongha", "record": "10:00:00", "rank":1},{"id":"seongha", "record": "20:00:00", "rank":2},
+    {"id":"seongha", "record": "30:00:00", "rank":3},{"id":"seongha", "record": "40:00:00", "rank":4},
+    {"id":"seongha", "record": "50:00:00", "rank":5}, {"id":"seongha", "record": "60:00:00", "rank":6},
+    {"id":"seongha", "record": "70:00:00", "rank":7}, {"id":"seongha", "record": "80:00:00", "rank":8}],
+  "2": [{"id":"seongha", "record": "00:00:00", "rank":1},{"id":"seongha", "record": "00:00:00", "rank":2},
+  {"id":"seongha", "record": "00:00:00", "rank":3},{"id":"seongha", "record": "00:00:00", "rank":4},
+  {"id":"seongha", "record": "00:00:00", "rank":5}, {"id":"seongha", "record": "00:00:00", "rank":6},
+  {"id":"seongha", "record": "00:00:00", "rank":7}, {"id":"seongha", "record": "00:00:00", "rank":8}],
+  "3": [{"id":"seongha", "record": "00:00:00", "rank":1},{"id":"seongha", "record": "00:00:00", "rank":2},
+  {"id":"seongha", "record": "00:00:00", "rank":3},{"id":"seongha", "record": "00:00:00", "rank":4},
+  {"id":"seongha", "record": "00:00:00", "rank":5}, {"id":"seongha", "record": "00:00:00", "rank":6},
+  {"id":"seongha", "record": "00:00:00", "rank":7}, {"id":"seongha", "record": "00:00:00", "rank":8}],
+  "4": [{"id":"seongha", "record": "00:00:00", "rank":1},{"id":"seongha", "record": "00:00:00", "rank":2},
+  {"id":"seongha", "record": "00:00:00", "rank":3},{"id":"seongha", "record": "00:00:00", "rank":4},
+  {"id":"seongha", "record": "00:00:00", "rank":5}, {"id":"seongha", "record": "00:00:00", "rank":6},
+  {"id":"seongha", "record": "00:00:00", "rank":7}, {"id":"seongha", "record": "00:00:00", "rank":8}],
+  "5": [{"id":"seongha", "record": "00:00:00", "rank":1},{"id":"seongha", "record": "00:00:00", "rank":2},
+  {"id":"seongha", "record": "00:00:00", "rank":3},{"id":"seongha", "record": "00:00:00", "rank":4},
+  {"id":"seongha", "record": "00:00:00", "rank":5}, {"id":"seongha", "record": "00:00:00", "rank":6},
+  {"id":"seongha", "record": "00:00:00", "rank":7}, {"id":"seongha", "record": "00:00:00", "rank":8}],
 
+});
 var id = "sihyun";
+var pw = "1234";
 var level = 1;
+writeToDatabase(id, pw, level);
+writeToDatabase("seongha", "4321", 1);
+writeToDatabase("sangmin", "1111", 1);
+writeToDatabase("yoonseo", "2222", 1);
+checkNewRecord(1, "sihyun", "00:00:01");
+checkNewRecord(1, "yoonseo", "00:00:03");
+checkNewRecord(1, "sihyun2", "00:00:03");
+
 
 class App extends React.Component {
   render() {
@@ -74,4 +154,5 @@ class App extends React.Component {
   }
 }
 
+export {login};
 export default App;
