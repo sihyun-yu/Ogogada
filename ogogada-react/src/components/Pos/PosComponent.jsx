@@ -34,7 +34,9 @@ const PosComponent = props => {
             </div>
           </div>
           <div className="right-content">
-            <Description />
+            <Description
+            level={props.match.params.level}
+            username={props.match.params.id}/>
             <SummaryTable />
           </div>
         </div>

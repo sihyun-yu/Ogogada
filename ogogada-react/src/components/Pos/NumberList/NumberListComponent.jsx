@@ -2,7 +2,7 @@ import React from "react";
 import { Subscribe } from "unstated";
 import NumberItem from "./NumberItemComponent.jsx";
 import { NumberStore } from "../../../stores";
-
+import { MenuStore } from "../../../stores"
 import "../../../stylesheets/NumberList.css";
 
 var divStyle = {
@@ -13,13 +13,14 @@ var divStyle = {
 const NumberListComponent = props => {
   return (
     <div className="number-list__container">
-      <Subscribe to={[NumberStore]}>
-        {number => (
+      <Subscribe to={[NumberStore, MenuStore]}>
+        {(number, menu) => (
           <div className="number-list">
             {number.state.numbers.map((numberItem) => (
               <NumberItem
                 number={numberItem}
-                handleAddSelectedNumbers={number.addSelectedNumber.bind(number)}
+                recentMenu={menu.state.recentMenu}
+                addNumber={number.buttonClickAtGifticon.bind(number)}
               />
             ))}
           </div>

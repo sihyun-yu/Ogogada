@@ -8,6 +8,7 @@ import SummaryTable from "./components/Pos/SummaryTable/SummaryTableComponent.js
 import Payment from "./components/Pos/Payment/PaymentComponent.jsx";
 import { Provider } from "unstated";
 import * as stores from "./stores";
+import Timer from "./components/Pos/Description/Timer.jsx"
 
 import "./stylesheets/App.css";
 import 'semantic-ui-css/semantic.min.css';
@@ -27,6 +28,7 @@ class App extends React.Component {
             <Route exact path="/history" component={Home} />
             <Route exact path="/pos/:id/:level" component={Pos}/>
             <Route exact path="/ranking" component={Home} />
+            <Route exact path="/timer" component={Timer} />
           </Switch>
           
         </div>
