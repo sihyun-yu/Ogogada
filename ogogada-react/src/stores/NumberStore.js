@@ -5,49 +5,30 @@ import metaJSON from "../assets/meta.js";
 class NumberStore extends Container {
   state = {
     numbers: metaJSON.numbers,
-    selected: {}
+    selected: {},
+    code: "",
+    display: "",
   };
 
-  addSelectedNumber = id => {
-    const newSelected = Object.assign({}, this.state.selected);
 
-    newSelected[id] =
-      isInteger(newSelected[id]) && newSelected[id] > 0
-        ? newSelected[id] + 1
-        : 1;
+  buttonClickAtGifticon = (menu, number) => {
+    console.log(menu);
+    console.log(number);
+    if (number === "C") {
+      this.setState({
+        code: "",
+        display: ""
+      })
+    }
+    else {
+      var code = this.state.code + number;
+      var display = this.state.display + "*";
 
-    this.setState({
-      selected: newSelected
-    });
-  };
-
-  decrementSelectedNumber = id => {
-    const newSelected = Object.assign({}, this.state.selected);
-
-    newSelected[id] =
-      isInteger(newSelected[id]) && newSelected[id] > 0
-        ? newSelected[id] - 1
-        : 0;
-
-    this.setState({
-      selected: newSelected
-    });
-  };
-
-  deleteSelectedNumber = id => {
-    const newSelected = Object.assign({}, this.state.selected);
-
-    delete newSelected[id];
-
-    this.setState({
-      selected: newSelected
-    });
-  };
-
-  resetSelectedNumber = () => {
-    this.setState({
-      selected: {}
-    });
+      this.setState({
+        code: code,
+        display: display
+      })
+    }
   };
 }
 

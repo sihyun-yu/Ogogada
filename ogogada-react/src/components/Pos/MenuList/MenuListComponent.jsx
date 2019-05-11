@@ -5,6 +5,7 @@ import MenuChangeItem from "./MenuChangeComponent.jsx"
 import RefundItem from "./RefundComponent.jsx"
 import GifticonItem from "./GifticonComponent.jsx"
 import { MenuStore } from "../../../stores";
+import GifticonDialog from "./GifticonDialogComponent.jsx"
 
 import "../../../stylesheets/MenuList.css";
 
@@ -28,6 +29,7 @@ const MenuListComponent = props => {
                 menu={menuItem}
                 handleAddSelectedMenu={menu.addSelectedMenu.bind(menu)}
                 level={props.level}
+                changeRecentMenu={menu.changeRecentMenu.bind(menu)}
               />
             ))}
             <RefundItem
@@ -35,6 +37,7 @@ const MenuListComponent = props => {
             />
             <GifticonItem
             level={props.level}
+            handleGifticonDialog={menu.openGifticon.bind(menu)}
             />
             <MenuChangeItem
             status={"left"}
@@ -45,6 +48,10 @@ const MenuListComponent = props => {
             status={"right"}
             style={menuchangebutton_style}s
             handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}
+            />
+            <GifticonDialog
+            open={menu.state.gifticonOpen}
+            handleGifticonDialog={menu.closeGifticon.bind(menu)}
             />
           </div>
         )}
