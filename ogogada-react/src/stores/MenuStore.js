@@ -10,8 +10,10 @@ class MenuStore extends Container {
     menus: menus_left,
     selected: {},
     gifticonOpen: false,
-    recentMenu: "",
-    totalmenu: totalmenu
+    recentMenuID: "",
+    totalmenu: totalmenu,
+    currentMenuID:-1,
+    numbersByPad: ""
   };
 
   changeMenuDisplay = status => {
@@ -83,11 +85,46 @@ class MenuStore extends Container {
       gifticonOpen: false
     })
   }
-  changeRecentMenu = recentMenu => {
+// =========== 패드 부분 =========== /
+
+// summary table에서 누른 id 들고오기 //
+  setCurrentMenuID = id => {
     this.setState({
-      recentMenu: recentMenu
+      currentMenuID: id
     })
   }
+
+// 패드 누른 숫자로 업데이트
+  changeNumberbyPad = (id, numbersByPad, number) => {
+    if (id != -1) {
+      var newNumber = (numbersByPad + number);
+      console.log(id);
+      console.log(newNumber);
+      const newSelected = Object.assign({}, this.state.selected);
+      newSelected[id] = parseInt(newNumber);
+
+      this.setState({
+        selected: newSelected,
+        numbersByPad: newNumber
+      });
+    }
+  }
+
+  resetNumber = () => {
+    //console.log("reset number");
+    this.setState({
+      numbersByPad: ""
+    })
+  }
+
+  refreshValues = id => {
+    this.setState({
+      recentMenuID: id,
+      currentMenuID: -1,
+      numbersByPad: ""
+    })
+  }
+
 }
 
 export default MenuStore;

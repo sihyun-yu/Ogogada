@@ -20,7 +20,7 @@ const MenuItemComponent = props => {
           style={buttonStyle}
           onClick={() => {
             props.handleAddSelectedMenu(props.id);
-            props.changeRecentMenu(props.menu[0]);
+            props.refreshValues(props.id)
           }}
         >
           <div className="menu-item__image">

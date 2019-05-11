@@ -19,8 +19,9 @@ const NumberListComponent = props => {
             {number.state.numbers.map((numberItem) => (
               <NumberItem
                 number={numberItem}
-                recentMenu={menu.state.recentMenu}
-                addNumber={number.buttonClickAtGifticon.bind(number)}
+                currentMenuID={menu.state.currentMenuID}
+                changeNumberbyPad = {menu.changeNumberbyPad.bind(menu)}
+                numbersByPad = {menu.state.numbersByPad}
               />
             ))}
           </div>

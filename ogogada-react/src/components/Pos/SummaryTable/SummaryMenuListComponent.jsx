@@ -1,6 +1,6 @@
 import React from "react";
 import { Subscribe } from "unstated";
-import { MenuStore, CouponStore } from "../../../stores/";
+import { MenuStore, CouponStore, NumberStore } from "../../../stores/";
 import "../../../stylesheets/SummaryMenuList.css";
 import SummrayMenuItem from "./SummaryMenuItemComponent.jsx";
 import SummrayTotal from "./SummaryTotalComponent.jsx";
@@ -10,8 +10,8 @@ const SummaryTableComponent = props => {
     Object.keys(object).sort(sortCb);
 
   return (
-    <Subscribe to={[MenuStore, CouponStore]}>
-      {(menuStore, couponStore) => (
+    <Subscribe to={[MenuStore, CouponStore, NumberStore]}>
+      {(menuStore, couponStore, numberStore) => (
         <div className="summary-menu">
           <div className="summary-menu__label-row">
             <div className="summary-menu__label menu-label">menu</div>
@@ -36,6 +36,8 @@ const SummaryTableComponent = props => {
                   id
                 )}
                 handleDelete={menuStore.deleteSelectedMenu.bind(menuStore, id)}
+                resetNumber={menuStore.resetNumber.bind(menuStore, id)}
+                setCurrentMenuID={menuStore.setCurrentMenuID.bind(menuStore, id)}
               />
             ))}
           </div>

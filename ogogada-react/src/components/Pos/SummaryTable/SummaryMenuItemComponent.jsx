@@ -9,10 +9,16 @@ var deleteButtonStyle = {
 }
 
 const SummaryTableComponent = props => {
+  //console.log(numByButton);
+  //console.log(numByButton);
   const getTotalValue = (menu, count) => menu[1] * count;  
   const getActualValue = (menu, count, coupon) => menu[1] * count * (1 - metaJSON.coupons[coupon])
   return (
-    <div className="summary-menu-item">
+    <div className="summary-menu-item"
+        onClick={() => {
+        props.resetNumber();
+        props.setCurrentMenuID(props.id);
+    }}>
       <div className="summary-menu-item__name">
         <p>{props.menu[0]}</p>
       </div>
