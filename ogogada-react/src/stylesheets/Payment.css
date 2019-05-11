@@ -16,7 +16,7 @@
 .payment__text,
 .payment__button-container {
   display: inline-block;
-  padding: 16px 0;
+  /* padding: 16px 0; */
   font-size: 20px;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .payment__button-container {
-  width: 40%;
+  width: 100%;
 }
 
 .payment-dialog__details {

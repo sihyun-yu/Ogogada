@@ -1,9 +1,16 @@
 import React from "react";
+import "../../../stylesheets/Timer.css";
 
 function pad(n, width) {
     n = n + '';
     return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
 }
+
+var pStyle = {
+  "margin": "0",
+  "font-size": "15px"
+}
+
 
 class Timer extends React.Component {
   constructor(props){
@@ -52,11 +59,15 @@ class Timer extends React.Component {
       <button onClick={this.startTimer}>resume</button> :
       null
     return(
-      <div style={{"display": "flex", "flex-direction": "row"}}>
-        <h3>{pad(Math.floor((this.state.time/1000)/60), 2)} : {pad(Math.floor((this.state.time/1000)%60), 2)} : {pad(Math.floor((this.state.time%1000)/10), 2)}</h3>
+      <div className="timer__container" >
+        <div className="timer__number"></div>
+        <p style={pStyle}>{pad(Math.floor((this.state.time/1000)/60), 2)} : {pad(Math.floor((this.state.time/1000)%60), 2)} : {pad(Math.floor((this.state.time%1000)/10), 2)}</p>
+        <div className="timer__action">
         {start}
         {stop}
         {reset}
+        </div>
+
       </div>
     )
   }

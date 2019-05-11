@@ -41,7 +41,7 @@ const SummaryTableComponent = props => {
               />
             ))}
           </div>
-          <SummrayTotal label="상품가격 합계" />
+          <SummrayTotal label="Total " />
         </div>
       )}
     </Subscribe>

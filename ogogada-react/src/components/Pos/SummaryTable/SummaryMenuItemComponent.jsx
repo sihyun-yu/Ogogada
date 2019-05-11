@@ -40,7 +40,6 @@ const SummaryTableComponent = props => {
       </div>
       <div className="summary-menu-item__actual">
         <div className="summary-menu-item__actual2">
-        {/* 여기에 actual value 가져오는 함수 만들고 적용시켜야함 */}
         <p>{getActualValue(props.menu, props.count, props.coupon)} ₩</p>
         </div>
         <div className="summary-menu-item__delete">
