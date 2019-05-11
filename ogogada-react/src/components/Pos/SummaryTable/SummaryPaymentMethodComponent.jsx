@@ -14,17 +14,21 @@ const SummaryPaymentMethodComponent = props => {
         <div className="summary-payment-method">
           <div className="summary-payment-method__radio-group-row">
             <div className="summary-payment-method__radio-group">
+            <div className="summary-payment-method__card">
             <PaymentMethodButton
-            label="Card"
+            label="CARD"
             id="0"
             handlePayment={paymentMethodStore.selectPaymentMethod.bind(paymentMethodStore)}/>         
+            </div>
+            <div className="summary-payment-method__cash">
             <PaymentMethodButton
-            label="Cash"
+            label="CASH"
             id="1"
             handlePayment={paymentMethodStore.selectPaymentMethod.bind(paymentMethodStore)}/>         
             </div>
+            </div>
           </div>
-          <SummrayTotal label="총 합계" applyCoupon applyCashDiscount />
+          {/* <SummrayTotal label="총 합계" applyCoupon applyCashDiscount /> */}
         </div>
       )}
     </Subscribe>

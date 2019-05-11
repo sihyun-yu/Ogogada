@@ -6,6 +6,11 @@ import { MenuStore, CouponStore, PaymentMethodStore } from "../../../stores";
 import PaymentDialog from "./PaymentDialogComponent.jsx";
 import { mockCardPayment } from "../../../api/paymentAPI.js";
 
+var paymentButtonStyle = {
+  width: "90%",
+  height: "100%"
+}
+
 class PaymentComponent extends React.Component {
   state = {
     pendingCardPayment: false,
@@ -102,7 +107,8 @@ class PaymentComponent extends React.Component {
                   className="payment__button"
                   variant="contained"
                   color="primary"
-                  size="large"
+                  // size="large"
+                  style={paymentButtonStyle}
                   disabled={
                     calculatedValue(
                       menuStore.state.menus,
@@ -117,7 +123,7 @@ class PaymentComponent extends React.Component {
                       : this.handleOpenDialog
                   }
                 >
-                  결제
+                  PAYMENT
                 </Button>
               </div>
             </div>

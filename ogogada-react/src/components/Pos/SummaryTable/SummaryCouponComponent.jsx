@@ -11,7 +11,9 @@ const SummaryCouponComponent = props => {
       {couponStore => (
         <div className="summary-coupon">
           <div className="summary-coupon__select-row">
-            <div className="summary-coupon__label">적용할 쿠폰</div>
+            <div className="summary-coupon__label">
+              <p className="summary-coupon__name">COUPON</p>
+            </div>
             <div className="summary-coupon__selector">
               <Select
                 value={couponStore.state.selected}
@@ -28,7 +30,7 @@ const SummaryCouponComponent = props => {
               </Select>
             </div>
           </div>
-          <SummrayTotal label="쿠폰적용 합계" applyCoupon />
+          {/* <SummrayTotal label="쿠폰적용 합계" applyCoupon /> */}
         </div>
       )}
     </Subscribe>
