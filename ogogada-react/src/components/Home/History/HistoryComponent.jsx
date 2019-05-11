@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../stylesheets/History.css"
-import { Icon, Table } from 'semantic-ui-react'
+import { Icon, Table, Button } from 'semantic-ui-react'
 
 class HistoryComponent extends React.Component {
     constructor(props) {
@@ -58,6 +58,7 @@ class HistoryComponent extends React.Component {
 
         return (
             <div id="totalContainer">
+                <div style={{"width": "40%"}}></div>
                 <div id="historyContainer">
                     <Table celled striped inverted selectable id="tableContainer">
                         <Table.Header>
@@ -73,35 +74,35 @@ class HistoryComponent extends React.Component {
                         </Table.Header>
 
                         <Table.Body>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell collapsing>
                             <Icon name='coffee' /> Level 1
                             </Table.Cell>
                             <Table.Cell>Take an order of 1 ice americano and 1 hot americano</Table.Cell>
                             <Table.Cell collapsing textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' /> Level 2
                             </Table.Cell>
                             <Table.Cell>Take an order of 2 green tea latte and 1 hot vanilla latte</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' /> Level 3
                             </Table.Cell>
                             <Table.Cell>Apply student discount</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' /> Level 4
                             </Table.Cell>
                             <Table.Cell>Use an ice americano gifticon</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' /> Level 5
                             </Table.Cell>
@@ -117,105 +118,105 @@ class HistoryComponent extends React.Component {
                         </Table.Header>
 
                         <Table.Body>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell collapsing textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell collapsing textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell collapsing textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row>
+                        <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                             <Icon name='coffee' />
                             </Table.Cell>
@@ -224,6 +225,9 @@ class HistoryComponent extends React.Component {
                         </Table.Row>
                         </Table.Body>
                     </Table>
+                </div>
+                <div style={{"width": "40%"}}>
+                    <Button id="backButton" onClick={() => this.props.history.push('/home')}>Back</Button>
                 </div>
             </div>
         )
