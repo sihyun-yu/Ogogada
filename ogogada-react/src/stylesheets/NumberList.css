@@ -2,7 +2,7 @@
   width: 94%;
   left: 10%;
   flex: 0.5;
-  margin: 0 10px 10px 10px;
+  margin: 0 7px 0 7px;
 }
 
 .number-item {
@@ -11,7 +11,7 @@
   font-size: 16px;
   font-weight: 500;
   width: 33%;
-  height: 11.5vh;
+  height: 11.7vh;
   /* border-bottom: solid black 1px; */
   padding: 3px;
 }

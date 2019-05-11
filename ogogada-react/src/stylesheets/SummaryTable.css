@@ -41,7 +41,7 @@
 }
 
 .summary-coupon__name {
-  
+
 }
 
 .summary-payment-method__radio-group-row {
@@ -69,6 +69,29 @@
 .summary-payment-method__card {
   width: 100%;
   height: 100%
+}
+
+.summary-table__container {
+  margin: 10px 20px 15px 0;
+  position: relative;
+  width: calc (100%-20px);
+  flex:0.9;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.28571429rem;
+  overflow: hidden;
+}
+
+.summary-table {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-total {
+  background: #F0F0F0;
+  text-align: center;
 }
 
 /* .summary-table__container {

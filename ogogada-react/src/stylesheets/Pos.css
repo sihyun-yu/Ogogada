@@ -29,7 +29,7 @@
   flex: 0.5;
   display: flex;
   flex-direction: row;
-  margin: 0 1% 1% 2%;
+  margin: 0 5px 0 5px;
 }
 
 .left-below-left__contatiner {
