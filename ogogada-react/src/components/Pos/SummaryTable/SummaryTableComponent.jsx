@@ -10,8 +10,6 @@ const SummaryTableComponent = props => {
     <div className="summary-table__container">
     <div className="summary-table">
       <SummaryMenuList />
-      {/* <SummaryCoupon />
-      <SummaryPaymentMethod /> */}
     </div>
     </div>
   );
