@@ -4,13 +4,14 @@ import metaJSON from "../assets/meta.js";
 
 const menus_left = metaJSON.menus_left;
 const menus_right = metaJSON.menus_right;
-
+const totalmenu = menus_left.concat(menus_right);
 class MenuStore extends Container {
   state = {
     menus: menus_left,
     selected: {},
     gifticonOpen: false,
-    recentMenu: ""
+    recentMenu: "",
+    totalmenu: totalmenu
   };
 
   changeMenuDisplay = status => {
@@ -28,6 +29,7 @@ class MenuStore extends Container {
   };
 
   addSelectedMenu = id => {
+    console.log(id);
     const newSelected = Object.assign({}, this.state.selected);
 
     newSelected[id] =

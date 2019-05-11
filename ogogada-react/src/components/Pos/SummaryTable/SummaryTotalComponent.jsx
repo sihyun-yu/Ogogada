@@ -26,7 +26,7 @@ const SummaryTotalComponent = props => {
           <div className="summary-total__label">{props.label}</div>
           <div className="summary-total__value">
             {calculatedValue(
-              menuStore.state.menus,
+              menuStore.state.totalmenu,
               menuStore.state.selected,
               couponStore.state.coupons[couponStore.state.selected],
               parseInt(paymentMethodStore.state.selected, 10)

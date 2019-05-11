@@ -27,7 +27,7 @@ const SummaryTableComponent = props => {
               <SummrayMenuItem
                 key={id}
                 id={id}
-                menu={menuStore.state.menus[id]}
+                menu={menuStore.state.totalmenu[id]}
                 count={menuStore.state.selected[id]}
                 coupon={couponStore.state.selected}
                 handleIncrement={menuStore.addSelectedMenu.bind(menuStore, id)}

@@ -24,8 +24,8 @@ const MenuListComponent = props => {
           <div className="menus">
             {menu.state.menus.map((menuItem, index) => (
               <MenuItem 
-                key={index}
-                id={index}
+                key={index + menuItem[3] * 8}
+                id={index + menuItem[3] * 8}
                 menu={menuItem}
                 handleAddSelectedMenu={menu.addSelectedMenu.bind(menu)}
                 level={props.level}
@@ -46,7 +46,7 @@ const MenuListComponent = props => {
             />
             <MenuChangeItem
             status={"right"}
-            style={menuchangebutton_style}s
+            style={menuchangebutton_style}
             handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}
             />
             <GifticonDialog
