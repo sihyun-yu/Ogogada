@@ -6,6 +6,11 @@ import MenuList from "./components/Pos/MenuList/MenuListComponent.jsx";
 import NumberList from "./components/Pos/NumberList/NumberListComponent.jsx";
 import History from "./components/Home/History/HistoryComponent.jsx";
 import Ranking from "./components/Home/Ranking/RankingComponent.jsx";
+import RankingEach1 from "./components/Home/Ranking/RankingLevels/RankingLevel1Component.jsx"
+import RankingEach2 from "./components/Home/Ranking/RankingLevels/RankingLevel2Component.jsx"
+import RankingEach3 from "./components/Home/Ranking/RankingLevels/RankingLevel3Component.jsx"
+import RankingEach4 from "./components/Home/Ranking/RankingLevels/RankingLevel4Component.jsx"
+import RankingEach5 from "./components/Home/Ranking/RankingLevels/RankingLevel5Component.jsx"
 import Pos from "./components/Pos/PosComponent.jsx"
 import SummaryTable from "./components/Pos/SummaryTable/SummaryTableComponent.jsx";
 import Payment from "./components/Pos/Payment/PaymentComponent.jsx";
@@ -31,6 +36,11 @@ class App extends React.Component {
             <Route exact path="/history" component={History} />
             <Route exact path="/pos/:id/:level" component={Pos}/>
             <Route exact path="/ranking" component={Ranking} />
+            <Route exact path="/ranking/1" component={RankingEach1} />
+            <Route exact path="/ranking/2" component={RankingEach2} />
+            <Route exact path="/ranking/3" component={RankingEach3} />
+            <Route exact path="/ranking/4" component={RankingEach4} />
+            <Route exact path="/ranking/5" component={RankingEach5} />
           </Switch>
 
         </div>
