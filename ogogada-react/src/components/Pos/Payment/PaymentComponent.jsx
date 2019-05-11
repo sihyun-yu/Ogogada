@@ -95,7 +95,7 @@ class PaymentComponent extends React.Component {
             <div className="payment">
               <div className="payment__text">
                 {paymentText(
-                  menuStore.state.menus,
+                  menuStore.state.totalmenu,
                   menuStore.state.selected,
                   couponStore.state.coupons[couponStore.state.selected],
                   parseInt(paymentMethodStore.state.selected, 10)
@@ -111,7 +111,7 @@ class PaymentComponent extends React.Component {
                   style={paymentButtonStyle}
                   disabled={
                     calculatedValue(
-                      menuStore.state.menus,
+                      menuStore.state.totalmenu,
                       menuStore.state.selected,
                       couponStore.state.coupons[couponStore.state.selected],
                       parseInt(paymentMethodStore.state.selected, 10)
@@ -130,11 +130,11 @@ class PaymentComponent extends React.Component {
             <PaymentDialog
               open={this.state.dialogOpen}
               selectedMenus={selectedMenus(
-                menuStore.state.menus,
+                menuStore.state.totalmenu,
                 menuStore.state.selected
               )}
               price={calculatedValue(
-                menuStore.state.menus,
+                menuStore.state.totalmenu,
                 menuStore.state.selected,
                 couponStore.state.coupons[couponStore.state.selected],
                 parseInt(paymentMethodStore.state.selected, 10)
