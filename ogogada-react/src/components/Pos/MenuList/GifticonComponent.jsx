@@ -13,7 +13,7 @@ const GifticonComponent = props => {
         style={gifticonStyle}
         className="gifticon-item"
         onClick={() => {
-//          props.handleChangeMenuDisplay(props.status);
+          props.handleGifticonDialog();
         }}
       >
       GIFTICON

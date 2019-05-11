@@ -9,6 +9,8 @@ class MenuStore extends Container {
   state = {
     menus: menus_left,
     selected: {},
+    gifticonOpen: false,
+    recentMenu: ""
   };
 
   changeMenuDisplay = status => {
@@ -67,6 +69,23 @@ class MenuStore extends Container {
     });
   };
 
+  openGifticon = () => {
+    this.setState({
+      gifticonOpen: true
+    });
+    console.log("gifticon open");
+  };
+
+  closeGifticon = () => {
+    this.setState({
+      gifticonOpen: false
+    })
+  }
+  changeRecentMenu = recentMenu => {
+    this.setState({
+      recentMenu: recentMenu
+    })
+  }
 }
 
 export default MenuStore;

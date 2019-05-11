@@ -13,7 +13,10 @@ const NumberItemComponent = props => {
       <Button
         style={divStyle}
         className="number-item__button"
-        variant="contained">
+        variant="contained"
+        onClick={() => {
+          props.addNumber(props.recentMenu, props.number)
+        }}>
        {props.number}
       </Button>
     </div>
