@@ -74,35 +74,35 @@ class HistoryComponent extends React.Component {
                         </Table.Header>
 
                         <Table.Body>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row onClick={() => this.props.history.push('/1')}>
                             <Table.Cell collapsing>
                             <Icon name='coffee' /> Level 1
                             </Table.Cell>
                             <Table.Cell>Take an order of 1 ice americano and 1 hot americano</Table.Cell>
                             <Table.Cell collapsing textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row onClick={() => this.props.history.push('/2')}>
                             <Table.Cell>
                             <Icon name='coffee' /> Level 2
                             </Table.Cell>
                             <Table.Cell>Take an order of 2 green tea latte and 1 hot vanilla latte</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row onClick={() => this.props.history.push('/3')}>
                             <Table.Cell>
                             <Icon name='coffee' /> Level 3
                             </Table.Cell>
                             <Table.Cell>Apply student discount</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row onClick={() => this.props.history.push('/4')}>
                             <Table.Cell>
                             <Icon name='coffee' /> Level 4
                             </Table.Cell>
                             <Table.Cell>Use an ice americano gifticon</Table.Cell>
                             <Table.Cell textAlign='right'>10 hours ago</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row onClick={() => this.props.history.push('/5')}>
                             <Table.Cell>
                             <Icon name='coffee' /> Level 5
                             </Table.Cell>
