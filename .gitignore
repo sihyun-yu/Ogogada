@@ -2,7 +2,7 @@
 # TODO: should modify this file - Yoonseo
 
 # dependencies
-/node_modules
+node_modules/
 
 # testing
 /coverage
