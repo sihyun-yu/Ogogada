@@ -42,35 +42,35 @@ class RankingComponent extends React.Component {
                         </Table.Header>
 
                         <Table.Body>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row onClick={() => this.props.history.push('ranking/1')}>
                             <Table.Cell collapsing>
                                 <Icon name='trophy' /> Level 1
                             </Table.Cell>
                             <Table.Cell>Take an order of 1 ice americano</Table.Cell>
                             <Table.Cell collapsing textAlign='right'>{winners[0]}</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row onClick={() => this.props.history.push('ranking/2')}>
                             <Table.Cell>
                                 <Icon name='trophy' /> Level 2
                             </Table.Cell>
                             <Table.Cell>Take an order of 2 green tea latte</Table.Cell>
                             <Table.Cell textAlign='right'>{winners[1]}</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row onClick={() => this.props.history.push('ranking/3')}>
                             <Table.Cell>
                                 <Icon name='trophy' /> Level 3
                             </Table.Cell>
                             <Table.Cell>Apply student discount</Table.Cell>
                             <Table.Cell textAlign='right'>{winners[2]}</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row onClick={() => this.props.history.push('ranking/4')}>
                             <Table.Cell>
                                 <Icon name='trophy' /> Level 4
                             </Table.Cell>
                             <Table.Cell>Use an ice americano gifticon</Table.Cell>
                             <Table.Cell textAlign='right'>{winners[3]}</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row onClick={() => this.props.history.push('ranking/5')}>
                             <Table.Cell>
                                 <Icon name='trophy' /> Level 5
                             </Table.Cell>
