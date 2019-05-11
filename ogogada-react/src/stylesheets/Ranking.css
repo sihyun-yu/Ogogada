@@ -5,15 +5,13 @@
     height: 100%;
 }
 
-#historyContainer {
-    display: flex;
-    flex-direction: column;
+#rankingContainer {
     width: 60%;
     height: 100%;
-    overflow-y: scroll;
 }
 
 #tableContainer {
+    display: table;
     width: 100%;
     height: 100%;
 }
