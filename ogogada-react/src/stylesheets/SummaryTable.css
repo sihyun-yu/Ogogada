@@ -71,6 +71,15 @@
   height: 100%
 }
 
+.summary-table__container {
+  position: relative;
+  width: 100%;
+  flex:0.9;
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+
 /* .summary-table__container {
   position: relative;
   width: 100%;
