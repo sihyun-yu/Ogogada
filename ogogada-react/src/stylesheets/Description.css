@@ -20,7 +20,7 @@
 }
 
 #user_id {
-  flex: 0.3;
+  flex: 0.2;
 }
 
 #timer {
@@ -28,5 +28,9 @@
 
   display: flex;
   flex-direction: row;
+}
+
+#replay {
+  flex: 0.1
 }
 

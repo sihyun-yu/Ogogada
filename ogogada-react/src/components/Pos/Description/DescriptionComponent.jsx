@@ -17,6 +17,9 @@ const DescriptionComponent = props => {
         <Icon name='stopwatch'></Icon>
         <Timer></Timer>
       </div>
+      <div id="replay">
+        <Icon name='sound'></Icon>
+      </div>
     </div>
     
   );
