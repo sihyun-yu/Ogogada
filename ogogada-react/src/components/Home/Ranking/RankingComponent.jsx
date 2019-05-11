@@ -3,6 +3,14 @@ import { withRouter} from 'react-router-dom';
 import { Icon, Table, Button } from 'semantic-ui-react'
 import "../../../stylesheets/Ranking.css"
 
+var winners = [
+    "Yoonseo Kim",
+    "Sangmin Lee",
+    "Yoonseo Kim",
+    "Sihyun Yu",
+    "Sungha Eom"
+];
+
 class RankingComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -39,35 +47,35 @@ class RankingComponent extends React.Component {
                                 <Icon name='trophy' /> Level 1
                             </Table.Cell>
                             <Table.Cell>Take an order of 1 ice americano</Table.Cell>
-                            <Table.Cell collapsing textAlign='right'>Yoonseo Kim</Table.Cell>
+                            <Table.Cell collapsing textAlign='right'>{winners[0]}</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                                 <Icon name='trophy' /> Level 2
                             </Table.Cell>
                             <Table.Cell>Take an order of 2 green tea latte</Table.Cell>
-                            <Table.Cell textAlign='right'>Sangmin Lee</Table.Cell>
+                            <Table.Cell textAlign='right'>{winners[1]}</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                                 <Icon name='trophy' /> Level 3
                             </Table.Cell>
                             <Table.Cell>Apply student discount</Table.Cell>
-                            <Table.Cell textAlign='right'>Yoonseo Kim</Table.Cell>
+                            <Table.Cell textAlign='right'>{winners[2]}</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                                 <Icon name='trophy' /> Level 4
                             </Table.Cell>
                             <Table.Cell>Use an ice americano gifticon</Table.Cell>
-                            <Table.Cell textAlign='right'>Sihyun yu</Table.Cell>
+                            <Table.Cell textAlign='right'>{winners[3]}</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => this.props.history.push('/home')}>
                             <Table.Cell>
                                 <Icon name='trophy' /> Level 5
                             </Table.Cell>
                             <Table.Cell>Refund most recent order</Table.Cell>
-                            <Table.Cell textAlign='right'>Sungha Eom</Table.Cell>
+                            <Table.Cell textAlign='right'>{winners[4]}</Table.Cell>
                         </Table.Row>
                         <Table.Row>
                             <Table.Cell rowSpan='10' colSpan='3' style={{"content": "''"}}></Table.Cell>

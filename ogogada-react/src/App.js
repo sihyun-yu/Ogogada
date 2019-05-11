@@ -11,11 +11,26 @@ import SummaryTable from "./components/Pos/SummaryTable/SummaryTableComponent.js
 import Payment from "./components/Pos/Payment/PaymentComponent.jsx";
 import { Provider } from "unstated";
 import * as stores from "./stores";
+import firebase from "firebase";
 
 import "./stylesheets/App.css";
 import 'semantic-ui-css/semantic.min.css';
 
 /*Firebase 이용 DB 여기서 받아오기*/
+var firebaseConfig = {
+  apiKey: "AIzaSyDXOPz3fKpgr5p4b99tNj4QnKVzqeXsxyU",
+  authDomain: "ogogada-dp6.firebaseapp.com",
+  databaseURL: "https://ogogada-dp6.firebaseio.com",
+  projectId: "ogogada-dp6",
+  storageBucket: "ogogada-dp6.appspot.com",
+  messagingSenderId: "327472332391",
+  appId: "1:327472332391:web:9f65dd33579f2761"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+var database = firebase.database();
+
 var id = "sihyun";
 var level = 1;
 
