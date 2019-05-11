@@ -72,19 +72,13 @@
 }
 
 .summary-table__container {
-<<<<<<< HEAD
   margin: 10px 20px 15px 0;
   position: relative;
   width: calc (100%-20px);
-=======
-  position: relative;
-  width: 100%;
->>>>>>> 5d5307573385fb9c94ed7b084d7b287758271771
   flex:0.9;
   float: right;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   border-radius: 0.28571429rem;
   overflow: hidden;
 }
@@ -98,8 +92,6 @@
 .summary-total {
   background: #F0F0F0;
   text-align: center;
-=======
->>>>>>> 5d5307573385fb9c94ed7b084d7b287758271771
 }
 
 /* .summary-table__container {
