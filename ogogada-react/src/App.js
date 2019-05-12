@@ -29,24 +29,6 @@ function writeToDatabase(input_id, input_pw, input_level) {
       "pw": input_pw,
       "level": input_level,
     });
-
-
-
-}
-
-function checkNewRecord (user_level, user_id, user_time) {
-  return firebase.database().ref('/records/'+user_level.toString()).once('value', function(snapshot){
-    var records = snapshot.val()
-    var user_rank = 9;
-    for (var idx in records){
-      if (records[idx]["record"] > user_time && user_rank > records[idx]["rank"]){
-        user_rank = records[idx]["rank"];
-        firebase.database().ref('/records/' + user_level.toString()+'/'+idx.toString()).
-          update({"id": user_id, "record": user_time})
-      }
-    }
-  })
-
 }
 
 function login (user_id, user_pw) {
