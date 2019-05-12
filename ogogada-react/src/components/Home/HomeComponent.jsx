@@ -97,8 +97,8 @@ class HomeComponent extends React.Component {
         ]
         }
 
-        console.log(this.props.history["state"]["id"])
-        console.log(this.props.history["state"]["level"])
+        // console.log(this.props.history["state"]["id"])
+        // console.log(this.props.history["state"]["level"])
 
 
         console.log("x1, y1: ", x1.toString() + "," + y1.toString() + ",63");
