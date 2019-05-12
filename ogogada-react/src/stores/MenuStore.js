@@ -13,7 +13,11 @@ class MenuStore extends Container {
     recentMenuID: "",
     totalmenu: totalmenu,
     currentMenuID:-1,
-    numbersByPad: ""
+    numbersByPad: "",
+    // ===== Gifticon ====== // 
+    display: "",
+    code: "",
+    cnt: 0
   };
 
   changeMenuDisplay = status => {
@@ -73,18 +77,44 @@ class MenuStore extends Container {
     });
   };
 
+
+// ===========Giftion ============== /
   openGifticon = () => {
     this.setState({
-      gifticonOpen: true
+      gifticonOpen: true,
+      numbersByPad: "",
+      currentMenuID: -1
     });
     console.log("gifticon open");
   };
 
   closeGifticon = () => {
     this.setState({
-      gifticonOpen: false
+      gifticonOpen: false,
+      code: "",
+      display: "",
+      cnt: 0
     })
   }
+
+  addGifticonCode = (number) => {
+    var cnt = this.state.cnt;  
+    var newDisplay = this.state.display;
+    if (cnt%4 == 0 && cnt < 12 && cnt > 0) {
+      newDisplay = newDisplay + "-";
+    }
+    var newCode = this.state.code + number;
+    newDisplay = newDisplay + "*";
+    console.log(newCode);
+    cnt = cnt + 1;
+    this.setState({
+      code: newCode,
+      display: newDisplay,
+      cnt: cnt
+    })
+  }
+
+
 // =========== 패드 부분 =========== /
 
 // summary table에서 누른 id 들고오기 //

@@ -1,0 +1,33 @@
+.gifticon-container {
+	background-color: #666666;
+	position: absolute;
+	width: 80%;
+	height: 50%;
+	left: 40%;
+	bottom: 45%;
+	z-index: 20;
+	text-align: center;
+
+}
+
+.gifticon-title {
+	position: relative;
+	text-align: center;
+	font-size: xx-large;
+	top: 10%;
+}
+
+.gifticon-display {
+	background-color: #e8e8e8;
+	color: #000000;
+	position: relative;
+	width: 80%;
+	height: 9%;
+	top:60%;
+	left: 10%;
+}
+
+.gifticon-submit {
+	position: relative;
+	top:70%;
+}

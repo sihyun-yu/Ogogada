@@ -15,7 +15,12 @@ const NumberItemComponent = props => {
         className="number-item__button"
         variant="contained"
         onClick={() => {
-          props.changeNumberbyPad(props.currentMenuID, props.numbersByPad, props.number);
+          if (props.gifticonOpen == false) {
+              props.changeNumberbyPad(props.currentMenuID, props.numbersByPad, props.number);
+          }
+          else {
+            props.addGifticonCode(props.number);
+          }
         }}>
        {props.number}
       </Button>
