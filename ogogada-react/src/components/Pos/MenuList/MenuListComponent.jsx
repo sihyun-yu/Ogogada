@@ -24,6 +24,7 @@ const MenuListComponent = props => {
     <div className="menus__container">
       <Subscribe to={[MenuStore, NumberStore]}>
         {(menu, number) => (
+          <div className="allcomponent-container">
           <div className="menus">
             {menu.state.menus.map((menuItem, index) => (
               <MenuItem 
@@ -52,11 +53,19 @@ const MenuListComponent = props => {
             style={menuchangebutton_style}
             handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}
             />
+          </div>
+          <div>
             <GifticonDialog
             open={menu.state.gifticonOpen}
+            display={menu.state.display}
             handleGifticonDialog={menu.closeGifticon.bind(menu)}
+            cnt={menu.state.cnt}
+            closeGifticon={menu.closeGifticon.bind(menu)}
+            checkGifticonCode={menu.checkGifticonCode.bind(menu)}
+            tryAgain={menu.state.tryAgain}
             />
           </div>
+        </div>
         )}
       </Subscribe>
     </div>

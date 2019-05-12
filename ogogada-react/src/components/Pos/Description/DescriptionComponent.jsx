@@ -15,13 +15,13 @@ const DescriptionComponent = props => {
       </div>
       <div className="timer">
         <div className="timer__icon">
-        <Icon name='stopwatch'></Icon>
+          <Icon name='stopwatch'></Icon>
         </div>
         <div className="timer__timer">
-        <Timer></Timer>
+          <Timer></Timer>
         </div>
       </div>
-      <div id="replay">
+      <div className="replay">
         <Icon name='sound'></Icon>
       </div>
     </div>

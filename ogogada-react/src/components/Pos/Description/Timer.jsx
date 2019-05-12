@@ -25,6 +25,17 @@ class Timer extends React.Component {
     this.resetTimer = this.resetTimer.bind(this)
   }
 
+  componentDidMount() {
+    this.setState({
+      time: this.state.time,
+      start: Date.now() - this.state.time,
+      isOn: true
+    })
+    this.timer = setInterval(() => this.setState({
+      time: Date.now() - this.state.start
+    }), 1);
+  }
+
   startTimer() {
     this.setState({
       time: this.state.time,
@@ -60,14 +71,12 @@ class Timer extends React.Component {
       null
     return(
       <div className="timer__container" >
-        <div className="timer__number"></div>
-        <p style={pStyle}>{pad(Math.floor((this.state.time/1000)/60), 2)} : {pad(Math.floor((this.state.time/1000)%60), 2)} : {pad(Math.floor((this.state.time%1000)/10), 2)}</p>
-        <div className="timer__action">
-        {start}
-        {stop}
-        {reset}
-        </div>
-
+          <p style={pStyle}>{pad(Math.floor((this.state.time/1000)/60), 2)} : {pad(Math.floor((this.state.time/1000)%60), 2)} : {pad(Math.floor((this.state.time%1000)/10), 2)}</p>
+        {/*<div className="timer__action">
+          {start}
+          {stop}
+          {reset}
+    </div>*/}
       </div>
     )
   }

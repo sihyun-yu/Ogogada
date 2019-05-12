@@ -22,6 +22,8 @@ const NumberListComponent = props => {
                 currentMenuID={menu.state.currentMenuID}
                 changeNumberbyPad = {menu.changeNumberbyPad.bind(menu)}
                 numbersByPad = {menu.state.numbersByPad}
+                gifticonOpen = {menu.state.gifticonOpen}
+                addGifticonCode = {menu.addGifticonCode.bind(menu)}
               />
             ))}
           </div>

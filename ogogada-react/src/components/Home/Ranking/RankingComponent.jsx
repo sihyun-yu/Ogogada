@@ -84,7 +84,7 @@ class RankingComponent extends React.Component {
                     </Table>
                 </div>
                 <div style={{"width": "40%"}}>
-                    <Button id="backButton" onClick={() => this.props.history.push('/home')}>Back</Button>
+                    <Button id="backButton" onClick={() => this.props.history.goBack()}>Back</Button>
                 </div>
             </div>
         )
