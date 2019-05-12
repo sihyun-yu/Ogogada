@@ -29,7 +29,7 @@ class PaymentComponent extends React.Component {
     super(props);
     this.state = {
       pendingCardPayment: false,
-      dialogOpen: false
+      dialogOpen: false,
     };
   }
 
