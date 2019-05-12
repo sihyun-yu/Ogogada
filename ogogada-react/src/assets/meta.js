@@ -15,7 +15,7 @@ const meta = {
     ["Green Tea Latte ICE", 2800, 3, 1],
     ["Earl Grey HOT", 2000, 3, 1],
     ["Earl Grey ICE", 2300, 3, 1],
-    ["Chamomile HOT", 2000, 4, 1],
+    ["Chamomile HOT", 2000, 4, 1],
     ["Chamomile ICE", 2300, 4, 1],
     ["Peppermint HOT", 2000, 4, 1],
     ["Peppermint ICE", 2300, 4, 1],
