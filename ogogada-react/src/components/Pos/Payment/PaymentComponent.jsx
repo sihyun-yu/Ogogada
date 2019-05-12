@@ -136,18 +136,13 @@ class PaymentComponent extends React.Component {
                   // size="large"
                   style={paymentButtonStyle}
                   disabled={
-                    calculatedValue(
-                      menuStore.state.totalmenu,
-                      menuStore.state.selected,
-                      couponStore.state.coupons[couponStore.state.selected],
-                      parseInt(paymentMethodStore.state.selected, 10)
-                    ) === 0
+                    !isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 
+                      this.props.history.location.pathname.split('/')[3])
                   }
                   onClick={
                     paymentMethodStore.state.selected === "0"
-                      ? (isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 
-                        this.props.history.location.pathname.split('/')[3]) &&
-                        this.handleCardPayment)
+                      ? 
+                        this.handleCardPayment
                       : this.handleOpenDialog
                   }
                 >
