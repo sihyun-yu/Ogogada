@@ -1,0 +1,111 @@
+#rankingLevel {
+    width: 100vw;
+    height: 100vh;
+    background-image : url("../assets/ranking_background.png");
+    position: relative;
+    align-self: center;
+    font-size: 100px;
+
+
+}
+
+#rankingTemplate {
+    position: relative;
+    /*content : url("../assets/ranking_template.png");*/
+    width: auto;
+    height: auto;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    font-size: 0.3em;
+
+}
+
+.one {
+    position: absolute;
+    top: 20%;
+    left: 18.5%;
+    text-align: center;
+    height: auto;
+    width: auto;
+
+
+
+}
+.five {
+    position: absolute;
+    top:20%;
+    left:60%;
+    text-align: center;
+    height: auto;
+    width: auto;
+
+
+}
+.two {
+    position: absolute;
+    top: 38%;
+    left: 18.5%;
+    text-align: center;
+    height: auto;
+    width: auto;
+
+
+}
+.six {
+    position: absolute;
+    top: 38%;
+    left: 60%;
+    text-align: center;
+    height: auto;
+    width: auto;
+
+
+}
+.three {
+    position: absolute;
+    top: 57%;
+    left: 18.5%;
+    text-align: center;
+    height: auto;
+    width: auto;
+
+
+}
+.seven {
+    position: absolute;
+    top: 57.5%;
+    left: 60%;
+    text-align: center;
+    height: auto;
+    width: auto;
+
+
+}
+.four {
+    position: absolute;
+    top:76%;
+    left: 18.5%;
+    text-align: center;
+    height: auto;
+    width: auto;
+
+
+}
+.eight {
+    position: absolute;
+    top: 76%;
+    left: 60%;
+    text-align: center;
+    height: auto;
+    width: auto;
+
+
+}
+
+#backButton {
+    position: absolute;
+    right: 0.3em;
+    top: 0.3em;
+}

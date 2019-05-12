@@ -36,6 +36,7 @@ class MenuStore extends Container {
 
   addSelectedMenu = id => {
     console.log(id);
+    console.log(this.state.selected);
     const newSelected = Object.assign({}, this.state.selected);
 
     newSelected[id] =

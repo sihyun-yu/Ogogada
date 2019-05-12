@@ -2,24 +2,25 @@ import React from "react";
 import { Image, Button, Icon } from 'semantic-ui-react'
 
 var menuChangeStyle = {
-  background: '#E0E0E0',
-  padding: "1px",
-  height:"14.5vh"
+  width: "100%",
+  height: "100%",
+  "font-size": "13em",
+  "line-height": "14.5vh"
 };
 
 const MenuItemComponent = props => {
-  console.log(props.status);
   var icon_name = (props.status == "left") ? "triangle left" : "triangle right";
   return (
+    <div style={{"display": "flex", "width": "100%", "height": "100%"}}>
       <Icon
         name={icon_name}
         style={menuChangeStyle}
-        className="menu-change-item"
         onClick={() => {
           props.handleChangeMenuDisplay(props.status);
         }}
       >
       </Icon>
+    </div>
   );
 };
 
