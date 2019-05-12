@@ -59,6 +59,10 @@ const MenuListComponent = props => {
             open={menu.state.gifticonOpen}
             display={menu.state.display}
             handleGifticonDialog={menu.closeGifticon.bind(menu)}
+            cnt={menu.state.cnt}
+            closeGifticon={menu.closeGifticon.bind(menu)}
+            checkGifticonCode={menu.checkGifticonCode.bind(menu)}
+            tryAgain={menu.state.tryAgain}
             />
           </div>
         </div>

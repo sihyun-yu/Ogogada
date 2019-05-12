@@ -37,8 +37,8 @@ const meta = {
     {level: 3, menu: {0:1}, coupon: 2, method: "0"},
     {level: 4, menu: {}},
     {level: 5, menu: {}},
-  ]
-
+  ],
+  gifticon: "123456780101"
 };
 
 export default meta;

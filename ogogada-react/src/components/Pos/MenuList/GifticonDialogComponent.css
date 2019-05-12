@@ -17,6 +17,12 @@
 	top: 10%;
 }
 
+.gifticon-code {
+	position: relative;
+	text-align: center;
+	font-size: medium;
+	top: 35%;
+}
 .gifticon-display {
 	background-color: #e8e8e8;
 	color: #000000;
@@ -27,7 +33,8 @@
 	left: 10%;
 }
 
-.gifticon-submit {
+.gifticon-buttons {
 	position: relative;
 	top:70%;
 }
+

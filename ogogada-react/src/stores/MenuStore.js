@@ -4,17 +4,19 @@ import metaJSON from "../assets/meta.js";
 
 const menus_left = metaJSON.menus_left;
 const menus_right = metaJSON.menus_right;
-const totalmenu = menus_left.concat(menus_right);
+const totalmenu = menus_left.concat(menus_right).concat([["Americano ICE Gifticon", -1800, 1, 0]]);
+
 class MenuStore extends Container {
   state = {
+    tryAgain: false,
     menus: menus_left,
     selected: {},
-    gifticonOpen: false,
     recentMenuID: "",
     totalmenu: totalmenu,
     currentMenuID:-1,
     numbersByPad: "",
     // ===== Gifticon ====== // 
+    gifticonOpen: false,
     display: "",
     code: "",
     cnt: 0
@@ -91,6 +93,7 @@ class MenuStore extends Container {
 
   closeGifticon = () => {
     this.setState({
+      tryAgain: false,
       gifticonOpen: false,
       code: "",
       display: "",
@@ -115,6 +118,29 @@ class MenuStore extends Container {
     })
   }
 
+  checkGifticonCode = () => {
+    if (this.state.code === metaJSON.gifticon) {
+      const newSelected = Object.assign({}, this.state.selected);
+      newSelected[16] = 1;
+      this.setState({
+        tryAgain: false,
+        selected: newSelected,
+        gifticonOpen: false,
+        code: "",
+        display: "",
+        cnt: 0
+      })
+    }
+    else {
+      this.setState({
+        tryAgain: true,
+        gifticonOpen: true,
+        code: "",
+        display: "",
+        cnt: 0
+      })
+    }
+  }
 
 // =========== 패드 부분 =========== /
 
