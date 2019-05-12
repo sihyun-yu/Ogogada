@@ -87,6 +87,11 @@ const MenuListComponent = props => {
             closeGifticon={menu.closeGifticon.bind(menu)}
             checkGifticonCode={menu.checkGifticonCode.bind(menu)}
             tryAgain={menu.state.tryAgain}
+            level={props.level}
+            historyCheck={history.increaseIndex.bind(history)}
+            historyList={history.state.historyList[props.level]}
+            historyIndex={history.state.historyIndex}
+
             />
           </div>
           <div>
@@ -98,6 +103,11 @@ const MenuListComponent = props => {
             confirm = {menu.confirm.bind(menu)}
             isConfirmed = {menu.state.isConfirmed}
             refundIdx = {menu.state.refundIdx}
+            level={props.level}
+            historyCheck={history.increaseIndex.bind(history)}
+            historyList={history.state.historyList[props.level]}
+            historyIndex={history.state.historyIndex}
+
             />
           </div>
         </div>

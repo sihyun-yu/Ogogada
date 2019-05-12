@@ -16,6 +16,14 @@ var paymentButtonStyle = {
   // color: "black"
 }
 
+var borderPaymentButtonStyle = {
+  width: "100%",
+  height: "100%",
+  padding: "0px",
+  border: "5px solid red"
+  // color: "black"
+}
+
 class PaymentComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -134,7 +142,10 @@ class PaymentComponent extends React.Component {
                   variant="contained"
                   color="primary"
                   // size="large"
-                  style={paymentButtonStyle}
+                  style={(history.state.historyList[this.props.level][history.state.historyIndex][0] == 'payment') ? 
+                    borderPaymentButtonStyle:
+                    paymentButtonStyle
+                }
                   disabled={
                     !isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 
                       this.props.history.location.pathname.split('/')[3])

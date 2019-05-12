@@ -33,9 +33,9 @@ const meta = {
   ],
   answers: [
     {level: 1, menu: {0:1, 1:1}, coupon: null, method: "0"},
-    {level: 2, menu: {4:2, 7:1}, coupon: null, method: "0"},
-    {level: 3, menu: {0:1}, coupon: 2, method: "0"},
-    {level: 4, menu: {1:1, 16:1}, coupon: null, method: "0"},
+    {level: 2, menu: {5:2, 8:1}, coupon: null, method: "0"},
+    {level: 3, menu: {15:5}, coupon: 2, method: "0"},
+    {level: 4, menu: {3:1, 16:1}, coupon: null, method: "0"},
     {level: 5, menu: {17: 1}},
   ],
   gifticon: "123456780101",
@@ -43,15 +43,21 @@ const meta = {
   [['menu', 0], ['method', 0], ['payment', 0]],
   [['menu', 7], ['list', 7], ['number', 2], ['change', 1], ['menu', 10], ['method', 0], ['payment', 0]],
   [['change', 1], ['menu', 15], ['list', 15], ['number', 5], ['coupon', 2], ['method', '0'], ['payment', 0]],
-  [['menu', 1], ['gift', 0], ['number', 1], ['number', 2], ['number', 3], ['number', 4], ['number', 5], ['number', 6], ['number', 7], ['number', 8], ['number', 0], ['number', 1], ['number', 0], ['number', 1], ['giftsubmit', 0]],
-  [['refund', 0], ['refundlist', 0], ['refundsubmit', 0]]
+  [['menu', 1], ['gift', 0], ['number', 1], ['number', 2], ['number', 3], ['number', 4], ['number', 5], ['number', 6], ['number', 7], ['number', 8], ['number', 0], ['number', 1], ['number', 0], ['number', 1], ['giftsubmit', 0], ['payment', 0]],
+  [['refund', 0], ['refundlist', 0], ['refundsubmit', 0], ['refundconfirm', 0]]
   ],
   historyAnswers: [
   {level: 1, menu: {0:1}, coupon: null, method: "0"},
   {level: 2, menu: {7:2, 10:1}, coupon: null, method: "0"},
-  {level: 3, menu: {7:2, 15:5}, coupon: 2, method: "0"},
-  {level: 4, menu: {1:1, 16:1}},
-  {level: 5, menu: {}}
+  {level: 3, menu: {15:5}, coupon: 2, method: "0"},
+  {level: 4, menu: {1:1, 16:1}, coupon: 0, method: "-1"},
+  {level: 5, menu: {}}],
+  questions : [
+    "Take an order for one HOT americano and one ICE americano with card.",
+    "Take an order for two ICE caramel macchiato and one HOT green tea latte with card.",
+    "Take an order for five ICE peppermint by 10% discount with card.",
+    "A customer wants to use one ICE americano gifticon and order one ICE caffelatte. \n Calculate the difference with card.",
+    "A customer wants to cancel the order that he/she made just now. Refund the most recent order."
   ]
 };
 

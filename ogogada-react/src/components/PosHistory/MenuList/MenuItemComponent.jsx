@@ -33,7 +33,6 @@ const MenuItemComponent = props => {
           style={borderbuttonStyle}
           onClick={() => {
             props.handleAddSelectedMenu(props.id);
-            props.refreshValues(props.id);
             props.historyCheck(props.level, 'menu', props.id);
           }}
         >

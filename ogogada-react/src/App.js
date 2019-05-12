@@ -6,11 +6,7 @@ import MenuList from "./components/Pos/MenuList/MenuListComponent.jsx";
 import NumberList from "./components/Pos/NumberList/NumberListComponent.jsx";
 import History from "./components/Home/History/HistoryComponent.jsx";
 import Ranking from "./components/Home/Ranking/RankingComponent.jsx";
-import RankingEach1 from "./components/Home/Ranking/RankingLevels/RankingLevel1Component.jsx"
-import RankingEach2 from "./components/Home/Ranking/RankingLevels/RankingLevel2Component.jsx"
-import RankingEach3 from "./components/Home/Ranking/RankingLevels/RankingLevel3Component.jsx"
-import RankingEach4 from "./components/Home/Ranking/RankingLevels/RankingLevel4Component.jsx"
-import RankingEach5 from "./components/Home/Ranking/RankingLevels/RankingLevel5Component.jsx"
+import RankingEach from "./components/Home/Ranking/RankingLevels/RankingLevelComponent.jsx"
 import Pos from "./components/Pos/PosComponent.jsx"
 import PosHistory from "./components/PosHistory/PosComponent.jsx"
 import SummaryTable from "./components/Pos/SummaryTable/SummaryTableComponent.jsx";
@@ -76,48 +72,13 @@ function login (user_id, user_pw) {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-firebase.database().ref('/records/').set({
-  "1": [{"id":"seongha", "record": "10:00:00", "rank":1},{"id":"seongha", "record": "20:00:00", "rank":2},
-    {"id":"seongha", "record": "30:00:00", "rank":3},{"id":"seongha", "record": "40:00:00", "rank":4},
-    {"id":"seongha", "record": "50:00:00", "rank":5}, {"id":"seongha", "record": "60:00:00", "rank":6},
-    {"id":"seongha", "record": "70:00:00", "rank":7}, {"id":"seongha", "record": "80:00:00", "rank":8}],
-  "2": [{"id":"seongha", "record": "00:00:00", "rank":1},{"id":"seongha", "record": "00:00:00", "rank":2},
-  {"id":"seongha", "record": "00:00:00", "rank":3},{"id":"seongha", "record": "00:00:00", "rank":4},
-  {"id":"seongha", "record": "00:00:00", "rank":5}, {"id":"seongha", "record": "00:00:00", "rank":6},
-  {"id":"seongha", "record": "00:00:00", "rank":7}, {"id":"seongha", "record": "00:00:00", "rank":8}],
-  "3": [{"id":"seongha", "record": "00:00:00", "rank":1},{"id":"seongha", "record": "00:00:00", "rank":2},
-  {"id":"seongha", "record": "00:00:00", "rank":3},{"id":"seongha", "record": "00:00:00", "rank":4},
-  {"id":"seongha", "record": "00:00:00", "rank":5}, {"id":"seongha", "record": "00:00:00", "rank":6},
-  {"id":"seongha", "record": "00:00:00", "rank":7}, {"id":"seongha", "record": "00:00:00", "rank":8}],
-  "4": [{"id":"seongha", "record": "00:00:00", "rank":1},{"id":"seongha", "record": "00:00:00", "rank":2},
-  {"id":"seongha", "record": "00:00:00", "rank":3},{"id":"seongha", "record": "00:00:00", "rank":4},
-  {"id":"seongha", "record": "00:00:00", "rank":5}, {"id":"seongha", "record": "00:00:00", "rank":6},
-  {"id":"seongha", "record": "00:00:00", "rank":7}, {"id":"seongha", "record": "00:00:00", "rank":8}],
-  "5": [{"id":"seongha", "record": "00:00:00", "rank":1},{"id":"seongha", "record": "00:00:00", "rank":2},
-  {"id":"seongha", "record": "00:00:00", "rank":3},{"id":"seongha", "record": "00:00:00", "rank":4},
-  {"id":"seongha", "record": "00:00:00", "rank":5}, {"id":"seongha", "record": "00:00:00", "rank":6},
-  {"id":"seongha", "record": "00:00:00", "rank":7}, {"id":"seongha", "record": "00:00:00", "rank":8}],
-
-});
-var id = "sihyun";
-var pw = "1234";
-var level = 1;
-writeToDatabase(id, pw, level);
-writeToDatabase("seongha", "4321", 1);
-writeToDatabase("sangmin", "1111", 1);
-writeToDatabase("yoonseo", "2222", 1);
-checkNewRecord(1, "sihyun", "00:00:01");
-checkNewRecord(1, "yoonseo", "00:00:03");
-checkNewRecord(1, "sihyun2", "00:00:03");
-
-
 class App extends React.Component {
   render() {
     return (
       <Provider inject={[...stores]}>
         <div className="app">
           <Switch>
-            <Route exact path="/" component={SignIn} />
+            <Route exact path="/" component={SignIn} /> 
             <Route exact path="/home" component={Home} />
             <Route exact path="/signin" component={SignIn} />
             <Route exact path="/history" component={History} />
@@ -125,11 +86,7 @@ class App extends React.Component {
             <Route exact path="/pos/:id/:level" component={Pos}/>
             <Route exact path="/timer" component={Timer} />
             <Route exact path="/ranking" component={Ranking} />
-            <Route exact path="/ranking/1" component={RankingEach1} />
-            <Route exact path="/ranking/2" component={RankingEach2} />
-            <Route exact path="/ranking/3" component={RankingEach3} />
-            <Route exact path="/ranking/4" component={RankingEach4} />
-            <Route exact path="/ranking/5" component={RankingEach5} />
+            <Route exact path="/ranking/:id" component={RankingEach} />
           </Switch>
 
         </div>

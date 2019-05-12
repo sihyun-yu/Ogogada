@@ -5,6 +5,25 @@ import Button from "@material-ui/core/Button";
 import { List } from 'semantic-ui-react'
 import "../../../stylesheets/GifticonDialogComponent.css"
 
+var noStyle = {
+    border:""
+};
+
+var borderStyle = {
+  border: "5px solid red"
+};
+
+var borderButtonStyle = {
+    marginLeft: "50px", 
+    marginRight: "10px",
+    border: "5px solid red",
+};
+
+var noButtonStyle = {
+    marginLeft: "50px", 
+    marginRight: "10px",
+}
+
 const RefundDialogComponent = props => {
     console.log("refunddialogcomponent ", props);
 	if (props.open == true && props.isConfirmed == false) {
@@ -13,9 +32,20 @@ const RefundDialogComponent = props => {
             <div class="gifticon-title">
                 Orders List
             </div>
-            <div class="refund-code">
+            <div class="refund-code" >
                 <List divided inverted relaxed>
-                    <List.Item onClick={props.selectRefund}>
+                    <List.Item onClick={() => {
+                        if (props.historyList[props.historyIndex][0] == "refundlist") {
+                            props.selectRefund()
+                            props.historyCheck(props.level, "refundlist", 0);
+                        }
+                    }
+                }
+                style={
+                (props.historyList[props.historyIndex][0] == "refundlist") ?
+                borderStyle : noStyle
+                }
+                    >
                         <List.Content>
                             <List.Header>Americano HOT 1, Americano COLD 1, ... </List.Header>
                                 2970₩
@@ -51,11 +81,19 @@ const RefundDialogComponent = props => {
                 <Button
                 className="gifticon-dialog__button"
                 disabled={props.refundIdx == -1}
-                style={{ marginLeft: "50px", marginRight: "10px" }}
+                style={ (props.historyList[props.historyIndex][0] == "refundsubmit") ?
+                borderButtonStyle : noButtonStyle
+                }
                 variant="contained"
                 color="primary"
                 size="massive"
-                onClick={props.confirm }>
+                onClick={() => {
+                    if (props.historyList[props.historyIndex][0] == "refundsubmit") {
+                        props.confirm() 
+                        props.historyCheck(props.level, "refundsubmit", 0);
+                    }
+                }
+            }>
                     Refund
                 </Button>
                 <Button
@@ -64,7 +102,7 @@ const RefundDialogComponent = props => {
                 variant="contained"
                 color="secondary"
                 size="massive"
-                onClick={props.closeRefund}>
+                >
                     Cancel
                 </Button>
             </div>
@@ -85,11 +123,14 @@ const RefundDialogComponent = props => {
             <div class="refund-ok-buttons">
             <Button
             className="gifticon-dialog__button"
-            style={{ marginLeft: "10px", marginRight: "50px" }}
+            style={(props.historyList[props.historyIndex][0] == "refundconfirm") ?
+                borderStyle : noStyle
+            }
             variant="contained"
             color="secondary"
             size="massive"
-            onClick={props.closeRefund}>
+            onClick={props.closeRefund}
+          >
                 OK!
             </Button>
             </div>

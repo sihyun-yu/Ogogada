@@ -3,12 +3,20 @@ import { Subscribe } from "unstated";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import SummrayTotal from "./SummaryTotalComponent.jsx";
-import { CouponStore } from "../../../stores";
+import { CouponStore, HistoryStore } from "../../../stores";
+
+var borderStyle = {
+  border: "5px solid red"
+};
+
+var noStyle = {
+  border: ""
+};
 
 const SummaryCouponComponent = props => {
   return (
-    <Subscribe to={[CouponStore]}>
-      {couponStore => (
+    <Subscribe to={[CouponStore, HistoryStore]}>
+      {(couponStore, history) => (
         <div className="summary-coupon">
           <div className="summary-coupon__select-row">
             <div className="summary-coupon__label">
@@ -16,9 +24,17 @@ const SummaryCouponComponent = props => {
             </div>
             <div className="summary-coupon__selector">
               <Select
+                style={(history.state.historyList[props.level][history.state.historyIndex][0] == 'coupon') ? 
+                    borderStyle:
+                    noStyle}
                 value={couponStore.state.selected}
                 onChange={e => {
                   couponStore.selectCoupon(e.target.value);
+                  console.log(e.target.value);
+                  if (e.target.value == history.state.historyList[props.level][history.state.historyIndex][1]) {
+                     history.increaseIndex(props.level, 'coupon', e.target.value);
+
+                  }
                 }}
                 displayEmpty
               >

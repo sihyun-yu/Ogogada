@@ -19,12 +19,34 @@ class MenuStore extends Container {
     gifticonOpen: false,
     display: "",
     code: "",
-    cnt: 0, 
+    cnt: 0,
+    // ===== Timer ===== //
+    timerFlag: true,
+  
     // ===== Refund ======//
     refundOpen: false,
     refundIdx: -1,
     isConfirmed: false,
+    // ===== Popup for questions ======//
+    questionConfirmed: false,
   };
+
+  flagFlip = () => {
+    this.setState({
+      timerFlag: false
+    });
+  }
+
+
+  clearSummaryTable = () => {
+    console.log ("clearSummaryTable")
+    this.setState({
+      
+      selected: {}
+      
+    });
+    console.log ("clearSummaryTable")
+  }
 
   changeMenuDisplay = status => {
     if (status == "left") {
@@ -83,6 +105,19 @@ class MenuStore extends Container {
       selected: {}
     });
   };
+// ========== Question Popup ========/
+  openQuestion = () => {
+    console.log("openQUestion");
+    this.setState({
+      questionConfirmed: false,
+    })
+  }
+  closeQuestion = () => {
+    console.log("closeQuestion");
+    this.setState({
+      questionConfirmed: true,
+    })
+  }
 // ===========Refund ============== /
   openRefund = () => {
     this.setState({
@@ -92,6 +127,7 @@ class MenuStore extends Container {
   };
   
   closeRefund = () => {
+    
     this.setState({
       refundOpen: false,
     })

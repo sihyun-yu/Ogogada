@@ -22,8 +22,8 @@ const GifticonComponent = props => {
           style={borderGifticonStyle}
           className="gifticon-item"
           onClick={() => {
-            props.handleGifticonDialog();
             props.historyCheck(props.level, 'gift', props.id);
+            props.handleGifticonDialog();
           }}
         >
         GIFTICON

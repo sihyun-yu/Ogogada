@@ -68,7 +68,11 @@ const GifticonDialogComponent = props => {
 	          		variant="contained"
 	          		color="primary"
 	          		size="massive"
-	          		onClick={props.checkGifticonCode}>
+	          		onClick={() => {
+	          			props.checkGifticonCode();
+	          			props.historyCheck(props.level, 'giftsubmit', 0);
+	          		}
+	          		}>
 	          		Submit
 	        		</Button>
 	        	    <Button
