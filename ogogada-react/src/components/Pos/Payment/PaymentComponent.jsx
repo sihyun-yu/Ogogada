@@ -17,10 +17,14 @@ var paymentButtonStyle = {
 }
 
 class PaymentComponent extends React.Component {
-  state = {
-    pendingCardPayment: false,
-    dialogOpen: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      pendingCardPayment: false,
+      dialogOpen: false
+    };
+  }
+
 
   handleOpenDialog = () => {
     this.setState({
@@ -98,8 +102,10 @@ class PaymentComponent extends React.Component {
       for (var i in metaJSON.answers){
         var each = metaJSON.answers[i];
         if (each.level == cur_level ){
-          console.log("answer: ", typeof(user_pay));
-          if (_.isEqual(user_menu, each.menu) && _.isEqual(user_coupon, each.coupon) && _.isEqual(user_pay, each.method)){
+          console.log("answer: ", each.coupon == null);
+          if (_.isEqual(user_menu, each.menu) 
+          && (_.isEqual(user_coupon, each.coupon) || each.coupon == null)
+          && _.isEqual(user_pay, each.method)){
             console.log("truye");
             return true
           }
@@ -107,7 +113,7 @@ class PaymentComponent extends React.Component {
       }
       return false
     }
-
+    console.log("PaymentComponent", this.props.history.location.pathname.split('/')[3]);
     return (
       <Subscribe to={[MenuStore, CouponStore, PaymentMethodStore]}>
         {(menuStore, couponStore, paymentMethodStore) => (
@@ -139,7 +145,9 @@ class PaymentComponent extends React.Component {
                   }
                   onClick={
                     paymentMethodStore.state.selected === "0"
-                      ? this.handleCardPayment
+                      ? (isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 
+                        this.props.history.location.pathname.split('/')[3]) &&
+                        this.handleCardPayment)
                       : this.handleOpenDialog
                   }
                 >
@@ -147,7 +155,8 @@ class PaymentComponent extends React.Component {
                 </Button>
               </div>
             </div>
-            {isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 3) &&
+            {isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 
+                    this.props.history.location.pathname.split('/')[3]) &&
               <PaymentDialog
                 open={this.state.dialogOpen}
                 selectedMenus={selectedMenus(

@@ -14,7 +14,7 @@ import SummaryPaymentMethod from "./SummaryTable/SummaryPaymentMethodComponent.j
 
 
 const PosComponent = props => {
-  console.log(props);
+  console.log("PosComponent:", props);
     return (
         <div className="pos">
           <div className="left-content">
@@ -28,7 +28,7 @@ const PosComponent = props => {
               <div className="left-below-right__container">
                 <SummaryCoupon />
                 <SummaryPaymentMethod />
-                <Payment />  
+                <Payment {...props}/>  
               </div>
                
             </div>
