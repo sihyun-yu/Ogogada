@@ -136,12 +136,12 @@ class PaymentComponent extends React.Component {
                   // size="large"
                   style={paymentButtonStyle}
                   disabled={
-                    calculatedValue(
+                    (calculatedValue(
                       menuStore.state.totalmenu,
                       menuStore.state.selected,
                       couponStore.state.coupons[couponStore.state.selected],
                       parseInt(paymentMethodStore.state.selected, 10)
-                    ) === 0
+                    ) === 0)
                   }
                   onClick={
                     paymentMethodStore.state.selected === "0"
