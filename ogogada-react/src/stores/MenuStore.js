@@ -29,12 +29,21 @@ class MenuStore extends Container {
     isConfirmed: false,
     // ===== Popup for questions ======//
     questionConfirmed: false,
+    // ====== level up flag ====//
+    levelUp: false,
   };
 
   flagFlip = () => {
     this.setState({
       timerFlag: false
     });
+  }
+
+  // ==== unlock functions ===//
+  unlock = level => {
+    this.setState({
+      levelUp: true,
+    })
   }
 
 

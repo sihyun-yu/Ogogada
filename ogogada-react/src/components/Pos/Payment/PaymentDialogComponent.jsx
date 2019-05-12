@@ -6,56 +6,111 @@ import { Button } from 'semantic-ui-react'
 const PaymentDialogComponent = props => {
   console.log(props.flagFlip);
   console.log(props.flag);
-  return (
-    <Dialog open={props.open} onClose={props.handleClose}>
-      <DialogTitle>Payment Check</DialogTitle>
-      <div className="payment-dialog__details">
-        {/* {props.selectedMenus.map((menu, index) => (
-          <div className="payment-dialog__detail-container" key={index}>
-            <div className="payment-dialog__detail">{menu[0]}</div>
-            <div className="payment-dialog__detail">{menu[2]}</div>
-            <div className="payment-dialog__detail">{menu[1] * menu[2] + " ₩"}</div>
-          </div>
-        ))} */}
-      </div>
-      <div className="payment-dialog__total">
-        Total {props.price}₩ {props.pendingCardPayment ? "in CARD" : "in CASH"}
-      </div>
-      {/* {props.pendingCardPayment && (
-        <div className="payment-dialog__pending">
-          <div className="lds-ring">
-            <div />
-            <div />
-            <div />
-            <div />
-          </div>
+  if (props.levelUp == false){
+    return (
+      <Dialog open={props.open} onClose={props.handleClose}>
+        <DialogTitle>Payment Check</DialogTitle>
+        <div className="payment-dialog__details">
+          {/* {props.selectedMenus.map((menu, index) => (
+            <div className="payment-dialog__detail-container" key={index}>
+              <div className="payment-dialog__detail">{menu[0]}</div>
+              <div className="payment-dialog__detail">{menu[2]}</div>
+              <div className="payment-dialog__detail">{menu[1] * menu[2] + " ₩"}</div>
+            </div>
+          ))} */}
         </div>
-      )} */}
-      <div className="payment-dialog__buttons">
-        <Button
-          className="payment-dialog__button"
-          style={{ marginLeft: "50px", marginRight: "10px" }}
-          variant="contained"
-          color="primary"
-          size="massive"
-          // disabled={props.pendingCardPayment}
-          onClick={() => {props.handleCompletePayment(); props.flagFlip();}}
-        >
-          Submit
-        </Button>
-        <Button
-          className="payment-dialog__button"
-          style={{ marginLeft: "10px", marginRight: "50px" }}
-          variant="contained"
-          color="secondary"
-          size="massive"
-          onClick={props.handleCancelPayment}
-        >
-          Cancel
-        </Button>
-      </div>
-    </Dialog>
-  );
+        <div className="payment-dialog__total">
+          Total {props.price}₩ {props.pendingCardPayment ? "in CARD" : "in CASH"}
+        </div>
+        {/* {props.pendingCardPayment && (
+          <div className="payment-dialog__pending">
+            <div className="lds-ring">
+              <div />
+              <div />
+              <div />
+              <div />
+            </div>
+          </div>
+        )} */}
+        <div className="payment-dialog__buttons">
+          <Button
+            className="payment-dialog__button"
+            style={{ marginLeft: "50px", marginRight: "10px" }}
+            variant="contained"
+            color="primary"
+            size="massive"
+            // disabled={props.pendingCardPayment}
+            onClick={() => {props.handleCompletePayment(); props.flagFlip(); props.unlock()}}
+          >
+            Submit
+          </Button>
+          <Button
+            className="payment-dialog__button"
+            style={{ marginLeft: "10px", marginRight: "50px" }}
+            variant="contained"
+            color="secondary"
+            size="massive"
+            onClick={props.handleCancelPayment}
+          >
+            Cancel
+          </Button>
+        </div>
+      </Dialog>
+    );
+  }
+  else {
+    return (
+      <Dialog open={props.open} onClose={props.handleClose}>
+        <DialogTitle>Level Up!</DialogTitle>
+        <div className="payment-dialog__details">
+          {/* {props.selectedMenus.map((menu, index) => (
+            <div className="payment-dialog__detail-container" key={index}>
+              <div className="payment-dialog__detail">{menu[0]}</div>
+              <div className="payment-dialog__detail">{menu[2]}</div>
+              <div className="payment-dialog__detail">{menu[1] * menu[2] + " ₩"}</div>
+            </div>
+          ))} */}
+        </div>
+        <div className="payment-dialog__total">
+          Total {props.price}₩ {props.pendingCardPayment ? "in CARD" : "in CASH"}
+        </div>
+        {/* {props.pendingCardPayment && (
+          <div className="payment-dialog__pending">
+            <div className="lds-ring">
+              <div />
+              <div />
+              <div />
+              <div />
+            </div>
+          </div>
+        )} */}
+        <div className="payment-dialog__buttons">
+          <Button
+            className="payment-dialog__button"
+            style={{ marginLeft: "50px", marginRight: "10px" }}
+            variant="contained"
+            color="primary"
+            size="massive"
+            // disabled={props.pendingCardPayment}
+            onClick={() => {props.handleCompletePayment(); props.flagFlip(); props.unlock()}}
+          >
+            Submit
+          </Button>
+          <Button
+            className="payment-dialog__button"
+            style={{ marginLeft: "10px", marginRight: "50px" }}
+            variant="contained"
+            color="secondary"
+            size="massive"
+            onClick={props.handleCancelPayment}
+          >
+            Cancel
+          </Button>
+        </div>
+      </Dialog>
+    )
+  }
+
 };
 
 export default PaymentDialogComponent;
