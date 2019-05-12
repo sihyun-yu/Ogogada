@@ -31,6 +31,13 @@ const meta = {
   "1", "2", "3",
   "00", "0", "C"
   ],
+  answers: [
+    {level: 1, answer: {0:1, 1:1}},
+    {level: 2, answer: {}},
+    {level: 3, answer: {}},
+    {level: 4, answer: {}},
+    {level: 5, answer: {}},
+  ]
 
 };
 
