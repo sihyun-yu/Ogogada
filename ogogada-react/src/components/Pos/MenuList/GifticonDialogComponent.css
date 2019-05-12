@@ -7,7 +7,8 @@
 	bottom: 45%;
 	z-index: 20;
 	text-align: center;
-
+	opacity: 0.95;
+	border-radius: 10px;
 }
 
 .gifticon-title {
@@ -23,18 +24,25 @@
 	font-size: medium;
 	top: 35%;
 }
+
+.gifticon-warning {
+	position: relative;
+	text-align: center;
+	font-size: medium;
+	top: 40%;
+}
 .gifticon-display {
 	background-color: #e8e8e8;
 	color: #000000;
 	position: relative;
 	width: 80%;
 	height: 9%;
-	top:60%;
+	top:55%;
 	left: 10%;
 }
 
 .gifticon-buttons {
 	position: relative;
-	top:70%;
+	top:60%;
 }
 

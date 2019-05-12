@@ -21,9 +21,10 @@ class HomeComponent extends React.Component {
     }
     
     routeChange(area) {
-        console.log("routeChage", area.name);
+        console.log("routeChage", this.props.history);
         if (area.name == "history")
         {
+
             this.props.history.push({
                 pathname : '../history',
                 state: {

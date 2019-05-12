@@ -112,6 +112,7 @@ class MenuStore extends Container {
     console.log(newCode);
     cnt = cnt + 1;
     this.setState({
+      tryAgain: false,
       code: newCode,
       display: newDisplay,
       cnt: cnt

@@ -5,13 +5,13 @@ import { Icon, Table, Button } from 'semantic-ui-react'
 class HistoryComponent extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-
-        };
+        this.state = this.props.location.state;
+        //{id: "seongha", pw: "4321", level: 1}
         
     }
     
     render () {
+        console.log("HistoryComponent: ", this.props.location.state);
         return (
             <div id="totalContainer">
                 <div style={{"width": "40%"}}></div>
@@ -160,7 +160,7 @@ class HistoryComponent extends React.Component {
                     </Table>
                 </div>
                 <div style={{"width": "40%"}}>
-                    <Button id="backButton" onClick={() => this.props.history.push('/home')}>Back</Button>
+                    <Button id="backButton" onClick={() => this.props.history.goBack()}>Back</Button>
                 </div>
             </div>
         )
