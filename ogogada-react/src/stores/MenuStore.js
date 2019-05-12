@@ -28,6 +28,16 @@ class MenuStore extends Container {
     questionConfirmed: false,
   };
 
+  clearSummaryTable = () => {
+    console.log ("clearSummaryTable")
+    this.setState({
+      
+      selected: {}
+      
+    });
+    console.log ("clearSummaryTable")
+  }
+
   changeMenuDisplay = status => {
     if (status == "left") {
       this.setState({

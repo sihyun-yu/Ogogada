@@ -102,16 +102,12 @@ class HomeComponent extends React.Component {
 
         return (
             <Subscribe to = {[HomeStore]}>
-                {user => (
-                    <div
-                        className = "stage"
-                    > 
+                {(user) => (                   
+                    <div className = "stage"> 
                         <ImageMapper src={URL} map={MAP} width={this.props.windowWidth} height={this.props.windowHeight}
-                            onClick={area => this.routeChange(area)}
-                        
-                        />
-
+                            onClick={area => this.routeChange(area)}/>
                     </div>
+                    
                     )
                     
                 }

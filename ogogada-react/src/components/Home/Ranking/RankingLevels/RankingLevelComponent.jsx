@@ -30,9 +30,7 @@ function getRankingsFromDB (level) {
     //     if ($('#capital_country_table tr').length == 3) {
     //       $("#pr3__clear").prop("disabled", true)
     //     }
-        });
-
-        
+        });        
     })
 }
 
