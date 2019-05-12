@@ -18,7 +18,11 @@ const DescriptionComponent = props => {
           <Icon name='stopwatch'></Icon>
         </div>
         <div className="timer__timer">
-          <Timer flag={props.flag}></Timer>
+          <Timer
+            flag={props.flag}
+            level={props.level}
+            username={props.username}  
+          ></Timer>
         </div>
       </div>
       <div className="replay">
