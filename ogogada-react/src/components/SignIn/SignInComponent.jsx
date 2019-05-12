@@ -58,7 +58,7 @@ class SignInComponent extends React.Component {
                             </Form.Field>
                             <Form.Field>
                             <label>PW</label>
-                            <input placeholder='Enter your Password' onChange = {(user_pw) => this.setState({pw: user_pw.target.value})}/>
+                            <input type="password" placeholder='Enter your Password' onChange = {(user_pw) => this.setState({pw: user_pw.target.value})}/>
                             </Form.Field>
                             <Button onClick={()=>{this.routeChange()
                                 }}>LOGIN</Button>
