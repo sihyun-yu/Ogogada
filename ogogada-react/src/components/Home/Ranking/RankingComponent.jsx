@@ -18,7 +18,6 @@ class RankingComponent extends React.Component {
             id:"",
             pw:"",
             level:"",
-
         };
         //this.routeChange = this.routeChange.bind(this);
         
