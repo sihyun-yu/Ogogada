@@ -6,7 +6,7 @@ import { List } from 'semantic-ui-react'
 import "../../../stylesheets/GifticonDialogComponent.css"
 
 const RefundDialogComponent = props => {
-    console.log("refunddialogcomponent ", props);
+    //console.log("refunddialogcomponent ", props);
 	if (props.open == true && props.isConfirmed == false) {
         return (
         <div class="gifticon-container">
