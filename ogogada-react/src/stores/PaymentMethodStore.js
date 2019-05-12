@@ -8,6 +8,7 @@ class PaymentMethodStore extends Container {
   };
 
   selectPaymentMethod = id => {
+    console.log("selectPaymentMethod:", id)
     this.setState({
       selected: id
     });
