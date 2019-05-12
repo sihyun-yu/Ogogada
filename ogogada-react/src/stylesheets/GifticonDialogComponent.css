@@ -24,6 +24,12 @@
 	font-size: large;
 	top: 35%;
 }
+.refund-code {
+	position: relative;
+	text-align: center;
+	font-size: small;
+	top: 20%;
+}
 
 .gifticon-warning {
 	position: relative;
@@ -46,5 +52,16 @@
 .gifticon-buttons {
 	position: relative;
 	top:60%;
+}
+
+
+.refund-buttons {
+	position: relative;
+	top: 25%;
+}
+
+.refund-ok-buttons {
+	position: relative;
+	top: 50%;
 }
 
