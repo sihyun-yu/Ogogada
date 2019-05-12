@@ -12,9 +12,12 @@ import SummaryCoupon from "./SummaryTable/SummaryCouponComponent.jsx";
 import SummaryPaymentMethod from "./SummaryTable/SummaryPaymentMethodComponent.jsx";
 
 
+class PosComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-const PosComponent = props => {
-  console.log("PosComponent:", props);
+  render () {
     return (
       <div>
         <Subscribe to ={[MenuStore]}>
@@ -22,8 +25,8 @@ const PosComponent = props => {
             <div className="pos">
               <div className="left-content">
                 <MenuList 
-                level={props.match.params.level}
-                username={props.match.params.id}/>
+                level={this.props.match.params.level}
+                username={this.props.match.params.id}/>
                 <div className="left-below__container">
                   <div className="left-below-left__contatiner">
                     <NumberList/>
@@ -31,15 +34,15 @@ const PosComponent = props => {
                   <div className="left-below-right__container">
                     <SummaryCoupon />
                     <SummaryPaymentMethod />
-                    <Payment {...props} flagFlip={menu.flagFlip.bind(menu)} flag={menu.state.timerFlag}/>  
+                    <Payment {...this.props} flagFlip={menu.flagFlip.bind(menu)} flag={menu.state.timerFlag}/>  
                   </div>
                   
                 </div>
               </div>
               <div className="right-content">
                 <Description
-                level={props.match.params.level}
-                username={props.match.params.id}
+                level={this.props.match.params.level}
+                username={this.props.match.params.id}
                 flag={menu.state.timerFlag}/>
                 <SummaryTable />
               </div>
@@ -48,6 +51,37 @@ const PosComponent = props => {
         </Subscribe>
       </div>
     );
-};
+  }
+}
+// const PosComponent = props => {
+//   // MenuStore.clearSummaryTable()
+//   console.log("PosComponent:", props);
+//     return (
+//         <div className="pos">
+//           <div className="left-content">
+//             <MenuList 
+//             level={props.match.params.level}
+//             username={props.match.params.id}/>
+//             <div className="left-below__container">
+//               <div className="left-below-left__contatiner">
+//                 <NumberList/>
+//               </div>
+//               <div className="left-below-right__container">
+//                 <SummaryCoupon />
+//                 <SummaryPaymentMethod />
+//                 <Payment {...props}/>  
+//               </div>
+               
+//             </div>
+//           </div>
+//           <div className="right-content">
+//             <Description
+//             level={props.match.params.level}
+//             username={props.match.params.id}/>
+//             <SummaryTable />
+//           </div>
+//         </div>
+//     );
+// };
 
 export default PosComponent;
