@@ -19,7 +19,11 @@ class MenuStore extends Container {
     gifticonOpen: false,
     display: "",
     code: "",
-    cnt: 0
+    cnt: 0, 
+    // ===== Refund ======//
+    refundOpen: false,
+    refundIdx: -1,
+    isConfirmed: false,
   };
 
   changeMenuDisplay = status => {
@@ -79,8 +83,34 @@ class MenuStore extends Container {
       selected: {}
     });
   };
+// ===========Refund ============== /
+  openRefund = () => {
+    this.setState({
+      refundOpen: true,
+    });
+    console.log("refund open");
+  };
+  
+  closeRefund = () => {
+    this.setState({
+      refundOpen: false,
+    })
+  };
 
+  selectRefund = () => {
+    const newSelected = Object.assign({}, this.state.selected);
+    newSelected[17] = 1;
+    console.log("selectRefund: ", newSelected);
+    this.setState({
+      refundIdx: 1,
+    })
+  };
 
+  confirm = () => {
+    this.setState({
+      isConfirmed: true,
+    })
+  }
 // ===========Giftion ============== /
   openGifticon = () => {
     this.setState({

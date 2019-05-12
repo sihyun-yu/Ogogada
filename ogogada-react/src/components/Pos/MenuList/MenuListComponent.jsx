@@ -4,11 +4,13 @@ import MenuItem from "./MenuItemComponent.jsx";
 import MenuChangeItem from "./MenuChangeComponent.jsx"
 import RefundItem from "./RefundComponent.jsx"
 import GifticonItem from "./GifticonComponent.jsx"
+
 import { MenuStore } from "../../../stores";
 import { NumberStore } from "../../../stores";
 
 import { Store } from "../../../stores";
 import GifticonDialog from "./GifticonDialogComponent.jsx"
+import RefundDialog from "./RefundDialogComponent.jsx"
 
 import "../../../stylesheets/MenuList.css";
 
@@ -38,6 +40,7 @@ const MenuListComponent = props => {
             ))}
             <RefundItem
             level={props.level}
+            handleRefundDialog = {menu.openRefund.bind(menu)}
             />
             <GifticonItem
             level={props.level}
@@ -63,6 +66,17 @@ const MenuListComponent = props => {
             closeGifticon={menu.closeGifticon.bind(menu)}
             checkGifticonCode={menu.checkGifticonCode.bind(menu)}
             tryAgain={menu.state.tryAgain}
+            />
+          </div>
+          <div>
+            <RefundDialog
+            open={menu.state.refundOpen}
+            handleRefundDialog={menu.closeRefund.bind(menu)}
+            closeRefund={menu.closeRefund.bind(menu)}
+            selectRefund={menu.selectRefund.bind(menu)}
+            confirm = {menu.confirm.bind(menu)}
+            isConfirmed = {menu.state.isConfirmed}
+            refundIdx = {menu.state.refundIdx}
             />
           </div>
         </div>
