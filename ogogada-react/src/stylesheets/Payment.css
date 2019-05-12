@@ -1,25 +1,32 @@
 .payment__container {
-  width: 100%;
+  flex: 0.333;
+  height: 33%;
+  margin: 5px;
 }
 
 .payment {
-  position: relative;
+  background: #C8C8C8;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  border-radius: .28571429rem;
 }
 
 .payment__text,
 .payment__button-container {
   display: inline-block;
-  padding: 16px 0;
+  /* padding: 16px 0; */
   font-size: 20px;
 }
 
 .payment__text {
-  width: 80%;
-  text-align: right;
+  width: 60%;
+  text-align: center;
 }
 
 .payment__button-container {
-  width: 20%;
+  width: 100%;
 }
 
 .payment-dialog__details {

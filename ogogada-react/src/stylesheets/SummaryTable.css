@@ -1,12 +1,156 @@
+.summary-coupon {
+  flex: 0.333;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.summary-coupon__select-row {
+  background: #C3DAF4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: .28571429rem;
+}
+
+.summary-payment-method {
+  flex: 0.333;
+  height: 33%;
+}
+
+.summary-coupon__label {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-coupon__selector {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-coupon__name {
+
+}
+
+.summary-payment-method__radio-group-row {
+  width: 100%;
+  height: 100%;
+}
+
+.summary-payment-method__radio-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.payment-select-item {
+  width: 100%;
+  height: 100%;
+}
+
+.summary-payment-method__cash {
+  width: 100%;
+  height: 100%
+}
+
+.summary-payment-method__card {
+  width: 100%;
+  height: 100%
+}
+
 .summary-table__container {
+  margin: 10px 20px 15px 0;
+  position: relative;
+  width: calc (100%-20px);
+  flex:0.9;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.28571429rem;
+  overflow: hidden;
+}
+
+.summary-table {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-total {
+  background: #F0F0F0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+}
+
+.summary-total__label {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: solid black 1px;
+}
+
+.summary-total__percent {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: solid black 1px;
+}
+
+.summary-total__total {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: solid black 1px;
+}
+
+.summary-total__actual {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* .summary-table__container {
   position: relative;
   width: 100%;
+  height: 100vh;
+  flex:0.8;
   float: right;
+  display: flex;
+  flex-direction: column;
 }
 
 .summary-table {
   position: rela;
   border-left: solid black 1px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .summary-total {
@@ -50,7 +194,11 @@
 }
 
 .summary-payment-method__radio-group-row {
-  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 120px; 
   position: relative;
 }
 
@@ -60,5 +208,5 @@
 }
 
 .summary-payment-method__radio-group {
-  margin-left: 70%;
-}
+  
+} */

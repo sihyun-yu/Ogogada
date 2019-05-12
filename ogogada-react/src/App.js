@@ -1,16 +1,58 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom';
 import Home from "./components/Home/HomeComponent.jsx"
+import SignIn from "./components/SignIn/SignInComponent.jsx"
 import MenuList from "./components/Pos/MenuList/MenuListComponent.jsx";
 import NumberList from "./components/Pos/NumberList/NumberListComponent.jsx";
+import History from "./components/Home/History/HistoryComponent.jsx";
+import Ranking from "./components/Home/Ranking/RankingComponent.jsx";
+import RankingEach from "./components/Home/Ranking/RankingLevels/RankingLevelComponent.jsx"
 import Pos from "./components/Pos/PosComponent.jsx"
+import PosHistory from "./components/PosHistory/PosComponent.jsx"
 import SummaryTable from "./components/Pos/SummaryTable/SummaryTableComponent.jsx";
 import Payment from "./components/Pos/Payment/PaymentComponent.jsx";
 import { Provider } from "unstated";
 import * as stores from "./stores";
+import Timer from "./components/Pos/Description/Timer.jsx"
+import firebase from "firebase";
+import firebaseConfig from "./assets/secret.js";
 
 import "./stylesheets/App.css";
 import 'semantic-ui-css/semantic.min.css';
+import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from "constants";
+
+function writeToDatabase(input_id, input_pw, input_level) {
+  //console.log("writeToDatabase",stack);
+
+    firebase.database().ref('/accounts/'+input_id).set({
+      "id": input_id,
+      "pw": input_pw,
+      "level": input_level,
+    });
+}
+
+function login (user_id, user_pw) {
+  return new Promise(function(resolve, reject){
+    firebase.database().ref('/accounts/').once('value', function(snapshot){
+      var accounts = snapshot.val()
+      for (var idx in accounts){
+        if (user_id == idx && user_pw == accounts[idx]["pw"]){
+          console.log("login!");
+          return  resolve(true);
+        }
+        else if (user_id == idx && user_pw != accounts[idx]["pw"]){
+          console.log("have accounts but wrong pw!");
+          return resolve(false);
+        }
+      }
+      
+      return resolve(false);
+    })
+  })
+}
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 class App extends React.Component {
   render() {
@@ -18,13 +60,17 @@ class App extends React.Component {
       <Provider inject={[...stores]}>
         <div className="app">
           <Switch>
+            <Route exact path="/" component={SignIn} /> 
             <Route exact path="/home" component={Home} />
-            <Route exact path="/signup" component={Home} />
-            <Route exact path="/history" component={Home} />
-            <Route exact path="/pos" component={Pos} />
-            <Route exact path="/ranking" component={Home} />
+            <Route exact path="/signin" component={SignIn} />
+            <Route exact path="/history" component={History} />
+            <Route exact path="/poshistory/:id/:level" component={PosHistory} />
+            <Route exact path="/pos/:id/:level" component={Pos}/>
+            <Route exact path="/timer" component={Timer} />
+            <Route exact path="/ranking" component={Ranking} />
+            <Route exact path="/ranking/:id" component={RankingEach} />
           </Switch>
-          <Home/>
+
         </div>
         {/*<div className="app">
           <div className="left-content">
@@ -41,4 +87,5 @@ class App extends React.Component {
   }
 }
 
+export {login};
 export default App;
