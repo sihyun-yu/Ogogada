@@ -149,12 +149,14 @@ class MenuStore extends Container {
   }
 // ===========Giftion ============== /
   openGifticon = () => {
+    console.log("HERE!!!!!@@@@!@!@!@!@!@!@!@!@!@!!@!@!!@");
     this.setState({
       gifticonOpen: true,
       numbersByPad: "",
       currentMenuID: -1
     });
     console.log("gifticon open");
+    console.log(this.state.gifticonOpen);
   };
 
   closeGifticon = () => {

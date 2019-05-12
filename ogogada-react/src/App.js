@@ -31,26 +31,6 @@ function writeToDatabase(input_id, input_pw, input_level) {
     });
 }
 
-function login (user_id, user_pw) {
-  return new Promise(function(resolve, reject){
-    firebase.database().ref('/accounts/').once('value', function(snapshot){
-      var accounts = snapshot.val()
-      for (var idx in accounts){
-        if (user_id == idx && user_pw == accounts[idx]["pw"]){
-          console.log("login!");
-          return  resolve(true);
-        }
-        else if (user_id == idx && user_pw != accounts[idx]["pw"]){
-          console.log("have accounts but wrong pw!");
-          return resolve(false);
-        }
-      }
-      
-      return resolve(false);
-    })
-  })
-}
-
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
@@ -87,5 +67,4 @@ class App extends React.Component {
   }
 }
 
-export {login};
 export default App;

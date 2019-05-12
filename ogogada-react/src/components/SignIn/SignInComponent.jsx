@@ -5,10 +5,28 @@ import { Input, Button, Form, Label } from 'semantic-ui-react';
 import { Redirect, Route, Link, withRouter} from 'react-router-dom';
 import Home from "../Home/HomeComponent.jsx"
 import "../../stylesheets/SignIn.css"
-import {login} from "../../App.js"
+import firebase from "firebase"
 
-
-
+function login (user_id, user_pw) {
+    return new Promise(function(resolve, reject){
+      firebase.database().ref('/accounts/').once('value', function(snapshot){
+        var accounts = snapshot.val()
+        for (var idx in accounts){
+          if (user_id == idx && user_pw == accounts[idx]["pw"]){
+            console.log("login!");
+            console.log(accounts[idx]);
+            return  resolve(accounts[idx]["level"]);
+          }
+          else if (user_id == idx && user_pw != accounts[idx]["pw"]){
+            console.log("have accounts but wrong pw!");
+            return resolve(false);
+          }
+        }
+        
+        return resolve(false);
+      })
+    })
+  }
 
 class SignInComponent extends React.Component {
     constructor(props) {
@@ -23,21 +41,17 @@ class SignInComponent extends React.Component {
 
     routeChange() {
         
-        login(this.state.id, this.state.pw).then((aaa)=>{
-            console.log(aaa);
-            if (aaa){
-                this.props.history.push({
-                    pathname : '/home',
-                    state: {
-                        id: this.state.id,
-                        pw: this.state.pw,
-                        level: this.state.level,
-                    }
-                })
-            }
-            else {
-                alert (aaa);
-            }
+        login(this.state.id, this.state.pw).then((level)=>{
+            console.log(level);
+            this.setState({ level: level})
+            this.props.history.push({
+                pathname : '/home',
+                state: {
+                    id: this.state.id,
+                    pw: this.state.pw,
+                    level: level,
+                }
+            })
         })
 
     }

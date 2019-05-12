@@ -16,7 +16,7 @@ var borderGifticonStyle = {
 
 const GifticonComponent = props => {
   if (props.historyList[props.historyIndex][0] == 'gift' &&
-    props.historyList[props.historyIndex][1] == props.id) {
+    props.historyList[props.historyIndex][1] == props.id && props.level >= 4) {
     return (
         <Button
           style={borderGifticonStyle}
@@ -30,7 +30,7 @@ const GifticonComponent = props => {
         </Button>
     );
   }
-  else {
+  else if (props.level >= 4){
     return (
         <Button
           style={gifticonStyle}
@@ -38,6 +38,18 @@ const GifticonComponent = props => {
         >
         GIFTICON
         </Button>
+    );    
+  }
+
+  else {
+  return (
+        <Button
+      className="hide-item">
+        <div className="hide-item__image">
+          <Image className="hide-item__image__image" src='/images/hidden.png' size='tiny' />
+        </div>
+        <div className="hide-item__name">Hidden</div>
+    </Button>
     );    
   }
 };

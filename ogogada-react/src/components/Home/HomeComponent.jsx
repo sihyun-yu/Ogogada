@@ -63,8 +63,10 @@ class HomeComponent extends React.Component {
 
     render() {
 
-        console.log("home", this.props);
+        console.log("home props: ", this.props);
+        console.log("home state: ", this.state);
         this.state = this.props.location.state;
+        console.log("home state: ", this.state);
 
         //this.setState({id:_id, pw:_pw, level:_level})
 
@@ -84,22 +86,25 @@ class HomeComponent extends React.Component {
         var y_rank = this.props.windowHeight * 588/720;
 
         var URL = require("../../assets/home.png")
+        var level_1 = { name: "1", shape: "circle", coords: [x1, y1, 63], }
+        var level_2 = { name: "2", shape: "circle", coords: [x2, y2, 63], }
+        var level_3 = { name: "3", shape: "circle", coords: [x3, y3, 63], }
+        var level_4 = { name: "4", shape: "circle", coords: [x4, y4, 63], }
+        var level_5 = { name: "5", shape: "circle", coords: [x5, y5, 63], }
+        var level_array = [level_1, level_2, level_3, level_4, level_5]
+        var areas= [];
+        console.log (this.state["level"])
+        for (var i=0; i<this.state["level"]; i++) {
+            console.log ("area: " + i)
+            areas.push(level_array[i])
+        }
+        areas.push({ name: "history", shape: "rect", coords: [x_his+63, y_his+63, x_his-63, y_his-63] })
+        areas.push({ name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] })
+        console.log ("areas: " + areas)
         var MAP = {
         name: "my-map",
-        areas: [
-            { name: "1", shape: "circle", coords: [x1, y1, 63], },
-            { name: "2", shape: "circle", coords: [x2, y2, 63],},
-            { name: "3", shape: "circle", coords: [x3, y3, 63], },
-            { name: "4", shape: "circle", coords: [x4, y4, 63], },
-            { name: "5", shape: "circle", coords: [x5, y5, 63] },
-            { name: "history", shape: "rect", coords: [x_his+63, y_his+63, x_his-63, y_his-63] },
-            { name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] },
-        ]
+        areas: areas
         }
-
-        // console.log(this.props.history["state"]["id"])
-        // console.log(this.props.history["state"]["level"])
-
 
         console.log("x1, y1: ", x1.toString() + "," + y1.toString() + ",63");
 

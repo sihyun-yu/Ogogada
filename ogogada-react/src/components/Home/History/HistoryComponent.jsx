@@ -6,8 +6,21 @@ class HistoryComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = this.props.location.state;
+        this.routeChange = this.routeChange.bind(this);
+
         //{id: "seongha", pw: "4321", level: 1}
         
+    }
+
+    routeChange(stage) {
+        this.props.history.push({
+            pathname : '../poshistory/' + this.state.id + "/" + stage ,
+                state: {
+                id: this.state.id,
+                pw: this.state.pw,
+                level: this.state.level,
+            }   
+        });
     }
     
     render () {
@@ -27,31 +40,51 @@ class HistoryComponent extends React.Component {
                         </Table.Header>
 
                         <Table.Body>
-                        <Table.Row onClick={() => this.props.history.push('/1')}>
+                        <Table.Row onClick={() => {
+                            this.props.history.push('/1')
+                            this.routeChange("1")
+                        }
+                        }>
                             <Table.Cell collapsing>
                             <Icon name='coffee' /> Level 1
                             </Table.Cell>
                             <Table.Cell>Take an order of 1 ice americano and 1 hot americano</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/2')}>
+                        <Table.Row onClick={() => {
+                            this.props.history.push('/2')
+                            this.routeChange("2")
+                        }
+                        }>
                             <Table.Cell>
                             <Icon name='coffee' /> Level 2
                             </Table.Cell>
                             <Table.Cell>Take an order of 2 green tea latte and 1 hot vanilla latte</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/3')}>
+                        <Table.Row onClick={() => {
+                            this.props.history.push('/3')
+                            this.routeChange("3")
+                        }
+                        }>
                             <Table.Cell>
                             <Icon name='coffee' /> Level 3
                             </Table.Cell>
                             <Table.Cell>Apply student discount</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/4')}>
+                        <Table.Row onClick={() => {
+                            this.props.history.push('/4')
+                            this.routeChange("4")
+                        }
+                        }>
                             <Table.Cell>
                             <Icon name='coffee' /> Level 4
                             </Table.Cell>
                             <Table.Cell>Use an ice americano gifticon</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/5')}>
+                        <Table.Row onClick={() => {
+                            this.props.history.push('/5')
+                            this.routeChange("5")
+                        }
+                        }>
                             <Table.Cell>
                             <Icon name='coffee' /> Level 5
                             </Table.Cell>
