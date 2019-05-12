@@ -36,6 +36,12 @@ class Timer extends React.Component {
     }), 1);
   }
 
+  componentDidUpdate() {
+    if(this.props.flag == false) {
+      clearInterval(this.timer)
+    }
+  }
+
   startTimer() {
     this.setState({
       time: this.state.time,
@@ -47,7 +53,7 @@ class Timer extends React.Component {
     }), 1);
   }
 
-  stopTimer() {
+  stopTimer = () => {
     this.setState({isOn: false})
     clearInterval(this.timer)
   }

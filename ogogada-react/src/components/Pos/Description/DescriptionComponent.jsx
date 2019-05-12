@@ -34,8 +34,11 @@ const DescriptionComponent = props => {
             </div>
           </div>
         </div>
+
       )}
     </Subscribe>
+
+
     </div>
     
   );

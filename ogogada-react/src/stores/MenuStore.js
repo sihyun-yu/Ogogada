@@ -19,7 +19,10 @@ class MenuStore extends Container {
     gifticonOpen: false,
     display: "",
     code: "",
-    cnt: 0, 
+    cnt: 0,
+    // ===== Timer ===== //
+    timerFlag: true,
+  
     // ===== Refund ======//
     refundOpen: false,
     refundIdx: -1,
@@ -27,6 +30,13 @@ class MenuStore extends Container {
     // ===== Popup for questions ======//
     questionConfirmed: false,
   };
+
+  flagFlip = () => {
+    this.setState({
+      timerFlag: false
+    });
+  }
+
 
   clearSummaryTable = () => {
     console.log ("clearSummaryTable")
