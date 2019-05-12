@@ -45,27 +45,28 @@ class SignInComponent extends React.Component {
     render() {
         return (
             <div class="signInContainer">
-                <div class="texts">
-                    <div class="ogogada">Ogogada</div>
-                    <div class="si"> Sign In</div>
-                </div>
-                <div class="forms">
-                    <Form>
-                        <Form.Field>
-                        <label>ID</label>
-                        <input placeholder='Enter your ID' onChange = {(user_id) => {this.setState({id: user_id.target.value})}}/>
-                        </Form.Field>
-                        <Form.Field>
-                        <label>PW</label>
-                        <input placeholder='Enter your Password' onChange = {(user_pw) => this.setState({pw: user_pw.target.value})}/>
-                        </Form.Field>
-                        <Button onClick={()=>{this.routeChange()
-                            }}>LOGIN</Button>
-                            
-                    </Form>
+                <div class="signInContainerBox">
+                    <div class="texts">
+                        <div class="ogogada">Ogogada</div>
+                        <div class="si"> Sign In</div>
+                    </div>
+                    <div class="forms">
+                        <Form>
+                            <Form.Field>
+                            <label>ID</label>
+                            <input placeholder='Enter your ID' onChange = {(user_id) => {this.setState({id: user_id.target.value})}}/>
+                            </Form.Field>
+                            <Form.Field>
+                            <label>PW</label>
+                            <input placeholder='Enter your Password' onChange = {(user_pw) => this.setState({pw: user_pw.target.value})}/>
+                            </Form.Field>
+                            <Button onClick={()=>{this.routeChange()
+                                }}>LOGIN</Button>
+                                
+                        </Form>
 
+                    </div>
                 </div>
-
             </div>
         )
     }
