@@ -13,6 +13,7 @@ const RefundComponent = props => {
         style={refundStyle}
         className="refund-item"
         onClick={() => {
+          props.handleRefundDialog();
 //          props.handleChangeMenuDisplay(props.status);
         }}
       >
