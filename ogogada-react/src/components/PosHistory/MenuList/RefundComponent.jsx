@@ -17,7 +17,7 @@ var borderRefundStyle = {
 
 const RefundComponent = props => {
   if (props.historyList[props.historyIndex][0] == 'refund' &&
-    props.historyList[props.historyIndex][1] == props.id) {
+    props.historyList[props.historyIndex][1] == props.id && props.level >= 5) {
       return (
       <Button
         style={borderRefundStyle}
@@ -33,7 +33,7 @@ const RefundComponent = props => {
     );
   }
 
-  else {
+  else if (props.level >= 5) {
       return (
       <Button
         style={refundStyle}
@@ -42,6 +42,18 @@ const RefundComponent = props => {
       REFUND
       </Button>
     );
+  }
+
+  else {
+  return (
+        <Button
+      className="hide-item">
+        <div className="hide-item__image">
+          <Image className="hide-item__image__image" src='/images/hidden.png' size='tiny' />
+        </div>
+        <div className="hide-item__name">Hidden</div>
+    </Button>
+    );    
   }
 };
 
