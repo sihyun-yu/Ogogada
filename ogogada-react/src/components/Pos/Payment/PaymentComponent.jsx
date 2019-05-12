@@ -6,6 +6,8 @@ import { Button } from 'semantic-ui-react'
 import { MenuStore, CouponStore, PaymentMethodStore } from "../../../stores";
 import PaymentDialog from "./PaymentDialogComponent.jsx";
 import { mockCardPayment } from "../../../api/paymentAPI.js";
+import metaJSON from "../../../assets/meta.js";
+import _ from 'lodash';
 
 var paymentButtonStyle = {
   width: "100%",
@@ -91,6 +93,21 @@ class PaymentComponent extends React.Component {
         .sort((a, b) => parseInt(a, 10) > parseInt(b, 10))
         .map(id => menus[id].concat(selectedMenus[id]));
 
+    const isCorrect = (user_menu, user_coupon, user_pay, cur_level) => {
+      console.log("user inputs:", user_menu, user_coupon, user_pay, cur_level);
+      for (var i in metaJSON.answers){
+        var each = metaJSON.answers[i];
+        if (each.level == cur_level ){
+          console.log("answer: ", typeof(user_pay));
+          if (_.isEqual(user_menu, each.menu) && _.isEqual(user_coupon, each.coupon) && _.isEqual(user_pay, each.method)){
+            console.log("truye");
+            return true
+          }
+        }
+      }
+      return false
+    }
+
     return (
       <Subscribe to={[MenuStore, CouponStore, PaymentMethodStore]}>
         {(menuStore, couponStore, paymentMethodStore) => (
@@ -130,41 +147,43 @@ class PaymentComponent extends React.Component {
                 </Button>
               </div>
             </div>
-            <PaymentDialog
-              open={this.state.dialogOpen}
-              selectedMenus={selectedMenus(
-                menuStore.state.totalmenu,
-                menuStore.state.selected
-              )}
-              price={calculatedValue(
-                menuStore.state.totalmenu,
-                menuStore.state.selected,
-                couponStore.state.coupons[couponStore.state.selected],
-                parseInt(paymentMethodStore.state.selected, 10)
-              )}
-              pendingCardPayment={this.state.pendingCardPayment}
-              handleClose={this.handleCloseDialog}
-              handleCompletePayment={() => {
-                const resetValuesCallbackArray = [];
-                resetValuesCallbackArray.push(
-                  menuStore.resetSelectedMenu.bind(menuStore)
-                );
-                resetValuesCallbackArray.push(
-                  paymentMethodStore.selectPaymentMethod.bind(
-                    paymentMethodStore,
-                    "0"
-                  )
-                );
-                resetValuesCallbackArray.push(
-                  couponStore.selectCoupon.bind(couponStore, 0)
-                );
+            {isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 3) &&
+              <PaymentDialog
+                open={this.state.dialogOpen}
+                selectedMenus={selectedMenus(
+                  menuStore.state.totalmenu,
+                  menuStore.state.selected
+                )}
+                price={calculatedValue(
+                  menuStore.state.totalmenu,
+                  menuStore.state.selected,
+                  couponStore.state.coupons[couponStore.state.selected],
+                  parseInt(paymentMethodStore.state.selected, 10)
+                )}
+                pendingCardPayment={this.state.pendingCardPayment}
+                handleClose={this.handleCloseDialog}
+                handleCompletePayment={() => {
+                  const resetValuesCallbackArray = [];
+                  resetValuesCallbackArray.push(
+                    menuStore.resetSelectedMenu.bind(menuStore)
+                  );
+                  resetValuesCallbackArray.push(
+                    paymentMethodStore.selectPaymentMethod.bind(
+                      paymentMethodStore,
+                      "0"
+                    )
+                  );
+                  resetValuesCallbackArray.push(
+                    couponStore.selectCoupon.bind(couponStore, 0)
+                  );
 
-                this.handleCompletePayment(resetValuesCallbackArray);
+                  this.handleCompletePayment(resetValuesCallbackArray);
 
-                this.handleCloseDialog();
-              }}
-              handleCancelPayment={this.handleCloseDialog}
-            />
+                  this.handleCloseDialog();
+                }}
+                handleCancelPayment={this.handleCloseDialog}
+              />
+            }
           </div>
         )}
       </Subscribe>
