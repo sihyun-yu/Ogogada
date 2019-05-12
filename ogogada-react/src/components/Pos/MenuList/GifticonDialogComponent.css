@@ -21,18 +21,20 @@
 .gifticon-code {
 	position: relative;
 	text-align: center;
-	font-size: medium;
+	font-size: large;
 	top: 35%;
 }
 
 .gifticon-warning {
 	position: relative;
 	text-align: center;
-	font-size: medium;
+	font-size: large;
 	top: 40%;
 }
 .gifticon-display {
 	background-color: #e8e8e8;
+	font-size: large;
+	line-height: 200%;
 	color: #000000;
 	position: relative;
 	width: 80%;
