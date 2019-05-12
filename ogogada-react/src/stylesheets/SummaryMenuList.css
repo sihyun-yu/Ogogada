@@ -9,6 +9,7 @@
   min-height: 212px;
   border-bottom: solid black 1px;
   background: #F0F0F0;
+  overflow-y: auto;
 }
 
 .summary-menu__label {
