@@ -7,6 +7,7 @@ import { MenuStore, CouponStore, PaymentMethodStore } from "../../../stores";
 import PaymentDialog from "./PaymentDialogComponent.jsx";
 import { mockCardPayment } from "../../../api/paymentAPI.js";
 import metaJSON from "../../../assets/meta.js";
+import _ from 'lodash';
 
 var paymentButtonStyle = {
   width: "100%",
@@ -94,11 +95,12 @@ class PaymentComponent extends React.Component {
 
     const isCorrect = (user_menu, user_coupon, user_pay, cur_level) => {
       console.log("user inputs:", user_menu, user_coupon, user_pay, cur_level);
-      for (var each in metaJSON.answers){
-        console.log(each);
+      for (var i in metaJSON.answers){
+        var each = metaJSON.answers[i];
         if (each.level == cur_level ){
-          console.log("answer: ", each);
-          if (user_menu == each.menu && user_coupon == each.coupon && user_pay == each.pay){
+          console.log("answer: ", typeof(user_pay));
+          if (_.isEqual(user_menu, each.menu) && _.isEqual(user_coupon, each.coupon) && _.isEqual(user_pay, each.method)){
+            console.log("truye");
             return true
           }
         }
