@@ -19,8 +19,16 @@ class MenuStore extends Container {
     gifticonOpen: false,
     display: "",
     code: "",
-    cnt: 0
+    cnt: 0,
+    // ===== Timer ===== //
+    timerFlag: true
   };
+
+  flagFlip = () => {
+    this.setState({
+      timerFlag: false
+    });
+  }
 
   changeMenuDisplay = status => {
     if (status == "left") {

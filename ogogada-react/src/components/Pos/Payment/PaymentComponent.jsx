@@ -113,6 +113,8 @@ class PaymentComponent extends React.Component {
       }
       return false
     }
+    console.log(this.props.flagFlip);
+    console.log(this.props.flag);
     console.log("PaymentComponent", this.props.history.location.pathname.split('/')[3]);
     return (
       <Subscribe to={[MenuStore, CouponStore, PaymentMethodStore]}>
@@ -153,6 +155,8 @@ class PaymentComponent extends React.Component {
             {isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 
                     this.props.history.location.pathname.split('/')[3]) &&
               <PaymentDialog
+                flagFlip={this.props.flagFlip}
+                flag={this.props.flag}
                 open={this.state.dialogOpen}
                 selectedMenus={selectedMenus(
                   menuStore.state.totalmenu,
