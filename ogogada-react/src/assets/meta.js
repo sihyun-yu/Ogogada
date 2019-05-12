@@ -38,7 +38,14 @@ const meta = {
     {level: 4, menu: {3:1, 16:1}, coupon: null, method: "0"},
     {level: 5, menu: {17: 1}},
   ],
-  gifticon: "123456780101"
+  gifticon: "123456780101",
+  questions : [
+    "Take an order for one HOT americano and one ICE americano with card.",
+    "Take an order for two ICE caramel macchiato and one HOT green tea latte with card.",
+    "Take an order for five ICE peppermint by 10% discount with card.",
+    "A customer wants to use one ICE americano gifticon and order one ICE caffelatte. \n Calculate the difference with card.",
+    "A customer wants to cancel the order that he/she made just now. Refund the most recent order."
+  ]
 };
 
 export default meta;

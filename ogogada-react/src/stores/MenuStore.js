@@ -85,6 +85,19 @@ class MenuStore extends Container {
       selected: {}
     });
   };
+// ========== Question Popup ========/
+  openQuestion = () => {
+    console.log("openQUestion");
+    this.setState({
+      questionConfirmed: false,
+    })
+  }
+  closeQuestion = () => {
+    console.log("closeQuestion");
+    this.setState({
+      questionConfirmed: true,
+    })
+  }
 // ===========Refund ============== /
   openRefund = () => {
     this.setState({
@@ -94,6 +107,7 @@ class MenuStore extends Container {
   };
   
   closeRefund = () => {
+    
     this.setState({
       refundOpen: false,
     })
