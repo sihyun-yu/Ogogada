@@ -1,11 +1,14 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
+import { Button } from 'semantic-ui-react'
 import "../../../stylesheets/SummaryTable.css";
 import metaJSON from "../../../assets/meta.js";
 
 var deleteButtonStyle = {
-  width: "20%",
-  "minWidth": "0px"
+  width: "100%",
+  height: "60%",
+  "minWidth": "0px",
+  padding: "0px"
 }
 
 const SummaryTableComponent = props => {
