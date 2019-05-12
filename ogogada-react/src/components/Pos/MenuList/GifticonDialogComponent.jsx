@@ -1,8 +1,8 @@
 import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import Button from "@material-ui/core/Button";
-import "./GifticonDialogComponent.css"
+import { Button } from 'semantic-ui-react'
+import "../../../stylesheets/GifticonDialogComponent.css";
 
 const GifticonDialogComponent = props => {
 	if (props.open == true) {
