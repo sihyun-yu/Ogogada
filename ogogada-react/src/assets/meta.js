@@ -1,8 +1,8 @@
 //name, price, level, left/right
 const meta = {
   menus_left: [
-    ["americano HOT", 1500, 1, 0],
-    ["americano ICE", 1800, 1, 0],
+    ["Americano HOT", 1500, 1, 0],
+    ["Americano ICE", 1800, 1, 0],
     ["Caffe Latte HOT", 2000, 2, 0],
     ["Caffe Latte ICE", 2300, 2, 0],
     ["Caramel macchiato HOT", 2500, 2, 0],
