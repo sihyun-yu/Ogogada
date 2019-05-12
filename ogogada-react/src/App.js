@@ -8,6 +8,7 @@ import History from "./components/Home/History/HistoryComponent.jsx";
 import Ranking from "./components/Home/Ranking/RankingComponent.jsx";
 import RankingEach from "./components/Home/Ranking/RankingLevels/RankingLevelComponent.jsx"
 import Pos from "./components/Pos/PosComponent.jsx"
+import PosHistory from "./components/PosHistory/PosComponent.jsx"
 import SummaryTable from "./components/Pos/SummaryTable/SummaryTableComponent.jsx";
 import Payment from "./components/Pos/Payment/PaymentComponent.jsx";
 import { Provider } from "unstated";
@@ -28,24 +29,6 @@ function writeToDatabase(input_id, input_pw, input_level) {
       "pw": input_pw,
       "level": input_level,
     });
-
-
-
-}
-
-function checkNewRecord (user_level, user_id, user_time) {
-  return firebase.database().ref('/records/'+user_level.toString()).once('value', function(snapshot){
-    var records = snapshot.val()
-    var user_rank = 9;
-    for (var idx in records){
-      if (records[idx]["record"] > user_time && user_rank > records[idx]["rank"]){
-        user_rank = records[idx]["rank"];
-        firebase.database().ref('/records/' + user_level.toString()+'/'+idx.toString()).
-          update({"id": user_id, "record": user_time})
-      }
-    }
-  })
-
 }
 
 function login (user_id, user_pw) {
@@ -81,6 +64,7 @@ class App extends React.Component {
             <Route exact path="/home" component={Home} />
             <Route exact path="/signin" component={SignIn} />
             <Route exact path="/history" component={History} />
+            <Route exact path="/poshistory/:id/:level" component={PosHistory} />
             <Route exact path="/pos/:id/:level" component={Pos}/>
             <Route exact path="/timer" component={Timer} />
             <Route exact path="/ranking" component={Ranking} />

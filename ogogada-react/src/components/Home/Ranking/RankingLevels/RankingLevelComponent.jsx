@@ -4,6 +4,10 @@ import { Image , Button} from 'semantic-ui-react'
 import firebase from "firebase";
 import src1 from '../../../../assets/ranking_template.png';
 
+function pad(n, width) {
+    n = n + '';
+    return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
+}
 
 function getRankingsFromDB (level) {
     console.log ('/records/'+level)
@@ -82,7 +86,8 @@ class RankingLevelComponent extends React.Component {
         const classNames = ["one", "two", "three", "four", "five", "six", "seven", "eight"]
         const ranking = this.state.data.map(function(item, i) {
             console.log (item["id"])
-            return <span className={classNames[i]}>{item["id"]+"   "+item["record"]}</span>
+            var time = pad(Math.floor((item["record"]/1000)/60), 2)+ " : " + pad(Math.floor((item["record"]/1000)%60), 2) + " : "  + pad(Math.floor((item["record"]%1000)/10), 2)
+            return <span className={classNames[i]}>{item["id"]+"   "+time}</span>
         })
 
         return (

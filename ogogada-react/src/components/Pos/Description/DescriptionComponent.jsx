@@ -26,7 +26,11 @@ const DescriptionComponent = props => {
                 <Icon name='stopwatch'></Icon>
               </div>
               <div className="timer__timer">
-                <Timer></Timer>
+                <Timer
+                  flag={props.flag}
+                  level={props.level}
+                  username={props.username}  
+                ></Timer>
               </div>
             </div>
             <div className="replay" onClick={menu.openQuestion.bind(menu)}>
@@ -34,13 +38,9 @@ const DescriptionComponent = props => {
             </div>
           </div>
         </div>
-
       )}
     </Subscribe>
-
-
     </div>
-    
   );
 };
 
