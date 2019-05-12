@@ -34,7 +34,11 @@ class PosComponent extends React.Component {
                   <div className="left-below-right__container">
                     <SummaryCoupon />
                     <SummaryPaymentMethod />
-                    <Payment {...this.props} flagFlip={menu.flagFlip.bind(menu)} flag={menu.state.timerFlag}/>  
+                    <Payment {...this.props} 
+                    flagFlip={menu.flagFlip.bind(menu)} 
+                    flag={menu.state.timerFlag}
+                    unlock = {menu.unlock.bind(menu)}
+                    levelUp = {menu.state.levelUp}/>  
                   </div>
                   
                 </div>
