@@ -1,6 +1,6 @@
 import React from "react";
 import { Subscribe } from "unstated";
-import { MenuStore } from "../../../stores/";
+import { MenuStore, CouponStore, NumberStore } from "../../../stores/";
 import "../../../stylesheets/SummaryMenuList.css";
 import SummrayMenuItem from "./SummaryMenuItemComponent.jsx";
 import SummrayTotal from "./SummaryTotalComponent.jsx";
@@ -10,8 +10,8 @@ const SummaryTableComponent = props => {
     Object.keys(object).sort(sortCb);
 
   return (
-    <Subscribe to={[MenuStore]}>
-      {menuStore => (
+    <Subscribe to={[MenuStore, CouponStore, NumberStore]}>
+      {(menuStore, couponStore, numberStore) => (
         <div className="summary-menu">
           <div className="summary-menu__label-row">
             <div className="summary-menu__label menu-label">menu</div>
@@ -27,18 +27,21 @@ const SummaryTableComponent = props => {
               <SummrayMenuItem
                 key={id}
                 id={id}
-                menu={menuStore.state.menus[id]}
+                menu={menuStore.state.totalmenu[id]}
                 count={menuStore.state.selected[id]}
+                coupon={couponStore.state.selected}
                 handleIncrement={menuStore.addSelectedMenu.bind(menuStore, id)}
                 handleDecrement={menuStore.decrementSelectedMenu.bind(
                   menuStore,
                   id
                 )}
                 handleDelete={menuStore.deleteSelectedMenu.bind(menuStore, id)}
+                resetNumber={menuStore.resetNumber.bind(menuStore, id)}
+                setCurrentMenuID={menuStore.setCurrentMenuID.bind(menuStore, id)}
               />
             ))}
           </div>
-          <SummrayTotal label="상품가격 합계" />
+          <SummrayTotal label="Total " />
         </div>
       )}
     </Subscribe>

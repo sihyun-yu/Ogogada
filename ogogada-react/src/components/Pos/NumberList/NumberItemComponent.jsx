@@ -15,7 +15,7 @@ const NumberItemComponent = props => {
         className="number-item__button"
         variant="contained"
         onClick={() => {
-          props.addNumber(props.recentMenu, props.number)
+          props.changeNumberbyPad(props.currentMenuID, props.numbersByPad, props.number);
         }}>
        {props.number}
       </Button>

@@ -7,8 +7,10 @@ import PaymentDialog from "./PaymentDialogComponent.jsx";
 import { mockCardPayment } from "../../../api/paymentAPI.js";
 
 var paymentButtonStyle = {
-  width: "90%",
-  height: "100%"
+  width: "100%",
+  height: "100%",
+  padding: "0px",
+  // color: "black"
 }
 
 class PaymentComponent extends React.Component {
@@ -93,14 +95,14 @@ class PaymentComponent extends React.Component {
         {(menuStore, couponStore, paymentMethodStore) => (
           <div className="payment__container">
             <div className="payment">
-              <div className="payment__text">
+              {/* <div className="payment__text">
                 {paymentText(
-                  menuStore.state.menus,
+                  menuStore.state.totalmenu,
                   menuStore.state.selected,
                   couponStore.state.coupons[couponStore.state.selected],
                   parseInt(paymentMethodStore.state.selected, 10)
                 )}
-              </div>
+              </div> */}
 
               <div className="payment__button-container">
                 <Button
@@ -111,7 +113,7 @@ class PaymentComponent extends React.Component {
                   style={paymentButtonStyle}
                   disabled={
                     calculatedValue(
-                      menuStore.state.menus,
+                      menuStore.state.totalmenu,
                       menuStore.state.selected,
                       couponStore.state.coupons[couponStore.state.selected],
                       parseInt(paymentMethodStore.state.selected, 10)
@@ -130,11 +132,11 @@ class PaymentComponent extends React.Component {
             <PaymentDialog
               open={this.state.dialogOpen}
               selectedMenus={selectedMenus(
-                menuStore.state.menus,
+                menuStore.state.totalmenu,
                 menuStore.state.selected
               )}
               price={calculatedValue(
-                menuStore.state.menus,
+                menuStore.state.totalmenu,
                 menuStore.state.selected,
                 couponStore.state.coupons[couponStore.state.selected],
                 parseInt(paymentMethodStore.state.selected, 10)

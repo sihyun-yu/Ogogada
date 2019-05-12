@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Button } from 'semantic-ui-react'
+import { Image, Button, Icon } from 'semantic-ui-react'
 
 var menuChangeStyle = {
   background: '#E0E0E0',
@@ -8,16 +8,18 @@ var menuChangeStyle = {
 };
 
 const MenuItemComponent = props => {
+  console.log(props.status);
+  var icon_name = (props.status == "left") ? "triangle left" : "triangle right";
   return (
-      <Button
+      <Icon
+        name={icon_name}
         style={menuChangeStyle}
         className="menu-change-item"
         onClick={() => {
           props.handleChangeMenuDisplay(props.status);
         }}
       >
-
-      </Button>
+      </Icon>
   );
 };
 

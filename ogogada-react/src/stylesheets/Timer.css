@@ -1,0 +1,16 @@
+.timer__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .timer__number {
+    flex: 0.7;
+  }
+
+  .timer__action {
+    flex: 0.3;
+    margin: 3px;
+  }

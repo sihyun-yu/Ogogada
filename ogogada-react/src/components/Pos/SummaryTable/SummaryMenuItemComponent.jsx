@@ -1,16 +1,24 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import "../../../stylesheets/SummaryTable.css";
+import metaJSON from "../../../assets/meta.js";
 
 var deleteButtonStyle = {
   width: "20%",
-  "min-width": "0px"
+  "minWidth": "0px"
 }
 
 const SummaryTableComponent = props => {
-  const getTotalValue = (menu, count) => menu[1] * count;
+  //console.log(numByButton);
+  //console.log(numByButton);
+  const getTotalValue = (menu, count) => menu[1] * count;  
+  const getActualValue = (menu, count, coupon) => menu[1] * count * (1 - metaJSON.coupons[coupon])
   return (
-    <div className="summary-menu-item">
+    <div className="summary-menu-item"
+        onClick={() => {
+        props.resetNumber();
+        props.setCurrentMenuID(props.id);
+    }}>
       <div className="summary-menu-item__name">
         <p>{props.menu[0]}</p>
       </div>
@@ -32,8 +40,7 @@ const SummaryTableComponent = props => {
       </div>
       <div className="summary-menu-item__actual">
         <div className="summary-menu-item__actual2">
-        {/* 여기에 actual value 가져오는 함수 만들고 적용시켜야함 */}
-        <p>{getTotalValue(props.menu, props.count)} ₩</p>
+        <p>{getActualValue(props.menu, props.count, props.coupon)} ₩</p>
         </div>
         <div className="summary-menu-item__delete">
           <Button

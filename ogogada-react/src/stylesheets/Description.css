@@ -15,19 +15,45 @@
   margin-right: 20px;
 }
 
-#description {
+.description {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 0.2;
 }
 
-#user_id {
-  flex: 0.2;
+.user_id {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.3;
 }
 
-#timer {
+.timer {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   flex: 0.5;
-
   display: flex;
   flex-direction: row;
+}
+
+.timer__icon {
+  flex: 0.2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer__timer {
+  flex: 0.8;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  
 }
 
 #replay {

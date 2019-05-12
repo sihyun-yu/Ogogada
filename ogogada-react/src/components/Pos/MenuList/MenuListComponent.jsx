@@ -5,6 +5,9 @@ import MenuChangeItem from "./MenuChangeComponent.jsx"
 import RefundItem from "./RefundComponent.jsx"
 import GifticonItem from "./GifticonComponent.jsx"
 import { MenuStore } from "../../../stores";
+import { NumberStore } from "../../../stores";
+
+import { Store } from "../../../stores";
 import GifticonDialog from "./GifticonDialogComponent.jsx"
 
 import "../../../stylesheets/MenuList.css";
@@ -19,17 +22,17 @@ const MenuListComponent = props => {
   console.log(props.level);
   return (
     <div className="menus__container">
-      <Subscribe to={[MenuStore]}>
-        {(menu) => (
+      <Subscribe to={[MenuStore, NumberStore]}>
+        {(menu, number) => (
           <div className="menus">
             {menu.state.menus.map((menuItem, index) => (
               <MenuItem 
-                key={index}
-                id={index}
+                key={index + menuItem[3] * 8}
+                id={index + menuItem[3] * 8}
                 menu={menuItem}
                 handleAddSelectedMenu={menu.addSelectedMenu.bind(menu)}
                 level={props.level}
-                changeRecentMenu={menu.changeRecentMenu.bind(menu)}
+                refreshValues={menu.refreshValues.bind(menu)}
               />
             ))}
             <RefundItem
@@ -46,7 +49,7 @@ const MenuListComponent = props => {
             />
             <MenuChangeItem
             status={"right"}
-            style={menuchangebutton_style}s
+            style={menuchangebutton_style}
             handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}
             />
             <GifticonDialog

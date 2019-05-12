@@ -7,15 +7,19 @@ import Timer from "./Timer.jsx"
 const DescriptionComponent = props => {
   return (
     <div className="description__container">
-      <div id="description" >
-        <h3>Level: {props.level}</h3>
+      <div className="description" >
+        <p>Level: {props.level}</p>
       </div>
-      <div id="user_id">
-        <h3>ID: {props.username}</h3>
+      <div className="user_id">
+        <p>ID: {props.username}</p>
       </div>
-      <div id="timer">
+      <div className="timer">
+        <div className="timer__icon">
         <Icon name='stopwatch'></Icon>
+        </div>
+        <div className="timer__timer">
         <Timer></Timer>
+        </div>
       </div>
       <div id="replay">
         <Icon name='sound'></Icon>
