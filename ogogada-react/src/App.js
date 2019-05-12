@@ -12,6 +12,7 @@ import RankingEach3 from "./components/Home/Ranking/RankingLevels/RankingLevel3C
 import RankingEach4 from "./components/Home/Ranking/RankingLevels/RankingLevel4Component.jsx"
 import RankingEach5 from "./components/Home/Ranking/RankingLevels/RankingLevel5Component.jsx"
 import Pos from "./components/Pos/PosComponent.jsx"
+import PosHistory from "./components/PosHistory/PosComponent.jsx"
 import SummaryTable from "./components/Pos/SummaryTable/SummaryTableComponent.jsx";
 import Payment from "./components/Pos/Payment/PaymentComponent.jsx";
 import { Provider } from "unstated";
@@ -120,6 +121,7 @@ class App extends React.Component {
             <Route exact path="/home" component={Home} />
             <Route exact path="/signin" component={SignIn} />
             <Route exact path="/history" component={History} />
+            <Route exact path="/poshistory/:id/:level" component={PosHistory} />
             <Route exact path="/pos/:id/:level" component={Pos}/>
             <Route exact path="/timer" component={Timer} />
             <Route exact path="/ranking" component={Ranking} />
