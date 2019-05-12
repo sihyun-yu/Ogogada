@@ -24,6 +24,8 @@ class MenuStore extends Container {
     refundOpen: false,
     refundIdx: -1,
     isConfirmed: false,
+    // ===== Popup for questions ======//
+    questionConfirmed: false,
   };
 
   changeMenuDisplay = status => {

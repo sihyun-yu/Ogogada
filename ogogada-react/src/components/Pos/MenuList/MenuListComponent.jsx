@@ -14,6 +14,10 @@ import RefundDialog from "./RefundDialogComponent.jsx"
 
 import "../../../stylesheets/MenuList.css";
 
+import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import { Button } from 'semantic-ui-react'
+
 var menuchangebutton_style = {
   background: "#E0E0E0",
 }

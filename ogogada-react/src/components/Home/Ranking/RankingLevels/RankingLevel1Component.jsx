@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../../stylesheets/RankingLevel.css"
-import { Image , Button} from 'semantic-ui-react'
+import { Image , Button, Item} from 'semantic-ui-react'
 
 import src1 from '../../../../assets/ranking_template.png';
 
@@ -18,17 +18,59 @@ class RankingLevel1Component extends React.Component {
     render () {
         return (
             <div id="rankingLevel"> 
-                    <div id="rankingTemplate" >
-                        <Image src={src1} alt="hey!" />
-                        <span class="one">{this.state.id+"   "+this.state.time}</span>
-                        <span class="two">{this.state.id+"   "+this.state.time}</span>
-                        <span class="three">{this.state.id+"   "+this.state.time}</span>
-                        <span class="four">{this.state.id+"   "+this.state.time}</span>
-                        <span class="five">{this.state.id+"   "+this.state.time}</span>
-                        <span class="six">{this.state.id+"   "+this.state.time}</span>
-                        <span class="seven">{this.state.id+"   "+this.state.time}</span>
-                        <span class="eight">{this.state.id+"   "+this.state.time}</span>
+                    <div id="rankingLeft" >
+                    <Item.Group>
+                        <Item>
+                        <Item.Image size='tiny' src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                        <Item.Content verticalAlign='middle'>
+                            <Item.Header as='a'>12 Years a Slave</Item.Header>
+                        </Item.Content>
+                        </Item>
 
+                        <Item>
+                        <Item.Image size='tiny' src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                        <Item.Content verticalAlign='middle'>
+                            <Item.Header as='a' content='My Neighbor Totoro' />
+                        </Item.Content>
+                        </Item>
+
+                        <Item>
+                        <Item.Image size='tiny' src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                        <Item.Content header='Watchmen' verticalAlign='middle' />
+                        </Item>
+
+                        <Item>
+                        <Item.Image size='tiny' src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                        <Item.Content header='Watchmen' verticalAlign='middle' />
+                        </Item>
+                    </Item.Group>
+                    </div>
+                    <div id="rankingRight" >
+                    <Item.Group>
+                        <Item>
+                        <Item.Image size='tiny' src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                        <Item.Content verticalAlign='middle'>
+                            <Item.Header as='a'>12 Years a Slave</Item.Header>
+                        </Item.Content>
+                        </Item>
+
+                        <Item>
+                        <Item.Image size='tiny' src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                        <Item.Content verticalAlign='middle'>
+                            <Item.Header as='a' content='My Neighbor Totoro' />
+                        </Item.Content>
+                        </Item>
+
+                        <Item>
+                        <Item.Image size='tiny' src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                        <Item.Content header='Watchmen' verticalAlign='middle' />
+                        </Item>
+
+                        <Item>
+                        <Item.Image size='tiny' src='https://react.semantic-ui.com/images/wireframe/image.png' />
+                        <Item.Content header='Watchmen' verticalAlign='middle' />
+                        </Item>
+                    </Item.Group>
                     </div>
                     <div id="backButton">
                         <Button >Back</Button>

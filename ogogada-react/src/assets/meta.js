@@ -33,9 +33,9 @@ const meta = {
   ],
   answers: [
     {level: 1, menu: {0:1, 1:1}, coupon: null, method: "0"},
-    {level: 2, menu: {4:2, 7:1}, coupon: null, method: "0"},
-    {level: 3, menu: {0:1}, coupon: 2, method: "0"},
-    {level: 4, menu: {1:1, 16:1}, coupon: null, method: "0"},
+    {level: 2, menu: {5:2, 8:1}, coupon: null, method: "0"},
+    {level: 3, menu: {15:5}, coupon: 2, method: "0"},
+    {level: 4, menu: {3:1, 16:1}, coupon: null, method: "0"},
     {level: 5, menu: {17: 1}},
   ],
   gifticon: "123456780101"
