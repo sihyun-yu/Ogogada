@@ -134,11 +134,39 @@ class MenuStore extends Container {
   addGifticonCode = (number) => {
     var cnt = this.state.cnt;  
     var newDisplay = this.state.display;
-    if (cnt%4 == 0 && cnt < 12 && cnt > 0) {
+    var newCode = this.state.code;
+
+// Cancellation 
+    if (number == 'C') {
+      if (cnt == 0) return;
+      if (cnt % 4 == 1 && cnt > 4) {
+        newDisplay = newDisplay.slice(0,-1);
+        newDisplay = newDisplay.slice(0,-1);
+      }
+      else {
+        newDisplay = newDisplay.slice(0, -1);
+      }
+      newCode = newCode.slice(0,-1);
+      cnt = cnt -1;
+
+      this.setState({
+        code: newCode,
+        display: newDisplay,
+        cnt: cnt
+      });
+
+      return;
+    }
+    if (cnt >= 12) return;
+
+
+//Add new code
+    newCode = newCode + number;
+    if (cnt%4 == 0 && cnt > 0) {
       newDisplay = newDisplay + "-";
     }
-    var newCode = this.state.code + number;
-    newDisplay = newDisplay + "*";
+
+    newDisplay = newDisplay + number;
     console.log(newCode);
     cnt = cnt + 1;
     this.setState({
@@ -185,16 +213,32 @@ class MenuStore extends Container {
 // 패드 누른 숫자로 업데이트
   changeNumberbyPad = (id, numbersByPad, number) => {
     if (id != -1) {
-      var newNumber = (numbersByPad + number);
-      console.log(id);
-      console.log(newNumber);
-      const newSelected = Object.assign({}, this.state.selected);
-      newSelected[id] = parseInt(newNumber);
+      if (number != 'C') {
+        var newNumber = (numbersByPad + number);
+        console.log(id);
+        console.log(newNumber);
+        const newSelected = Object.assign({}, this.state.selected);
+        newSelected[id] = parseInt(newNumber);
 
-      this.setState({
-        selected: newSelected,
-        numbersByPad: newNumber
-      });
+        this.setState({
+          selected: newSelected,
+          numbersByPad: newNumber
+        });
+      }
+
+      else if (number == 'C') {
+        var newNumber = numbersByPad;
+        newNumber = newNumber.slice(0,-1);
+        console.log(newNumber);
+        if (newNumber == "") newNumber = "0"; 
+        const newSelected = Object.assign({}, this.state.selected);
+        newSelected[id] = parseInt(newNumber);
+
+        this.setState ({
+          selected: newSelected,
+          numbersByPad: newNumber
+        })
+      }
     }
   }
 
