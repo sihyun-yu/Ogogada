@@ -8,7 +8,8 @@ var gifticonStyle = {
 };
 
 const GifticonComponent = props => {
-  return (
+  if (props.level >= 4) {
+    return (
       <Button
         style={gifticonStyle}
         className="gifticon-item"
@@ -19,6 +20,19 @@ const GifticonComponent = props => {
       GIFTICON
       </Button>
   );
+  }
+
+  else {
+  return (
+        <Button
+      className="hide-item">
+        <div className="hide-item__image">
+          <Image className="hide-item__image__image" src='/images/hidden.png' size='tiny' />
+        </div>
+        <div className="hide-item__name">Hidden</div>
+    </Button>
+    );    
+  }
 };
 
 export default GifticonComponent;

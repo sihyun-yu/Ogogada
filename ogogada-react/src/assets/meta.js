@@ -15,10 +15,10 @@ const meta = {
     ["Green Tea Latte ICE", 2800, 2, 1],
     ["Earl Grey HOT", 2000, 2, 1],
     ["Earl Grey ICE", 2300, 2, 1],
-    ["Chamomile HOT", 2000, 4, 1],
-    ["Chamomile ICE", 2300, 4, 1],
-    ["Peppermint HOT", 2000, 3, 1],
-    ["Peppermint ICE", 2300, 3, 1],
+    ["Chamomile HOT", 2000, 2, 1],
+    ["Chamomile ICE", 2300, 2, 1],
+    ["Peppermint HOT", 2000, 2, 1],
+    ["Peppermint ICE", 2300, 2, 1],
   ],
   coupons: [0, 0.05, 0.1],
   paymentMethods: [
@@ -50,7 +50,7 @@ const meta = {
   {level: 1, menu: {0:1}, coupon: null, method: "0"},
   {level: 2, menu: {7:2, 10:1}, coupon: null, method: "0"},
   {level: 3, menu: {15:5}, coupon: 2, method: "0"},
-  {level: 4, menu: {1:1, 16:1}, coupon: 0, method: "-1"},
+  {level: 4, menu: {1:1, 16:1}, coupon: null, method: "-1"},
   {level: 5, menu: {}}],
   questions : [
     "Take an order for one HOT americano and one ICE americano with card.",

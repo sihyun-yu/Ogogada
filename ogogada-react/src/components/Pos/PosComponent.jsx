@@ -37,8 +37,7 @@ class PosComponent extends React.Component {
                     <Payment {...this.props} 
                     flagFlip={menu.flagFlip.bind(menu)} 
                     flag={menu.state.timerFlag}
-                    unlock = {menu.unlock.bind(menu)}
-                    levelUp = {menu.state.levelUp}/>  
+                    />  
                   </div>
                   
                 </div>

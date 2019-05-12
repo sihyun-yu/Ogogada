@@ -2,14 +2,19 @@ import React from "react";
 import { withRouter} from 'react-router-dom';
 import { Icon, Table, Button } from 'semantic-ui-react'
 import "../../../stylesheets/Ranking.css"
+import firebase from "firebase";
 
-var winners = [
-    "Yoonseo Kim",
-    "Sangmin Lee",
-    "Yoonseo Kim",
-    "Sihyun Yu",
-    "Sungha Eom"
-];
+var winners = [];
+
+function getWinnerFromDB (level) {
+    return new Promise(function(resolve, reject) {
+        var myValue;
+        firebase.database().ref('/records/'+level+'/0').once('value', function(snapshot) {
+            myValue = snapshot.val();
+            return resolve(myValue["id"]);
+        });        
+    })
+}
 
 class RankingComponent extends React.Component {
     constructor(props) {
@@ -18,9 +23,20 @@ class RankingComponent extends React.Component {
             id:"",
             pw:"",
             level:"",
+            data: []
         };
         //this.routeChange = this.routeChange.bind(this);
         
+    }
+
+    componentDidMount() {
+        for (var i = 1; i < 6; i++) {
+            getWinnerFromDB(i).then(res=> 
+                {
+                    winners.push(res)
+                    this.setState({data: winners})
+                });
+        }
     }
 
     render () {
@@ -46,7 +62,7 @@ class RankingComponent extends React.Component {
                                 <Icon name='trophy' /> Level 1
                             </Table.Cell>
                             <Table.Cell>Take an order of 1 ice americano</Table.Cell>
-                            <Table.Cell collapsing textAlign='right'>{winners[0]}</Table.Cell>
+                            <Table.Cell textAlign='right'>{winners[0]}</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => this.props.history.push('ranking/2')}>
                             <Table.Cell>

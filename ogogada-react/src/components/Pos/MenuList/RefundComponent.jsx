@@ -8,18 +8,31 @@ var refundStyle = {
 };
 
 const RefundComponent = props => {
+  if (props.level>=5) {
+    return (
+        <Button
+          style={refundStyle}
+          className="refund-item"
+          onClick={() => {
+            props.handleRefundDialog();
+  //          props.handleChangeMenuDisplay(props.status);
+          }}
+        >
+        REFUND
+        </Button>
+    );
+  }
+  else {
   return (
-      <Button
-        style={refundStyle}
-        className="refund-item"
-        onClick={() => {
-          props.handleRefundDialog();
-//          props.handleChangeMenuDisplay(props.status);
-        }}
-      >
-      REFUND
-      </Button>
-  );
+        <Button
+      className="hide-item">
+        <div className="hide-item__image">
+          <Image className="hide-item__image__image" src='/images/hidden.png' size='tiny' />
+        </div>
+        <div className="hide-item__name">Hidden</div>
+    </Button>
+    );    
+  }
 };
 
 export default RefundComponent;

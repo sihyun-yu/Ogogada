@@ -54,11 +54,13 @@ const MenuListComponent = props => {
             handleGifticonDialog={menu.openGifticon.bind(menu)}
             />
             <MenuChangeItem
+            level={props.level}
             status={"left"}
             style={menuchangebutton_style}
             handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}
             />
             <MenuChangeItem
+            level={props.level}
             status={"right"}
             style={menuchangebutton_style}
             handleChangeMenuDisplay={menu.changeMenuDisplay.bind(menu)}

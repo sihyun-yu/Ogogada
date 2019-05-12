@@ -13,17 +13,7 @@ const DescriptionComponent = props => {
       <div className="user_id">
         <p>ID: {props.username}</p>
       </div>
-      <div className="timer">
-        <div className="timer__icon">
-          <Icon name='stopwatch'></Icon>
-        </div>
-        <div className="timer__timer">
-          <Timer></Timer>
-        </div>
-      </div>
-      <div className="replay">
-        <Icon name='sound'></Icon>
-      </div>
+
     </div>
     
   );

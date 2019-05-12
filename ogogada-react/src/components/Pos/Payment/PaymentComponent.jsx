@@ -17,10 +17,12 @@ var paymentButtonStyle = {
 
 class PaymentComponent extends React.Component {
   constructor(props) {
+    console.log("paymentComponent", props)
     super(props);
     this.state = {
       pendingCardPayment: false,
-      dialogOpen: false
+      dialogOpen: false,
+      levelUp: false,
     };
   }
 
@@ -56,6 +58,14 @@ class PaymentComponent extends React.Component {
       cb();
     });
   };
+
+  handleLevelUp = () => {
+    console.log("hey levelup");
+    this.setState({
+      levelUp: true,
+    })
+  }
+
 
   render() {
     const calculatedValue = (
@@ -112,8 +122,8 @@ class PaymentComponent extends React.Component {
       }
       return false
     }
-    console.log(this.props.flagFlip);
-    console.log(this.props.flag);
+    console.log(this.props);
+    console.log(this.props, "paymentComponent");
     console.log("PaymentComponent", this.props.history.location.pathname.split('/')[3]);
     return (
       <Subscribe to={[MenuStore, CouponStore, PaymentMethodStore]}>
@@ -157,6 +167,7 @@ class PaymentComponent extends React.Component {
                 flagFlip={this.props.flagFlip}
                 flag={this.props.flag}
                 open={this.state.dialogOpen}
+                levelUp = {this.state.levelUp}
                 selectedMenus={selectedMenus(
                   menuStore.state.totalmenu,
                   menuStore.state.selected
@@ -189,6 +200,9 @@ class PaymentComponent extends React.Component {
                   this.handleCloseDialog();
                 }}
                 handleCancelPayment={this.handleCloseDialog}
+                handleLevelUp = {this.handleLevelUp}
+                curLevel = {this.props.history.location.pathname.split('/')[3]}
+                goBackHistory = {this.props.history}
               />
             }
           </div>
