@@ -8,6 +8,7 @@ class CouponStore extends Container {
   };
 
   selectCoupon = id => {
+    console.log("selectCoupon:", id);
     this.setState({
       selected: id
     });

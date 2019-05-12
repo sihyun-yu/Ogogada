@@ -32,11 +32,11 @@ const meta = {
   "00", "0", "C"
   ],
   answers: [
-    {level: 1, answer: {0:1, 1:1}},
-    {level: 2, answer: {}},
-    {level: 3, answer: {}},
-    {level: 4, answer: {}},
-    {level: 5, answer: {}},
+    {level: 1, menu: {0:1, 1:1}, method: "card"},
+    {level: 2, menu: {8:2, 4:1}, method: "card"},
+    {level: 3, menu: {0:1}, coupon: 2, method: "card"},
+    {level: 4, menu: {}},
+    {level: 5, menu: {}},
   ]
 
 };
