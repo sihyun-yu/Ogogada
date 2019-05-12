@@ -6,6 +6,7 @@ import { Input, Button, Image } from 'semantic-ui-react';
 import { withRouter} from 'react-router-dom';
 import ImageMapper from 'react-image-mapper';
 import "../../stylesheets/Home.css"
+import { Card, Header, Icon, Feed } from 'semantic-ui-react'
 
 class HomeComponent extends React.Component {
     constructor(props) {
@@ -108,18 +109,25 @@ class HomeComponent extends React.Component {
 
         console.log("x1, y1: ", x1.toString() + "," + y1.toString() + ",63");
 
-        return (
-            <Subscribe to = {[HomeStore]}>
-                {(user) => (                   
-                    <div className = "stage"> 
-                        <ImageMapper src={URL} map={MAP} width={this.props.windowWidth} height={this.props.windowHeight}
-                            onClick={area => this.routeChange(area)}/>
+        return (                
+                <div className = "home"> 
+                    <div className = "home-header">
+                        <Header as='h1'>
+                            <Icon name="coffee"></Icon>
+                        OGOGADA POS
+                        </Header>
                     </div>
-                    
-                    )
-                    
-                }
-            </Subscribe>
+                    <div className = "home-user">
+                        <Card>
+                        <Card.Content>
+                            <Card.Header>{this.state.id}</Card.Header>
+                            <Card.Description>{"level: "+this.state.level}</Card.Description>
+                        </Card.Content>
+                        </Card>
+                    </div>
+                    <ImageMapper src={URL} map={MAP} width={this.props.windowWidth} height={this.props.windowHeight}
+                        onClick={area => this.routeChange(area)}/>
+                </div>
         )
     }
 }
