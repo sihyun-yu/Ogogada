@@ -1,7 +1,8 @@
 import React from "react";
 import "../../../stylesheets/Payment.css";
 import { Subscribe } from "unstated";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
+import { Button } from 'semantic-ui-react'
 import { MenuStore, CouponStore, PaymentMethodStore } from "../../../stores";
 import PaymentDialog from "./PaymentDialogComponent.jsx";
 import { mockCardPayment } from "../../../api/paymentAPI.js";
