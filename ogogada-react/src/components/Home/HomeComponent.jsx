@@ -8,6 +8,11 @@ import ImageMapper from 'react-image-mapper';
 import "../../stylesheets/Home.css"
 import { Card, Header, Icon, Feed } from 'semantic-ui-react'
 
+console.log("home window ", window)
+window.addEventListener('hashchange', (event) => {
+    window.location.reload(true);
+});
+//window.location.reload(true);
 class HomeComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -81,8 +86,8 @@ class HomeComponent extends React.Component {
         var y4 = this.props.windowHeight * 471/720;
         var x5 = this.props.windowWidth * 1066/1280;
         var y5 = this.props.windowHeight * 593/720;
-        var x_his = this.props.windowWidth * 1148/1280;
-        var y_his = this.props.windowHeight * 134/720;
+        var x_his = this.props.windowWidth * 300/1024;
+        var y_his = this.props.windowHeight * 550/768;
         var x_rank = this.props.windowWidth * 134/1280;
         var y_rank = this.props.windowHeight * 588/720;
 
@@ -99,7 +104,7 @@ class HomeComponent extends React.Component {
             console.log ("area: " + i)
             areas.push(level_array[i])
         }
-        areas.push({ name: "history", shape: "rect", coords: [x_his+63, y_his+63, x_his-63, y_his-63] })
+        areas.push({ name: "history", shape: "rect", coords: [x_his, y_his, x_his+120, y_his+120] })
         areas.push({ name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] })
         console.log ("areas: " + areas)
         var MAP = {
@@ -121,7 +126,7 @@ class HomeComponent extends React.Component {
                         <Card>
                         <Card.Content>
                             <Card.Header>{this.state.id}</Card.Header>
-                            <Card.Description>{"level: "+this.state.level}</Card.Description>
+                            <Card.Description>{"level: " + this.state.level}</Card.Description>
                         </Card.Content>
                         </Card>
                     </div>

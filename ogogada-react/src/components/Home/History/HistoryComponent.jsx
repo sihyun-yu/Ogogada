@@ -58,7 +58,7 @@ class HistoryComponent extends React.Component {
                             <Table.Cell>
                             <Icon name='coffee' /> Level 2
                             </Table.Cell>
-                            <Table.Cell>Take an order of 2 green tea latte and 1 hot vanilla latte</Table.Cell>
+                            <Table.Cell>Take an order of 2 ice caffe mocha and 1 hot earl grey</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
                             this.props.history.push('/3')
@@ -193,7 +193,10 @@ class HistoryComponent extends React.Component {
                     </Table>
                 </div>
                 <div style={{"width": "40%"}}>
-                    <Button id="backButton" onClick={() => this.props.history.goBack()}>Back</Button>
+                    <Button id="backButton" onClick={() => this.props.history.push({
+                        pathname : '../home',
+                        state: this.props.location.state,})}>
+                    Back</Button>
                 </div>
             </div>
         )
