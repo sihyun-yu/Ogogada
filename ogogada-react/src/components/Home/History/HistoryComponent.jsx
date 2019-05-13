@@ -24,7 +24,7 @@ class HistoryComponent extends React.Component {
     }
     
     render () {
-        console.log("HistoryComponent: ", this.props.location.state);
+        // console.log("HistoryComponent: ", this.props.location.state);
         return (
             <div id="totalContainer">
                 <div style={{"width": "40%"}}></div>

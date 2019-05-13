@@ -12,7 +12,7 @@ import SummaryCoupon from "./SummaryTable/SummaryCouponComponent.jsx";
 import SummaryPaymentMethod from "./SummaryTable/SummaryPaymentMethodComponent.jsx";
 
 window.onhashchange = function() { 
-  console.log("window chnage!@");
+  // console.log("window chnage!@");
 }
 
 
@@ -22,7 +22,8 @@ class PosComponent extends React.Component {
   }
 
   render () {
-    console.log("PosComponent state: ", this.props.location.state)
+    // console.log("PosComponent state: ", this.props.location.state)
+    // console.log("PosComponent history: ", this.props.history)
     return (
       <div>
         <Subscribe to ={[MenuStore]}>
@@ -42,6 +43,8 @@ class PosComponent extends React.Component {
                     <Payment {...this.props} 
                     flagFlip={menu.flagFlip.bind(menu)} 
                     flag={menu.state.timerFlag}
+                    userName={this.props.match.params.id}
+                    // history={this.props.history}
                     />  
                   </div>
                   

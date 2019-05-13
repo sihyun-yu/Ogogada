@@ -28,14 +28,14 @@ function checkNewRecord (user_level, user_id, user_time) {
 }
 
 function levelUp (user_level, user_id) {
-  console.log (user_id + " level Up!!!!!!!!!!!!!!") 
-  console.log("game_level1: " + user_level)
+  // console.log (user_id + " level Up!!!!!!!!!!!!!!") 
+  // console.log("game_level1: " + user_level)
   firebase.database().ref("/accounts/"+user_id+"/level/").once('value', function (snapshot) {
-    console.log("prev_level: " + snapshot.val())
+    // console.log("prev_level: " + snapshot.val())
     var prev_level = snapshot.val()
-    console.log("game_level2: " + user_level)
+    // console.log("game_level2: " + user_level)
     if (parseInt(prev_level) === parseInt(user_level)) {
-      console.log("level ", parseInt(prev_level)+1);
+      // console.log("level ", parseInt(prev_level)+1);
       firebase.database().ref("/accounts/"+user_id+"/level/").set(parseInt(prev_level)+1);
     } 
   
@@ -77,7 +77,7 @@ class Timer extends React.Component {
       // record to db
       checkNewRecord (this.props.level, this.props.username, this.state.time)
 
-      console.log ("props level: " + this.props.level)
+      // console.log ("props level: " + this.props.level)
       // levelup to db
       levelUp (this.props.level, this.props.username)
     }

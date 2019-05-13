@@ -54,13 +54,13 @@ class MenuStore extends Container {
 
 
   clearSummaryTable = () => {
-    console.log ("clearSummaryTable")
+    // console.log ("clearSummaryTable")
     this.setState({
       
       selected: {}
       
     });
-    console.log ("clearSummaryTable")
+    // console.log ("clearSummaryTable")
   }
 
   changeMenuDisplay = status => {
@@ -73,13 +73,13 @@ class MenuStore extends Container {
       this.setState({
         menus: menus_right
       });
-      console.log("right");
+      // console.log("right");
     }
   };
 
   addSelectedMenu = id => {
-    console.log(id);
-    console.log(this.state.selected);
+    // console.log(id);
+    // console.log(this.state.selected);
     const newSelected = Object.assign({}, this.state.selected);
 
     newSelected[id] =
@@ -122,13 +122,13 @@ class MenuStore extends Container {
   };
 // ========== Question Popup ========/
   openQuestion = () => {
-    console.log("openQUestion");
+    // console.log("openQUestion");
     this.setState({
       questionConfirmed: false,
     })
   }
   closeQuestion = () => {
-    console.log("closeQuestion");
+    // console.log("closeQuestion");
     this.setState({
       questionConfirmed: true,
     })
@@ -138,7 +138,7 @@ class MenuStore extends Container {
     this.setState({
       refundOpen: true,
     });
-    console.log("refund open");
+    // console.log("refund open");
   };
   
   closeRefund = () => {
@@ -151,7 +151,7 @@ class MenuStore extends Container {
   selectRefund = () => {
     const newSelected = Object.assign({}, this.state.selected);
     newSelected[17] = 1;
-    console.log("selectRefund: ", newSelected);
+    // console.log("selectRefund: ", newSelected);
     this.setState({
       refundIdx: 1,
     })
@@ -164,14 +164,14 @@ class MenuStore extends Container {
   }
 // ===========Giftion ============== /
   openGifticon = () => {
-    console.log("HERE!!!!!@@@@!@!@!@!@!@!@!@!@!@!!@!@!!@");
+    // console.log("HERE!!!!!@@@@!@!@!@!@!@!@!@!@!@!!@!@!!@");
     this.setState({
       gifticonOpen: true,
       numbersByPad: "",
       currentMenuID: -1
     });
-    console.log("gifticon open");
-    console.log(this.state.gifticonOpen);
+    // console.log("gifticon open");
+    // console.log(this.state.gifticonOpen);
   };
 
   closeGifticon = () => {
@@ -220,7 +220,7 @@ class MenuStore extends Container {
     }
 
     newDisplay = newDisplay + number;
-    console.log(newCode);
+    // console.log(newCode);
     cnt = cnt + 1;
     this.setState({
       tryAgain: false,
@@ -268,8 +268,8 @@ class MenuStore extends Container {
     if (id != -1) {
       if (number != 'C') {
         var newNumber = (numbersByPad + number);
-        console.log(id);
-        console.log(newNumber);
+        // console.log(id);
+        // console.log(newNumber);
         const newSelected = Object.assign({}, this.state.selected);
         newSelected[id] = parseInt(newNumber);
 
@@ -282,7 +282,7 @@ class MenuStore extends Container {
       else if (number == 'C') {
         var newNumber = numbersByPad;
         newNumber = newNumber.slice(0,-1);
-        console.log(newNumber);
+        // console.log(newNumber);
         if (newNumber == "") newNumber = "0"; 
         const newSelected = Object.assign({}, this.state.selected);
         newSelected[id] = parseInt(newNumber);
