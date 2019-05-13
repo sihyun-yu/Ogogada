@@ -1,6 +1,8 @@
 import React from "react";
 import "../../../stylesheets/History.css"
 import { Icon, Table, Button } from 'semantic-ui-react'
+import { Subscribe } from "unstated";
+import { HistoryStore } from "../../../stores"
 
 class HistoryComponent extends React.Component {
     constructor(props) {
@@ -26,7 +28,10 @@ class HistoryComponent extends React.Component {
     render () {
         console.log("HistoryComponent: ", this.props.location.state);
         return (
-            <div id="totalContainer">
+            <div>
+            <Subscribe to={[HistoryStore]}>
+            {(history ) => (
+                <div id="totalContainer">
                 <div style={{"width": "40%"}}></div>
                 <div id="historyContainer">
                     <Table celled striped inverted selectable id="tableContainer">
@@ -41,6 +46,7 @@ class HistoryComponent extends React.Component {
 
                         <Table.Body>
                         <Table.Row onClick={() => {
+                            history.resetIndex()
                             this.props.history.push('/1')
                             this.routeChange("1")
                         }
@@ -51,6 +57,7 @@ class HistoryComponent extends React.Component {
                             <Table.Cell>Take an order of 1 ice americano and 1 hot americano</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
+                            history.resetIndex()
                             this.props.history.push('/2')
                             this.routeChange("2")
                         }
@@ -61,6 +68,7 @@ class HistoryComponent extends React.Component {
                             <Table.Cell>Take an order of 2 ice caffe mocha and 1 hot earl grey</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
+                            history.resetIndex()
                             this.props.history.push('/3')
                             this.routeChange("3")
                         }
@@ -71,6 +79,7 @@ class HistoryComponent extends React.Component {
                             <Table.Cell>Apply student discount</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
+                            history.resetIndex()
                             this.props.history.push('/4')
                             this.routeChange("4")
                         }
@@ -81,6 +90,7 @@ class HistoryComponent extends React.Component {
                             <Table.Cell>Use an ice americano gifticon</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
+                            history.resetIndex()
                             this.props.history.push('/5')
                             this.routeChange("5")
                         }
@@ -180,6 +190,9 @@ class HistoryComponent extends React.Component {
                         state: this.props.location.state,})}>
                     Back</Button>
                 </div>
+                </div>
+            )}
+            </Subscribe>
             </div>
         )
     }

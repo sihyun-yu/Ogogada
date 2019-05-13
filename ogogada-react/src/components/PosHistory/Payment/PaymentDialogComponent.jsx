@@ -4,6 +4,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import { Button } from 'semantic-ui-react'
 
 const PaymentDialogComponent = props => {
+
   return (
     <Dialog open={props.open} onClose={props.handleClose}>
       <DialogTitle>Payment Check</DialogTitle>
@@ -48,7 +49,7 @@ const PaymentDialogComponent = props => {
           variant="contained"
           color="secondary"
           size="massive"
-          onClick={props.handleCancelPayment}
+          onClick={()=> {props.handleCancelPayment(); props.resetIndex();}}
         >
           Cancel
         </Button>
