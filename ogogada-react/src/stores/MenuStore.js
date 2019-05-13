@@ -119,7 +119,7 @@ class MenuStore extends Container {
   };
 // ========== Question Popup ========/
   openQuestion = () => {
-    // console.log("openQUestion");
+    console.log("openQUestion");
     this.setState({
       questionConfirmed: false,
     })

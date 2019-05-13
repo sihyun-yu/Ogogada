@@ -140,7 +140,7 @@ class PaymentDialogComponent extends React.Component {
                   this.routeChange();
                   this.props.flagFlip();
                   // props.goBackHistory.goBack();
-    
+                  this.props.openQuestion();
                 }}
               >
                 Got it!

@@ -44,6 +44,7 @@ class PosComponent extends React.Component {
                     flagFlip={menu.flagFlip.bind(menu)} 
                     flag={menu.state.timerFlag}
                     userName={this.props.match.params.id}
+                    openQuestion={menu.openQuestion.bind(menu)}
                     // history={this.props.history}
                     />  
                   </div>

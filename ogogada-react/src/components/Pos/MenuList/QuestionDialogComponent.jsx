@@ -11,7 +11,7 @@ const QuestionDialogComponent = props => {
     var question = metaJSON.questions[props.level-1];
 
     console.log ("questionDialogComponent ", props.isConfirmed);
-    props.openQuestion;
+    props.open;
     if (!props.isConfirmed){
         return (
             <div class="gifticon-container">
