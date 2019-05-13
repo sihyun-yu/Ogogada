@@ -29,7 +29,6 @@ class HomeComponent extends React.Component {
             pw: "",
             level: "",
         };
-
         this.routeChange = this.routeChange.bind(this);
         
     }
