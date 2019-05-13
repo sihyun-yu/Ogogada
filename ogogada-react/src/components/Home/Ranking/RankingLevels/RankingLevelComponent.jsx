@@ -92,13 +92,14 @@ class RankingLevelComponent extends React.Component {
 
         return (
             <div id="rankingLevel"> 
+                    <div className="backButtonDiv">
+                        <Button className="backButton" onClick={() => this.props.history.goBack()}>Back</Button>
+                    </div>
                     <div id="rankingTemplate" >
                         <Image src={src1} alt="hey!" />
                         {ranking}
                     </div>
-                    <div className="backButtonDiv">
-                        <Button className="backButton" onClick={() => this.props.history.goBack()}>Back</Button>
-                    </div>
+                    
             </div>       
         )
     }
