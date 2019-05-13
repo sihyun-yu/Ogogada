@@ -202,14 +202,7 @@ class PaymentComponent extends React.Component {
                 handleCancelPayment={this.handleCloseDialog}
                 handleLevelUp = {this.handleLevelUp}
                 curLevel = {this.props.history.location.pathname.split('/')[3]}
-                goBackHistory = {this.props.history.push({
-                  pathname : '../../../history',
-                      state: {
-                      id: this.props.history.location.state.id,
-                      pw: this.props.history.location.state.pw,
-                      level: this.props.history.location.state.level,
-                  }   
-              })}
+                goBackHistory = {this.props.history}
               />
             }
           </div>

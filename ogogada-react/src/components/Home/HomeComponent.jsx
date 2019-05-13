@@ -24,15 +24,12 @@ function getUserFromDB (userName) {
 class HomeComponent extends React.Component {
     constructor(props) {
         super(props);
-<<<<<<< HEAD
-        this.state = props.location.state;
-=======
         this.state = {
             id: "",
             pw: "",
             level: "",
         };
->>>>>>> 263bb0fb6022dabd802b49b342572ff63ab7f97c
+
         this.routeChange = this.routeChange.bind(this);
         
     }
