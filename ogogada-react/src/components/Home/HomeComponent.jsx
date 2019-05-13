@@ -13,12 +13,7 @@ import { Card, Header, Icon, Feed } from 'semantic-ui-react'
 class HomeComponent extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            id:"",
-            pw:"",
-            level:"",
-
-        };
+        this.state = props.location.state;
         this.routeChange = this.routeChange.bind(this);
         
     }
@@ -96,7 +91,7 @@ class HomeComponent extends React.Component {
         var level_5 = { name: "5", shape: "circle", coords: [x5, y5, 63], }
         var level_array = [level_1, level_2, level_3, level_4, level_5]
         var areas= [];
-        console.log (this.state["level"])
+
         for (var i=0; i<this.state["level"]; i++) {
             console.log ("area: " + i)
             areas.push(level_array[i])

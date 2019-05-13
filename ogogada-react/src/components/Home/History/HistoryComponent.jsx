@@ -55,7 +55,7 @@ class HistoryComponent extends React.Component {
                             this.routeChange("2")
                         }
                         }>
-                            <Table.Cell>
+                            <Table.Cell disabled={this.props.location.state.level < 2}>
                             <Icon name='coffee' /> Level 2
                             </Table.Cell>
                             <Table.Cell>Take an order of 2 ice caffe mocha and 1 hot earl grey</Table.Cell>
@@ -65,7 +65,7 @@ class HistoryComponent extends React.Component {
                             this.routeChange("3")
                         }
                         }>
-                            <Table.Cell>
+                            <Table.Cell disabled={this.props.location.state.level < 3}>
                             <Icon name='coffee' /> Level 3
                             </Table.Cell>
                             <Table.Cell>Apply student discount</Table.Cell>
@@ -75,7 +75,7 @@ class HistoryComponent extends React.Component {
                             this.routeChange("4")
                         }
                         }>
-                            <Table.Cell>
+                            <Table.Cell disabled={this.props.location.state.level < 4}>
                             <Icon name='coffee' /> Level 4
                             </Table.Cell>
                             <Table.Cell>Use an ice americano gifticon</Table.Cell>
@@ -85,105 +85,87 @@ class HistoryComponent extends React.Component {
                             this.routeChange("5")
                         }
                         }>
-                            <Table.Cell>
+                            <Table.Cell disabled={this.props.location.state.level < 5}>
                             <Icon name='coffee' /> Level 5
                             </Table.Cell>
                             <Table.Cell>Refund most recent order</Table.Cell>
                         </Table.Row>
                         </Table.Body>
 
-                        <Table.Header>
+                        <Table.Header disabled={true}>
                         <Table.Row>
                             <Table.HeaderCell colSpan='2'>More</Table.HeaderCell>
                         </Table.Row>
                         </Table.Header>
 
                         <Table.Body>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row>
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row >
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row >
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row >
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row>
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row >
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row >
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row >
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row >
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row >
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row >
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>
                             <Table.Cell>Not yet</Table.Cell>
                         </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
-                            <Table.Cell collapsing>
-                            <Icon name='coffee' />
-                            </Table.Cell>
-                            <Table.Cell>Not yet</Table.Cell>
-                        </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
-                            <Table.Cell collapsing>
-                            <Icon name='coffee' />
-                            </Table.Cell>
-                            <Table.Cell>Not yet</Table.Cell>
-                        </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
-                            <Table.Cell collapsing>
-                            <Icon name='coffee' />
-                            </Table.Cell>
-                            <Table.Cell>Not yet</Table.Cell>
-                        </Table.Row>
-                        <Table.Row onClick={() => this.props.history.push('/home')}>
+                        <Table.Row >
                             <Table.Cell collapsing>
                             <Icon name='coffee' />
                             </Table.Cell>

@@ -22,6 +22,7 @@ class PosComponent extends React.Component {
   }
 
   render () {
+    console.log("PosComponent state: ", this.props.location.state)
     return (
       <div>
         <Subscribe to ={[MenuStore]}>

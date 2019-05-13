@@ -35,10 +35,11 @@ function levelUp (user_level, user_id) {
     var prev_level = snapshot.val()
     console.log("game_level2: " + user_level)
     if (parseInt(prev_level) === parseInt(user_level)) {
+      console.log("level ", parseInt(prev_level)+1);
       firebase.database().ref("/accounts/"+user_id+"/level/").set(parseInt(prev_level)+1);
     } 
   
-    console.log ("level: " + (user_level+1))
+ 
   })
 }
 
