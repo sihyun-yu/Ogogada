@@ -16,12 +16,23 @@ function checkNewRecord (user_level, user_id, user_time) {
   // console.log (checkNewRecord)
   return firebase.database().ref('/records/'+user_level.toString()).once('value', function(snapshot){
     var records = snapshot.val()
-    var user_rank = 9;
+    var temp_rank = 9;
+    var temp_time = user_time;
+    var temp_id = user_id;
+    var save_time, save_id, save_rank;
     for (var idx in records){
-      if (records[idx]["record"] > user_time && user_rank > records[idx]["rank"]){
-        user_rank = records[idx]["rank"];
+      if (records[idx]["record"] > temp_time && temp_rank > records[idx]["rank"]){
+        save_time = records[idx]["record"];
+        save_id = records[idx]["id"];
+        save_rank = temp_rank;
+
+        temp_rank = records[idx]["rank"];
         firebase.database().ref('/records/' + user_level.toString()+'/'+idx.toString()).
-          update({"id": user_id, "record": user_time})
+          update({"id": temp_id, "record": temp_time, "rank": temp_rank});
+
+        temp_time = save_time;
+        temp_id = save_id;
+        temp_rank = save_rank;
       }
     }
   })
