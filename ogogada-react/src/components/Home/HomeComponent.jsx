@@ -10,6 +10,7 @@ import { Card, Header, Icon, Feed } from 'semantic-ui-react'
 import firebase from "firebase"
 
 function getUserFromDB (userName) {
+    console.log ("userName: " + userName)
     return new Promise(function (resolve, reject) {
         var myValue;
         firebase.database().ref('/accounts/'+userName).once('value', function (snapshot) {
@@ -26,7 +27,7 @@ class HomeComponent extends React.Component {
         this.state = {
             id: "",
             pw: "",
-            level: ""
+            level: "",
         };
         this.routeChange = this.routeChange.bind(this);
         
@@ -72,16 +73,18 @@ class HomeComponent extends React.Component {
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
+        this.state = this.props.location.state;
+
+        console.log ("id at first : " + this.state.id)
         getUserFromDB (this.state.id).then(res => {
+            console.log ("id at first : " + this.state.id)
             console.log (res)
             console.log ("level4: " + res["level"])
-            this.setState ({
-                id: "aaa",
-                pw: "bbb",
-                level: "ccc"
-            })
-            this.setState ({ level: res["level"] }, () => {
+            console.log ("id: " + res["id"])
+            console.log ("level2: " + res["level"])
+            console.log ("pw: " + res["pw"])
+            this.setState ({ level: res["level"], id:res["id"] }, () => {
                 console.log ("res_level: " + res["level"])
                 console.log ("real_level: " + this.state.level)
             })
@@ -97,12 +100,9 @@ class HomeComponent extends React.Component {
 
 
     render() {
-        const userCardHeader = <Card.Header>{this.state.id}</Card.Header>
-        const userCardDescription = <Card.Description>{"level: " + this.state.level}</Card.Description>
-
         console.log("home props: ", this.props);
         console.log("home state: ", this.state);
-        this.state = this.props.location.state;
+        // this.state = this.props.location.state;
         console.log("home state: ", this.state);
 
         //this.setState({id:_id, pw:_pw, level:_level})
@@ -130,20 +130,37 @@ class HomeComponent extends React.Component {
         var level_5 = { name: "5", shape: "circle", coords: [x5, y5, 63], }
         var level_array = [level_1, level_2, level_3, level_4, level_5]
         var areas= [];
-        console.log (this.state["level"])
-        for (var i=0; i<this.state["level"]; i++) {
-            console.log ("area: " + i)
-            areas.push(level_array[i])
-        }
-        areas.push({ name: "history", shape: "rect", coords: [x_his, y_his, x_his+120, y_his+120] })
-        areas.push({ name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] })
-        console.log ("areas: " + areas)
-        var MAP = {
-        name: "my-map",
-        areas: areas
-        }
 
-        console.log("x1, y1: ", x1.toString() + "," + y1.toString() + ",63");
+        function makeMAP (level) {
+            console.log ("make MAP")
+            console.log (level)
+            for (var i=0; i<level; i++) {
+                console.log ("area: " + i)
+                areas.push(level_array[i])
+            }
+            areas.push({ name: "history", shape: "rect", coords: [x_his, y_his, x_his+120, y_his+120] })
+            areas.push({ name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] })
+            console.log ("areas: " + areas)
+            var MAP = {
+            name: "my-map",
+            areas: areas
+            }
+            return MAP
+        }
+        // console.log (this.state["level"])
+        // for (var i=0; i<this.state["level"]; i++) {
+        //     console.log ("area: " + i)
+        //     areas.push(level_array[i])
+        // }
+        // areas.push({ name: "history", shape: "rect", coords: [x_his, y_his, x_his+120, y_his+120] })
+        // areas.push({ name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] })
+        // console.log ("areas: " + areas)
+        // var MAP = {
+        // name: "my-map",
+        // areas: areas
+        // }
+
+        // console.log("x1, y1: ", x1.toString() + "," + y1.toString() + ",63");
 
         return (                
                 <div className = "home"> 
@@ -161,7 +178,7 @@ class HomeComponent extends React.Component {
                         </Card.Content>
                         </Card>
                     </div>
-                    <ImageMapper src={URL} map={MAP} width={this.props.windowWidth} height={this.props.windowHeight}
+                    <ImageMapper src={URL} map={makeMAP(this.state.level)} width={this.props.windowWidth} height={this.props.windowHeight} 
                         onClick={area => this.routeChange(area)}/>
                 </div>
         )
