@@ -32,6 +32,16 @@ class MenuStore extends Container {
   };
 
   flagFlip = () => {
+    // if (this.state.timerFlag === true) {
+    //   this.setState({
+    //     timerFlag: false
+    //   });
+    // }
+    // else {
+    //   this.setState({
+    //     timerFlag: true
+    //   });
+    // }
     this.setState({
       timerFlag: false
     });

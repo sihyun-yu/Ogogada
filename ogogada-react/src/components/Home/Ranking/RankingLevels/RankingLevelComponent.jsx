@@ -14,26 +14,26 @@ function getRankingsFromDB (level) {
     return new Promise(function(resolve, reject) {
         var myValue;
         firebase.database().ref('/records/'+level).once('value', function(snapshot) {
-        console.log ("get ranking from db")
-        myValue = snapshot.val();
-        console.log (myValue)
-        return resolve(myValue);
-        
-        // var keyList = Object.keys(myValue);
-        // console.log(keyList)
-    //     var myKey = keyList[0]
-    //     console.log("myKey: "+myKey)
-    //     console.log(myValue[myKey]) 
-        
-    //     // make table with current rows
-    //     for(var i=0; i<keyList.length; i++) {
-    //       var myKey = keyList[i];
-    //       addRow(myValue[myKey], myKey);
-    //     }
-        
-    //     if ($('#capital_country_table tr').length == 3) {
-    //       $("#pr3__clear").prop("disabled", true)
-    //     }
+            console.log ("get ranking from db")
+            myValue = snapshot.val();
+            console.log (myValue)
+            return resolve(myValue);
+            
+            // var keyList = Object.keys(myValue);
+            // console.log(keyList)
+        //     var myKey = keyList[0]
+        //     console.log("myKey: "+myKey)
+        //     console.log(myValue[myKey]) 
+            
+        //     // make table with current rows
+        //     for(var i=0; i<keyList.length; i++) {
+        //       var myKey = keyList[i];
+        //       addRow(myValue[myKey], myKey);
+        //     }
+            
+        //     if ($('#capital_country_table tr').length == 3) {
+        //       $("#pr3__clear").prop("disabled", true)
+        //     }
         });        
     })
 }

@@ -7,17 +7,26 @@ import { withRouter} from 'react-router-dom';
 import ImageMapper from 'react-image-mapper';
 import "../../stylesheets/Home.css"
 import { Card, Header, Icon, Feed } from 'semantic-ui-react'
+import firebase from "firebase"
 
+function getUserFromDB (userName) {
+    return new Promise(function (resolve, reject) {
+        var myValue;
+        firebase.database().ref('/accounts/'+userName).once('value', function (snapshot) {
+            myValue = snapshot.val();
+            return resolve(myValue)
+        })
+    })
+} 
 
 //window.location.reload(true);
 class HomeComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            id:"",
-            pw:"",
-            level:"",
-
+            id: "",
+            pw: "",
+            level: ""
         };
         this.routeChange = this.routeChange.bind(this);
         
@@ -63,8 +72,33 @@ class HomeComponent extends React.Component {
         }
     }
 
+    componentWillMount() {
+        getUserFromDB (this.state.id).then(res => {
+            console.log (res)
+            console.log ("level4: " + res["level"])
+            this.setState ({
+                id: "aaa",
+                pw: "bbb",
+                level: "ccc"
+            })
+            this.setState ({ level: res["level"] }, () => {
+                console.log ("res_level: " + res["level"])
+                console.log ("real_level: " + this.state.level)
+            })
+
+            console.log ("id: " + res["id"])
+            console.log ("level2: " + res["level"])
+            console.log ("pw: " + res["pw"])
+            console.log ("id: " + this.state.id)
+            console.log ("level5: " + this.state.level)
+            console.log ("pwd: " + this.state.pw)
+        })
+    }
+
 
     render() {
+        const userCardHeader = <Card.Header>{this.state.id}</Card.Header>
+        const userCardDescription = <Card.Description>{"level: " + this.state.level}</Card.Description>
 
         console.log("home props: ", this.props);
         console.log("home state: ", this.state);
