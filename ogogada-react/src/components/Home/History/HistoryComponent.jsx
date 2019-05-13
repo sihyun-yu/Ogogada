@@ -51,8 +51,10 @@ class HistoryComponent extends React.Component {
                             <Table.Cell>Take an order of 1 ice americano and 1 hot americano</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
+                            if (this.state.level >= 2) {
                             this.props.history.push('/2')
                             this.routeChange("2")
+                        }
                         }
                         }>
                             <Table.Cell disabled={this.props.location.state.level < 2}>
@@ -61,8 +63,10 @@ class HistoryComponent extends React.Component {
                             <Table.Cell>Take an order of 2 ice caffe mocha and 1 hot earl grey</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
-                            this.props.history.push('/3')
-                            this.routeChange("3")
+                            if (this.state.level >= 3 ){
+                                this.props.history.push('/3')
+                                this.routeChange("3")
+                            }
                         }
                         }>
                             <Table.Cell disabled={this.props.location.state.level < 3}>
@@ -71,8 +75,10 @@ class HistoryComponent extends React.Component {
                             <Table.Cell>Apply student discount</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
+                            if (this.state.level >= 4) {
                             this.props.history.push('/4')
                             this.routeChange("4")
+                        }
                         }
                         }>
                             <Table.Cell disabled={this.props.location.state.level < 4}>
@@ -81,8 +87,10 @@ class HistoryComponent extends React.Component {
                             <Table.Cell>Use an ice americano gifticon</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
-                            this.props.history.push('/5')
-                            this.routeChange("5")
+                            if (this.state.level >= 5) {
+                                this.props.history.push('/5')
+                                this.routeChange("5")
+                            }
                         }
                         }>
                             <Table.Cell disabled={this.props.location.state.level < 5}>
