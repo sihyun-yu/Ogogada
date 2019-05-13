@@ -11,6 +11,10 @@ import Payment from "./Payment/PaymentComponent.jsx";
 import SummaryCoupon from "./SummaryTable/SummaryCouponComponent.jsx";
 import SummaryPaymentMethod from "./SummaryTable/SummaryPaymentMethodComponent.jsx";
 
+window.onhashchange = function() { 
+  console.log("window chnage!@");
+}
+
 
 class PosComponent extends React.Component {
   constructor(props) {

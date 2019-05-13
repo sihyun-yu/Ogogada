@@ -8,6 +8,8 @@ import ImageMapper from 'react-image-mapper';
 import "../../stylesheets/Home.css"
 import { Card, Header, Icon, Feed } from 'semantic-ui-react'
 
+
+//window.location.reload(true);
 class HomeComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -71,20 +73,20 @@ class HomeComponent extends React.Component {
 
         //this.setState({id:_id, pw:_pw, level:_level})
 
-        var x1 = this.props.windowWidth * 211/1280;
-        var y1 = this.props.windowHeight * 114/720;
-        var x2 = this.props.windowWidth * 425/1280;
-        var y2 = this.props.windowHeight * 228/720;
-        var x3 = this.props.windowWidth * 641/1280;
-        var y3 = this.props.windowHeight * 352/720;
-        var x4 = this.props.windowWidth * 852/1280;
-        var y4 = this.props.windowHeight * 471/720;
-        var x5 = this.props.windowWidth * 1066/1280;
-        var y5 = this.props.windowHeight * 593/720;
-        var x_his = this.props.windowWidth * 1148/1280;
-        var y_his = this.props.windowHeight * 134/720;
-        var x_rank = this.props.windowWidth * 134/1280;
-        var y_rank = this.props.windowHeight * 588/720;
+        var x1 = this.props.windowWidth * 130/1024;
+        var y1 = this.props.windowHeight * 220/768;
+        var x2 = this.props.windowWidth * 300/1024;
+        var y2 = this.props.windowHeight * 250/768;
+        var x3 = this.props.windowWidth * 500/1024;
+        var y3 = this.props.windowHeight * 350/768;
+        var x4 = this.props.windowWidth * 670/1024;
+        var y4 = this.props.windowHeight * 430/768;
+        var x5 = this.props.windowWidth * 880/1024;
+        var y5 = this.props.windowHeight * 593/768;
+        var x_his = this.props.windowWidth * 300/1024;
+        var y_his = this.props.windowHeight * 530/768;
+        var x_rank = this.props.windowWidth * 150/1024;
+        var y_rank = this.props.windowHeight * 600/768;
 
         var URL = require("../../assets/home.png")
         var level_1 = { name: "1", shape: "circle", coords: [x1, y1, 63], }
@@ -99,7 +101,7 @@ class HomeComponent extends React.Component {
             console.log ("area: " + i)
             areas.push(level_array[i])
         }
-        areas.push({ name: "history", shape: "rect", coords: [x_his+63, y_his+63, x_his-63, y_his-63] })
+        areas.push({ name: "history", shape: "rect", coords: [x_his, y_his, x_his+120, y_his+120] })
         areas.push({ name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] })
         console.log ("areas: " + areas)
         var MAP = {
@@ -121,7 +123,7 @@ class HomeComponent extends React.Component {
                         <Card>
                         <Card.Content>
                             <Card.Header>{this.state.id}</Card.Header>
-                            <Card.Description>{"level: "+this.state.level}</Card.Description>
+                            <Card.Description>{"level: " + this.state.level}</Card.Description>
                         </Card.Content>
                         </Card>
                     </div>

@@ -37,7 +37,8 @@ const PaymentDialogComponent = props => {
           color="primary"
           size="massive"
           // disabled={props.pendingCardPayment}
-          onClick={props.handleCompletePayment}
+          onClick={()=> {props.handleCompletePayment();
+            props.goBackHistory()}}
         >
           Submit
         </Button>

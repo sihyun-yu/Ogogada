@@ -121,7 +121,7 @@ class PaymentComponent extends React.Component {
       }
       return false
     }
-    console.log("PaymentComponent", this.props.history.location.pathname.split('/')[3]);
+    console.log("PaymentComponent", this.props.history.location);
     return (
       <Subscribe to={[MenuStore, CouponStore, PaymentMethodStore, HistoryStore]}>
         {(menuStore, couponStore, paymentMethodStore, history) => (
@@ -197,6 +197,14 @@ class PaymentComponent extends React.Component {
                   this.handleCloseDialog();
                 }}
                 handleCancelPayment={this.handleCloseDialog}
+                goBackHistory = {this.props.history.push({
+                  pathname : '../../../history',
+                      state: {
+                      id: this.props.history.location.state.id,
+                      pw: this.props.history.location.state.pw,
+                      level: this.props.history.location.state.level,
+                  }   
+              })}
               />
             }
           </div>

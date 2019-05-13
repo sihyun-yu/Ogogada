@@ -1,7 +1,13 @@
 import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import { Button } from 'semantic-ui-react'
+import { Button, Image } from 'semantic-ui-react'
+
+import src2 from "../../../assets/unlock2.png";
+import src3 from "../../../assets/unlock3.png";
+import src4 from "../../../assets/unlock4.png";
+import src5 from "../../../assets/unlock5.png";
+
 
 const PaymentDialogComponent = props => {
   console.log("paymentdialogcomponent ", props);
@@ -73,8 +79,19 @@ const PaymentDialogComponent = props => {
           ))} */}
         </div>
         <div className="payment-dialog__total">
-          You leveled up from {props.curLevel} to {Number(props.curLevel) + 1 + '!\n'}
-          New buttons are unlocked!
+          You leveled up from {props.curLevel} to {Number(props.curLevel) + 1 + "!\n"}
+          
+        </div>
+        <div className="payment-dialog__total">
+          New button
+           {props.curLevel == 1 && <Image src={src2} size="small" centered="true"/> ||
+          props.curLevel == 2 && <Image src={src3} size="small" centered="true"/> ||
+          props.curLevel == 3 && <Image src={src4} size="small" centered="true"/> ||
+          props.curLevel == 4 && <Image src={src5} size="small" centered="true"/> 
+          }
+        </div>
+        <div className="payment-dialog__total">
+          is unlocked!
         </div>
         {/* {props.pendingCardPayment && (
           <div className="payment-dialog__pending">
