@@ -32,7 +32,7 @@ class PosComponent extends React.Component {
                     <NumberList/>
                   </div>
                   <div className="left-below-right__container">
-                    <SummaryCoupon />
+                    <SummaryCoupon level={this.props.match.params.level} />
                     <SummaryPaymentMethod />
                     <Payment {...this.props} 
                     flagFlip={menu.flagFlip.bind(menu)} 
