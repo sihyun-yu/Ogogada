@@ -45,7 +45,12 @@ const PaymentDialogComponent = props => {
             color="primary"
             size="massive"
             // disabled={props.pendingCardPayment}
-            onClick={() => {props.flagFlip(); props.handleLevelUp()}}
+            onClick={() => {
+              props.flagFlip(); 
+              props.handleLevelUp();
+              props.resetPaymentMethod();
+              props.resetMenuDisplay();
+              }}
           >
             Submit
           </Button>
@@ -55,7 +60,9 @@ const PaymentDialogComponent = props => {
             variant="contained"
             color="secondary"
             size="massive"
-            onClick={props.handleCancelPayment}
+            onClick= { () => {
+              props.handleCancelPayment();
+              }}
           >
             Cancel
           </Button>

@@ -64,6 +64,7 @@ class PaymentComponent extends React.Component {
     this.setState({
       levelUp: true,
     })
+
   }
 
 
@@ -130,15 +131,6 @@ class PaymentComponent extends React.Component {
         {(menuStore, couponStore, paymentMethodStore) => (
           <div className="payment__container">
             <div className="payment">
-              {/* <div className="payment__text">
-                {paymentText(
-                  menuStore.state.totalmenu,
-                  menuStore.state.selected,
-                  couponStore.state.coupons[couponStore.state.selected],
-                  parseInt(paymentMethodStore.state.selected, 10)
-                )}
-              </div> */}
-
               <div className="payment__button-container">
                 <Button
                   className="payment__button"
@@ -161,9 +153,8 @@ class PaymentComponent extends React.Component {
                 </Button>
               </div>
             </div>
-            {isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 
-                    this.props.history.location.pathname.split('/')[3]) &&
-              <PaymentDialog
+             <PaymentDialog
+                resetMenuDisplay={menuStore.resetMenuDisplay}
                 flagFlip={this.props.flagFlip}
                 flag={this.props.flag}
                 open={this.state.dialogOpen}
@@ -188,7 +179,7 @@ class PaymentComponent extends React.Component {
                   resetValuesCallbackArray.push(
                     paymentMethodStore.selectPaymentMethod.bind(
                       paymentMethodStore,
-                      "0"
+                      "-1"
                     )
                   );
                   resetValuesCallbackArray.push(
@@ -203,8 +194,8 @@ class PaymentComponent extends React.Component {
                 handleLevelUp = {this.handleLevelUp}
                 curLevel = {this.props.history.location.pathname.split('/')[3]}
                 goBackHistory = {this.props.history}
+                resetPaymentMethod = {paymentMethodStore.resetPaymentMethod.bind(paymentMethodStore)}
               />
-            }
           </div>
         )}
       </Subscribe>

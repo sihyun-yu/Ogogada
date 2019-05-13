@@ -31,6 +31,11 @@ class MenuStore extends Container {
     questionConfirmed: false,
   };
 
+  resetMenuDisplay = () => {
+    this.setState({
+      menus:menus_left
+    })
+  }
   flagFlip = () => {
     // if (this.state.timerFlag === true) {
     //   this.setState({
