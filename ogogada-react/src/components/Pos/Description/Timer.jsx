@@ -58,14 +58,17 @@ class Timer extends React.Component {
   }
 
   componentDidMount() {
+    console.log("didmount!!");
     this.setState({
       time: this.state.time,
       start: Date.now() - this.state.time,
       isOn: true
-    })
+    });
+    console.log("setstateend");
     this.timer = setInterval(() => this.setState({
       time: Date.now() - this.state.start
     }), 1);
+    console.log("setInterval");
   }
 
   

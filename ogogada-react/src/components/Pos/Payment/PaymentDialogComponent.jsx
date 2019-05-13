@@ -138,6 +138,7 @@ class PaymentDialogComponent extends React.Component {
                 onClick={() => {
                   this.props.handleCompletePayment();
                   this.routeChange();
+                  this.props.flagFlip();
                   // props.goBackHistory.goBack();
     
                 }}
