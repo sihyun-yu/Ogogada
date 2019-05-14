@@ -19,6 +19,13 @@ class PaymentMethodStore extends Container {
       selected: "-1"
     })
   }
+
+  sendtoRankMethod = (level, history) => {
+    console.log("send to rank page: ", level)
+    history.push({
+      pathName : "../../../ranking/" + level,
+    })
+  }
 }
 
 export default PaymentMethodStore;
