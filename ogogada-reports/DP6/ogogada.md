@@ -14,6 +14,11 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 ### Individual Reflections
 
 - Yoonseo Kim
+> I made some of the css layouts of this project. In log in page, I placed the logo and input in the center. In home page, I placed the logo and username and level which got from database. The user only can click the level button lower or equal with their level. On the POS page, I made and placed menu buttons, numpads, coupon, card, cash, payment buttons and summary table on the right part. Also except timer and task button, I placed the description on the top right div. Also I did some link between POS page to home when the game ended. In the ranking page, ranking according to the level is called from the firebase and placed in the background appropriately. 
+> 
+> I found that managing several and complex structured divs are really hard. I needed to first think carefully to decide how our divs structured. Also, it was difficult to implement the hi-fi prototype when the window size changes from user to user. I used 'flex' to deal with these problems. By setting ‘flex’ to property ‘display’ in div and set other parameter, I can easily locate other div inside one div in direction with row or column or locate contents in the center in one div. However, I could not do everything relatively in the layout. It was because it is doubtful whether it is correct to do percentages things such as font-size and margin. In fact, even on sites such as Google or Naver, the font-size remains the same for a while when the window size varies. These things were not clear to me and I had a lot of difficulty in make the hi-fi prototype. For this, I had to do more analysis with other complete website's UI changing their window size. Also since I was not expert in semantic-ui, I have hard time implementing the hi-fi prototype. More specifically, when implementing POS ui, I tried to change background color in semantic ui buttons, but it makes hover effect and click effect disappear. 
+>  
+> Finally, I had some difficulties using react js because I was not familiar with it. It took me a long time to understand how to pass data between the component, where to call db in component life cycle. I think I learned a lot while implementing hi-fi prototype and hope we will make better and more complete prototype before the user test. 
 
 - Sungha Eom
 
