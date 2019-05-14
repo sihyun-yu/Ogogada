@@ -29,8 +29,14 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
 - Sangmin Lee
 
-> I made History Page and Ranking page mainly. I also made description part of POS.
+> I made History Page and Ranking page mainly. I made all of the components in the History select page and Ranking select page such as, history table, back button, etc. I also made description part of POS. 
 >
-> I have two big difficulties. First is making UI of history page, and second is implementing timer. 
+> I have two big difficulties during this project. First is making UI of history page, and second is implementing timer. 
+>
+> Because this project is my first web programming using react, I was confused everytime I try to add components in our project. At first, I didn't understand any concepts of components of react, and I don't know how to add some functions at table with semantic-ui-react. However, after I become familier with react, I can add some properties(such as, clickable, invert, etc.) and make it better than hard coded html table easily.
+>
+> Implementing timer was also a big problem to me. I can easily find timer source code, but it is hard to make it run automatically after POS page rendered, and stop automatically when user press "Submit" button at payment dialog. Since this is my first web programming with react, I don't know anything about 'componentDidMount'. After I spent some time for search the solution of this problem at google, I learn the life cycle of react component and can make timer start automatically. Make timer stop automatically is more difficult than make timer start. In our program, paymentDialog component and timer component are quite apart. Therefore to make interaction between those, it needs to use 'props'. But I don't know any concepts of parent and child interaction, so I studied more than 3 hours to get solution of this problem. Without these problems, I also have some troubles with fixing bugs.
+>
+> Through DP5 and DP6, I learn lots of implementation skills of web programming. I learn how to use React, and semantic-ui-react. I also learn how to deal with props. Moreover I got some tips to place components with .css.
 
 ### Studio Reflections
