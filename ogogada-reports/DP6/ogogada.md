@@ -44,7 +44,7 @@ This screen is for POS game level 1. Before starting the game, a dialog pops up 
 ![](./Images/pos2.png)
 This screen is also for POS game level 1. The user did the task and now "PAYMENT" button is available to click. "PAYMENT" button is disabled until the player clicks all the necessary buttons. When he/she finishes, the button becomes clickable.
 
-![](./Images/pos3.png)
+![](./Images/pos2.png)
 This screen is when the player finished POS game level1. A dialog pops up, telling that he/she leveled up from 1 to 2 and new button is introduced. At that point, the timer is stopped. When his/her record is in top 8 among all the users of the game in that level, the record is stored in DB.
 
 ![](./Images/ranking.png)
