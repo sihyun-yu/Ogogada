@@ -145,7 +145,7 @@ class PaymentComponent extends React.Component {
                 openQuestion={menuStore.openQuestion.bind(menuStore)}
                 history={this.props.history}
                 userName={this.props.userName}
-                resetMenuDisplay={menuStore.resetMenuDisplay}
+                resetMenuDisplay={menuStore.resetMenuDisplay.bind(menuStore)}
                 flagFlip={this.props.flagFlip}
                 flag={this.props.flag}
                 open={this.state.dialogOpen}

@@ -89,7 +89,18 @@ const RefundDialogComponent = props => {
             variant="contained"
             color="secondary"
             size="massive"
-            onClick={props.closeRefund}>
+            onClick={() => {
+                props.flagFlip();
+                props.resetPaymentMethod();
+                props.resetMenuDisplay();
+                props.closeRefund();
+                props.history.push({
+                    pathname : '../../../home',
+                    state: {
+                        id: props.username,
+                    }
+                  });
+                }}>
                 OK!
             </Button>
             </div>
