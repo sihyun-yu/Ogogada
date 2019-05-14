@@ -8,6 +8,18 @@ var menuChangeStyle = {
   "line-height": "14.5vh"
 };
 
+var hiddenStyle = {
+  padding: "1px",
+  height:"14.5vh",
+  "font-size": "18px",
+  display: "flex",
+  "align-items": "center",
+  "justify-content": "center",
+  "text-align": "center",
+  "color": "black",
+  "flex-direction": "coloumn"
+};
+
 const MenuItemComponent = props => {
   var icon_name = (props.status == "left") ? "triangle left" : "triangle right";
   if (props.level >= 2) {
@@ -28,11 +40,12 @@ const MenuItemComponent = props => {
   else {
     return (
     <Button
+      color='white'
+      style={hiddenStyle}
       className="hide-item">
         <div className="hide-item__image">
           <Image className="hide-item__image__image" src='/images/hidden.png' size='tiny' />
         </div>
-        <div className="hide-item__name">Hidden</div>
     </Button>
     );
   }
