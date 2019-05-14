@@ -9,6 +9,7 @@ needs to <strong> practice a lot and quickly get familiar with POS </strong> bec
 
 ### Target Users
 New cafe part-time job workers
+
 People who want to work at cafe as a part time job worker
 
 ### Tasks
