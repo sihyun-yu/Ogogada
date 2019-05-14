@@ -24,6 +24,16 @@ needs to <strong> practice a lot and quickly get familiar with POS </strong> bec
 
 - Sungha Eom
 
+> I contributed to most of the SignIn, Home, Rank, History page with Sangmin. I mostly contributed to designing the static screen of SignIn, Home, each Ranking pages, and implemented props functions for passing data like user information. I also helped Sihyun and Yoonseo implementing POS game little bit since that part contains many functions to be implemented. They did the main parts and I helped to check for user inputs whether they are correct and show popup dialogs, so on. These bullets are summary of what I’ve did mostly. 
+> - Signin: SignIn screen and connecting to Home screen after signing in.
+> - Home: Home screen,  linking buttons to each corresponding pos game using image mapper, ranking or pos history page
+> - Pos Game: pop up dialog for giving questions, dialog for after finishing game,  functions to check user inputs with answer, store user’s record if the user’s record is within top 8 and then connecting to Home screen after finishing the game.
+> - Ranking: designing the each level’s History screen
+>
+> I felt difficult when our teammates were fixing minor issues separately and communicate through messengers, because explanation tends to be not clear enough and I could not see the issue visually. But it was not a big issue because we worked mostly together. 
+>
+> I learned a lot while building an app from the start until deployment. Mostly I participated in fixing or building code for implementing functions, but I had new experiences like app deployment with Heroku + Git, and doing evenly contributing team project. One useful implement skill I learned is to quickly understand others’ code so that I could support them. I helped Sihyun and Yoonseo while they were implementing POS game with specific functions like checking user inputs, so on. I had to quickly learn their code structures and use their code. Through this experience I felt quickly understanding the already existing structures of code is necessary and important to be part of some big project in the future, like working as a developer. I wish I could actually find some bugs and contribute to improvements in code rather than just reading and understanding it. Also I found it useful to use tag extensions to quickly learn the implementation structure.
+
 - Sihyun Yu
 
 > I contributed to most of the POS UI page with Yoonseo. Specifically, I contributed to Gifticon page after clicking, enabled lock/unlock for each button, history following by red border with given order at each level, entering the code with Gifticon popup and so on. The Gifticon popup UI is used as the default popup page for our whole prototype. In addition, I contributed to implementing a most functional part of POS (like switching the menu list if we click prev triangle or next triangle) but since the reflection required to focus on ‘UI part’, I will not explain this in detail. 
@@ -36,9 +46,15 @@ needs to <strong> practice a lot and quickly get familiar with POS </strong> bec
 
 - Sangmin Lee
 
-> I made History Page and Ranking page mainly. I also made description part of POS.
+> I made History Page and Ranking page mainly. I made all of the components in the History select page and Ranking select page such as, history table, back button, etc. I also made description part of POS. 
 >
-> I have two big difficulties. First is making UI of history page, and second is implementing timer. 
+> I have two big difficulties during this project. First is making UI of history page, and second is implementing timer. 
+>
+> Because this project is my first web programming using react, I was confused everytime I try to add components in our project. At first, I didn't understand any concepts of components of react, and I don't know how to add some functions at table with semantic-ui-react. However, after I become familier with react, I can add some properties(such as, clickable, invert, etc.) and make it better than hard coded html table easily.
+>
+> Implementing timer was also a big problem to me. I can easily find timer source code, but it is hard to make it run automatically after POS page rendered, and stop automatically when user press "Submit" button at payment dialog. Since this is my first web programming with react, I don't know anything about 'componentDidMount'. After I spent some time for search the solution of this problem at google, I learn the life cycle of react component and can make timer start automatically. Make timer stop automatically is more difficult than make timer start. In our program, paymentDialog component and timer component are quite apart. Therefore to make interaction between those, it needs to use 'props'. But I don't know any concepts of parent and child interaction, so I studied more than 3 hours to get solution of this problem. Without these problems, I also have some troubles with fixing bugs.
+>
+> Through DP5 and DP6, I learn lots of implementation skills of web programming. I learn how to use React, and semantic-ui-react. I also learn how to deal with props. Moreover I got some tips to place components with .css.
 
 ### Studio Reflections
 
