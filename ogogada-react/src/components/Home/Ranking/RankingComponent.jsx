@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter} from 'react-router-dom';
-import { Icon, Table, Button } from 'semantic-ui-react'
+import { Icon, Table, Button, Header } from 'semantic-ui-react'
 import "../../../stylesheets/Ranking.css"
 import firebase from "firebase";
 
@@ -61,35 +61,36 @@ class RankingComponent extends React.Component {
                             <Table.Cell collapsing>
                                 <Icon name='trophy' /> Level 1
                             </Table.Cell>
-                            <Table.Cell>Take an order of 1 ice americano</Table.Cell>
+                            <Table.Cell>Take an order for one HOT americano and one ICE americano with card.</Table.Cell>
                             <Table.Cell textAlign='right'>{winners[0]}</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => this.props.history.push('ranking/2')}>
                             <Table.Cell>
                                 <Icon name='trophy' /> Level 2
                             </Table.Cell>
-                            <Table.Cell>Take an order of 2 green tea latte</Table.Cell>
+                            <Table.Cell>Take an order for two ICE caramel macchiato and one HOT green tea latte with card.</Table.Cell>
                             <Table.Cell textAlign='right'>{winners[1]}</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => this.props.history.push('ranking/3')}>
                             <Table.Cell>
                                 <Icon name='trophy' /> Level 3
                             </Table.Cell>
-                            <Table.Cell>Apply student discount</Table.Cell>
+                            <Table.Cell>Take an order for five ICE peppermint by 10% discount with card.</Table.Cell>
                             <Table.Cell textAlign='right'>{winners[2]}</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => this.props.history.push('ranking/4')}>
                             <Table.Cell>
                                 <Icon name='trophy' /> Level 4
                             </Table.Cell>
-                            <Table.Cell>Use an ice americano gifticon</Table.Cell>
+                            <Table.Cell>A customer wants to use one ICE americano gifticon and order one ICE caffelatte. Calculate the difference with card.</Table.Cell>
                             <Table.Cell textAlign='right'>{winners[3]}</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => this.props.history.push('ranking/5')}>
                             <Table.Cell>
                                 <Icon name='trophy' /> Level 5
                             </Table.Cell>
-                            <Table.Cell>Refund most recent order</Table.Cell>
+                               
+                            <Table.Cell> A customer wants to cancel the order that he/she made just now. Refund the most recent order.</Table.Cell>
                             <Table.Cell textAlign='right'>{winners[4]}</Table.Cell>
                         </Table.Row>
                         <Table.Row>

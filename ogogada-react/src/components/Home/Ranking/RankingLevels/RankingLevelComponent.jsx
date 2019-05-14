@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../../stylesheets/RankingLevel.css"
-import { Image , Button} from 'semantic-ui-react'
+import { Image , Button, Header} from 'semantic-ui-react'
 import firebase from "firebase";
 import src1 from '../../../../assets/ranking_template.png';
 
@@ -95,7 +95,9 @@ class RankingLevelComponent extends React.Component {
                     <div className="backButtonDiv">
                         <Button className="backButton" onClick={() => this.props.history.goBack()}>Back</Button>
                     </div>
+                    <div><Header as='h1' size= 'medium' color="brown">Level {this.props.match.params.id}</Header></div>
                     <div id="rankingTemplate" >
+                        
                         <Image src={src1} alt="hey!" />
                         {ranking}
                     </div>
