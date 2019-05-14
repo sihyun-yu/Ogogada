@@ -37,27 +37,31 @@ class HomeComponent extends React.Component {
 
     makeMAP (level) {
         console.log ("[makeMAP]")
-        var x1 = this.props.windowWidth * 130/1024;
-        var y1 = this.props.windowHeight * 220/768;
-        var x2 = this.props.windowWidth * 300/1024;
-        var y2 = this.props.windowHeight * 250/768;
-        var x3 = this.props.windowWidth * 500/1024;
-        var y3 = this.props.windowHeight * 350/768;
-        var x4 = this.props.windowWidth * 670/1024;
-        var y4 = this.props.windowHeight * 430/768;
-        var x5 = this.props.windowWidth * 880/1024;
-        var y5 = this.props.windowHeight * 593/768;
-        var x_his = this.props.windowWidth * 300/1024;
-        var y_his = this.props.windowHeight * 530/768;
-        var x_rank = this.props.windowWidth * 150/1024;
-        var y_rank = this.props.windowHeight * 600/768;
+        var level_r = this.props.windowWidth * 67/1283;
+        var x1 = this.props.windowWidth * 169/1283;
+        var y1 = this.props.windowHeight * 226/1106;
+        var x2 = this.props.windowWidth * 386/1283;
+        var y2 = this.props.windowHeight * 350/1106;
+        var x3 = this.props.windowWidth * 609/1283;
+        var y3 = this.props.windowHeight * 474/1106;
+        var x4 = this.props.windowWidth * 831/1283;
+        var y4 = this.props.windowHeight * 600/1106;
+        var x5 = this.props.windowWidth * 1064/1283;
+        var y5 = this.props.windowHeight * 724/1106;
+        var x_his1 = this.props.windowWidth * 396/1283;
+        var y_his1 = this.props.windowHeight * 776/1106;
+        var x_his2 = this.props.windowWidth * 572/1283;
+        var y_his2 = this.props.windowHeight * 964/1106;
+        var rank_r = this.props.windowWidth * 90/1283;
+        var x_rank = this.props.windowWidth * 196/1283;
+        var y_rank = this.props.windowHeight * 852/1106;
     
         var URL = require("../../assets/home.png")
-        var level_1 = { name: "1", shape: "circle", coords: [x1, y1, 63], }
-        var level_2 = { name: "2", shape: "circle", coords: [x2, y2, 63], }
-        var level_3 = { name: "3", shape: "circle", coords: [x3, y3, 63], }
-        var level_4 = { name: "4", shape: "circle", coords: [x4, y4, 63], }
-        var level_5 = { name: "5", shape: "circle", coords: [x5, y5, 63], }
+        var level_1 = { name: "1", shape: "circle", coords: [x1, y1, level_r], }
+        var level_2 = { name: "2", shape: "circle", coords: [x2, y2, level_r], }
+        var level_3 = { name: "3", shape: "circle", coords: [x3, y3, level_r], }
+        var level_4 = { name: "4", shape: "circle", coords: [x4, y4, level_r], }
+        var level_5 = { name: "5", shape: "circle", coords: [x5, y5, level_r], }
         var level_array = [level_1, level_2, level_3, level_4, level_5]
         var areas= [];
 
@@ -66,8 +70,9 @@ class HomeComponent extends React.Component {
             // console.log ("area: " + i)
             areas.push(level_array[i])
         }
-        areas.push({ name: "history", shape: "rect", coords: [x_his, y_his, x_his+120, y_his+120] })
-        areas.push({ name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] })
+
+        areas.push({ name: "history", shape: "rect", coords: [x_his1, y_his1, x_his2, y_his2] })
+        areas.push({ name: "ranking", shape: "circle", coords: [x_rank, y_rank, rank_r] })
         console.log ("areas: " + areas)
         var MAP = {
         name: "my-map",
