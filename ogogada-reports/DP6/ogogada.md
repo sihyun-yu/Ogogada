@@ -12,9 +12,9 @@ New cafe part-time job workers
 People who want to work at cafe as a part time job worker
 
 ### Tasks
-1. Learn how to use Gifticon before playing game.
+1. Learn how to use Gifticon <strong> before </strong> playing game.
 2. Get used to the location of important buttons.
-3. Try to be faster than others to prevent being embarrassed when there are many customers or when you meet any demanding customers.
+3. <strong> Try to be faster </strong> than others to prevent being embarrassed when there are many customers or when you meet any demanding customers.
 
 ### Implementation Notes
 - URL of the prototype:
