@@ -21,8 +21,10 @@ People who want to work at cafe as a part time job worker
 Since we want to let the user practice POS feeling like playing game, we ask for test users to follow the 3 tasks below.
 
 
-Task 1. Get used to the location of important buttons, such as "ICE Americano button".
+Task 1. Get used to the location of important and frequently used buttons, such as "ICE Americano button".
+
 Task 2. Watch and know how to use Gifticon.
+
 Task 3.  <strong> Try to be faster </strong> than others to prevent being embarrassed when there are many customers or when you meet any demanding customers.
 
 We provide the end-to-end scenario of test user who wants to learn how to use Gifticon and how to refund . The 3 tasks are mentioned in parenthesis.
@@ -36,7 +38,7 @@ We provide the end-to-end scenario of test user who wants to learn how to use Gi
 7. After finish, press "Submit" button that check that you leveled up and what buttons are unlocked. Press "Got it!". 
 8. After finishing it, the screen automatically goes to Rank screen. You can check your rank if your record is under 8th. (Task 3)
 9. Go to Home. Repeat step 2 to 8 until level 4.
-10. Go to History list screen and select level 4. Follow the guidance with read highlights. (Task 2)
+10. Go to History list screen and select level 4. Follow the guidance with red highlights. (Task 2)
 11. You have done all the tasks and enjoy the game if you want to learn more!
 
 ### Implementation Notes
