@@ -28,7 +28,7 @@ var menuchangebutton_style = {
 var level = 2;
 
 const MenuListComponent = props => {
-  console.log("menulistComponent", props.level);
+  // console.log("menulistComponent", props.level);
   return (
     <div className="menus__container">
       <Subscribe to={[MenuStore, NumberStore]}>

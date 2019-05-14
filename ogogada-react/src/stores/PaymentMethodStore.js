@@ -13,6 +13,12 @@ class PaymentMethodStore extends Container {
       selected: id
     });
   };
+
+  resetPaymentMethod = () => {
+    this.setState({
+      selected: "-1"
+    })
+  }
 }
 
 export default PaymentMethodStore;

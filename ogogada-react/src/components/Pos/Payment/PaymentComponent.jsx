@@ -17,13 +17,15 @@ var paymentButtonStyle = {
 
 class PaymentComponent extends React.Component {
   constructor(props) {
-    console.log("paymentComponent", props)
     super(props);
     this.state = {
       pendingCardPayment: false,
       dialogOpen: false,
       levelUp: false,
     };
+
+    // console.log("[history check] in paymentcomponent: ", props.history)
+    // console.log("userName1: "+ props.userName)
   }
 
 
@@ -60,14 +62,16 @@ class PaymentComponent extends React.Component {
   };
 
   handleLevelUp = () => {
-    console.log("hey levelup");
+    // console.log("hey levelup");
     this.setState({
       levelUp: true,
     })
+
   }
 
 
   render() {
+    // console.log("[history check] in paymentcomponent: ", this.props.history)
     const calculatedValue = (
       menus,
       selectedMenus,
@@ -107,38 +111,29 @@ class PaymentComponent extends React.Component {
         .map(id => menus[id].concat(selectedMenus[id]));
 
     const isCorrect = (user_menu, user_coupon, user_pay, cur_level) => {
-      console.log("user inputs:", user_menu, user_coupon, user_pay, cur_level);
+      // console.log("user inputs:", user_menu, user_coupon, user_pay, cur_level);
       for (var i in metaJSON.answers){
         var each = metaJSON.answers[i];
         if (each.level == cur_level ){
-          console.log("answer: ", each.coupon == null);
+          // console.log("answer: ", each.coupon == null);
           if (_.isEqual(user_menu, each.menu) 
           && (_.isEqual(user_coupon, each.coupon) || each.coupon == null)
           && _.isEqual(user_pay, each.method)){
-            console.log("truye");
+            // console.log("truye");
             return true
           }
         }
       }
       return false
     }
-    console.log(this.props);
-    console.log(this.props, "paymentComponent");
-    console.log("PaymentComponent", this.props.history.location.pathname.split('/')[3]);
+    // console.log(this.props);
+    // console.log(this.props, "paymentComponent");
+    // console.log("PaymentComponent", this.props.history.location.pathname.split('/')[3]);
     return (
       <Subscribe to={[MenuStore, CouponStore, PaymentMethodStore]}>
         {(menuStore, couponStore, paymentMethodStore) => (
           <div className="payment__container">
             <div className="payment">
-              {/* <div className="payment__text">
-                {paymentText(
-                  menuStore.state.totalmenu,
-                  menuStore.state.selected,
-                  couponStore.state.coupons[couponStore.state.selected],
-                  parseInt(paymentMethodStore.state.selected, 10)
-                )}
-              </div> */}
-
               <div className="payment__button-container">
                 <Button
                   className="payment__button"
@@ -161,9 +156,11 @@ class PaymentComponent extends React.Component {
                 </Button>
               </div>
             </div>
-            {isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 
-                    this.props.history.location.pathname.split('/')[3]) &&
-              <PaymentDialog
+             <PaymentDialog
+                openQuestion={menuStore.openQuestion.bind(menuStore)}
+                history={this.props.history}
+                userName={this.props.userName}
+                resetMenuDisplay={menuStore.resetMenuDisplay}
                 flagFlip={this.props.flagFlip}
                 flag={this.props.flag}
                 open={this.state.dialogOpen}
@@ -188,7 +185,7 @@ class PaymentComponent extends React.Component {
                   resetValuesCallbackArray.push(
                     paymentMethodStore.selectPaymentMethod.bind(
                       paymentMethodStore,
-                      "0"
+                      "-1"
                     )
                   );
                   resetValuesCallbackArray.push(
@@ -203,8 +200,8 @@ class PaymentComponent extends React.Component {
                 handleLevelUp = {this.handleLevelUp}
                 curLevel = {this.props.history.location.pathname.split('/')[3]}
                 goBackHistory = {this.props.history}
+                resetPaymentMethod = {paymentMethodStore.resetPaymentMethod.bind(paymentMethodStore)}
               />
-            }
           </div>
         )}
       </Subscribe>

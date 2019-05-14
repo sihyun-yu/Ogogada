@@ -197,16 +197,23 @@ class PaymentComponent extends React.Component {
                   this.handleCloseDialog();
                 }}
                 handleCancelPayment={this.handleCloseDialog}
-                goBackHistory = {this.props.history.push({
+                forRouter={this.props.history}
+                resetIndex={history.resetIndex}
+
+                goBackHistory = {{
                   pathname : '../../../history',
                       state: {
                       id: this.props.history.location.state.id,
                       pw: this.props.history.location.state.pw,
                       level: this.props.history.location.state.level,
                   }   
+<<<<<<< HEAD
                   
               })}
               resetIndex= {this.resetIndex}
+=======
+              }}
+>>>>>>> 8eccbf7dc770aa4c5a55678f64d04ab9c258574e
               />
             }
           </div>

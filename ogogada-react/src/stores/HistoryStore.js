@@ -3,7 +3,7 @@ import isInteger from "lodash/isInteger";
 import metaJSON from "../assets/meta.js";
 
 const historylist = metaJSON.history;
-console.log(historylist);
+// console.log(historylist);
 
 
 class HistoryStore extends Container {

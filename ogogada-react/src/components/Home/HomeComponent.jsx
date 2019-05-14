@@ -10,7 +10,7 @@ import { Card, Header, Icon, Feed } from 'semantic-ui-react'
 import firebase from "firebase"
 
 function getUserFromDB (userName) {
-    console.log ("userName: " + userName)
+    // console.log ("userName: " + userName)
     return new Promise(function (resolve, reject) {
         var myValue;
         firebase.database().ref('/accounts/'+userName).once('value', function (snapshot) {
@@ -29,12 +29,13 @@ class HomeComponent extends React.Component {
             pw: "",
             level: "",
         };
+        this.state = this.props.location.state;
         this.routeChange = this.routeChange.bind(this);
         
     }
     
     routeChange(area) {
-        console.log("routeChage", this.props.history);
+        // console.log("routeChage", this.props.history);
         if (area.name == "history")
         {
 
@@ -74,36 +75,37 @@ class HomeComponent extends React.Component {
     }
 
     componentDidMount() {
+        // console.log ("[props location state id]" + this.props.location.state.id)
         this.state = this.props.location.state;
 
-        console.log ("id at first : " + this.state.id)
+        // console.log ("id at first : " + this.state.id)
         getUserFromDB (this.state.id).then(res => {
-            console.log ("id at first : " + this.state.id)
-            console.log (res)
-            console.log ("level4: " + res["level"])
-            console.log ("id: " + res["id"])
-            console.log ("level2: " + res["level"])
-            console.log ("pw: " + res["pw"])
+            // console.log ("id at first : " + this.state.id)
+            // console.log (res)
+            // console.log ("level4: " + res["level"])
+            // console.log ("id: " + res["id"])
+            // console.log ("level2: " + res["level"])
+            // console.log ("pw: " + res["pw"])
             this.setState ({ level: res["level"], id:res["id"] }, () => {
-                console.log ("res_level: " + res["level"])
-                console.log ("real_level: " + this.state.level)
+                // console.log ("res_level: " + res["level"])
+                // console.log ("real_level: " + this.state.level)
             })
 
-            console.log ("id: " + res["id"])
-            console.log ("level2: " + res["level"])
-            console.log ("pw: " + res["pw"])
-            console.log ("id: " + this.state.id)
-            console.log ("level5: " + this.state.level)
-            console.log ("pwd: " + this.state.pw)
+            // console.log ("id: " + res["id"])
+            // console.log ("level2: " + res["level"])
+            // console.log ("pw: " + res["pw"])
+            // console.log ("id: " + this.state.id)
+            // console.log ("level5: " + this.state.level)
+            // console.log ("pwd: " + this.state.pw)
         })
     }
 
 
     render() {
-        console.log("home props: ", this.props);
-        console.log("home state: ", this.state);
+        // console.log("home props: ", this.props);
+        // console.log("home state: ", this.state);
         // this.state = this.props.location.state;
-        console.log("home state: ", this.state);
+        // console.log("home state: ", this.state);
 
         //this.setState({id:_id, pw:_pw, level:_level})
 
@@ -132,15 +134,15 @@ class HomeComponent extends React.Component {
         var areas= [];
 
         function makeMAP (level) {
-            console.log ("make MAP")
-            console.log (level)
+            // console.log ("make MAP")
+            // console.log (level)
             for (var i=0; i<level; i++) {
-                console.log ("area: " + i)
+                // console.log ("area: " + i)
                 areas.push(level_array[i])
             }
             areas.push({ name: "history", shape: "rect", coords: [x_his, y_his, x_his+120, y_his+120] })
             areas.push({ name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] })
-            console.log ("areas: " + areas)
+            // console.log ("areas: " + areas)
             var MAP = {
             name: "my-map",
             areas: areas
