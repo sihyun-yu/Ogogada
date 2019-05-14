@@ -1,8 +1,7 @@
 import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import Button from "@material-ui/core/Button";
-import { List } from 'semantic-ui-react'
+import { List, Button } from 'semantic-ui-react'
 import "../../../stylesheets/GifticonDialogComponent.css"
 
 const RefundDialogComponent = props => {
@@ -51,7 +50,7 @@ const RefundDialogComponent = props => {
                 <Button
                 className="gifticon-dialog__button"
                 disabled={props.refundIdx == -1}
-                style={{ marginLeft: "50px", marginRight: "10px" }}
+                // style={{ marginLeft: "50px", marginRight: "10px" }}
                 variant="contained"
                 color="primary"
                 size="massive"
@@ -60,7 +59,7 @@ const RefundDialogComponent = props => {
                 </Button>
                 <Button
                 className="gifticon-dialog__button"
-                style={{ marginLeft: "10px", marginRight: "50px" }}
+                // style={{ marginLeft: "10px", marginRight: "50px" }}
                 variant="contained"
                 color="secondary"
                 size="massive"
@@ -85,7 +84,7 @@ const RefundDialogComponent = props => {
             <div class="refund-ok-buttons">
             <Button
             className="gifticon-dialog__button"
-            style={{ marginLeft: "10px", marginRight: "50px" }}
+            // style={{ marginLeft: "50px", marginRight: "50px" }}
             variant="contained"
             color="secondary"
             size="massive"

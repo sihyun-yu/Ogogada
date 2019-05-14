@@ -1,8 +1,7 @@
 import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import Button from "@material-ui/core/Button";
-import { List } from 'semantic-ui-react'
+import { List, Button } from 'semantic-ui-react'
 import "../../../stylesheets/GifticonDialogComponent.css"
 
 var noStyle = {
