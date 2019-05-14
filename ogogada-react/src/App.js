@@ -33,7 +33,7 @@ function writeToDatabase(input_id, input_pw, input_level) {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-writeToDatabase("test", "1111", 1);
+
 
 class App extends React.Component {
   render() {

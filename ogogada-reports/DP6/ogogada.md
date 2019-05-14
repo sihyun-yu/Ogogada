@@ -9,12 +9,37 @@ needs to <strong> practice a lot and quickly get familiar with POS </strong> bec
 
 ### Target Users
 New cafe part-time job workers
+
 People who want to work at cafe as a part time job worker
 
 ### Tasks
-1. Learn how to use Gifticon <strong> before </strong> playing game.
-2. Get used to the location of important buttons.
-3. <strong> Try to be faster </strong> than others to prevent being embarrassed when there are many customers or when you meet any demanding customers.
+
+<strong>Please use Chrome with size 1200 x 900. </strong> 
+
+<strong>Please do not use back button of Chrome browser.</strong>
+
+Since we want to let the user practice POS feeling like playing game, we ask for test users to follow the 3 tasks below.
+
+
+Task 1. Get used to the location of important and frequently used buttons, such as "ICE Americano button".
+
+Task 2. Watch and know how to use Gifticon.
+
+Task 3.  <strong> Try to be faster </strong> than others to prevent being embarrassed when there are many customers or when you meet any demanding customers.
+
+We provide the end-to-end scenario of test user who wants to learn how to use Gifticon and how to refund . The 3 tasks are mentioned in parenthesis.
+
+1. Signin with ID "test", password "1111". The test user is currently at Home screen and is in level 1.
+2. Go to History list screen and get familiar with locations of basic buttons to solve level 1. (Task 1)
+3. Follow the guidance with buttons with red highlight. (Task 1)
+4. After finishing it, the screen automatically goes to History list screen. Go to Home in order to play the round.
+5. At Home screen, press level 1 and start playing the game. (Task 1)
+6. At POS game screen, read the instruction and press "Got it!" button to begin. If you want to re-read the task, press task icon on right top corner. Be aware that there's timer running already before pressing "Got it!" button.
+7. After finish, press "Submit" button that check that you leveled up and what buttons are unlocked. Press "Got it!". 
+8. After finishing it, the screen automatically goes to Rank screen. You can check your rank if your record is under 8th. (Task 3)
+9. Go to Home. Repeat step 2 to 8 until level 4.
+10. Go to History list screen and select level 4. Follow the guidance with red highlights. (Task 2)
+11. You have done all the tasks and enjoy the game if you want to learn more!
 
 ### Implementation Notes
 - URL of the prototype:
@@ -25,32 +50,42 @@ https://github.com/sihyun-yu/Ogogada/tree/master/ogogada-react
 - Libraries and frameworks: Nodejs, React, material-ui, Semantic-UI-React, Semantic-UI-CSS, firebase, lodash, unstated, etc
 - Representative screenshots: 
 ![](./Images/signin.png)
+
 This screen is SignIn screen. User can login with unqiue ID.
 ![](./Images/home.png)
+
 This screen is Home screen, which is main screen that connects to Rank screen and History screen.
 
 ![](./Images/historylist.png)
+
 This screen is History screen that makes users practice what to learn from each level.
 
 ![](./Images/historylist2.png)
+
  Since the current user is at level 3, level 4 and level 5 history is locked and cannot access. If the user levels up, then they are available.
 
 ![](./Images/historylevel3.png)
+
 This screen is of History of level 3. The red box tells users what to do step by step if he/she wants to success game of level 3.
 
 ![](./Images/pos.png)
+
 This screen is for POS game level 1. Before starting the game, a dialog pops up to explain a task. There is timer that counts right after the user clicks "Got it!" button, and it ends until the user finishes the game. 
 
 ![](./Images/pos3.png)
+
 This screen is also for POS game level 1. The user did the task and now "PAYMENT" button is available to click. "PAYMENT" button is disabled until the player clicks all the necessary buttons. When he/she finishes, the button becomes clickable.
 
 ![](./Images/pos2.png)
+
 This screen is when the player finished POS game level1. A dialog pops up, telling that he/she leveled up from 1 to 2 and new button is introduced. At that point, the timer is stopped. When his/her record is in top 8 among all the users of the game in that level, the record is stored in DB.
 
 ![](./Images/ranking.png)
+
 This screen is of Ranking list from level 1 to level 5. Task is listed in text and the winner's ID for each level is shown.
 
 ![](./Images/rankingeach.png)
+
 This screen is for Ranking of level 3. Top 8 players' ID and their record is listed.
 
 ### Individual Reflections
