@@ -80,6 +80,7 @@ const MenuListComponent = props => {
           <div>
             <RefundDialog
             {...props}
+            openQuestion={menu.openQuestion.bind(menu)}
             resetPaymentMethod = {paymentMethodStore.resetPaymentMethod.bind(paymentMethodStore)}
             resetMenuDisplay={menu.resetMenuDisplay.bind(menu)}
             open={menu.state.refundOpen}
@@ -87,6 +88,7 @@ const MenuListComponent = props => {
             closeRefund={menu.closeRefund.bind(menu)}
             selectRefund={menu.selectRefund.bind(menu)}
             confirm = {menu.confirm.bind(menu)}
+            unconfirm = {menu.unconfirm.bind(menu)}
             isConfirmed = {menu.state.isConfirmed}
             refundIdx = {menu.state.refundIdx}
             />

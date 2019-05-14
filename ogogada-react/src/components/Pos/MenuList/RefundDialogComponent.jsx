@@ -93,6 +93,8 @@ const RefundDialogComponent = props => {
                 props.resetPaymentMethod();
                 props.resetMenuDisplay();
                 props.closeRefund();
+                props.openQuestion();
+                props.unconfirm();
                 props.history.push({
                     pathname : '../../../home',
                     state: {

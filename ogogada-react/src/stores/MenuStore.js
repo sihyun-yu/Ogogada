@@ -159,6 +159,12 @@ class MenuStore extends Container {
       isConfirmed: true,
     })
   }
+
+  unconfirm = () => {
+    this.setState({
+      isConfirmed: false,
+    })
+  }
 // ===========Giftion ============== /
   openGifticon = () => {
     // console.log("HERE!!!!!@@@@!@!@!@!@!@!@!@!@!@!!@!@!!@");

@@ -128,7 +128,14 @@ const RefundDialogComponent = props => {
             variant="contained"
             color="secondary"
             size="massive"
-            onClick={props.closeRefund}
+            onClick={() => {
+                props.resetPaymentMethod();
+                props.resetMenuDisplay();
+                props.forRouter.push(props.goBackHistory);
+                props.resetIndex();
+                props.closeRefund();
+                props.unconfirm();
+                }}
           >
                 OK!
             </Button>
