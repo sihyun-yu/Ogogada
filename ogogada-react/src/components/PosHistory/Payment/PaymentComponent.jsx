@@ -206,14 +206,9 @@ class PaymentComponent extends React.Component {
                       id: this.props.history.location.state.id,
                       pw: this.props.history.location.state.pw,
                       level: this.props.history.location.state.level,
-                  }   
-<<<<<<< HEAD
-                  
-              })}
-              resetIndex= {this.resetIndex}
-=======
-              }}
->>>>>>> 8eccbf7dc770aa4c5a55678f64d04ab9c258574e
+                  }}}
+                resetIndex= {this.resetIndex}
+
               />
             }
           </div>
