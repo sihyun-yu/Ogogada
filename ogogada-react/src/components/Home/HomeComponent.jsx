@@ -31,8 +31,53 @@ class HomeComponent extends React.Component {
         };
         this.state = this.props.location.state;
         this.routeChange = this.routeChange.bind(this);
-        
+        this.makeMAP = this.makeMAP.bind(this);
+        this.imageMapper = "";
     }
+
+    makeMAP (level) {
+        console.log ("[makeMAP]")
+        var x1 = this.props.windowWidth * 130/1024;
+        var y1 = this.props.windowHeight * 220/768;
+        var x2 = this.props.windowWidth * 300/1024;
+        var y2 = this.props.windowHeight * 250/768;
+        var x3 = this.props.windowWidth * 500/1024;
+        var y3 = this.props.windowHeight * 350/768;
+        var x4 = this.props.windowWidth * 670/1024;
+        var y4 = this.props.windowHeight * 430/768;
+        var x5 = this.props.windowWidth * 880/1024;
+        var y5 = this.props.windowHeight * 593/768;
+        var x_his = this.props.windowWidth * 300/1024;
+        var y_his = this.props.windowHeight * 530/768;
+        var x_rank = this.props.windowWidth * 150/1024;
+        var y_rank = this.props.windowHeight * 600/768;
+    
+        var URL = require("../../assets/home.png")
+        var level_1 = { name: "1", shape: "circle", coords: [x1, y1, 63], }
+        var level_2 = { name: "2", shape: "circle", coords: [x2, y2, 63], }
+        var level_3 = { name: "3", shape: "circle", coords: [x3, y3, 63], }
+        var level_4 = { name: "4", shape: "circle", coords: [x4, y4, 63], }
+        var level_5 = { name: "5", shape: "circle", coords: [x5, y5, 63], }
+        var level_array = [level_1, level_2, level_3, level_4, level_5]
+        var areas= [];
+
+        console.log (level)
+        for (var i=0; i<level; i++) {
+            // console.log ("area: " + i)
+            areas.push(level_array[i])
+        }
+        areas.push({ name: "history", shape: "rect", coords: [x_his, y_his, x_his+120, y_his+120] })
+        areas.push({ name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] })
+        console.log ("areas: " + areas)
+        var MAP = {
+        name: "my-map",
+        areas: areas
+        }
+        console.log (MAP["areas"])
+        return <ImageMapper src={URL} map={MAP} width={this.props.windowWidth} height={this.props.windowHeight} 
+                        onClick={area => this.routeChange(area)}/>
+    }
+
     
     routeChange(area) {
         // console.log("routeChage", this.props.history);
@@ -74,97 +119,28 @@ class HomeComponent extends React.Component {
         }
     }
 
-    componentDidMount() {
-        // console.log ("[props location state id]" + this.props.location.state.id)
-        this.state = this.props.location.state;
-
-        // console.log ("id at first : " + this.state.id)
+    componentWillMount() {
         getUserFromDB (this.state.id).then(res => {
-            // console.log ("id at first : " + this.state.id)
-            // console.log (res)
-            // console.log ("level4: " + res["level"])
-            // console.log ("id: " + res["id"])
-            // console.log ("level2: " + res["level"])
-            // console.log ("pw: " + res["pw"])
-            this.setState ({ level: res["level"], id:res["id"] }, () => {
-                // console.log ("res_level: " + res["level"])
-                // console.log ("real_level: " + this.state.level)
+            this.setState ({ level: res["level"], id: res["id"] }, () => {
             })
-
-            // console.log ("id: " + res["id"])
-            // console.log ("level2: " + res["level"])
-            // console.log ("pw: " + res["pw"])
-            // console.log ("id: " + this.state.id)
-            // console.log ("level5: " + this.state.level)
-            // console.log ("pwd: " + this.state.pw)
         })
     }
 
+    componentDidMount() {
+        getUserFromDB (this.state.id).then(res => {
+            this.setState ({ level: res["level"], id: res["id"] }, () => {
+            })
+        })
+    }
 
     render() {
+        // console.log ("[render]")
         // console.log("home props: ", this.props);
         // console.log("home state: ", this.state);
-        // this.state = this.props.location.state;
-        // console.log("home state: ", this.state);
-
-        //this.setState({id:_id, pw:_pw, level:_level})
-
-        var x1 = this.props.windowWidth * 130/1024;
-        var y1 = this.props.windowHeight * 220/768;
-        var x2 = this.props.windowWidth * 300/1024;
-        var y2 = this.props.windowHeight * 250/768;
-        var x3 = this.props.windowWidth * 500/1024;
-        var y3 = this.props.windowHeight * 350/768;
-        var x4 = this.props.windowWidth * 670/1024;
-        var y4 = this.props.windowHeight * 430/768;
-        var x5 = this.props.windowWidth * 880/1024;
-        var y5 = this.props.windowHeight * 593/768;
-        var x_his = this.props.windowWidth * 300/1024;
-        var y_his = this.props.windowHeight * 530/768;
-        var x_rank = this.props.windowWidth * 150/1024;
-        var y_rank = this.props.windowHeight * 600/768;
-
-        var URL = require("../../assets/home.png")
-        var level_1 = { name: "1", shape: "circle", coords: [x1, y1, 63], }
-        var level_2 = { name: "2", shape: "circle", coords: [x2, y2, 63], }
-        var level_3 = { name: "3", shape: "circle", coords: [x3, y3, 63], }
-        var level_4 = { name: "4", shape: "circle", coords: [x4, y4, 63], }
-        var level_5 = { name: "5", shape: "circle", coords: [x5, y5, 63], }
-        var level_array = [level_1, level_2, level_3, level_4, level_5]
-        var areas= [];
-
-        function makeMAP (level) {
-            // console.log ("make MAP")
-            // console.log (level)
-            for (var i=0; i<level; i++) {
-                // console.log ("area: " + i)
-                areas.push(level_array[i])
-            }
-            areas.push({ name: "history", shape: "rect", coords: [x_his, y_his, x_his+120, y_his+120] })
-            areas.push({ name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] })
-            // console.log ("areas: " + areas)
-            var MAP = {
-            name: "my-map",
-            areas: areas
-            }
-            return MAP
-
-        }
-        // console.log (this.state["level"])
-        // for (var i=0; i<this.state["level"]; i++) {
-        //     console.log ("area: " + i)
-        //     areas.push(level_array[i])
-        // }
-        // areas.push({ name: "history", shape: "rect", coords: [x_his, y_his, x_his+120, y_his+120] })
-        // areas.push({ name: "ranking", shape: "circle", coords: [x_rank, y_rank, 63] })
-        // console.log ("areas: " + areas)
-        // var MAP = {
-        // name: "my-map",
-        // areas: areas
-        // }
+        const imageMapper = this.makeMAP(this.state.level)
 
         // console.log("x1, y1: ", x1.toString() + "," + y1.toString() + ",63");
-
+        console.log (imageMapper)
         return (                
                 <div className = "home"> 
                     <div className = "home-header">
@@ -181,9 +157,9 @@ class HomeComponent extends React.Component {
                         </Card.Content>
                         </Card>
                     </div>
-                    <ImageMapper src={URL} map={makeMAP(this.state.level)} width={this.props.windowWidth} height={this.props.windowHeight} 
-                        onClick={area => this.routeChange(area)}/>
+                    {imageMapper}
                 </div>
+                
         )
     }
 }
