@@ -1,4 +1,5 @@
 #totalContainer {
+    background: #81A5D5;
     display:flex;
     flex-direction: row;
     width: 100%;

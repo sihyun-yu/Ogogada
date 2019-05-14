@@ -4,13 +4,16 @@ import { Button } from 'semantic-ui-react'
 var divStyle = {
   background: "#EAD1D1",
   width: "100%",
-  height: "100%"
+  height: "100%",
+  "font-size": "25px",
 };
 
 const NumberItemComponent = props => {
   return (
     <div className="number-item">
       <Button
+        
+        color="#EAD1D1"
         style={divStyle}
         className="number-item__button"
         variant="contained"

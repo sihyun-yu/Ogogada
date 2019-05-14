@@ -8,10 +8,50 @@ A new cafe part-time job worker
 needs to <strong> practice a lot and quickly get familiar with POS </strong> because <strong> most new workers are at the complex device POS, but there’s no explicit instructions or guides for that and he/she doesn’t want to be embarrassed at sudden situations. </strong>
 
 ### Target Users
+New cafe part-time job workers
+People who want to work at cafe as a part time job worker
 
 ### Tasks
+1. Learn how to use Gifticon before playing game.
+2. Get used to the location of important buttons.
+3. Try to be faster than others to prevent being embarrassed when there are many customers or when you meet any demanding customers.
 
 ### Implementation Notes
+- URL of the prototype:
+https://blooming-dawn-12855.herokuapp.com
+- URL of the Git repository:
+https://github.com/sihyun-yu/Ogogada
+Our project code is mostly in /ogogada-react directory.
+- Libraries and frameworks: Nodejs, React, material-ui, Semantic-UI-React, Semantic-UI-CSS, firebase, lodash, unstated, etc
+- Representative screenshots: 
+![](./Images/signin.png)
+This screen is SignIn screen. User can login with unqiue ID.
+![](./Images/home.png)
+This screen is Home screen, which is main screen that connects to Rank screen and History screen.
+
+![](./Images/historylist.png)
+This screen is History screen that makes users practice what to learn from each level.
+
+![](./Images/historylist2.png)
+ Since the current user is at level 3, level 4 and level 5 history is locked and cannot access. If the user levels up, then they are available.
+
+![](./Images/historylevel3.png)
+This screen is of History of level 3. The red box tells users what to do step by step if he/she wants to success game of level 3.
+
+![](./Images/pos.png)
+This screen is for POS game level 1. Before starting the game, a dialog pops up to explain a task. There is timer that counts right after the user clicks "Got it!" button, and it ends until the user finishes the game. 
+
+![](./Images/pos2.png)
+This screen is also for POS game level 1. The user did the task and now "PAYMENT" button is available to click. "PAYMENT" button is disabled until the player clicks all the necessary buttons. When he/she finishes, the button becomes clickable.
+
+![](./Images/pos3.png)
+This screen is when the player finished POS game level1. A dialog pops up, telling that he/she leveled up from 1 to 2 and new button is introduced. At that point, the timer is stopped. When his/her record is in top 8 among all the users of the game in that level, the record is stored in DB.
+
+![](./Images/ranking.png)
+This screen is of Ranking list from level 1 to level 5. Task is listed in text and the winner's ID for each level is shown.
+
+![](./Images/rankingeach.png)
+This screen is for Ranking of level 3. Top 8 players' ID and their record is listed.
 
 ### Individual Reflections
 
