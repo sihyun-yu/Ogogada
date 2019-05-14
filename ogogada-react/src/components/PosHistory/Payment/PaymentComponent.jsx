@@ -206,8 +206,7 @@ class PaymentComponent extends React.Component {
                       id: this.props.history.location.state.id,
                       pw: this.props.history.location.state.pw,
                       level: this.props.history.location.state.level,
-                  }   
-              }}
+                  }}}
               />
             }
           </div>

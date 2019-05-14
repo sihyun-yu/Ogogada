@@ -2,6 +2,7 @@ import React from "react";
 import "../../../stylesheets/History.css"
 import { Icon, Table, Button } from 'semantic-ui-react'
 
+
 class HistoryComponent extends React.Component {
     constructor(props) {
         super(props);
