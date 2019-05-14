@@ -14,14 +14,11 @@ class PaymentDialogComponent extends React.Component {
     this.routeChange = this.routeChange.bind(this);
   }
 
-  routeChange() {
+  routeChange = (level) => {
     // console.log ("routeChange in PaymentDialog: "+this.props.history)
     // console.log ("routeChange userName "+this.props.userName)
     this.props.history.push({
-      pathname : '../../../home',
-      state: {
-          id: this.props.userName,
-      }
+      pathname : '../../../ranking/' + level,
     });
   }
 
@@ -137,7 +134,7 @@ class PaymentDialogComponent extends React.Component {
                 size="massive"
                 onClick={() => {
                   this.props.handleCompletePayment();
-                  this.routeChange();
+                  this.routeChange(this.props.curLevel);
                   this.props.flagFlip();
                   // props.goBackHistory.goBack();
                   this.props.openQuestion();

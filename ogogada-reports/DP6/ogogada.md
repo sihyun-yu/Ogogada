@@ -20,8 +20,8 @@ People who want to work at cafe as a part time job worker
 - URL of the prototype:
 https://blooming-dawn-12855.herokuapp.com
 - URL of the Git repository:
-https://github.com/sihyun-yu/Ogogada
-Our project code is mostly in /ogogada-react directory.
+https://github.com/sihyun-yu/Ogogada/tree/master/ogogada-react
+
 - Libraries and frameworks: Nodejs, React, material-ui, Semantic-UI-React, Semantic-UI-CSS, firebase, lodash, unstated, etc
 - Representative screenshots: 
 ![](./Images/signin.png)
@@ -41,7 +41,7 @@ This screen is of History of level 3. The red box tells users what to do step by
 ![](./Images/pos.png)
 This screen is for POS game level 1. Before starting the game, a dialog pops up to explain a task. There is timer that counts right after the user clicks "Got it!" button, and it ends until the user finishes the game. 
 
-![](./Images/pos2.png)
+![](./Images/pos3.png)
 This screen is also for POS game level 1. The user did the task and now "PAYMENT" button is available to click. "PAYMENT" button is disabled until the player clicks all the necessary buttons. When he/she finishes, the button becomes clickable.
 
 ![](./Images/pos2.png)

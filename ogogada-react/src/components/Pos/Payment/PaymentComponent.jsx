@@ -186,6 +186,7 @@ class PaymentComponent extends React.Component {
                 curLevel = {this.props.history.location.pathname.split('/')[3]}
                 goBackHistory = {this.props.history}
                 resetPaymentMethod = {paymentMethodStore.resetPaymentMethod.bind(paymentMethodStore)}
+                sendtoHistoryMethod = {this.sendtoHistoryMethod}
               />
           </div>
         )}
