@@ -90,23 +90,6 @@ class PaymentComponent extends React.Component {
       );
     };
 
-    const paymentText = (
-      menus,
-      selectedMenus,
-      selectedCoupon,
-      selectedPaymentMethod
-    ) =>
-      `${selectedCoupon !== 0 ? `쿠폰할인 ${selectedCoupon * 100}%` : ""}${
-        selectedCoupon !== 0 && selectedPaymentMethod === 1 ? ", " : " "
-      }${selectedPaymentMethod === 1 ? "현금할인 5% " : ""}${
-        selectedCoupon !== 0 || selectedPaymentMethod === 1 ? "적용하여 " : ""
-      }${calculatedValue(
-        menus,
-        selectedMenus,
-        selectedCoupon,
-        selectedPaymentMethod
-      )}원입니다.`;
-
     const selectedMenus = (menus, selectedMenus) =>
       Object.keys(selectedMenus)
         .sort((a, b) => parseInt(a, 10) > parseInt(b, 10))
