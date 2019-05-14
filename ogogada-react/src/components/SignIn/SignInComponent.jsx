@@ -59,7 +59,7 @@ class SignInComponent extends React.Component {
     render() {
         return (
             <div class="signInContainer">
-                <div class="signInContainerBox">
+                <div class="signInContainerBox">                    
                     <div class="texts">
                         <div class="ogogada">Ogogada</div>
                         <div class="si"> Sign In</div>
@@ -68,7 +68,7 @@ class SignInComponent extends React.Component {
                         <Form>
                             <Form.Field>
                             <label>ID</label>
-                            <input placeholder='Enter your ID' onChange = {(user_id) => {this.setState({id: user_id.target.value})}}/>
+                            <input placeholder='Enter your ID' onChange = {(user_id) => {this.setState({id: user_id.target.value})}} autofocus="autofocus"/>
                             </Form.Field>
                             <Form.Field>
                             <label>PW</label>
