@@ -50,7 +50,7 @@ const PaymentDialogComponent = props => {
           variant="contained"
           color="secondary"
           size="massive"
-          onClick={()=> {props.handleCancelPayment(); props.resetIndex();}}
+          onClick={()=> {props.handleCancelPayment();}}
         >
           Cancel
         </Button>

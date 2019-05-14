@@ -207,8 +207,6 @@ class PaymentComponent extends React.Component {
                       pw: this.props.history.location.state.pw,
                       level: this.props.history.location.state.level,
                   }}}
-                resetIndex= {this.resetIndex}
-
               />
             }
           </div>
