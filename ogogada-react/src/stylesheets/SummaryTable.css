@@ -41,7 +41,8 @@
 }
 
 .summary-coupon__name {
-
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .summary-payment-method__radio-group-row {

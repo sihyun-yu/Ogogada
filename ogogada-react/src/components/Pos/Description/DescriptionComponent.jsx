@@ -10,10 +10,8 @@ import { Subscribe } from "unstated";
 
 const DescriptionComponent = props => {
   return (
-    <div>
     <Subscribe to={[MenuStore]}>
       {(menu) => (
-        <div>
           <div className="description__container">
             <div className="description" >
               <p>Level: {props.level}</p>
@@ -37,10 +35,8 @@ const DescriptionComponent = props => {
               <Icon name='tasks' size='small'>task</Icon>
             </div>
           </div>
-        </div>
       )}
     </Subscribe>
-    </div>
   );
 };
 
