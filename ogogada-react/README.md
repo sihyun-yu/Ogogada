@@ -63,7 +63,7 @@ All files are similar to files in POS folder above. Added some lines for each co
 #### /Signin
 1. ```SignInComponent.jsx```: includes code for log-in page at the beginning
 
-### Stores
+### /Stores
 1. ```CouponStore.js```: manages selected coupon state
 2. ```HistoryStore.js```: manages current history index and history answer list
 3. ```index.js```: export all Store javascript files 
@@ -72,6 +72,6 @@ All files are similar to files in POS folder above. Added some lines for each co
 6. ```PaymentMethodStore.js```: manages the payment method is card or cash
 7. ```HomeStore.js```: manages id, password, and level
 
-### stylesheets
+### /stylesheets
 each ```.css``` file corresponds to the design of the same name ```.js``` or ```.jsx``` file. 
 
