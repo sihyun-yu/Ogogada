@@ -55,6 +55,26 @@ needs to <strong> practice a lot and quickly get familiar with POS </strong> bec
 > Implementing timer was also a big problem to me. I can easily find timer source code, but it is hard to make it run automatically after POS page rendered, and stop automatically when user press "Submit" button at payment dialog. Since this is my first web programming with react, I don't know anything about 'componentDidMount'. After I spent some time for search the solution of this problem at google, I learn the life cycle of react component and can make timer start automatically. Make timer stop automatically is more difficult than make timer start. In our program, paymentDialog component and timer component are quite apart. Therefore to make interaction between those, it needs to use 'props'. But I don't know any concepts of parent and child interaction, so I studied more than 3 hours to get solution of this problem. Without these problems, I also have some troubles with fixing bugs.
 >
 > Through DP5 and DP6, I learn lots of implementation skills of web programming. I learn how to use React, and semantic-ui-react. I also learn how to deal with props. Moreover I got some tips to place components with .css.
+>
+> I use git at Visual Studio Code without setting config name and email, so it doesn't show any commit history at our Github Contributer tab. Please refer to our commit log if you want to check.
 
 ### Studio Reflections
 
+There were some comments after the presentation. Because this milestone is related to implementation, most feedbacks are about our UI.
+
+First, there were some feedbacks about the relation of our implementation and tasks. Someone said that it is hard to notice that how does second task is related to our implementation. Another person also mentioned that our second task is not appropriate to our POS model.
+
+> 	We agree with this feedbacks. It is not easy to memorize all buttons by just following our level system. Therefore, we slightly change our second task not to remember all buttons, but remember important buttons.
+
+Also, there are some comments about function of our prototpye. Someone said, "It is better to show the ranking and time after user finish the level with good performance"
+The only way to know the record in our implementation is going to ranking page. 
+
+> We haven't consider about this. This is very great idea to encourge users. We will going to apply this function to our works and this might be help our work look more attractive to user.
+
+Someone gives us feedback that it might be better to make the image of clickable material looks like a button or something.
+
+> We agree with this comment. In this milestone, we focused on creating prototype to meet user needs. Therefore we was a bit neglected in functions that is not strongly related to user needs. After works, we will make level select image looks like button.
+
+Someone notes that the font size of prototype is too small.
+
+> We realize ths problem, and make font size bigger than before.
