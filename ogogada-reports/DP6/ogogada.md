@@ -12,16 +12,16 @@ New cafe part-time job workers
 People who want to work at cafe as a part time job worker
 
 ### Tasks
-1. Learn how to use Gifticon before playing game.
+1. Learn how to use Gifticon <strong> before </strong> playing game.
 2. Get used to the location of important buttons.
-3. Try to be faster than others to prevent being embarrassed when there are many customers or when you meet any demanding customers.
+3. <strong> Try to be faster </strong> than others to prevent being embarrassed when there are many customers or when you meet any demanding customers.
 
 ### Implementation Notes
 - URL of the prototype:
 https://blooming-dawn-12855.herokuapp.com
 - URL of the Git repository:
-https://github.com/sihyun-yu/Ogogada
-Our project code is mostly in /ogogada-react directory.
+https://github.com/sihyun-yu/Ogogada/tree/master/ogogada-react
+
 - Libraries and frameworks: Nodejs, React, material-ui, Semantic-UI-React, Semantic-UI-CSS, firebase, lodash, unstated, etc
 - Representative screenshots: 
 ![](./Images/signin.png)
@@ -41,10 +41,10 @@ This screen is of History of level 3. The red box tells users what to do step by
 ![](./Images/pos.png)
 This screen is for POS game level 1. Before starting the game, a dialog pops up to explain a task. There is timer that counts right after the user clicks "Got it!" button, and it ends until the user finishes the game. 
 
-![](./Images/pos2.png)
+![](./Images/pos3.png)
 This screen is also for POS game level 1. The user did the task and now "PAYMENT" button is available to click. "PAYMENT" button is disabled until the player clicks all the necessary buttons. When he/she finishes, the button becomes clickable.
 
-![](./Images/pos3.png)
+![](./Images/pos2.png)
 This screen is when the player finished POS game level1. A dialog pops up, telling that he/she leveled up from 1 to 2 and new button is introduced. At that point, the timer is stopped. When his/her record is in top 8 among all the users of the game in that level, the record is stored in DB.
 
 ![](./Images/ranking.png)

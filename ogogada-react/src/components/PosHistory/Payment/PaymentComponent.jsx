@@ -194,6 +194,7 @@ class PaymentComponent extends React.Component {
                       pw: this.props.history.location.state.pw,
                       level: this.props.history.location.state.level,
                   }}}
+                sendtoHistoryMethod = {this.sendtoHistoryMethod}
               />
             }
           </div>

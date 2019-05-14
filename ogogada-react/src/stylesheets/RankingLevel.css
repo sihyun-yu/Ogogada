@@ -15,7 +15,7 @@
     width: auto;
     height: auto;
     padding-left: 10%;
-    padding-top: 10%;
+    padding-top: 7%;
     padding-right: 10%;
     padding-bottom: 10%;
     font-size: 0.3em;
@@ -24,7 +24,7 @@
 
 .one {
     position: absolute;
-    top: 20%;
+    top: 17%;
     left: 18.5%;
     text-align: center;
     height: auto;
@@ -35,7 +35,7 @@
 }
 .five {
     position: absolute;
-    top:20%;
+    top:17%;
     left:60%;
     text-align: center;
     height: auto;
@@ -45,7 +45,7 @@
 }
 .two {
     position: absolute;
-    top: 38%;
+    top: 36%;
     left: 18.5%;
     text-align: center;
     height: auto;
@@ -55,7 +55,7 @@
 }
 .six {
     position: absolute;
-    top: 38%;
+    top: 36%;
     left: 60%;
     text-align: center;
     height: auto;
@@ -65,7 +65,7 @@
 }
 .three {
     position: absolute;
-    top: 57%;
+    top: 56%;
     left: 18.5%;
     text-align: center;
     height: auto;
@@ -75,7 +75,7 @@
 }
 .seven {
     position: absolute;
-    top: 57.5%;
+    top: 56.5%;
     left: 60%;
     text-align: center;
     height: auto;

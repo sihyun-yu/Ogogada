@@ -2,7 +2,7 @@ import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { Button } from 'semantic-ui-react'
-import "../../../stylesheets/GifticonDialogComponent.css";
+import "../../../stylesheets/QuestionDialogComponent.css";
 import metaJSON from "../../../assets/meta.js";
 
 
@@ -14,15 +14,15 @@ const QuestionDialogComponent = props => {
     
     if (!props.isConfirmed){
         return (
-            <div class="gifticon-container">
-            		<div class="gifticon-code">
+            <div class="question-container">
+            		<div class="question-code">
                     {question}
 
 					</div>
-                    <div class="gifticon-buttons">
+                    <div class="quesiton-buttons">
                         <Button
-                        className="gifticon-dialog__button"
-                        style={{ marginLeft: "50px", marginRight: "10px" }}
+                        className="question-dialog__button"
+                        // style={{ marginLeft: "50px", marginRight: "10px" }}
                         variant="contained"
                         color="primary"
                         size="massive"
