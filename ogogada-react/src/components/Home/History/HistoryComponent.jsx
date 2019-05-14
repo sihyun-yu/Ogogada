@@ -1,8 +1,7 @@
 import React from "react";
 import "../../../stylesheets/History.css"
 import { Icon, Table, Button } from 'semantic-ui-react'
-import { Subscribe } from "unstated";
-import { HistoryStore } from "../../../stores"
+
 
 class HistoryComponent extends React.Component {
     constructor(props) {
@@ -28,7 +27,7 @@ class HistoryComponent extends React.Component {
     render () {
         // console.log("HistoryComponent: ", this.props.location.state);
         return (
-                <div id="totalContainer">
+            <div id="totalContainer">
                 <div style={{"width": "40%"}}></div>
                 <div id="historyContainer">
                     <Table celled striped inverted selectable id="tableContainer">
@@ -43,7 +42,6 @@ class HistoryComponent extends React.Component {
 
                         <Table.Body>
                         <Table.Row onClick={() => {
-                            history.resetIndex()
                             this.props.history.push('/1')
                             this.routeChange("1")
                         }
@@ -54,23 +52,22 @@ class HistoryComponent extends React.Component {
                             <Table.Cell>Take an order of 1 ice americano and 1 hot americano</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
-                            history.resetIndex()
-
+                            if (this.state.level >= 2) {
                             this.props.history.push('/2')
                             this.routeChange("2")
                         }
                         }
-                        >
+                        }>
                             <Table.Cell disabled={this.props.location.state.level < 2}>
                             <Icon name='coffee' /> Level 2
                             </Table.Cell>
                             <Table.Cell>Take an order of 2 ice caffe mocha and 1 hot earl grey</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
-
-                            history.resetIndex()
-                            this.props.history.push('/3')
-                            this.routeChange("3")
+                            if (this.state.level >= 3 ){
+                                this.props.history.push('/3')
+                                this.routeChange("3")
+                            }
                         }
                         }>
                             <Table.Cell disabled={this.props.location.state.level < 3}>
@@ -79,22 +76,22 @@ class HistoryComponent extends React.Component {
                             <Table.Cell>Apply student discount</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
-                            history.resetIndex()
+                            if (this.state.level >= 4) {
                             this.props.history.push('/4')
                             this.routeChange("4")
                         }
                         }
-                        >
+                        }>
                             <Table.Cell disabled={this.props.location.state.level < 4}>
                             <Icon name='coffee' /> Level 4
                             </Table.Cell>
                             <Table.Cell>Use an ice americano gifticon</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
-                            history.resetIndex()
-                            this.props.history.push('/5')
-                            this.routeChange("5")
-
+                            if (this.state.level >= 5) {
+                                this.props.history.push('/5')
+                                this.routeChange("5")
+                            }
                         }
                         }>
                             <Table.Cell disabled={this.props.location.state.level < 5}>
@@ -102,7 +99,7 @@ class HistoryComponent extends React.Component {
                             </Table.Cell>
                             <Table.Cell>Refund most recent order</Table.Cell>
                         </Table.Row>
-
+                        </Table.Body>
 
                         <Table.Header disabled={true}>
                         <Table.Row>
@@ -192,9 +189,7 @@ class HistoryComponent extends React.Component {
                         state: this.props.location.state,})}>
                     Back</Button>
                 </div>
-                </div>
-
-
+            </div>
         )
     }
 }
