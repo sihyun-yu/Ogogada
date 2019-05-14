@@ -12,6 +12,8 @@ var paymentButtonStyle = {
   width: "100%",
   height: "100%",
   padding: "0px",
+  "font-size": "30px",
+  "color": "black"
   // color: "black"
 }
 
@@ -87,23 +89,6 @@ class PaymentComponent extends React.Component {
           (selectedPaymentMethod === 1 ? 0.95 : 1)
       );
     };
-
-    const paymentText = (
-      menus,
-      selectedMenus,
-      selectedCoupon,
-      selectedPaymentMethod
-    ) =>
-      `${selectedCoupon !== 0 ? `쿠폰할인 ${selectedCoupon * 100}%` : ""}${
-        selectedCoupon !== 0 && selectedPaymentMethod === 1 ? ", " : " "
-      }${selectedPaymentMethod === 1 ? "현금할인 5% " : ""}${
-        selectedCoupon !== 0 || selectedPaymentMethod === 1 ? "적용하여 " : ""
-      }${calculatedValue(
-        menus,
-        selectedMenus,
-        selectedCoupon,
-        selectedPaymentMethod
-      )}원입니다.`;
 
     const selectedMenus = (menus, selectedMenus) =>
       Object.keys(selectedMenus)

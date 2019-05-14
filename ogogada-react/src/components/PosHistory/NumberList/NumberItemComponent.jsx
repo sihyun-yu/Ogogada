@@ -5,6 +5,7 @@ var divStyle = {
   background: "#EAD1D1",
   width: "100%",
   height: "100%",
+  "font-size": "25px",
 };
 
 var borderDivStyle = {
@@ -12,6 +13,7 @@ var borderDivStyle = {
   width: "100%",
   height: "100%",
   border: "5px solid red",
+  "font-size": "25px",
 }
 
 const NumberItemComponent = props => {
