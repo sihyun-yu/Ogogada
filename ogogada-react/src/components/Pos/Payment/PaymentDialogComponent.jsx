@@ -23,8 +23,11 @@ class PaymentDialogComponent extends React.Component {
     });
   }
 
+
+
   render () {
     {
+      console.log (this.props.level)
       // console.log("[history check] in paymentdialogcomponent: ", this.props.history)
       // console.log("paymentdialogcomponent ", this.props);
       if (this.props.levelUp == false){
@@ -88,64 +91,114 @@ class PaymentDialogComponent extends React.Component {
       }
       else {
         // console.log("enter~!!!!!!!", this.props)
-        
-        return (
-          <Dialog open={this.props.levelUp} onClose={this.props.handleClose}>
-            <DialogTitle>Level Up!</DialogTitle>
-            <div className="payment-dialog__details">
-              {/* {props.selectedMenus.map((menu, index) => (
-                <div className="payment-dialog__detail-container" key={index}>
-                  <div className="payment-dialog__detail">{menu[0]}</div>
-                  <div className="payment-dialog__detail">{menu[2]}</div>
-                  <div className="payment-dialog__detail">{menu[1] * menu[2] + " ₩"}</div>
-                </div>
-              ))} */}
-            </div>
-            <div className="payment-dialog__total">
-              You leveled up from {this.props.curLevel} to {Number(this.props.curLevel) + 1 + "!\n"}
-              
-            </div>
-            <div className="payment-dialog__total">
-              New button
-               {this.props.curLevel == 1 && <Image src={src2} size="small" centered="true"/> ||
-              this.props.curLevel == 2 && <Image src={src3} size="small" centered="true"/> ||
-              this.props.curLevel == 3 && <Image src={src4} size="small" centered="true"/> ||
-              this.props.curLevel == 4 && <Image src={src5} size="small" centered="true"/> 
-              }
-            </div>
-            <div className="payment-dialog__total">
-              is unlocked!
-            </div>
-            {/* {props.pendingCardPayment && (
-              <div className="payment-dialog__pending">
-                <div className="lds-ring">
-                  <div />
-                  <div />
-                  <div />
-                  <div />
-                </div>
+        if (this.props.level == this.props.curLevel) {
+          return (
+            <Dialog open={this.props.levelUp} onClose={this.props.handleClose}>
+              <DialogTitle>Level Up!</DialogTitle>
+              <div className="payment-dialog__details">
+                {/* {props.selectedMenus.map((menu, index) => (
+                  <div className="payment-dialog__detail-container" key={index}>
+                    <div className="payment-dialog__detail">{menu[0]}</div>
+                    <div className="payment-dialog__detail">{menu[2]}</div>
+                    <div className="payment-dialog__detail">{menu[1] * menu[2] + " ₩"}</div>
+                  </div>
+                ))} */}
               </div>
-            )} */}
-            <div className="payment-dialog__buttons">
-              <Button
-                className="payment-dialog__button"
-                style={{ marginLeft: "10px", marginRight: "50px" }}
-                variant="contained"
-                color="secondary"
-                size="massive"
-                onClick={() => {
-                  this.props.handleCompletePayment();
-                  this.routeChange(this.props.curLevel);
-                  this.props.flagFlip();
-                  // props.goBackHistory.goBack();
-                  this.props.openQuestion();
-                }}
-              >
-                Got it!
-              </Button>
-            </div>
-          </Dialog>
-        )
+              <div className="payment-dialog__total">
+                You leveled up from {this.props.curLevel} to {Number(this.props.curLevel) + 1 + "!\n"}
+                
+              </div>
+              <div className="payment-dialog__total">
+                New button
+                {this.props.curLevel == 1 && <Image src={src2} size="small" centered="true"/> ||
+                this.props.curLevel == 2 && <Image src={src3} size="small" centered="true"/> ||
+                this.props.curLevel == 3 && <Image src={src4} size="small" centered="true"/> ||
+                this.props.curLevel == 4 && <Image src={src5} size="small" centered="true"/> 
+                }
+              </div>
+              <div className="payment-dialog__total">
+                is unlocked!
+              </div>
+              {/* {props.pendingCardPayment && (
+                <div className="payment-dialog__pending">
+                  <div className="lds-ring">
+                    <div />
+                    <div />
+                    <div />
+                    <div />
+                  </div>
+                </div>
+              )} */}
+              <div className="payment-dialog__buttons">
+                <Button
+                  className="payment-dialog__button"
+                  // style={{ marginLeft: "10px", marginRight: "50px" }}
+                  variant="contained"
+                  color="secondary"
+                  size="massive"
+                  onClick={() => {
+                    this.props.handleCompletePayment();
+                    this.routeChange(this.props.curLevel);
+                    this.props.flagFlip();
+                    // props.goBackHistory.goBack();
+                    this.props.openQuestion();
+                  }}
+                >
+                  Got it!
+                </Button>
+              </div>
+            </Dialog>
+          )
+        }
+        else {
+          return (
+            <Dialog open={this.props.levelUp} onClose={this.props.handleClose}>
+              <div className="payment-dialog__details">
+                {/* {props.selectedMenus.map((menu, index) => (
+                  <div className="payment-dialog__detail-container" key={index}>
+                    <div className="payment-dialog__detail">{menu[0]}</div>
+                    <div className="payment-dialog__detail">{menu[2]}</div>
+                    <div className="payment-dialog__detail">{menu[1] * menu[2] + " ₩"}</div>
+                  </div>
+                ))} */}
+              </div>
+              <div className="payment-dialog__total">
+                You done the task in level {this.props.curLevel}!
+              </div>
+              <div className="payment-dialog__total">
+                Your current level is {this.props.level}.
+              </div>
+              {/* {props.pendingCardPayment && (
+                <div className="payment-dialog__pending">
+                  <div className="lds-ring">
+                    <div />
+                    <div />
+                    <div />
+                    <div />
+                  </div>
+                </div>
+              )} */}
+              <div className="payment-dialog__buttons">
+                <Button
+                  className="payment-dialog__button"
+                  // style={{ marginLeft: "10px", marginRight: "50px" }}
+                  variant="contained"
+                  color="secondary"
+                  size="massive"
+                  onClick={() => {
+                    this.props.handleCompletePayment();
+                    this.routeChange(this.props.curLevel);
+                    this.props.flagFlip();
+                    // props.goBackHistory.goBack();
+                    this.props.openQuestion();
+                  }}
+                >
+                  Got it!
+                </Button>
+              </div>
+            </Dialog>
+          )
+        }
       }
   }
 }

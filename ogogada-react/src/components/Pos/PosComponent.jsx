@@ -23,6 +23,7 @@ class PosComponent extends React.Component {
 
   render () {
     // console.log("PosComponent state: ", this.props.location.state)
+    // console.log("PosComponent level: ", this.props.location.state.level)
     // console.log("PosComponent history: ", this.props.history)
     return (
       <div>
@@ -47,6 +48,7 @@ class PosComponent extends React.Component {
                     flagFlip={menu.flagFlip.bind(menu)} 
                     flag={menu.state.timerFlag}
                     userName={this.props.match.params.id}
+                    level={this.props.location.state.level}
                     openQuestion={menu.openQuestion.bind(menu)}
                     // history={this.props.history}
                     />  
