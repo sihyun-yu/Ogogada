@@ -49,7 +49,7 @@ class HistoryComponent extends React.Component {
                             <Table.Cell collapsing>
                             <Icon name='coffee' /> Level 1
                             </Table.Cell>
-                            <Table.Cell>Take an order of 1 ice americano and 1 hot americano</Table.Cell>
+                            <Table.Cell>Take an order of 1 hot americano</Table.Cell>
                         </Table.Row>
                         <Table.Row onClick={() => {
                             if (this.state.level >= 2) {
