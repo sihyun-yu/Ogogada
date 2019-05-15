@@ -32,3 +32,20 @@
     z-index: 2;
 }
 
+.ranking-label {
+    position: absolute;
+    z-index: 2;
+    width: 25%;
+    bottom: 8%;
+    left: 2.5%;
+}
+
+.history-label {
+    position: absolute;
+    z-index: 2;
+    width: 25%;
+    bottom: 8%;
+    left: 25%;
+}
+
+

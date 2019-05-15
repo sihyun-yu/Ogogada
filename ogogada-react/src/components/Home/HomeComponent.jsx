@@ -160,6 +160,16 @@ class HomeComponent extends React.Component {
                         </Card.Content>
                         </Card>
                     </div>
+                    <div className = "ranking-label">
+                        <Header as='h1'> 
+                        RANKING
+                        </Header>
+                    </div>
+                    <div className = "history-label">
+                        <Header as='h1'> 
+                        HISTORY
+                        </Header>
+                    </div>
                     {imageMapper}
                 </div>
                 
