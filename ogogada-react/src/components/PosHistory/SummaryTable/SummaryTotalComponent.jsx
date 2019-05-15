@@ -17,11 +17,22 @@ const SummaryTotalComponent = props => {
     );
   };
 
+  function getPayment(selected) {
+    console.log (selected)
+    if (selected == 1) {
+      return "CASH"
+    } else if (selected == 0) {
+      return "CARD"
+    } else {
+      return "WRONG"
+    }
+  }
+
   return (
     <Subscribe to={[MenuStore, CouponStore, PaymentMethodStore]}>
       {(menuStore, couponStore, paymentMethodStore, history) => (
         <div className="summary-total">
-          <div className="summary-total__label">{props.label}</div>
+          <div className="summary-total__label">{getPayment(paymentMethodStore.state.selected)}</div>
           <div className="summary-total__percent">
             {couponStore.state.coupons[couponStore.state.selected]*100+"%"}
           </div>

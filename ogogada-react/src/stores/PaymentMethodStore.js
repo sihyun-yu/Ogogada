@@ -4,7 +4,7 @@ import metaJSON from "../assets/meta.js";
 class PaymentMethodStore extends Container {
   state = {
     paymentMethods: metaJSON.paymentMethods,
-    selected: "-1"
+    selected: "1"
   };
 
   selectPaymentMethod = id => {
@@ -16,7 +16,7 @@ class PaymentMethodStore extends Container {
 
   resetPaymentMethod = () => {
     this.setState({
-      selected: "-1"
+      selected: "1"
     })
   }
 

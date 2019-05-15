@@ -68,7 +68,7 @@ class SignInComponent extends React.Component {
                         <Form>
                             <Form.Field>
                             <label>ID</label>
-                            <input placeholder='Enter your ID' onChange = {(user_id) => {this.setState({id: user_id.target.value})}} autofocus="autofocus"/>
+                            <input placeholder='Enter your ID' onChange = {(user_id) => {this.setState({id: user_id.target.value})}} autoFocus="autoFocus"/>
                             </Form.Field>
                             <Form.Field>
                             <label>PW</label>

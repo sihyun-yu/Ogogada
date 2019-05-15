@@ -12,8 +12,6 @@ const NumberItemComponent = props => {
   return (
     <div className="number-item">
       <Button
-        
-        color="#EAD1D1"
         style={divStyle}
         className="number-item__button"
         variant="contained"
