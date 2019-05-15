@@ -93,7 +93,9 @@ class Timer extends React.Component {
 
       // console.log ("props level: " + this.props.level)
       // levelup to db
-      levelUp (this.props.level, this.props.username)
+      if (this.props.level < 5) {
+        levelUp (this.props.level, this.props.username)
+      }
     }
   }
 

@@ -103,11 +103,9 @@ class HomeComponent extends React.Component {
         {
             this.props.history.push({
                 pathname : '../ranking',
-                state: {
-                    id: this.state.id,
-                    pw: this.state.pw,
-                    level: this.state.level,
-                }
+                id: this.state.id,
+                pw: this.state.pw,
+                level: this.state.level,
     
             });
         }
@@ -143,7 +141,7 @@ class HomeComponent extends React.Component {
         // console.log("home props: ", this.props);
         // console.log("home state: ", this.state);
         const imageMapper = this.makeMAP(this.state.level)
-
+        console.log("home cur leve", this.state.level)
         // console.log("x1, y1: ", x1.toString() + "," + y1.toString() + ",63");
         console.log (imageMapper)
         return (                

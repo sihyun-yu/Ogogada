@@ -31,6 +31,9 @@ class PosComponent extends React.Component {
             <div className="pos">
               <div className="left-content">
                 <MenuList 
+                {...this.props}
+                flagFlip={menu.flagFlip.bind(menu)} 
+                flag={menu.state.timerFlag}
                 level={this.props.match.params.level}
                 username={this.props.match.params.id}/>
                 <div className="left-below__container">

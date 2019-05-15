@@ -49,10 +49,9 @@ class RankingLevelComponent extends React.Component {
         // })
         this.state = {
             data: [],
+            id : this.props.history.location.id,
         }
-        console.log ("A")
-        console.log (this.state)
-        console.log ("B")
+
     }
 
     componentDidMount() {
@@ -84,16 +83,18 @@ class RankingLevelComponent extends React.Component {
 
     render () {
         const classNames = ["one", "two", "three", "four", "five", "six", "seven", "eight"]
+
         const ranking = this.state.data.map(function(item, i) {
             console.log (item["id"])
             var time = pad(Math.floor((item["record"]/1000)/60), 2)+ " : " + pad(Math.floor((item["record"]/1000)%60), 2) + " : "  + pad(Math.floor((item["record"]%1000)/10), 2)
             return <span className={classNames[i]}>{item["id"]+"   "+time}</span>
         })
+        console.log ("ranking level compoenent", this.state.id)
 
         return (
             <div id="rankingLevel"> 
                     <div className="backButtonDiv">
-                        <Button className="backButton" onClick={() => this.props.history.goBack()}>Back</Button>
+                        <Button className="backButton" onClick={() => this.props.history.push({pathname: '../ranking', id: this.state.id})}>Back</Button>
                     </div>
                     <div><Header as='h1' size= 'medium' color="brown">Level {this.props.match.params.id}</Header></div>
                     <div id="rankingTemplate" >

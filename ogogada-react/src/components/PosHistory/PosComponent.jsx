@@ -19,6 +19,7 @@ const PosComponent = props => {
         <div className="pos">
           <div className="left-content">
             <MenuList 
+            {...props}
             level={props.match.params.level}
             username={props.match.params.id}/>
             <div className="left-below__container">

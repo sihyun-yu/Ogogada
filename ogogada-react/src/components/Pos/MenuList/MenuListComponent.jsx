@@ -7,7 +7,7 @@ import GifticonItem from "./GifticonComponent.jsx"
 
 
 import { MenuStore } from "../../../stores";
-import { NumberStore } from "../../../stores";
+import { NumberStore , PaymentMethodStore} from "../../../stores";
 
 import { Store } from "../../../stores";
 import GifticonDialog from "./GifticonDialogComponent.jsx"
@@ -31,8 +31,8 @@ const MenuListComponent = props => {
   // console.log("menulistComponent", props.level);
   return (
     <div className="menus__container">
-      <Subscribe to={[MenuStore, NumberStore]}>
-        {(menu, number) => (
+      <Subscribe to={[MenuStore, NumberStore, PaymentMethodStore]}>
+        {(menu, number, paymentMethodStore) => (
           <div className="allcomponent-container">
           <div className="menus">
             {menu.state.menus.map((menuItem, index) => (
@@ -79,11 +79,16 @@ const MenuListComponent = props => {
           </div>
           <div>
             <RefundDialog
+            {...props}
+            openQuestion={menu.openQuestion.bind(menu)}
+            resetPaymentMethod = {paymentMethodStore.resetPaymentMethod.bind(paymentMethodStore)}
+            resetMenuDisplay={menu.resetMenuDisplay.bind(menu)}
             open={menu.state.refundOpen}
             handleRefundDialog={menu.closeRefund.bind(menu)}
             closeRefund={menu.closeRefund.bind(menu)}
             selectRefund={menu.selectRefund.bind(menu)}
             confirm = {menu.confirm.bind(menu)}
+            unconfirm = {menu.unconfirm.bind(menu)}
             isConfirmed = {menu.state.isConfirmed}
             refundIdx = {menu.state.refundIdx}
             />
