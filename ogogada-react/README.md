@@ -49,13 +49,13 @@ yarn start
 2. ```PaymentDialogComponent.jsx```: includes code for payment popup after clicking payment button
 
 ##### /SummaryTable
-1. ```SummaryTotalComponent.jsx```: 
-2. ```SummaryTableComponent.jsx```
-3. ```SummaryPaymentMethodComponent.jsx```
-4. ```SummaryMenuListComponent.jsx```
-5. ```SummaryMenuItemComponent.jsx```
-6. ```SummaryCouponComponent.jsx```
-7. ```PaymentMethodButton.jsx```
+1. ```SummaryTotalComponent.jsx```: includes codes for whole summary table
+2. ```SummaryTableComponent.jsx```: includes codes for calculate and show price before and after applying coupons
+3. ```SummaryPaymentMethodComponent.jsx```: includes codes for two payment method buttons, card and cash
+4. ```SummaryMenuListComponent.jsx```: includes codes for summary table menu list
+5. ```SummaryMenuItemComponent.jsx```: includes codes for menu items in summary table
+6. ```SummaryCouponComponent.jsx```: includes code for coupons with 0%, 5% ,10%
+7. ```PaymentMethodButton.jsx```: includes code for each payment method buttons such as card and cash
 
 #### /PosHistory
 All files are similar to files in POS folder above. Added some lines for each code to implement showing history with red border at each button
