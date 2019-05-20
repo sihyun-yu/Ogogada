@@ -50,7 +50,7 @@ const meta = {
   {level: 1, menu: {0:1}, coupon: null, method: "0"},
   {level: 2, menu: {7:2, 10:1}, coupon: null, method: "0"},
   {level: 3, menu: {15:5}, coupon: 2, method: "0"},
-  {level: 4, menu: {1:1, 16:1}, coupon: null, method: "-1"},
+  {level: 4, menu: {1:1, 16:1}, coupon: null, method: "1"},
   {level: 5, menu: {}}],
   questions : [
     "Take an order for one HOT americano and one ICE americano with card.",
