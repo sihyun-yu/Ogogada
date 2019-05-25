@@ -45,6 +45,8 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
 #### Recording strategy
 
+> We are going to take photo while you experiencing our prototpye, and if you do well with some tasks, your record will be remained in our DB.
+
 #### Questionnaries, Interview questions
 
 #### Debrief prompt
