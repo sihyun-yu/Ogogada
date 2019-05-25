@@ -10,6 +10,7 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 #### Introduction and informed consent
 
 #### Tutorial or training (if needed)
+> Since our tasks don't require any prior familiarity with our prototype, we did not provide them any tutorial or training.
 
 #### Task list & instruction
 
