@@ -47,7 +47,10 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
 > We are going to take photo while you experiencing our prototpye, and if you do well with some tasks, your record will be remained in our DB.
 
-#### Questionnaries, Interview questions
+#### Questionnaires, Interview questions
+> After we observed test users, we asked questions based on their behaviors that seemed to have struggling with our prototype. Also we asked them to fill out 5 point likert scale questionnaire from "The SUS Survey" 
+(https://arl.human.cornell.edu/linked%20docs/Choosing%20the%20Right%20Usability%20Questionnaire.pdf) in Google form
+ (https://docs.google.com/forms/d/1ve4cWWTc9wXS6iZ_r9yF1ePLlfEpiy8VQDtHMkwYVr0/edit#responses). To remark some of the results, the answers to the question "I think that I would need the support of a technical person(기술적 도우미) to be able to use this prototype." and "I found the prototype very cumbersome(귀찮은) to use." had high variance while the rest of them mostly produced positive results.
 
 #### Debrief prompt
 
