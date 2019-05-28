@@ -105,11 +105,11 @@ High
 
 > In HISTORY POS page at level 4, when applying Gifticon, the user had hard time finding highlighted num pad button with red border.  The user tried to click white form in “Insert Gitficon Code” dialogue (seol, gogi, jungu)
 >
->- num pad를 dialogue처럼 눈에 띄게 한다 
+>- We will make the num pad more visible as the pop up dialog.
 >
 > In GAME POS page, the user did not understand the task properly and kept checking the task agin and again. (james)
 >
->- 해결책 voice 추가?
+>- We add a voice to make the user concentrate on remembering tasks.
 >
 
 Medium
@@ -138,7 +138,7 @@ Medium
 
 > In HISTORY POS page, since there was no description after entering page, it seemed that the user just follow red box without understanding what he or she is doing. (gogi, james, gamgam)
 > 
->- aaa
+>- Description of tasks needs to be added.
 >
 > In GAME POS page, the user confused about how to change number of menu in summary table. Actually we have three ways of changing number of menu (james, seol)
 >
@@ -149,7 +149,7 @@ Low
 
 > Trying to use back button in chrome browser (gogi, gamgam, bjw, hancy5) 
 >
->- aaa
+>- This is not an important issue since the final version would be on Ipad
 
 <strong> Gamification </strong>
 
@@ -157,10 +157,10 @@ High
 
 > Even experiencing HISTORY POS page, the user did not try to entry HISTORY page before playing actual GAME. (james, jungu, gamgam)
 >
->- the word “HISTORY” did not correspond with current functions. Delete “history” button in HOME page and add new “tutorial” button below each level “game” button.
+>- The word “HISTORY” did not correspond with current functions. Delete “history” button in HOME page and add new “tutorial” button below each level “game” button.
 >
 > In HOME page, the user thought that three stars beside each level’s button mean something. (gamgam, bjw, hancy5, jungu)
->- 각 레벨 별로 게임을 완료하는 데 걸리는 시간을 바탕으로 절대적으로 기준을 만들어서, 별을 부여하고, HOME page에서 별로 표시한다. 
+>- Based on the finishing record of time, rate the stars so that users can feel accomplishment.
 
 Medium
 
