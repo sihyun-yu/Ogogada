@@ -53,32 +53,56 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
 ### Session observations
 
-gogi
-22, has no POS experience, use computer
+#### Participants
 
-james 
-21, has no POS experience, use computer
+- Total 9 participants for testing
+- 6 people are completely new at using POS, 3 people has experience using POS
+- Tried to find participants that matched our persona(Early 20s, less part-time work experience).
 
-seol
-23, has no POS experience, use iPad
+1. gogi
+    - 22 years old, Male
+    - Totally new at using POS
+    - Use computer for test
 
-gamgam
-21, male, 알바 경험 x
+2. james
+    - 21 years old, Male
+    - Totally new at using POS
+    - Use computer for test
 
-bjw	
-22, male, 알바 경험 x
+3. seol
+    - 23 years old, Female
+    - Totally new at using POS
+    - Use iPad for test
 
-hancy5
-21, male, 알바 경험 x
+4. guunn.juu
+    - 22 years old, Male
+    - Has POS experience (Less than a year)
+    - Use computer for test
 
-jungu
-22, has POS experience, use computer
+5. gamgam
+    - 21 years old, Male
+    - Totally new at using POS
+    - Use computer for test
 
-hyojin
-22, has POS experience, use computer
+6. bjw
+    - 22 years old, Male
+    - Totally new at using POS
+    - Use computer for test
 
-hanna
-21, has POS experience, use computer
+7. hojiny103
+    - 22 years old, Female
+    - Has POS experience (Less than a year)
+    - Use computer for test
+
+8. nanah1929
+    - 21 years old, Female
+    - Has POS experience (Less than a year)
+    - Use computer for test
+
+9. hancy5
+    - 21 years old, Male
+    - Totally new at using POS
+    - Use computer for test
 
 ### Usability lessons
 We devided the oberservations by three themes, visiblity, affordability and gamification. And we classified them into high, medium, and low based on the correlation with tasks.
