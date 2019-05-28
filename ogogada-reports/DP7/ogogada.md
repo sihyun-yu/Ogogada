@@ -62,45 +62,63 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 - 6 people are completely new at using POS, 3 people has experience using POS
 - Tried to find participants that matched our persona(Early 20s, less part-time work experience).
 
+![](./Images/gogi.png)
+
 1. gogi
     - 22 years old, Male
     - Totally new at using POS
     - Use computer for test
+
+![](./Images/james.png)
 
 2. james
     - 21 years old, Male
     - Totally new at using POS
     - Use computer for test
 
+![](./Images/seol.png)
+
 3. seol
     - 23 years old, Female
     - Totally new at using POS
     - Use iPad for test
+
+![](./Images/guunnjuu.png)
 
 4. guunn.juu
     - 22 years old, Male
     - Has POS experience (Less than a year)
     - Use computer for test
 
+![](./Images/gamgam.png)
+
 5. gamgam
     - 21 years old, Male
     - Totally new at using POS
     - Use computer for test
+
+![](./Images/bjw.png)
 
 6. bjw
     - 22 years old, Male
     - Totally new at using POS
     - Use computer for test
 
+![](./Images/hojiny103.png)
+
 7. hojiny103
     - 22 years old, Female
     - Has POS experience (Less than a year)
     - Use computer for test
 
+![](./Images/nanah1929.png)
+
 8. nanah1929
     - 21 years old, Female
     - Has POS experience (Less than a year)
     - Use computer for test
+
+![](./Images/hancy5.png)
 
 9. hancy5
     - 21 years old, Male
