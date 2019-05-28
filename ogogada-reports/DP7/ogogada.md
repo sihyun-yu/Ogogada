@@ -47,7 +47,10 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
 > We are going to take photo while you experiencing our prototpye, and if you do well with some tasks, your record will be remained in our DB.
 
-#### Questionnaries, Interview questions
+#### Questionnaires, Interview questions
+> After we observed test users, we asked questions based on their behaviors that seemed to have struggling with our prototype. Also we asked them to fill out 5 point likert scale questionnaire from "The SUS Survey" 
+(https://arl.human.cornell.edu/linked%20docs/Choosing%20the%20Right%20Usability%20Questionnaire.pdf) in Google form
+ (https://docs.google.com/forms/d/1ve4cWWTc9wXS6iZ_r9yF1ePLlfEpiy8VQDtHMkwYVr0/edit#responses). To remark some of the results, the answers to the question "I think that I would need the support of a technical person(기술적 도우미) to be able to use this prototype." and "I found the prototype very cumbersome(귀찮은) to use." had high variance while the rest of them mostly produced positive results.
 
 #### Debrief prompt
 
@@ -178,8 +181,18 @@ High
 Medium
 
 > Some user irritated when they move to LEVEL {level} RANK page automatically after finishing game in GAME POS page. (gamgam, bjw, hancy5)
->
+> 
 >- Give options to move such as HOME page, RANK page.
+
+#### High-level reflections
+
+Getting quantitative answers from questionnaires helped us a lot knowing users' feeling of our prototype. These are some surprising answers we got from user questionnaires. Most of users gave us positive answer in most questions.
+
+![](./Images/questionnaires1.png)
+![](./Images/questionnaires2.png)
+![](./Images/questionnaires3.png)
+
+ However, we noticed that some users thought that our prototpye is unnecessarily complex and some users were cumbersome to use the prototype. Also, some of users thought they need the support of technical person to be able to use the prototype. For the better UI, we need to keep in mind that users don’t act as we expect in various ways. For example, some users have hard time finding number pad which is highlighted with red boarder in HISTORY POS page. It was a problem that we never thought of. Thus, we need to think more in user side and make the UI as easy and simple as possible. 
 
 ### Studio Reflections
 
@@ -197,5 +210,14 @@ I wish the collected data was not that limited. Few questions with 1 to 5 scale 
 I like that many potential users tested your project. However, is there any extreme users like someone who are not familiar with digital devices?
 > We haven't thought about this, and it is true that there might be some people that who wants to work at the cafe but not familiar with digital devices. If we can find such people who also fits to our persona, we will ask those people to do the test.
 
-
 ### Plan for iteration
+After getting feedbacks from users and people at the studio, we made a plan to make our prototype better. Since we have not enough time (which is about 1 week), we considered a lot how can we efficiently solve as many problems as we can. Theerefore, we thought a lot about simple ways to apply most feedbacks from users and people at the studio.
+
+First of all, there was a feedback from two test users, "In GAME POS page, often confuse ICE and HOT." Therefore, we will try distinguish these by color (red with HOT, blue with COLD)
+
+Plus, there were some feedbacks that task information is hard to catch at once and some information were missing in both modes in our prototype. Therefore, we try to fix this by checking the task information one more time (such as student discount is 10%), keep showing the task in showing history mode. 
+
+Furthermore, there were some feedbacks tht UI design at the home page looks bad and hard to catch the meaning of each buttons. Therefore, we are trying to change the home page UI design like as below, so that users can catch the meaning of each button easier, leads to convienient use of our prototype.
+
+Finally, focusing on usability lessons with "HIGH" that we clasified, many people first said it is hard for users to remember the task at once while playing the game and it was hard to find the button for seeing again task. Therefore, 
+
