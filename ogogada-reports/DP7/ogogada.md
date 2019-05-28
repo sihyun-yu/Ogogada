@@ -157,8 +157,18 @@ High
 Medium
 
 > Some user irritated when they move to LEVEL {level} RANK page automatically after finishing game in GAME POS page. (gamgam, bjw, hancy5)
->
+> 
 >- Give options to move such as HOME page, RANK page.
+
+#### High-level reflections
+
+Getting quantitative answers from questionnaires helped us a lot knowing users' feeling of our prototype. These are some surprising answers we got from user questionnaires. Most of users gave us positive answer in most questions.
+
+![](./Images/questionnaires1.png)
+![](./Images/questionnaires2.png)
+![](./Images/questionnaires3.png)
+
+ However, we noticed that some users thought that our prototpye is unnecessarily complex and some users were cumbersome to use the prototype. Also, some of users thought they need the support of technical person to be able to use the prototype. For the better UI, we need to keep in mind that users don’t act as we expect in various ways. For example, some users have hard time finding number pad which is highlighted with red boarder in HISTORY POS page. It was a problem that we never thought of. Thus, we need to think more in user side and make the UI as easy and simple as possible. 
 
 ### Studio Reflections
 
