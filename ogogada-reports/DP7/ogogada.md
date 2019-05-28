@@ -51,7 +51,109 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
 ### Session observations
 
+gogi
+22, has no POS experience, use computer
+
+james 
+21, has no POS experience, use computer
+
+seol
+23, has no POS experience, use iPad
+
+gamgam
+21, male, 알바 경험 x
+
+bjw	
+22, male, 알바 경험 x
+
+hancy5
+21, male, 알바 경험 x
+
+jungu
+22, has POS experience, use computer
+
+hyojin
+22, has POS experience, use computer
+
+hanna
+21, has POS experience, use computer
+
 ### Usability lessons
+We devided the oberservations by three themes, visiblity, affordability and gamification. And we classified them into high, medium, and low based on the correlation with tasks.
+
+- Visibility: Can users find what they have to do easily without additional verbal or textual explanations?
+
+- Affordability: Can users interact with our prototype with enough reactions in both ways?
+
+- Gamification: Do users feel like an actual game? Do users play and expect like any other games?
+
+<strong>Visibility </strong>
+
+High
+
+> In HISTORY POS page at level 4, when applying Gifticon, the user had hard time finding highlighted num pad button with red border.  The user tried to click white form in “Insert Gitficon Code” dialogue (seol, gogi, jungu)
+>
+>- num pad를 dialogue처럼 눈에 띄게 한다 
+>
+> In GAME POS page, the user did not understand the task properly and kept checking the task agin and again. (james)
+>
+>- 해결책 voice 추가?
+>
+
+Medium
+
+> In HISTORY POS page at level 3, the user did not know how much the student discount was. (james, gamgam)
+>
+>- The description of level 3 in HISTORY page should include “10% student discount”
+>
+
+Low
+
+> In GAME POS page, the user confused ICE and HOT. (gogi, seol)
+>- If would be better if ICE and HOT are separated by color such as blue and red
+>
+
+<strong> Affordability </strong>
+
+High
+
+> In GAME POS page, the user cannot remember task quickly and cannot find Task button well to look again. (jungu, gamgam, hancy5, gogi, james)
+> 
+>- Make the button more visible and attractable.
+>
+> In GAME POS page, the user confused about how to change number of menu in summary table. Actually we have three ways of changing number of menu (james, seol)
+>
+>- It would be better if we highlight menu in the summary table if the user click it to change number of order. Or it would be better if we remove ‘+’ and ‘-‘ buttons in each menu in summary table.
+> 
+
+Medium
+
+> In HISTORY POS page, since there was no description after entering page, it seemed that the user just follow red box without understanding what he or she is doing. (gogi, james, gamgam)
+>- aaa
+>
+
+Low
+
+> Trying to use back button in chrome browser (gogi, gamgam, bjw, hancy5) 
+>
+>- aaa
+
+<strong> Gamification </strong>
+
+High
+
+> Even experiencing HISTORY POS page, the user did not try to entry HISTORY page before playing actual GAME. (james, jungu, gamgam)
+>
+>- the word “HISTORY” did not correspond with current functions. Delete “history” button in HOME page and add new “tutorial” button below each level “game” button.
+>
+> In HOME page, the user thought that three stars beside each level’s button mean something. (gamgam, bjw, hancy5, jungu)
+>- 각 레벨 별로 게임을 완료하는 데 걸리는 시간을 바탕으로 절대적으로 기준을 만들어서, 별을 부여하고, HOME page에서 별로 표시한다. 
+
+Medium
+
+> Some user irritated when they move to LEVEL {level} RANK page automatically after finishing game in GAME POS page. (gamgam, bjw, hancy5)
+>
+>- Give options to move such as HOME page, RANK page.
 
 ### Studio Reflections
 
