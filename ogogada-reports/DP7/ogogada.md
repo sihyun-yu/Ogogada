@@ -51,7 +51,14 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 #### Questionnaires, Interview questions
 
 
-> After we observed test users, we asked questions based on their behaviors that seemed to have struggling with our prototype. Also we asked them to fill out 5 point likert scale questionnaire from "The SUS Survey" (source link is below) in Google form (form link is below). 
+> After we observed test users, we asked questions about some things we have expected the users might be struggling with, such as
+>> <strong> "Did you feel this UI is complex or difficult?"
+>> "Did you feel difficulty when applying Gifticon?
+ and how about now?" </strong>
+>
+> and some additional questions based on their behaviors. 
+>
+>  Also we asked them to fill out 5 point likert scale questionnaire from "The SUS Survey" (source link is below) in Google form (form link is below). 
 >
 >![](./Images/questionnaires.png)
 >
