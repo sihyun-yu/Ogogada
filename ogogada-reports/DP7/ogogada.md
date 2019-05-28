@@ -74,6 +74,7 @@ Thank you for testing our prototype. Our project is for effcient POS learning fo
 
 - Total 9 participants for testing
 - 6 people are completely new at using POS, 3 people has experience using POS
+- We recruited them through finding friends around us who do not know our project and have plan to work at café or have experience of using POS.
 - Tried to find participants that matched our persona(Early 20s, less part-time work experience).
 
 ![](./Images/gogi.png)
@@ -154,11 +155,11 @@ High
 
 > In HISTORY POS page at level 4, when applying Gifticon, the user had hard time finding highlighted num pad button with red border.  The user tried to click white form in “Insert Gitficon Code” dialogue (seol, gogi, jungu)
 >
->- We will make the num pad more visible as the pop up dialog.
+>- We will make the num pad more visible as the pop up dialog by highlighted the border of whole number pad part.
 >
 > In GAME POS page, the user did not understand the task properly and kept checking the task agin and again. (james)
 >
->- We add a voice to make the user concentrate on remembering tasks.
+>- We could add a voice to make the user concentrate on remembering tasks and feel like actual situation in café.
 >
 
 Medium
@@ -180,14 +181,14 @@ High
 
 > In GAME POS page, the user cannot remember task quickly and cannot find Task button well to look again. (jungu, gamgam, hancy5, gogi, james)
 > 
-> - Make the button more visible and attractable.
+> - Make the 'task' button more visible and attractable.
 >
 
 Medium
 
 > In HISTORY POS page, since there was no description after entering page, it seemed that the user just follow red box without understanding what he or she is doing. (gogi, james, gamgam)
 > 
->- Description of tasks needs to be added.
+>- Description of tasks needs to be added in HISTORY POS page.
 >
 > In GAME POS page, the user confused about how to change number of menu in summary table. Actually we have three ways of changing number of menu (james, seol)
 >
@@ -209,13 +210,16 @@ High
 >- The word “HISTORY” did not correspond with current functions. Delete “history” button in HOME page and add new “tutorial” button below each level “game” button.
 >
 > In HOME page, the user thought that three stars beside each level’s button mean something. (gamgam, bjw, hancy5, jungu)
+> 
 >- Based on the finishing record of time, rate the stars so that users can feel accomplishment.
+>
 
 Medium
 
 > Some user irritated when they move to LEVEL {level} RANK page automatically after finishing game in GAME POS page. (gamgam, bjw, hancy5)
 > 
 >- Give options to move such as HOME page, RANK page.
+>
 
 #### High-level reflections
 
