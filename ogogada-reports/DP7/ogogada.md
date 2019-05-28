@@ -57,4 +57,19 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
 ### Studio Reflections
 
+There are some meaningful feedbacks after our studio. We summarzied these feedbacks and have thought about theses.
+
+I like that you tried to match your participants to the chosen persona. 
+> Since we set and fixed our Persona very beginning of our milestones, we also considered who should test our prototype very early. That's why we can have the test with people who have similar properties of Persona we set. 
+
+Showing graphs helped me understanding and for visualization.
+> We thought that it is usually hard to show statistical results in HCI result, since many questions may feel test users to surjective. To overcome this, we tried to think a lot about survey questions a lot which is quite objective than others (also looked some existing questions that used in HCI research). Furthermore, to show objective and quantitative result, we are planning to compare the time to complete the certain order before learning and after learning. Plus, since statistical result is meaningful if there are enough number of test users, we are planning to test more with different people that fit to our persona. 
+
+I wish the collected data was not that limited. Few questions with 1 to 5 scale answers significantly limit the amount of possible feedback that could have been collected
+> As said at above, it is true that quantifying the result with objective questions in HCI field is quite hard. Therefore, not only doing survey questions by 1 to 5 scale, we also did interview with test users. Later, to verify our prototype, we are trying to mearure and compare the time difference with people who used our prototype and not used our prototype, to argue our protytype helps to solve POV that we set. 
+
+I like that many potential users tested your project. However, is there any extreme users like someone who are not familiar with digital devices?
+> We haven't thought about this, and it is true that there might be some people that who wants to work at the cafe but not familiar with digital devices. If we can find such people who also fits to our persona, we will ask those people to do the test.
+
+
 ### Plan for iteration
