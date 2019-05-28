@@ -77,6 +77,8 @@ Thank you for testing our prototype. Our project is for effcient POS learning fo
 
 ### Session observations
 
+Our prototype works best for iPad but because of resource limit for iPad, we mostly tested them with notebook and only one user with actual iPad.
+
 #### Participants
 
 - Total 9 participants for testing
