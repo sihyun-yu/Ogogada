@@ -8,8 +8,11 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 #### Instructions for preparation and setting up the testing environment
 
 > Go to URL, https://blooming-dawn-12855.herokuapp.com.
+> 
 > Please use Chrome with size 1200 x 900.
+>
 > Please do not use back button of Chrome browser.
+
 
 #### Introduction and informed consent
 
