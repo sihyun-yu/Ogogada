@@ -194,6 +194,9 @@ I like that many potential users tested your project. However, is there any extr
 > We haven't thought about this, and it is true that there might be some people that who wants to work at the cafe but not familiar with digital devices. If we can find such people who also fits to our persona, we will ask those people to do the test.
 
 ### Plan for iteration
+
+![](./Images/new_ui.png)
+
 After getting feedbacks from users and people at the studio, we made a plan to make our prototype better. Since we have not enough time (which is about 1 week), we considered a lot how can we efficiently solve as many problems as we can. Theerefore, we thought a lot about simple ways to apply most feedbacks from users and people at the studio.
 
 First of all, there was a feedback from two test users, "In GAME POS page, often confuse ICE and HOT." Therefore, we will try distinguish these by color (red with HOT, blue with COLD)
