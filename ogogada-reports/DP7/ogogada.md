@@ -211,4 +211,5 @@ Plus, many people said it is hard for users to remember the task at once while p
 Lastly, many people get confused of the purpose of "history mode". Our purpose is history mode is like a tutorial mode of each game level mode, but they often misunderstood the purpose. Therefore, we changed the concept and design of Home Page UI on the below, After finishing each level, ladder between two levels appears, which is tutorial mode (was history mode in our original prototype) for the next level task.
 
 ![](./Images/new_ui.png)
+![](./Images/new_ui2.png)
 
