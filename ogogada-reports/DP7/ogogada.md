@@ -52,8 +52,7 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
 > After we observed test users, we asked questions based on their behaviors that seemed to have struggling with our prototype. Also we asked them to fill out 5 point likert scale questionnaire from "The SUS Survey" (source link is below) in Google form (form link is below). To remark some of the results, the answers to the question <strong> "I think that I would need the support of a technical person(기술적 도우미) to be able to use this prototype."</strong> and <strong>"I found the prototype very cumbersome(귀찮은) to use."</strong> had high variance while the rest of them mostly produced positive results, which gave us general direction for later revision : to bother users less and to require less attention from the users.
 >
->![](./Images/result1.png)
->![](./Images/result2.png)
+>![](./Images/questionnaires.png)
 >
 > "The SUS Survey" source: https://arl.human.cornell.edu/linked%20docs/Choosing%20the%20Right%20Usability%20Questionnaire.pdf
 > Our survey link: https://docs.google.com/forms/d/1ve4cWWTc9wXS6iZ_r9yF1ePLlfEpiy8VQDtHMkwYVr0/edit#responses
@@ -61,34 +60,79 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
 #### Debrief prompt
 
+Thank you for testing our prototype. Our project is for effcient POS learning for new part-time job workers at the cafe. Since many new workers at the cafe are often embarassed at many new situations, so we tried to solve this problem using our prototype by learning POS fun and efficiently. Again, thank you so much! 
+
+
 ### Session observations
 
-gogi
-22, has no POS experience, use computer
+#### Participants
 
-james 
-21, has no POS experience, use computer
+- Total 9 participants for testing
+- 6 people are completely new at using POS, 3 people has experience using POS
+- Tried to find participants that matched our persona(Early 20s, less part-time work experience).
 
-seol
-23, has no POS experience, use iPad
+![](./Images/gogi.png)
 
-gamgam
-21, male, 알바 경험 x
+1. gogi
+    - 22 years old, Male
+    - Totally new at using POS
+    - Use computer for test
 
-bjw	
-22, male, 알바 경험 x
+![](./Images/james.png)
 
-hancy5
-21, male, 알바 경험 x
+2. james
+    - 21 years old, Male
+    - Totally new at using POS
+    - Use computer for test
 
-jungu
-22, has POS experience, use computer
+![](./Images/seol.png)
 
-hyojin
-22, has POS experience, use computer
+3. seol
+    - 23 years old, Female
+    - Totally new at using POS
+    - Use iPad for test
 
-hanna
-21, has POS experience, use computer
+![](./Images/guunnjuu.png)
+
+4. guunn.juu
+    - 22 years old, Male
+    - Has POS experience (Less than a year)
+    - Use computer for test
+
+![](./Images/gamgam.png)
+
+5. gamgam
+    - 21 years old, Male
+    - Totally new at using POS
+    - Use computer for test
+
+![](./Images/bjw.png)
+
+6. bjw
+    - 22 years old, Male
+    - Totally new at using POS
+    - Use computer for test
+
+![](./Images/hojiny103.png)
+
+7. hojiny103
+    - 22 years old, Female
+    - Has POS experience (Less than a year)
+    - Use computer for test
+
+![](./Images/nanah1929.png)
+
+8. nanah1929
+    - 21 years old, Female
+    - Has POS experience (Less than a year)
+    - Use computer for test
+
+![](./Images/hancy5.png)
+
+9. hancy5
+    - 21 years old, Male
+    - Totally new at using POS
+    - Use computer for test
 
 ### Usability lessons
 We devided the oberservations by three themes, visiblity, affordability and gamification. And we classified them into high, medium, and low based on the correlation with tasks.
