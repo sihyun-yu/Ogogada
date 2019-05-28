@@ -182,4 +182,5 @@ Plus, there were some feedbacks that task information is hard to catch at once a
 
 Furthermore, there were some feedbacks tht UI design at the home page looks bad and hard to catch the meaning of each buttons. Therefore, we are trying to change the home page UI design like as below, so that users can catch the meaning of each button easier, leads to convienient use of our prototype.
 
+Finally, focusing on usability lessons with "HIGH" that we clasified, many people first said it is hard for users to remember the task at once while playing the game and it was hard to find the button for seeing again task. Therefore, 
 
