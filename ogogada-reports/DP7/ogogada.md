@@ -48,9 +48,16 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 > We are going to take photo while you experiencing our prototpye, and if you do well with some tasks, your record will be remained in our DB.
 
 #### Questionnaires, Interview questions
-> After we observed test users, we asked questions based on their behaviors that seemed to have struggling with our prototype. Also we asked them to fill out 5 point likert scale questionnaire from "The SUS Survey" 
-(https://arl.human.cornell.edu/linked%20docs/Choosing%20the%20Right%20Usability%20Questionnaire.pdf) in Google form
- (https://docs.google.com/forms/d/1ve4cWWTc9wXS6iZ_r9yF1ePLlfEpiy8VQDtHMkwYVr0/edit#responses). To remark some of the results, the answers to the question "I think that I would need the support of a technical person(기술적 도우미) to be able to use this prototype." and "I found the prototype very cumbersome(귀찮은) to use." had high variance while the rest of them mostly produced positive results.
+
+
+> After we observed test users, we asked questions based on their behaviors that seemed to have struggling with our prototype. Also we asked them to fill out 5 point likert scale questionnaire from "The SUS Survey" (source link is below) in Google form (form link is below). To remark some of the results, the answers to the question <strong> "I think that I would need the support of a technical person(기술적 도우미) to be able to use this prototype."</strong> and <strong>"I found the prototype very cumbersome(귀찮은) to use."</strong> had high variance while the rest of them mostly produced positive results, which gave us general direction for later revision : to bother users less and to require less attention from the users.
+>
+>![](./Images/result1.png)
+>![](./Images/result2.png)
+>
+> "The SUS Survey" source: https://arl.human.cornell.edu/linked%20docs/Choosing%20the%20Right%20Usability%20Questionnaire.pdf
+> Our survey link: https://docs.google.com/forms/d/1ve4cWWTc9wXS6iZ_r9yF1ePLlfEpiy8VQDtHMkwYVr0/edit#responses
+
 
 #### Debrief prompt
 
@@ -188,9 +195,8 @@ I like that many potential users tested your project. However, is there any extr
 > We haven't thought about this, and it is true that there might be some people that who wants to work at the cafe but not familiar with digital devices. If we can find such people who also fits to our persona, we will ask those people to do the test.
 
 ### Plan for iteration
-After getting feedbacks from users and people at the studio, we made a plan to make our prototype better. Since we have not enough time (which is about 1 week), we considered a lot how can we efficiently solve as many problems as we can. Theerefore, we thought a lot about simple ways to apply most feedbacks from users and people at the studio. 
 
-Before concerning the feedback from other people, we will fix the bug that we've found during our self-testing which is not included in our scenario but crucial. Plus, we have considered about adding the real voice like real situation at the cafe and discussed with TAs, and the conclusion was it will be hard to implement in 1 week. 
+After getting feedbacks from users and people at the studio, we made a plan to make our prototype better. Since we have not enough time (which is about 1 week), we considered a lot how can we efficiently solve as many problems as we can. Theerefore, we thought a lot about simple ways to apply most feedbacks from users and people at the studio.
 
 First of all, there was a feedback from two test users, "In GAME POS page, often confuse ICE and HOT." Therefore, we will try distinguish these by color (red with HOT, blue with COLD)
 
@@ -204,4 +210,5 @@ Plus, many people said it is hard for users to remember the task at once while p
 
 Lastly, many people get confused of the purpose of "history mode". Our purpose is history mode is like a tutorial mode of each game level mode, but they often misunderstood the purpose. Therefore, we changed the concept and design of Home Page UI on the below, After finishing each level, ladder between two levels appears, which is tutorial mode (was history mode in our original prototype) for the next level task.
 
+![](./Images/new_ui.png)
 
