@@ -49,6 +49,7 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 #### Recording strategy
 
 > We are going to take photo while you experiencing our prototpye, and if you do well with some tasks, your record will be remained in our DB.
+> 
 > During user testing, one person did the role of tech person, and another person did the role of facilitator and other two persons did the role of observers. We switched the role for each participant in user testing.
 
 #### Questionnaires, Interview questions
