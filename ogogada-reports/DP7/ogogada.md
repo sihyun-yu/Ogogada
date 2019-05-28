@@ -105,11 +105,11 @@ High
 
 > In HISTORY POS page at level 4, when applying Gifticon, the user had hard time finding highlighted num pad button with red border.  The user tried to click white form in “Insert Gitficon Code” dialogue (seol, gogi, jungu)
 >
->- num pad를 dialogue처럼 눈에 띄게 한다 
+>- We will make the num pad more visible as the pop up dialog.
 >
 > In GAME POS page, the user did not understand the task properly and kept checking the task agin and again. (james)
 >
->- 해결책 voice 추가?
+>- We add a voice to make the user concentrate on remembering tasks.
 >
 
 Medium
@@ -131,24 +131,25 @@ High
 
 > In GAME POS page, the user cannot remember task quickly and cannot find Task button well to look again. (jungu, gamgam, hancy5, gogi, james)
 > 
->- Make the button more visible and attractable.
+> - Make the button more visible and attractable.
+>
+
+Medium
+
+> In HISTORY POS page, since there was no description after entering page, it seemed that the user just follow red box without understanding what he or she is doing. (gogi, james, gamgam)
+> 
+>- Description of tasks needs to be added.
 >
 > In GAME POS page, the user confused about how to change number of menu in summary table. Actually we have three ways of changing number of menu (james, seol)
 >
 >- It would be better if we highlight menu in the summary table if the user click it to change number of order. Or it would be better if we remove ‘+’ and ‘-‘ buttons in each menu in summary table.
 > 
 
-Medium
-
-> In HISTORY POS page, since there was no description after entering page, it seemed that the user just follow red box without understanding what he or she is doing. (gogi, james, gamgam)
->- aaa
->
-
 Low
 
 > Trying to use back button in chrome browser (gogi, gamgam, bjw, hancy5) 
 >
->- aaa
+>- This is not an important issue since the final version would be on Ipad
 
 <strong> Gamification </strong>
 
@@ -156,10 +157,10 @@ High
 
 > Even experiencing HISTORY POS page, the user did not try to entry HISTORY page before playing actual GAME. (james, jungu, gamgam)
 >
->- the word “HISTORY” did not correspond with current functions. Delete “history” button in HOME page and add new “tutorial” button below each level “game” button.
+>- The word “HISTORY” did not correspond with current functions. Delete “history” button in HOME page and add new “tutorial” button below each level “game” button.
 >
 > In HOME page, the user thought that three stars beside each level’s button mean something. (gamgam, bjw, hancy5, jungu)
->- 각 레벨 별로 게임을 완료하는 데 걸리는 시간을 바탕으로 절대적으로 기준을 만들어서, 별을 부여하고, HOME page에서 별로 표시한다. 
+>- Based on the finishing record of time, rate the stars so that users can feel accomplishment.
 
 Medium
 
@@ -195,8 +196,6 @@ I like that many potential users tested your project. However, is there any extr
 
 ### Plan for iteration
 
-![](./Images/new_ui.png)
-
 After getting feedbacks from users and people at the studio, we made a plan to make our prototype better. Since we have not enough time (which is about 1 week), we considered a lot how can we efficiently solve as many problems as we can. Theerefore, we thought a lot about simple ways to apply most feedbacks from users and people at the studio.
 
 First of all, there was a feedback from two test users, "In GAME POS page, often confuse ICE and HOT." Therefore, we will try distinguish these by color (red with HOT, blue with COLD)
@@ -205,5 +204,11 @@ Plus, there were some feedbacks that task information is hard to catch at once a
 
 Furthermore, there were some feedbacks tht UI design at the home page looks bad and hard to catch the meaning of each buttons. Therefore, we are trying to change the home page UI design like as below, so that users can catch the meaning of each button easier, leads to convienient use of our prototype.
 
-Finally, focusing on usability lessons with "HIGH" that we clasified, many people first said it is hard for users to remember the task at once while playing the game and it was hard to find the button for seeing again task. Therefore, 
+Finally, focusing on usability lessons with "HIGH" that we clasified, people first mentioned that it was hard to find and recognize the numpad buttons when they need to use buttons when using gifticon. Therefore, when this situation, we will also make the highlighted border at whole numpad so that users can recognize the existence of numpad well. 
+
+Plus, many people said it is hard for users to remember the task at once while playing the game, and it was 'hard to find the task button for seeing again the task'. (which is shaped with bell shape on the right above).
+
+Lastly, many people get confused of the purpose of "history mode". Our purpose is history mode is like a tutorial mode of each game level mode, but they often misunderstood the purpose. Therefore, we changed the concept and design of Home Page UI on the below, After finishing each level, ladder between two levels appears, which is tutorial mode (was history mode in our original prototype) for the next level task.
+
+![](./Images/new_ui.png)
 
