@@ -61,6 +61,9 @@ Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
 #### Debrief prompt
 
+Thank you for testing our prototype. Our project is for effcient POS learning for new part-time job workers at the cafe. Since many new workers at the cafe are often embarassed at many new situations, so we tried to solve this problem using our prototype by learning POS fun and efficiently. Again, thank you so much! 
+
+
 ### Session observations
 
 gogi
