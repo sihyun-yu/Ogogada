@@ -29,7 +29,7 @@ const DescriptionComponent = props => {
               </div>
             </div>
             <div className="replay" onClick={menu.openQuestion.bind(menu)}>
-              <Icon name='tasks' size='small'>task</Icon>
+              <Icon name='tasks' ><span className="task">Task</span></Icon>
             </div>
             <div className="home__button">
               <Button size="medium" onClick={() => {

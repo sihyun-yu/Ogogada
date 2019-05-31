@@ -8,13 +8,29 @@ import src3 from "../../../assets/unlock3.png";
 import src4 from "../../../assets/unlock4.png";
 import src5 from "../../../assets/unlock5.png";
 
+var dialogStyle = {
+  "min-width": "400px",
+};
+
 class PaymentDialogComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.routeChange = this.routeChange.bind(this);
+    this.routeChangeToRanking = this.routeChangeToRanking.bind(this);
+    this.routeChangeToHome = this.routeChangeToHome.bind(this);
   }
 
-  routeChange = (level) => {
+  // change url to ranking
+  routeChangeToHome = () => {
+    this.props.history.push({
+      pathname : '../../../home',
+      state: {
+        id: this.props.history.location.state.id,
+        pw: this.props.history.location.state.pw,
+        level: this.props.history.location.state.level,
+      }
+    })
+  }
+  routeChangeToRanking = (level) => {
     // console.log ("routeChange in PaymentDialog: "+this.props.history)
      console.log ("routeChange userName "+this.props.userName)
     this.props.history.push({
@@ -95,7 +111,7 @@ class PaymentDialogComponent extends React.Component {
           return (
             <Dialog open={this.props.levelUp} onClose={this.props.handleClose}>
               <DialogTitle>Level Up!</DialogTitle>
-              <div className="payment-dialog__details">
+              <div className="payment-dialog__details" style={dialogStyle}>
                 {/* {props.selectedMenus.map((menu, index) => (
                   <div className="payment-dialog__detail-container" key={index}>
                     <div className="payment-dialog__detail">{menu[0]}</div>
@@ -105,8 +121,7 @@ class PaymentDialogComponent extends React.Component {
                 ))} */}
               </div>
               <div className="payment-dialog__total">
-                You leveled up from {this.props.curLevel} to {Number(this.props.curLevel) + 1 + "!\n"}
-                
+                You leveled up from <b>{this.props.curLevel}</b> to <b>{Number(this.props.curLevel) + 1 + "!\n"}</b>                
               </div>
               <div className="payment-dialog__total">
                 New button
@@ -119,6 +134,9 @@ class PaymentDialogComponent extends React.Component {
               <div className="payment-dialog__total">
                 is unlocked!
               </div>
+              <div className="payment-dialog__total">
+                Go to ...
+              </div>
               {/* {props.pendingCardPayment && (
                 <div className="payment-dialog__pending">
                   <div className="lds-ring">
@@ -134,17 +152,33 @@ class PaymentDialogComponent extends React.Component {
                   className="payment-dialog__button"
                   // style={{ marginLeft: "10px", marginRight: "50px" }}
                   variant="contained"
-                  color="secondary"
+                  // color="secondary"
                   size="massive"
                   onClick={() => {
                     this.props.handleCompletePayment();
-                    this.routeChange(this.props.curLevel);
+                    this.routeChangeToRanking(this.props.curLevel);
                     this.props.flagFlip();
                     // props.goBackHistory.goBack();
                     this.props.openQuestion();
                   }}
                 >
-                  Got it!
+                  Ranking
+                </Button>
+                <Button
+                  className="payment-dialog__button"
+                  // style={{ marginLeft: "10px", marginRight: "50px" }}
+                  variant="contained"
+                  // color="secondary"
+                  size="massive"
+                  onClick={() => {
+                    this.props.handleCompletePayment();
+                    this.routeChangeToHome(this.props.curLevel);
+                    this.props.flagFlip();
+                    // props.goBackHistory.goBack();
+                    this.props.openQuestion();
+                  }}
+                >
+                  Home
                 </Button>
               </div>
             </Dialog>
@@ -152,8 +186,8 @@ class PaymentDialogComponent extends React.Component {
         }
         else {
           return (
-            <Dialog open={this.props.levelUp} onClose={this.props.handleClose}>
-              <div className="payment-dialog__details">
+            <Dialog  open={this.props.levelUp} onClose={this.props.handleClose}>
+              <div className="payment-dialog__details" style={dialogStyle}>
                 {/* {props.selectedMenus.map((menu, index) => (
                   <div className="payment-dialog__detail-container" key={index}>
                     <div className="payment-dialog__detail">{menu[0]}</div>
@@ -163,10 +197,13 @@ class PaymentDialogComponent extends React.Component {
                 ))} */}
               </div>
               <div className="payment-dialog__total">
-                You done the task in level {this.props.curLevel}!
+                You've  done the task in <b>LEVEL {this.props.curLevel}</b>!
               </div>
               <div className="payment-dialog__total">
-                Your current level is {this.props.level}.
+                You're currently at <b>LEVEL {this.props.level}</b>.
+              </div>
+              <div className="payment-dialog__total">
+                Go to ...
               </div>
               {/* {props.pendingCardPayment && (
                 <div className="payment-dialog__pending">
@@ -183,17 +220,33 @@ class PaymentDialogComponent extends React.Component {
                   className="payment-dialog__button"
                   // style={{ marginLeft: "10px", marginRight: "50px" }}
                   variant="contained"
-                  color="secondary"
+                  // color="secondary"
                   size="massive"
                   onClick={() => {
                     this.props.handleCompletePayment();
-                    this.routeChange(this.props.curLevel);
+                    this.routeChangeToRanking(this.props.curLevel);
                     this.props.flagFlip();
                     // props.goBackHistory.goBack();
                     this.props.openQuestion();
                   }}
                 >
-                  Got it!
+                  Ranking
+                </Button>
+                <Button
+                  className="payment-dialog__button"
+                  // style={{ marginLeft: "10px", marginRight: "50px" }}
+                  variant="contained"
+                  // color="secondary"
+                  size="massive"
+                  onClick={() => {
+                    this.props.handleCompletePayment();
+                    this.routeChangeToHome(this.props.curLevel);
+                    this.props.flagFlip();
+                    // props.goBackHistory.goBack();
+                    this.props.openQuestion();
+                  }}
+                >
+                  Home
                 </Button>
               </div>
             </Dialog>
