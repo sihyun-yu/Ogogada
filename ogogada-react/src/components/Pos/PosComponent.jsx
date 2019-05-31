@@ -106,7 +106,9 @@ class PosComponent extends React.Component {
                   this.handleCompletePayment(resetValuesCallbackArray);
 
                   this.handleCloseDialog();
-                }}/>
+                }}
+                closeRefund={menu.closeRefund.bind(menu)}
+                closeGifticon={menu.closeGifticon.bind(menu)}/>
                 <SummaryTable />
               </div>
             </div>

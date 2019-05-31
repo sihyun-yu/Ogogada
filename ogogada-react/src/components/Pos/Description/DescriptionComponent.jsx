@@ -36,6 +36,8 @@ const DescriptionComponent = props => {
                 props.routeChange();
                 props.openQuestion();
                 props.handleCompletePayment();
+                props.closeRefund();
+                props.closeGifticon();
               }}>
                 HOME
               </Button>
