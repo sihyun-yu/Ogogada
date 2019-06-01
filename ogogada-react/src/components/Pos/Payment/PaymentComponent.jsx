@@ -96,11 +96,6 @@ class PaymentComponent extends React.Component {
         .map(id => menus[id].concat(selectedMenus[id]));
 
     const isCorrect = (user_menu, user_coupon, user_pay, cur_level) => {
-      console.log(user_menu)
-      console.log(user_coupon)
-      console.log(user_pay)
-      console.log(cur_level)
-      console.log(metaJSON.answers)
       // console.log("user inputs:", user_menu, user_coupon, user_pay, cur_level);
       for (var i in metaJSON.answers){
         var each = metaJSON.answers[i];
