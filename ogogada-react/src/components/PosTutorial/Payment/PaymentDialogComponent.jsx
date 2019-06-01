@@ -26,7 +26,11 @@ class PaymentDialogComponent extends React.Component {
      console.log ("routeChange userName "+this.props.userName)
     this.props.history.push({
       pathname : '../../../stage/' + level + "/" + this.props.userName,
-      id : this.props.userName,
+      state: {
+        id : this.props.userName,
+        level: this.props.history.location.state.level,
+        pw: this.props.history.location.state.pw,
+      }
     });
   }
 

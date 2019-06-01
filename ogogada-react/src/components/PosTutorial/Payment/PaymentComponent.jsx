@@ -207,7 +207,7 @@ class PaymentComponent extends React.Component {
                 handleFinishTutorial={this.handleFinishTutorial}
                 curLevel={this.props.history.location.pathname.split('/')[2]}
                 history={this.props.history}
-                userName={this.props.userName}
+                userName={this.props.username}
                 resetMenuDisplay={menuStore.resetMenuDisplay.bind(menuStore)}
               />
             }
