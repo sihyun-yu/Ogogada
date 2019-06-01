@@ -7,7 +7,7 @@ import "../../../stylesheets/GoHomeDialogComponent.css";
 const GoHomeDialogComponent = props => {
   return (
     <Dialog open={props.goHomeOpen} onClose={props.closePopup}>
-      <DialogTitle>Back to home?</DialogTitle>
+      <DialogTitle>Go to home?</DialogTitle>
       <div className="payment-dialog__total">
         Are you sure?
       </div>
