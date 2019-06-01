@@ -5,6 +5,14 @@
   margin: 0 7px 0 7px;
 }
 
+.number-list__container__gifticonOpen {
+  width: 94%;
+  left: 10%;
+  flex: 0.5;
+  margin: 0 7px 0 7px;
+  border: 5px solid black
+}
+
 .number-item {
   display:inline-block;
   text-align: left;
