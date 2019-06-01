@@ -135,7 +135,7 @@ class PaymentComponent extends React.Component {
                 }
                   disabled={
                     !isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 
-                      this.props.history.location.pathname.split('/')[3])
+                      this.props.history.location.pathname.split('/')[2])
                   }
                   onClick={
                     paymentMethodStore.state.selected === "0"
@@ -149,7 +149,7 @@ class PaymentComponent extends React.Component {
               </div>
             </div>
             {isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 
-                    this.props.history.location.pathname.split('/')[3]) &&
+                    this.props.history.location.pathname.split('/')[2]) &&
               <PaymentDialog
                 open={this.state.dialogOpen}
                 selectedMenus={selectedMenus(

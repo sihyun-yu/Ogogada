@@ -96,19 +96,28 @@ class PaymentComponent extends React.Component {
         .map(id => menus[id].concat(selectedMenus[id]));
 
     const isCorrect = (user_menu, user_coupon, user_pay, cur_level) => {
+      console.log(user_menu)
+      console.log(user_coupon)
+      console.log(user_pay)
+      console.log(cur_level)
+      console.log(metaJSON.answers)
       // console.log("user inputs:", user_menu, user_coupon, user_pay, cur_level);
       for (var i in metaJSON.answers){
         var each = metaJSON.answers[i];
+        console.log(each)
+        console.log ("each.level: " + each.level)
+        console.log ("level: " + cur_level)
         if (each.level == cur_level ){
-          // console.log("answer: ", each.coupon == null);
+          console.log( "answer: ", each.coupon == null);
           if (_.isEqual(user_menu, each.menu) 
           && (_.isEqual(user_coupon, each.coupon) || each.coupon == null)
           && _.isEqual(user_pay, each.method)){
-            // console.log("truye");
+            console.log("true");
             return true
           }
         }
       }
+      console.log("false");
       return false
     }
     // console.log(this.props);
@@ -128,7 +137,7 @@ class PaymentComponent extends React.Component {
                   style={paymentButtonStyle}
                   disabled={
                     !isCorrect(menuStore.state.selected, couponStore.state.selected, paymentMethodStore.state.selected, 
-                      this.props.history.location.pathname.split('/')[3])
+                      this.props.history.location.pathname.split('/')[2])
                   }
                   onClick={
                     paymentMethodStore.state.selected === "0"
@@ -184,7 +193,7 @@ class PaymentComponent extends React.Component {
                 }}
                 handleCancelPayment={this.handleCloseDialog}
                 handleLevelUp = {this.handleLevelUp}
-                curLevel = {this.props.history.location.pathname.split('/')[3]}
+                curLevel = {this.props.history.location.pathname.split('/')[2]}
                 goBackHistory = {this.props.history}
                 resetPaymentMethod = {paymentMethodStore.resetPaymentMethod.bind(paymentMethodStore)}
                 sendtoHistoryMethod = {this.sendtoHistoryMethod}
