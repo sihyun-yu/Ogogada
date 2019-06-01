@@ -15,7 +15,7 @@ class HistoryComponent extends React.Component {
 
     routeChange(stage) {
         this.props.history.push({
-            pathname : '../poshistory/' + this.state.id + "/" + stage ,
+            pathname : '../pos/tutorial/' + this.state.id + "/" + stage ,
                 state: {
                 id: this.state.id,
                 pw: this.state.pw,

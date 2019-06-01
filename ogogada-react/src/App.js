@@ -45,8 +45,8 @@ class App extends React.Component {
             <Route exact path="/home" component={Home} />
             <Route exact path="/signin" component={SignIn} />
             <Route exact path="/history" component={History} />
-            <Route exact path="/poshistory/:id/:level" component={PosHistory} />
-            <Route exact path="/pos/:id/:level" component={Pos}/>
+            <Route exact path="/pos/tutorial/:id/:level" component={PosHistory} />
+            <Route exact path="/pos/stage/:id/:level" component={Pos}/>
             <Route exact path="/timer" component={Timer} />
             <Route exact path="/ranking" component={Ranking} />
             <Route exact path="/ranking/:id" component={RankingEach} />
