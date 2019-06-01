@@ -8,12 +8,21 @@ import { MenuStore } from "../../../stores";
 import { Subscribe } from "unstated";
 //import Button from "@material-ui/core/Button";
 
+var descriptionStyle = {
+  "height": "100%",
+  "display": "flex",
+  "align-items": "center",
+  "justify-content": "center",
+  "flex": "0.40",
+  "font-size": "30px"
+}
+
 const DescriptionComponent = props => {
   return (
     <Subscribe to={[MenuStore]}>
       {(menu) => (
           <div className="description__container">
-            <div className="description" >
+            <div className="description" style={descriptionStyle}>
               <p>STAGE {props.level}</p>
             </div>
             <div className="timer">

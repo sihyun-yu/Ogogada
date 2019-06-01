@@ -128,7 +128,7 @@ const MenuListComponent = props => {
             />
           </div>
           <div>
-            <QuestionDialog2
+            <QuestionDialog
               isConfirmed = {menu.state.questionConfirmed}
               confirm = {menu.closeQuestion.bind(menu)}
               open = {menu.openQuestion.bind(menu)}
