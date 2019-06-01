@@ -53,7 +53,10 @@ class PosComponent extends React.Component {
               <MenuList 
               {...this.props}
               level={this.props.match.params.level}
-              username={this.props.match.params.id}/>
+              username={this.props.match.params.id}
+              routeChange={this.routeChange}
+              handleCompletePayment={this.handleCompletePayment}
+              handleCloseDialog={this.handleCloseDialog}/>
               <div className="left-below__container">
                 <div className="left-below-left__contatiner">
                   <NumberList
@@ -83,30 +86,8 @@ class PosComponent extends React.Component {
               <Description
               level={this.props.match.params.level}
               username={this.props.match.params.id}
-              routeChange={this.routeChange}
-              openQuestion={menuStore.openQuestion.bind(menuStore)}
-              handleCompletePayment={() => {
-                const resetValuesCallbackArray = [];
-                resetValuesCallbackArray.push(
-                  menuStore.resetSelectedMenu.bind(menuStore)
-                );
-                resetValuesCallbackArray.push(
-                  paymentMethodStore.selectPaymentMethod.bind(
-                    paymentMethodStore,
-                    "1"
-                  )
-                );
-                resetValuesCallbackArray.push(
-                  couponStore.selectCoupon.bind(couponStore, 0)
-                );
-
-                this.handleCompletePayment(resetValuesCallbackArray);
-
-                this.handleCloseDialog();
-              }}
-              resetIndex={history.resetIndex}
-              closeRefund={menuStore.closeRefund.bind(menuStore)}
-              closeGifticon={menuStore.closeGifticon.bind(menuStore)}/>
+              openPopup = {menuStore.openPopup.bind(menuStore)}
+              openQuestion={menuStore.openQuestion.bind(menuStore)}/>
               <SummaryTable 
               level={this.props.match.params.level}/>
             </div>

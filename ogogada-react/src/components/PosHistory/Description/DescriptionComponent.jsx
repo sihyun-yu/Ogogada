@@ -20,12 +20,7 @@ const DescriptionComponent = props => {
       </div>
       <div className="home__button">
         <Button size="medium" onClick={() => {
-          props.handleCompletePayment();
-          props.routeChange();
-          props.resetIndex();
-          props.closeRefund();
-          props.closeGifticon();
-          props.openQuestion();
+          props.openPopup();
         }}>
           HOME
         </Button>
