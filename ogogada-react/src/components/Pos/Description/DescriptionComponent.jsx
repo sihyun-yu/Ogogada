@@ -33,7 +33,9 @@ const DescriptionComponent = props => {
                 <Timer
                   flag={props.flag}
                   level={props.level}
-                  username={props.username}  
+                  username={props.username}
+                  startFlag={menu.state.startFlag} 
+                  startFlagFlip={menu.startFlagFlip.bind(menu)}
                 ></Timer>
               </div>
             </div>

@@ -100,6 +100,7 @@ const MenuListComponent = props => {
               confirm = {menu.closeQuestion.bind(menu)}
               open = {menu.openQuestion.bind(menu)}
               level = {props.level}
+              startFlagFlip = {menu.startFlagFlip.bind(menu)}
             />
           </div>
           <div>

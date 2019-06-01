@@ -26,7 +26,10 @@ const QuestionDialogComponent = props => {
                         variant="contained"
                         color="primary"
                         size="massive"
-                        onClick={props.confirm}>
+                        onClick={() => {
+                            props.confirm();
+                            props.startFlagFlip();
+                        }}>
                         Got it!
                         </Button>
                     </div>
