@@ -7,12 +7,13 @@ import GifticonItem from "./GifticonComponent.jsx"
 
 
 import { MenuStore } from "../../../stores";
-import { NumberStore , PaymentMethodStore} from "../../../stores";
+import { NumberStore , PaymentMethodStore, CouponStore} from "../../../stores";
 
 import { Store } from "../../../stores";
 import GifticonDialog from "./GifticonDialogComponent.jsx"
 import RefundDialog from "./RefundDialogComponent.jsx"
 import QuestionDialog from "./QuestionDialogComponent.jsx"
+import GoHomeDialog from "./GoHomeDialogComponent.jsx"
 
 import "../../../stylesheets/MenuList.css";
 
@@ -31,8 +32,8 @@ const MenuListComponent = props => {
   // console.log("menulistComponent", props.level);
   return (
     <div className="menus__container">
-      <Subscribe to={[MenuStore, NumberStore, PaymentMethodStore]}>
-        {(menu, number, paymentMethodStore) => (
+      <Subscribe to={[MenuStore, NumberStore, PaymentMethodStore, CouponStore]}>
+        {(menu, number, paymentMethodStore, couponStore) => (
           <div className="allcomponent-container">
           <div className="menus">
             {menu.state.menus.map((menuItem, index) => (
@@ -100,6 +101,36 @@ const MenuListComponent = props => {
               open = {menu.openQuestion.bind(menu)}
               level = {props.level}
             />
+          </div>
+          <div>
+            <GoHomeDialog
+              level={props.match.params.level}
+              username={props.match.params.id}
+              goHomeOpen={menu.state.goHomeOpen}
+              closePopup={menu.closePopup.bind(menu)}
+              routeChange={props.routeChange}
+              openQuestion={menu.openQuestion.bind(menu)}
+              handleCompletePayment={() => {
+                const resetValuesCallbackArray = [];
+                resetValuesCallbackArray.push(
+                  menu.resetSelectedMenu.bind(menu)
+                );
+                resetValuesCallbackArray.push(
+                  paymentMethodStore.selectPaymentMethod.bind(
+                    paymentMethodStore,
+                    "1"
+                  )
+                );
+                resetValuesCallbackArray.push(
+                  couponStore.selectCoupon.bind(couponStore, 0)
+                );
+
+                props.handleCompletePayment(resetValuesCallbackArray);
+
+                props.handleCloseDialog();
+              }}
+              closeRefund={menu.closeRefund.bind(menu)}
+              closeGifticon={menu.closeGifticon.bind(menu)}/>
           </div>
         </div>
         )}

@@ -29,6 +29,8 @@ class MenuStore extends Container {
     isConfirmed: false,
     // ===== Popup for questions ======//
     questionConfirmed: false,
+    // ===== GoHome ======//
+    goHomeOpen: false,
   };
 
   resetMenuDisplay = () => {
@@ -312,6 +314,20 @@ class MenuStore extends Container {
       numbersByPad: ""
     })
   }
+
+  // =========== GoHome ============== /
+
+  openPopup = () => {
+    this.setState({
+      goHomeOpen: true,
+    })
+  };
+
+  closePopup = () => {
+    this.setState({
+      goHomeOpen: false,
+    })
+  };
 
 }
 

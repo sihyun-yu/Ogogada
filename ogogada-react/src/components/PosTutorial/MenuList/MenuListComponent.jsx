@@ -14,7 +14,8 @@ import { CouponStore } from "../../../stores";
 import { Store } from "../../../stores";
 import GifticonDialog from "./GifticonDialogComponent.jsx"
 import RefundDialog from "./RefundDialogComponent.jsx"
-import QuestionDialog2 from "./QuestionDialogComponent.jsx"
+import QuestionDialog from "./QuestionDialogComponent.jsx"
+import GoHomeDialog from "./GoHomeDialogComponent.jsx"
 
 import "../../../stylesheets/MenuList.css";
 
@@ -133,6 +134,37 @@ const MenuListComponent = props => {
               open = {menu.openQuestion.bind(menu)}
               level = {props.level}
             />
+          </div>
+          <div>
+            <GoHomeDialog
+              level={props.match.params.level}
+              username={props.match.params.id}
+              goHomeOpen={menu.state.goHomeOpen}
+              closePopup={menu.closePopup.bind(menu)}
+              routeChange={props.routeChange}
+              openQuestion={menu.openQuestion.bind(menu)}
+              handleCompletePayment={() => {
+                const resetValuesCallbackArray = [];
+                resetValuesCallbackArray.push(
+                  menu.resetSelectedMenu.bind(menu)
+                );
+                resetValuesCallbackArray.push(
+                  paymentMethodStore.selectPaymentMethod.bind(
+                    paymentMethodStore,
+                    "1"
+                  )
+                );
+                resetValuesCallbackArray.push(
+                  couponStore.selectCoupon.bind(couponStore, 0)
+                );
+
+                props.handleCompletePayment(resetValuesCallbackArray);
+
+                props.handleCloseDialog();
+              }}
+              resetIndex={history.resetIndex}
+              closeRefund={menu.closeRefund.bind(menu)}
+              closeGifticon={menu.closeGifticon.bind(menu)}/>
           </div>
         </div>
         )}
