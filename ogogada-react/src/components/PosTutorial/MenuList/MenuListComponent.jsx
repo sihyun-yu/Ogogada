@@ -103,8 +103,8 @@ const MenuListComponent = props => {
             {...props}
             resetIndex={history.resetIndex}
             forRouter={props.history}
-            goBackHistory = {{
-              pathname : '../../../history',
+            goBackHome = {{
+              pathname : '../../../home',
                   state: {
                   id: props.history.location.state.id,
                   pw: props.history.location.state.pw,

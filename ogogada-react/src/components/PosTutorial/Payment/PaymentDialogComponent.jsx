@@ -39,7 +39,7 @@ const PaymentDialogComponent = props => {
           size="massive"
           // disabled={props.pendingCardPayment}
           onClick={()=> {props.handleCompletePayment();
-            props.forRouter.push(props.goBackHistory)
+            props.forRouter.push(props.goBackHome)
             props.resetIndex();
             props.openQuestion();
             props.resetMenuDisplay();

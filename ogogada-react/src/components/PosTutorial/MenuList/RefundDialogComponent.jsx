@@ -131,7 +131,7 @@ const RefundDialogComponent = props => {
             onClick={() => {
                 props.resetPaymentMethod();
                 props.resetMenuDisplay();
-                props.forRouter.push(props.goBackHistory);
+                props.forRouter.push(props.goBackHome);
                 props.resetIndex();
                 props.closeRefund();
                 props.unconfirm();
