@@ -96,7 +96,7 @@ class PosComponent extends React.Component {
                   resetValuesCallbackArray.push(
                     paymentMethodStore.selectPaymentMethod.bind(
                       paymentMethodStore,
-                      "-1"
+                      "1"
                     )
                   );
                   resetValuesCallbackArray.push(
