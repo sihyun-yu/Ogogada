@@ -89,7 +89,7 @@ class HomeComponent extends React.Component {
         {
 
             this.props.history.push({
-                pathname : '../poshistory/'+this.state.id+'/'+ area.level,
+                pathname : '../tutorial/' + area.level + '/' + this.state.id,
                 state: {
                     id: this.state.id,
                     pw: this.state.pw,
