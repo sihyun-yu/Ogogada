@@ -4,7 +4,7 @@ import { HomeStore } from "../../stores";
 import "../../stylesheets/Pos.css";
 import MenuList from "./MenuList/MenuListComponent.jsx";
 import NumberList from "./NumberList/NumberListComponent.jsx";
-import Description from "./Description/DescriptionComponent.jsx";
+import DescriptionTutorial from "./Description/DescriptionTutorialComponent.jsx";
 import SummaryTable from "./SummaryTable/SummaryTableComponent.jsx";
 import Payment from "./Payment/PaymentComponent.jsx";
 
@@ -80,7 +80,7 @@ class PosTutorialComponent extends React.Component {
               </div>
             </div>
             <div className="right-content">
-              <Description
+              <DescriptionTutorial
               level={this.props.match.params.level}
               username={this.props.match.params.id}
               routeChange={this.routeChange}

@@ -16,8 +16,13 @@ const QuestionDialog2Component = props => {
         return (
             <div class="question-container">
             		<div class="question-code">
+                        <div>
+                        Follow the order highlighted with
+                        <font color="red"> red </font>
+                        border.
+                        </div> 
+                        <br/>
                         {question}
-
 					</div>
                     <div class="quesiton-buttons">
                         <Button

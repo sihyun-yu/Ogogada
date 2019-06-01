@@ -61,11 +61,11 @@ const meta = {
   ],
   // TODO 줄바꿈 잘 안됨, red 빨갛게 하고 싶은데 모르곘음
   tutorialQuestions : [
-    "Follow the order highlited with red border. \n Your task is taking an order of 1 HOT americano.",
-    "Follow the order highlited with red border. \n Your task is taking an order of 2 ICE caffe mocha and 1 hot earl grey.",
-    "Follow the order highlited with red border. \n Your task is applying 10% student discount.",
-    "Follow the order highlited with red border. \n Your task is applying an ice americano Gifticon.",
-    "Follow the order highlited with red border. \n Your task is refunding most recent order."
+    "Your task is taking an order of 1 HOT americano.",
+    "Your task is taking an order of 2 ICE caffe mocha and 1 hot earl grey.",
+    "Your task is applying 10% student discount.",
+    "Your task is applying an ice americano Gifticon.",
+    "Your task is refunding most recent order."
   ]
 };
 

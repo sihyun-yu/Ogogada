@@ -4,7 +4,7 @@ import { Button, Icon } from 'semantic-ui-react'
 import Timer from "./Timer.jsx"
 //import Button from "@material-ui/core/Button";
 
-const DescriptionComponent = props => {
+const DescriptionTutorialComponent = props => {
   return (
     <div className="description__container">
       <div className="description" >
@@ -36,4 +36,4 @@ const DescriptionComponent = props => {
   );
 };
 
-export default DescriptionComponent;
+export default DescriptionTutorialComponent;

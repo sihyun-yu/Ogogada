@@ -14,7 +14,7 @@ const DescriptionComponent = props => {
       {(menu) => (
           <div className="description__container">
             <div className="description" >
-              <p>Level: {props.level}</p>
+              <p>STAGE {props.level}</p>
             </div>
             <div className="timer">
               <div className="timer__icon">
@@ -29,7 +29,12 @@ const DescriptionComponent = props => {
               </div>
             </div>
             <div className="replay" onClick={menu.openQuestion.bind(menu)}>
-              <Icon name='tasks' ><span className="task">Task</span></Icon>
+              <Button size="medium" onClick={() => {
+                }}>
+                  TASK
+                {/* <Icon name='tasks' ><span className="task">Task</span></Icon> */}
+              </Button>
+              {/* <Icon name='tasks' ><span className="task">Task</span></Icon> */}
             </div>
             <div className="home__button">
               <Button size="medium" onClick={() => {

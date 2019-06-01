@@ -17,8 +17,7 @@ const QuestionDialogComponent = props => {
         return (
             <div class="question-container">
             		<div class="question-code">
-                    {question}
-
+                        {question}
 					</div>
                     <div class="quesiton-buttons">
                         <Button
