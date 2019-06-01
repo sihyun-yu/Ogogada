@@ -10,7 +10,8 @@ import metaJSON from "../../../assets/meta.js";
 const QuestionDialogComponent = props => {
     var question = metaJSON.questions[props.level-1];
 
-    console.log ("questionDialogComponent ", props.isConfirmed);
+    console.log ("questionDialogComponent at stage: " + props.isConfirmed);
+    console.log ("qustion:" + question);
     
     if (!props.isConfirmed){
         return (

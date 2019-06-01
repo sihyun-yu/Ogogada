@@ -7,16 +7,16 @@ import metaJSON from "../../../assets/meta.js";
 
 
 
-const QuestionDialogComponent = props => {
-    var question = metaJSON.questions[props.level-1];
+const QuestionDialog2Component = props => {
+    var question = metaJSON.tutorialQuestions[props.level-1];
 
-    console.log ("questionDialogComponent ", props.isConfirmed);
+    console.log ("questionDialogComponent at stage: " + props.isConfirmed);
     
     if (!props.isConfirmed){
         return (
             <div class="question-container">
             		<div class="question-code">
-                    {question}
+                        {question}
 
 					</div>
                     <div class="quesiton-buttons">
@@ -41,4 +41,4 @@ const QuestionDialogComponent = props => {
     }
 }
 
-export default QuestionDialogComponent;
+export default QuestionDialog2Component;

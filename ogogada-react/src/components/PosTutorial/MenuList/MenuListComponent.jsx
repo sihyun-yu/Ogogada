@@ -14,7 +14,7 @@ import { CouponStore } from "../../../stores";
 import { Store } from "../../../stores";
 import GifticonDialog from "./GifticonDialogComponent.jsx"
 import RefundDialog from "./RefundDialogComponent.jsx"
-import QuestionDialog from "./QuestionDialogComponent.jsx"
+import QuestionDialog2 from "./QuestionDialogComponent.jsx"
 
 import "../../../stylesheets/MenuList.css";
 
@@ -127,7 +127,7 @@ const MenuListComponent = props => {
             />
           </div>
           <div>
-            <QuestionDialog
+            <QuestionDialog2
               isConfirmed = {menu.state.questionConfirmed}
               confirm = {menu.closeQuestion.bind(menu)}
               open = {menu.openQuestion.bind(menu)}

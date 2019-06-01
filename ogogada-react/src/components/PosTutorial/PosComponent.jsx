@@ -14,7 +14,7 @@ import SummaryPaymentMethod from "./SummaryTable/SummaryPaymentMethodComponent.j
 import { MenuStore, CouponStore, PaymentMethodStore, HistoryStore } from "../../stores";
 
 
-class PosComponent extends React.Component {
+class PosTutorialComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = this.props.location.state;
@@ -172,4 +172,4 @@ const PosComponent = props => {
 };
 */
 
-export default PosComponent;
+export default PosTutorialComponent;
