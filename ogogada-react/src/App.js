@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom';
-import Home from "./components/Home/HomeComponent.jsx"
+import Home from "./components/Home/HomeComponent_new.jsx"
 import SignIn from "./components/SignIn/SignInComponent.jsx"
 import MenuList from "./components/Pos/MenuList/MenuListComponent.jsx";
 import NumberList from "./components/Pos/NumberList/NumberListComponent.jsx";
