@@ -108,9 +108,9 @@ class HomeComponent extends React.Component {
     
             });
         }
-        else {
+        else if (area.name == "pos"){
             this.props.history.push({
-                pathname : '../pos/' + this.state.id + "/" + area.name,
+                pathname : '../stage/' + area.level + '/' + this.state.id,
                 state: {
                     id: this.state.id,
                     pw: this.state.pw,
@@ -171,6 +171,52 @@ class HomeComponent extends React.Component {
                     <div className = "home-ladder5">
                     <Image src='/images/ladder5@3x.png' size="tiny" onClick={() => {this.routeChange({name: "history", level: "5"})}} hidden={this.state.level < 5}/>
                     </div>
+                    <div className = "home-level1">
+                    <Image src='/images/level1_yellow@3x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "1"})}} hidden={this.state.level < 1}/>
+                    </div>
+                    {this.state.level >= 2 &&
+                        <div className = "home-level2">
+                        <Image src='/images/level2_yellow@3x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "2"})}}/>
+                        </div>
+                    }
+                    {this.state.level < 2 &&
+                        <div className = "home-level2">
+                        <Image src='/images/level2_gray@3x.png' size="tiny"/>
+                        </div>
+                    }
+
+                    {this.state.level >= 3 &&
+                        <div className = "home-level3">
+                        <Image src='/images/level3_yellow@3x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "3"})}} />
+                        </div>
+                    }
+                    {this.state.level < 3 &&
+                        <div className = "home-level3">
+                        <Image src='/images/level3_gray@3x.png' size="tiny" />
+                        </div>
+                    }
+
+                    {this.state.level >= 4 &&
+                        <div className = "home-level4">
+                        <Image src='/images/level4_yellow@3x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "4"})}}/>
+                        </div>
+                    }
+                    {this.state.level < 4 &&
+                        <div className = "home-level4">
+                        <Image src='/images/level4_gray@3x.png' size="tiny"  />
+                        </div>
+                    }
+                    {this.state.level >= 5 &&
+                        <div className = "home-level5">
+                        <Image src='/images/level5_yellow@4x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "5"})}} />
+                        </div>
+                    }
+                    {this.state.level < 5 &&
+                        <div className = "home-level5">
+                        <Image src='/images/level5_gray@4x.png' size="tiny" />
+                        </div>
+                    }
+
                 </div>
                 
         )

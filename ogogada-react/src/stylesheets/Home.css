@@ -84,6 +84,48 @@
     height: 100%;
 }
 
+.home-level1 {
+    z-index: 2;
+    left: 12%;
+    top: 55%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
+.home-level2 {
+    z-index: 2;
+    left: 38%;
+    top: 60%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.home-level3 {
+    z-index: 2;
+    left: 54%;
+    top: 52%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.home-level4 {
+    z-index: 2;
+    left: 79%;
+    top: 30.5%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.home-level5 {
+    z-index: 2;
+    left: 79%;
+    top: 13.5%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
 
