@@ -23,12 +23,12 @@
   flex: 0.2;
 }
 
-.user_id {
+.home__button {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0.3;
+  flex: 0.25;
 }
 
 .timer {
@@ -46,6 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .timer__timer {
@@ -57,6 +58,32 @@
 }
 
 .replay {
-  flex: 0.1
+  display: flex;
+  height: 100%;
+  flex: 0.15;
+  align-items: center;
+  justify-content: left;
+  font-size: 20px;
+  /* border: 1px solid black; */
+  color: white;
+  font-size: 22px;
+}
+
+.replay__history {
+  display: flex;
+  height: 100%;
+  flex: 0.15;
+  align-items: center;
+  justify-content: left;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* border: 1px solid black; */
+  color: white;
+  font-size: 22px;
+}
+
+.task {
+  margin-left: 6px;
 }
 

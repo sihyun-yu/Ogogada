@@ -16,9 +16,6 @@ const DescriptionComponent = props => {
             <div className="description" >
               <p>Level: {props.level}</p>
             </div>
-            <div className="user_id">
-              <p>ID: {props.username}</p>
-            </div>
             <div className="timer">
               <div className="timer__icon">
                 <Icon name='stopwatch'></Icon>
@@ -32,7 +29,18 @@ const DescriptionComponent = props => {
               </div>
             </div>
             <div className="replay" onClick={menu.openQuestion.bind(menu)}>
-              <Icon name='tasks' size='small'>task</Icon>
+              <Icon name='tasks' ><span className="task">Task</span></Icon>
+            </div>
+            <div className="home__button">
+              <Button size="medium" onClick={() => {
+                props.routeChange();
+                props.openQuestion();
+                props.handleCompletePayment();
+                props.closeRefund();
+                props.closeGifticon();
+              }}>
+                HOME
+              </Button>
             </div>
           </div>
       )}

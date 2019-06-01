@@ -1,6 +1,6 @@
 import React from "react";
 import { Subscribe } from "unstated";
-import { HomeStore, MenuStore } from "../../stores";
+import { HomeStore, MenuStore ,CouponStore, PaymentMethodStore} from "../../stores";
 import "../../stylesheets/Pos.css";
 import MenuList from "./MenuList/MenuListComponent.jsx";
 import NumberList from "./NumberList/NumberListComponent.jsx";
@@ -19,7 +19,32 @@ window.onhashchange = function() {
 class PosComponent extends React.Component {
   constructor(props) {
     super(props);
+    this.state = this.props.location.state;
+    this.routeChange = this.routeChange.bind(this);
   }
+
+  routeChange = () => {
+    this.props.history.push({
+      pathname : '../../../home/',
+      state: {
+        id: this.state.id,
+        pw: this.state.pw,
+        level: this.state.level,
+      }
+    });
+  }
+
+  handleCloseDialog = () => {
+    this.setState({
+      dialogOpen: false
+    });
+  };
+
+  handleCompletePayment = cbArray => {
+    cbArray.forEach(cb => {
+      cb();
+    });
+  };
 
   render () {
     // console.log("PosComponent state: ", this.props.location.state)
@@ -27,8 +52,8 @@ class PosComponent extends React.Component {
     // console.log("PosComponent history: ", this.props.history)
     return (
       <div>
-        <Subscribe to ={[MenuStore]}>
-          {(menu) => (
+        <Subscribe to ={[MenuStore, CouponStore, PaymentMethodStore]}>
+          {(menu, couponStore, paymentMethodStore) => (
             <div className="pos">
               <div className="left-content">
                 <MenuList 
@@ -39,7 +64,8 @@ class PosComponent extends React.Component {
                 username={this.props.match.params.id}/>
                 <div className="left-below__container">
                   <div className="left-below-left__contatiner">
-                    <NumberList/>
+                    <NumberList
+                      gifticonOpen = {menu.state.gifticonOpen}/>
                   </div>
                   <div className="left-below-right__container">
                     <SummaryCoupon level={this.props.match.params.level} />
@@ -60,7 +86,30 @@ class PosComponent extends React.Component {
                 <Description
                 level={this.props.match.params.level}
                 username={this.props.match.params.id}
-                flag={menu.state.timerFlag}/>
+                flag={menu.state.timerFlag}
+                routeChange={this.routeChange}
+                openQuestion={menu.openQuestion.bind(menu)}
+                handleCompletePayment={() => {
+                  const resetValuesCallbackArray = [];
+                  resetValuesCallbackArray.push(
+                    menu.resetSelectedMenu.bind(menu)
+                  );
+                  resetValuesCallbackArray.push(
+                    paymentMethodStore.selectPaymentMethod.bind(
+                      paymentMethodStore,
+                      "1"
+                    )
+                  );
+                  resetValuesCallbackArray.push(
+                    couponStore.selectCoupon.bind(couponStore, 0)
+                  );
+
+                  this.handleCompletePayment(resetValuesCallbackArray);
+
+                  this.handleCloseDialog();
+                }}
+                closeRefund={menu.closeRefund.bind(menu)}
+                closeGifticon={menu.closeGifticon.bind(menu)}/>
                 <SummaryTable />
               </div>
             </div>

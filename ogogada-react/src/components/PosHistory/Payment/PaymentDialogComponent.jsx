@@ -40,7 +40,9 @@ const PaymentDialogComponent = props => {
           // disabled={props.pendingCardPayment}
           onClick={()=> {props.handleCompletePayment();
             props.forRouter.push(props.goBackHistory)
-            props.resetIndex();}}
+            props.resetIndex();
+            props.openQuestion();
+          }}
         >
           Submit
         </Button>
