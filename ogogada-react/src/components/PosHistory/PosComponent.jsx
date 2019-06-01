@@ -71,7 +71,8 @@ class PosComponent extends React.Component {
 
                   <Payment {...this.props}
                     level={this.props.match.params.level}
-                    username={this.props.match.params.id}/>
+                    username={this.props.match.params.id}
+                    openQuestion={menuStore.openQuestion.bind(menuStore)}/>
 
                 </div>
                 
@@ -82,6 +83,7 @@ class PosComponent extends React.Component {
               level={this.props.match.params.level}
               username={this.props.match.params.id}
               routeChange={this.routeChange}
+              openQuestion={menuStore.openQuestion.bind(menuStore)}
               handleCompletePayment={() => {
                 const resetValuesCallbackArray = [];
                 resetValuesCallbackArray.push(

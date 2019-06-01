@@ -195,6 +195,7 @@ class PaymentComponent extends React.Component {
                       level: this.props.history.location.state.level,
                   }}}
                 sendtoHistoryMethod = {this.sendtoHistoryMethod}
+                openQuestion={menuStore.openQuestion.bind(menuStore)}
               />
             }
           </div>

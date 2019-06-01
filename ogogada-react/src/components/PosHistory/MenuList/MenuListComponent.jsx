@@ -14,6 +14,7 @@ import { CouponStore } from "../../../stores";
 import { Store } from "../../../stores";
 import GifticonDialog from "./GifticonDialogComponent.jsx"
 import RefundDialog from "./RefundDialogComponent.jsx"
+import QuestionDialog from "./QuestionDialogComponent.jsx"
 
 import "../../../stylesheets/MenuList.css";
 
@@ -123,6 +124,14 @@ const MenuListComponent = props => {
             historyList={history.state.historyList[props.level]}
             historyIndex={history.state.historyIndex}
 
+            />
+          </div>
+          <div>
+            <QuestionDialog
+              isConfirmed = {menu.state.questionConfirmed}
+              confirm = {menu.closeQuestion.bind(menu)}
+              open = {menu.openQuestion.bind(menu)}
+              level = {props.level}
             />
           </div>
         </div>

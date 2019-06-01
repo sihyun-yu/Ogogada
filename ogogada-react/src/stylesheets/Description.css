@@ -69,6 +69,20 @@
   font-size: 22px;
 }
 
+.replay__history {
+  display: flex;
+  height: 100%;
+  flex: 0.15;
+  align-items: center;
+  justify-content: left;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* border: 1px solid black; */
+  color: white;
+  font-size: 22px;
+}
+
 .task {
   margin-left: 6px;
 }
