@@ -20,22 +20,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0.2;
-}
-
-.home__button {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0.25;
+  flex: 0.40;
+  font-size: 30px;
 }
 
 .timer {
   height: 100%;
   align-items: center;
   justify-content: center;
-  flex: 0.3;
+  flex: 0.27;
   display: flex;
   flex-direction: row;
 }
@@ -53,20 +46,26 @@
   flex: 0.8;
   height: 100%;
   display: flex;
-  flex-direction: row;
-  
 }
 
 .replay {
   display: flex;
   height: 100%;
-  flex: 0.15;
+  flex: 0.1;
   align-items: center;
   justify-content: left;
   font-size: 20px;
   /* border: 1px solid black; */
   color: white;
   font-size: 22px;
+}
+
+.home__button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.1;
 }
 
 .replay__history {

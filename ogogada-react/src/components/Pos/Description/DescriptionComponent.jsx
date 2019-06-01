@@ -8,13 +8,22 @@ import { MenuStore } from "../../../stores";
 import { Subscribe } from "unstated";
 //import Button from "@material-ui/core/Button";
 
+var descriptionStyle = {
+  "height": "100%",
+  "display": "flex",
+  "align-items": "center",
+  "justify-content": "center",
+  "flex": "0.40",
+  "font-size": "30px"
+}
+
 const DescriptionComponent = props => {
   return (
     <Subscribe to={[MenuStore]}>
       {(menu) => (
           <div className="description__container">
-            <div className="description" >
-              <p>Level: {props.level}</p>
+            <div className="description" style={descriptionStyle}>
+              <p>STAGE {props.level}</p>
             </div>
             <div className="timer">
               <div className="timer__icon">
@@ -29,15 +38,16 @@ const DescriptionComponent = props => {
               </div>
             </div>
             <div className="replay" onClick={menu.openQuestion.bind(menu)}>
-              <Icon name='tasks' ><span className="task">Task</span></Icon>
+              <Button size="medium" onClick={() => {
+                }}>
+                  TASK
+                {/* <Icon name='tasks' ><span className="task">Task</span></Icon> */}
+              </Button>
+              {/* <Icon name='tasks' ><span className="task">Task</span></Icon> */}
             </div>
             <div className="home__button">
               <Button size="medium" onClick={() => {
-                props.routeChange();
-                props.openQuestion();
-                props.handleCompletePayment();
-                props.closeRefund();
-                props.closeGifticon();
+                props.openPopup();
               }}>
                 HOME
               </Button>

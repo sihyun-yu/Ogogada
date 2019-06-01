@@ -42,6 +42,7 @@ const PaymentDialogComponent = props => {
             props.forRouter.push(props.goBackHistory)
             props.resetIndex();
             props.openQuestion();
+            props.resetMenuDisplay();
           }}
         >
           Submit

@@ -58,6 +58,14 @@ const meta = {
     "Take an order for five ICE peppermint by 10% discount with card.",
     "A customer wants to use one ICE americano gifticon and order one ICE caffelatte. \n Calculate the difference with card.",
     "A customer wants to cancel the order that he/she made just now. Refund the most recent order."
+  ],
+  // TODO 줄바꿈 잘 안됨, red 빨갛게 하고 싶은데 모르곘음
+  tutorialQuestions : [
+    "Your task is taking an order of 1 HOT americano.",
+    "Your task is taking an order of 2 ICE caffe mocha and 1 hot earl grey.",
+    "Your task is applying 10% student discount.",
+    "Your task is applying an ice americano Gifticon.",
+    "Your task is refunding most recent order."
   ]
 };
 

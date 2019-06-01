@@ -61,7 +61,10 @@ class PosComponent extends React.Component {
                 flagFlip={menu.flagFlip.bind(menu)} 
                 flag={menu.state.timerFlag}
                 level={this.props.match.params.level}
-                username={this.props.match.params.id}/>
+                username={this.props.match.params.id}
+                routeChange={this.routeChange}
+                handleCompletePayment={this.handleCompletePayment}
+                handleCloseDialog={this.handleCloseDialog}/>
                 <div className="left-below__container">
                   <div className="left-below-left__contatiner">
                     <NumberList
@@ -87,29 +90,8 @@ class PosComponent extends React.Component {
                 level={this.props.match.params.level}
                 username={this.props.match.params.id}
                 flag={menu.state.timerFlag}
-                routeChange={this.routeChange}
-                openQuestion={menu.openQuestion.bind(menu)}
-                handleCompletePayment={() => {
-                  const resetValuesCallbackArray = [];
-                  resetValuesCallbackArray.push(
-                    menu.resetSelectedMenu.bind(menu)
-                  );
-                  resetValuesCallbackArray.push(
-                    paymentMethodStore.selectPaymentMethod.bind(
-                      paymentMethodStore,
-                      "1"
-                    )
-                  );
-                  resetValuesCallbackArray.push(
-                    couponStore.selectCoupon.bind(couponStore, 0)
-                  );
-
-                  this.handleCompletePayment(resetValuesCallbackArray);
-
-                  this.handleCloseDialog();
-                }}
-                closeRefund={menu.closeRefund.bind(menu)}
-                closeGifticon={menu.closeGifticon.bind(menu)}/>
+                openPopup = {menu.openPopup.bind(menu)}
+                openQuestion={menu.openQuestion.bind(menu)}/>
                 <SummaryTable />
               </div>
             </div>

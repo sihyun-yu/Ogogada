@@ -4,7 +4,7 @@ import { HomeStore } from "../../stores";
 import "../../stylesheets/Pos.css";
 import MenuList from "./MenuList/MenuListComponent.jsx";
 import NumberList from "./NumberList/NumberListComponent.jsx";
-import Description from "./Description/DescriptionComponent.jsx";
+import DescriptionTutorial from "./Description/DescriptionTutorialComponent.jsx";
 import SummaryTable from "./SummaryTable/SummaryTableComponent.jsx";
 import Payment from "./Payment/PaymentComponent.jsx";
 
@@ -14,7 +14,7 @@ import SummaryPaymentMethod from "./SummaryTable/SummaryPaymentMethodComponent.j
 import { MenuStore, CouponStore, PaymentMethodStore, HistoryStore } from "../../stores";
 
 
-class PosComponent extends React.Component {
+class PosTutorialComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = this.props.location.state;
@@ -53,7 +53,10 @@ class PosComponent extends React.Component {
               <MenuList 
               {...this.props}
               level={this.props.match.params.level}
-              username={this.props.match.params.id}/>
+              username={this.props.match.params.id}
+              routeChange={this.routeChange}
+              handleCompletePayment={this.handleCompletePayment}
+              handleCloseDialog={this.handleCloseDialog}/>
               <div className="left-below__container">
                 <div className="left-below-left__contatiner">
                   <NumberList
@@ -80,33 +83,11 @@ class PosComponent extends React.Component {
               </div>
             </div>
             <div className="right-content">
-              <Description
+              <DescriptionTutorial
               level={this.props.match.params.level}
               username={this.props.match.params.id}
-              routeChange={this.routeChange}
-              openQuestion={menuStore.openQuestion.bind(menuStore)}
-              handleCompletePayment={() => {
-                const resetValuesCallbackArray = [];
-                resetValuesCallbackArray.push(
-                  menuStore.resetSelectedMenu.bind(menuStore)
-                );
-                resetValuesCallbackArray.push(
-                  paymentMethodStore.selectPaymentMethod.bind(
-                    paymentMethodStore,
-                    "1"
-                  )
-                );
-                resetValuesCallbackArray.push(
-                  couponStore.selectCoupon.bind(couponStore, 0)
-                );
-
-                this.handleCompletePayment(resetValuesCallbackArray);
-
-                this.handleCloseDialog();
-              }}
-              resetIndex={history.resetIndex}
-              closeRefund={menuStore.closeRefund.bind(menuStore)}
-              closeGifticon={menuStore.closeGifticon.bind(menuStore)}/>
+              openPopup = {menuStore.openPopup.bind(menuStore)}
+              openQuestion={menuStore.openQuestion.bind(menuStore)}/>
               <SummaryTable 
               level={this.props.match.params.level}/>
             </div>
@@ -172,4 +153,4 @@ const PosComponent = props => {
 };
 */
 
-export default PosComponent;
+export default PosTutorialComponent;

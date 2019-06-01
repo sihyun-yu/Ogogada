@@ -8,7 +8,7 @@ import History from "./components/Home/History/HistoryComponent.jsx";
 import Ranking from "./components/Home/Ranking/RankingComponent.jsx";
 import RankingEach from "./components/Home/Ranking/RankingLevels/RankingLevelComponent.jsx"
 import Pos from "./components/Pos/PosComponent.jsx"
-import PosHistory from "./components/PosHistory/PosComponent.jsx"
+import PosTutorial from "./components/PosTutorial/PosComponent.jsx"
 import SummaryTable from "./components/Pos/SummaryTable/SummaryTableComponent.jsx";
 import Payment from "./components/Pos/Payment/PaymentComponent.jsx";
 import { Provider } from "unstated";
@@ -45,8 +45,8 @@ class App extends React.Component {
             <Route exact path="/home" component={Home} />
             <Route exact path="/signin" component={SignIn} />
             <Route exact path="/history" component={History} />
-            <Route exact path="/poshistory/:id/:level" component={PosHistory} />
-            <Route exact path="/pos/:id/:level" component={Pos}/>
+            <Route exact path="/tutorial/:level/:id" component={PosTutorial} />
+            <Route exact path="/stage/:level/:id" component={Pos}/>
             <Route exact path="/timer" component={Timer} />
             <Route exact path="/ranking" component={Ranking} />
             <Route exact path="/ranking/:id" component={RankingEach} />

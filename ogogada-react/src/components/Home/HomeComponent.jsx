@@ -111,7 +111,7 @@ class HomeComponent extends React.Component {
         }
         else {
             this.props.history.push({
-                pathname : '../pos/' + this.state.id + "/" + area.name,
+                pathname : '../stage/' + area.name + "/" + this.state.id,
                 state: {
                     id: this.state.id,
                     pw: this.state.pw,
