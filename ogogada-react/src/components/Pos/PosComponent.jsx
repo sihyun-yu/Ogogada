@@ -64,7 +64,8 @@ class PosComponent extends React.Component {
                 username={this.props.match.params.id}/>
                 <div className="left-below__container">
                   <div className="left-below-left__contatiner">
-                    <NumberList/>
+                    <NumberList
+                      gifticonOpen = {menu.state.gifticonOpen}/>
                   </div>
                   <div className="left-below-right__container">
                     <SummaryCoupon level={this.props.match.params.level} />
