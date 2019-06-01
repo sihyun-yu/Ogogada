@@ -192,6 +192,7 @@ class PaymentComponent extends React.Component {
                 goBackHistory = {this.props.history}
                 resetPaymentMethod = {paymentMethodStore.resetPaymentMethod.bind(paymentMethodStore)}
                 sendtoHistoryMethod = {this.sendtoHistoryMethod}
+                changeMenuDisplay = {menuStore.changeMenuDisplay.bind(menuStore)}
               />
           </div>
         )}

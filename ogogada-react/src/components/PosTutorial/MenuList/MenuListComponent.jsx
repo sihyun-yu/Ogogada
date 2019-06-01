@@ -164,7 +164,8 @@ const MenuListComponent = props => {
               }}
               resetIndex={history.resetIndex}
               closeRefund={menu.closeRefund.bind(menu)}
-              closeGifticon={menu.closeGifticon.bind(menu)}/>
+              closeGifticon={menu.closeGifticon.bind(menu)}
+              resetMenuDisplay={menu.resetMenuDisplay.bind(menu)}/>
           </div>
         </div>
         )}

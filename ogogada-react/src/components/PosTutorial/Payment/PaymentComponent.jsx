@@ -196,6 +196,7 @@ class PaymentComponent extends React.Component {
                   }}}
                 sendtoHistoryMethod = {this.sendtoHistoryMethod}
                 openQuestion={menuStore.openQuestion.bind(menuStore)}
+                resetMenuDisplay={menuStore.resetMenuDisplay.bind(menuStore)}
               />
             }
           </div>
