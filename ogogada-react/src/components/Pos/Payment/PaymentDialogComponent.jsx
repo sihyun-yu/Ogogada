@@ -82,7 +82,6 @@ class PaymentDialogComponent extends React.Component {
                   this.props.flagFlip(); 
                   this.props.handleLevelUp();
                   this.props.resetPaymentMethod();
-                  this.props.resetMenuDisplay();
                   }}
               >
                 Submit
@@ -158,6 +157,7 @@ class PaymentDialogComponent extends React.Component {
                     this.props.flagFlip();
                     // props.goBackHistory.goBack();
                     this.props.openQuestion();
+                    this.props.resetMenuDisplay();
                   }}
                 >
                   Ranking
@@ -174,6 +174,7 @@ class PaymentDialogComponent extends React.Component {
                     this.props.flagFlip();
                     // props.goBackHistory.goBack();
                     this.props.openQuestion();
+                    this.props.resetMenuDisplay();
                   }}
                 >
                   Home
@@ -226,6 +227,7 @@ class PaymentDialogComponent extends React.Component {
                     this.props.flagFlip();
                     // props.goBackHistory.goBack();
                     this.props.openQuestion();
+                    this.props.resetMenuDisplay();
                   }}
                 >
                   Ranking
@@ -242,6 +244,7 @@ class PaymentDialogComponent extends React.Component {
                     this.props.flagFlip();
                     // props.goBackHistory.goBack();
                     this.props.openQuestion();
+                    this.props.resetMenuDisplay();
                   }}
                 >
                   Home

@@ -193,8 +193,9 @@ class PaymentComponent extends React.Component {
                 handleCancelPayment={this.handleCloseDialog}
                 forRouter={this.props.history}
                 resetIndex={history.resetIndex}
-                goBackHistory = {{
-                  pathname : '../../../history',
+
+                goBackHome = {{
+                  pathname : '../../../home',
                       state: {
                       id: this.props.history.location.state.id,
                       pw: this.props.history.location.state.pw,
@@ -207,6 +208,7 @@ class PaymentComponent extends React.Component {
                 curLevel={this.props.history.location.pathname.split('/')[2]}
                 history={this.props.history}
                 userName={this.props.userName}
+                resetMenuDisplay={menuStore.resetMenuDisplay.bind(menuStore)}
               />
             }
           </div>

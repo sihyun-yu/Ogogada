@@ -26,6 +26,7 @@ const GoHomeDialogComponent = props => {
             props.closeRefund();
             props.closeGifticon();
             props.closePopup();
+            props.resetMenuDisplay();
           }}
         >
           Yes

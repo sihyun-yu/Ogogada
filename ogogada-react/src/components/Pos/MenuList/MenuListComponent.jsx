@@ -130,7 +130,8 @@ const MenuListComponent = props => {
                 props.handleCloseDialog();
               }}
               closeRefund={menu.closeRefund.bind(menu)}
-              closeGifticon={menu.closeGifticon.bind(menu)}/>
+              closeGifticon={menu.closeGifticon.bind(menu)}
+              resetMenuDisplay={menu.resetMenuDisplay.bind(menu)}/>
           </div>
         </div>
         )}

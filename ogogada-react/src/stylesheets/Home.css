@@ -1,51 +1,131 @@
 .home {
-
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
-    /* background-image: url("../assets/home.png"); */
-    /* background-size:100% 100%; */
-    
+    background-image: url("../assets/Home_base.png");
+    background-size:100% 100%;
 }
 
 .header {
     text-align: center;
 }
 
-.home-header {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    top: 5%;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.home-user {
+.home-id {
     position: absolute;
     width: 30%;
-    left: 70%;
-    top: 15%;
+    left: 50%;
+    top: 32%;
     z-index: 2;
+    color: #47AFEA;
+    font-size: 24px;
 }
 
-.ranking-label {
+.home-level {
     position: absolute;
+    width: 30%;
+    left: 59%;
+    top: 32%;
     z-index: 2;
-    width: 25%;
-    bottom: 8%;
-    left: 2.5%;
+    font-size: 24px;
 }
 
-.history-label {
-    position: absolute;
+.home-rank {
     z-index: 2;
-    width: 25%;
-    bottom: 8%;
-    left: 25%;
+    left: 4%;
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.home-ladder1 {
+    z-index: 2;
+    left: 6%;
+    top: 66%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.home-ladder2 {
+    z-index: 2;
+    left: 26.3%;
+    top: 64%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.home-ladder3 {
+    z-index: 2;
+    left: 45.5%;
+    top: 61.5%;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+.home-ladder4 {
+    z-index: 2;
+    left: 69%;
+    top: 43%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.home-ladder5 {
+    z-index: 2;
+    left: 85%;
+    top: 21.5%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.home-level1 {
+    z-index: 2;
+    left: 12%;
+    top: 55%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.home-level2 {
+    z-index: 2;
+    left: 38%;
+    top: 60%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.home-level3 {
+    z-index: 2;
+    left: 54%;
+    top: 52%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.home-level4 {
+    z-index: 2;
+    left: 79%;
+    top: 30.5%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.home-level5 {
+    z-index: 2;
+    left: 79%;
+    top: 13.5%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 
