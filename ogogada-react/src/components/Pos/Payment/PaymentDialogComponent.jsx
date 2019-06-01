@@ -39,8 +39,6 @@ class PaymentDialogComponent extends React.Component {
     });
   }
 
-
-
   render () {
     {
       console.log (this.props.level)
@@ -186,7 +184,7 @@ class PaymentDialogComponent extends React.Component {
         }
         else {
           return (
-            <Dialog  open={this.props.levelUp} onClose={this.props.handleClose}>
+            <Dialog open={this.props.levelUp} onClose={this.props.handleClose}>
               <div className="payment-dialog__details" style={dialogStyle}>
                 {/* {props.selectedMenus.map((menu, index) => (
                   <div className="payment-dialog__detail-container" key={index}>
