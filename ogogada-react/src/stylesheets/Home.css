@@ -36,8 +36,15 @@
     left: 4%;
     top: 0%;
     position: absolute;
-    width: 100%;
-    height: 100%;
+
+}
+
+.home-rank-hover {
+    z-index: 2;
+    left: 5%;
+    top: 0%;
+    position: absolute;
+
 }
 
 .home-ladder1 {
@@ -45,43 +52,38 @@
     left: 6%;
     top: 66%;
     position: absolute;
-    width: 100%;
-    height: 100%;
+
 }
 
 .home-ladder2 {
-    z-index: 2;
+    z-index: 3;
     left: 26.3%;
     top: 64%;
     position: absolute;
-    width: 100%;
-    height: 100%;
+
 }
 
 .home-ladder3 {
-    z-index: 2;
+    z-index: 4;
     left: 45.5%;
     top: 61.5%;
     position: absolute;
-    width: 50%;
-    height: 50%;
+
 }
 
 .home-ladder4 {
-    z-index: 2;
+    z-index: 5;
     left: 69%;
     top: 43%;
     position: absolute;
-    width: 100%;
-    height: 100%;
+
 }
 .home-ladder5 {
-    z-index: 2;
+    z-index: 6;
     left: 85%;
     top: 21.5%;
     position: absolute;
-    width: 100%;
-    height: 100%;
+
 }
 
 .home-level1 {
@@ -89,8 +91,7 @@
     left: 12%;
     top: 55%;
     position: absolute;
-    width: 100%;
-    height: 100%;
+
 }
 
 .home-level2 {
@@ -98,16 +99,14 @@
     left: 38%;
     top: 60%;
     position: absolute;
-    width: 100%;
-    height: 100%;
+
 }
 .home-level3 {
     z-index: 2;
     left: 54%;
     top: 52%;
     position: absolute;
-    width: 100%;
-    height: 100%;
+
 }
 
 .home-level4 {
@@ -115,8 +114,7 @@
     left: 79%;
     top: 30.5%;
     position: absolute;
-    width: 100%;
-    height: 100%;
+
 }
 
 .home-level5 {
@@ -124,8 +122,7 @@
     left: 79%;
     top: 13.5%;
     position: absolute;
-    width: 100%;
-    height: 100%;
+
 }
 
 

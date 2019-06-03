@@ -48,7 +48,8 @@ class RankingComponent extends React.Component {
                     <Table celled striped inverted selectable id="tableContainer">
                         <Table.Header>
                         <Table.Row>
-                            <Table.HeaderCell colSpan='3'>Ranking</Table.HeaderCell>
+                            <Button colSpan='3' onClick={() => this.props.history.push({pathname: '../home', state: {id: this.state.id, pw: "", level: this.state.level}})}>
+                            Go Home </Button>
                         </Table.Row>
                         <Table.Row>
                             <Table.HeaderCell>Basic</Table.HeaderCell>
@@ -100,9 +101,7 @@ class RankingComponent extends React.Component {
                         </Table.Body>
                     </Table>
                 </div>
-                <div style={{"width": "40%"}}>
-                    <Button id="backButton" onClick={() => this.props.history.push({pathname: '../home', state: {id: this.state.id, pw: "", level: this.state.level}})}>Back</Button>
-                </div>
+
             </div>
         )
     }

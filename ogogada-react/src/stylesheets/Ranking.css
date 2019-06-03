@@ -1,14 +1,21 @@
 #totalContainer {
-    background: #81A5D5;
-    display:flex;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     width: 100%;
     height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/base.png");
+    background-size:100% 100%;
 }
 
 #rankingContainer {
     width: 60%;
     height: 100%;
+    opacity: 0.85;
 }
 
 #tableContainer {

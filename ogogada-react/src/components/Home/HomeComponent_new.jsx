@@ -8,6 +8,7 @@ import ImageMapper from 'react-image-mapper';
 import "../../stylesheets/Home.css"
 import { Card, Header, Icon, Feed } from 'semantic-ui-react'
 import firebase from "firebase"
+import ReactHoverObserver from 'react-hover-observer';
 
 function getUserFromDB (userName) {
     // console.log ("userName: " + userName)
@@ -28,9 +29,11 @@ class HomeComponent extends React.Component {
             id: "",
             pw: "",
             level: "",
+            hovered: false,
         };
         this.state = this.props.location.state;
         this.routeChange = this.routeChange.bind(this);
+        this.setHover = this.setHover.bind(this);
     }
     /*
     makeMAP (level) {
@@ -121,6 +124,13 @@ class HomeComponent extends React.Component {
         }
     }
 
+
+    setHover() {
+        //console.log("setHover ", this.state.hovered);
+        this.setState({hovered : !this.state.hovered});
+    }
+
+
     componentWillMount() {
         getUserFromDB (this.state.id).then(res => {
             this.setState ({ level: res["level"], id: res["id"] }, () => {
@@ -153,9 +163,15 @@ class HomeComponent extends React.Component {
                             {"level: " + this.state.level}
 
                     </div>
-                    <div className = "home-rank" >
-                        <Image src='/images/rank.png' size="medium" onClick={() => {this.routeChange({name: "ranking"})}}/>
-                    </div>
+                    <ReactHoverObserver>
+                        <div className = {this.state.hovered ? "home-rank" : "home-rank-hover"}
+                        onMouseOver={()=>this.setState({hovered: !this.state.hovered})} onMouseOut={()=>this.setState({hovered: !this.state.hovered})}
+                        >
+                            <Image src='/images/rank.png' size="medium" 
+                            onClick={() => {this.routeChange({name: "ranking"})}}/>
+                        </div>
+                    </ReactHoverObserver>
+
                     <div className = "home-ladder1">
                     <Image src='/images/ladder1@3x.png' size="tiny" onClick={() => {this.routeChange({name: "history", level: "1"})}} hidden={this.state.level < 1}/>
                     </div>
@@ -226,3 +242,8 @@ class HomeComponent extends React.Component {
 
 
 export default withRouter(windowSize(HomeComponent));
+
+ReactDOM.render(
+    <HomeComponent>World</HomeComponent>,
+    document.getElementById('container')
+  );
