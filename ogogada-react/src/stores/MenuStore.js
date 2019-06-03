@@ -22,7 +22,7 @@ class MenuStore extends Container {
     cnt: 0,
     // ===== Timer ===== //
     timerFlag: true,
-  
+    startFlag: false,
     // ===== Refund ======//
     refundOpen: false,
     refundIdx: -1,
@@ -38,6 +38,8 @@ class MenuStore extends Container {
       menus:menus_left
     })
   }
+
+  // ===== Timer ===== //
   flagFlip = () => {
      if (this.state.timerFlag === true) {
        this.setState({
@@ -51,6 +53,18 @@ class MenuStore extends Container {
      }
   }
 
+  startFlagFlip = () => {
+    if (this.state.startFlag === true) {
+      this.setState({
+        startFlag: false
+      });
+    }
+    else {
+      this.setState({
+        startFlag: true
+      });
+    }
+ }
 
   clearSummaryTable = () => {
     // console.log ("clearSummaryTable")

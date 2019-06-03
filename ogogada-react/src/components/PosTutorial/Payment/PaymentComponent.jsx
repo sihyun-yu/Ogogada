@@ -34,6 +34,7 @@ class PaymentComponent extends React.Component {
     this.state = {
       pendingCardPayment: false,
       dialogOpen: false,
+      tutorialFinished: false,
     };
   }
 
@@ -69,6 +70,12 @@ class PaymentComponent extends React.Component {
       cb();
     });
   };
+
+  handleFinishTutorial = () => {
+    this.setState({
+      tutorialFinished: true,
+    })
+  }
 
   render() {
     const calculatedValue = (
@@ -196,6 +203,11 @@ class PaymentComponent extends React.Component {
                   }}}
                 sendtoHistoryMethod = {this.sendtoHistoryMethod}
                 openQuestion={menuStore.openQuestion.bind(menuStore)}
+                tutorialFinished={this.state.tutorialFinished}
+                handleFinishTutorial={this.handleFinishTutorial}
+                curLevel={this.props.history.location.pathname.split('/')[2]}
+                history={this.props.history}
+                userName={this.props.username}
                 resetMenuDisplay={menuStore.resetMenuDisplay.bind(menuStore)}
               />
             }

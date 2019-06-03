@@ -12,6 +12,8 @@ var pStyle = {
   "font-size": "15px"
 }
 
+var gotItTime = 0
+
 function checkNewRecord (user_level, user_id, user_time) {
   // console.log (checkNewRecord)
   return firebase.database().ref('/records/'+user_level.toString()).once('value', function(snapshot){
@@ -82,14 +84,20 @@ class Timer extends React.Component {
     console.log("setInterval");
   }
 
-  
+  componentWillMount() {
+    gotItTime = 0
+  }
 
   componentDidUpdate() {
+    if(this.props.startFlag == true) {
+      gotItTime = Date.now() - this.state.start
+      this.props.startFlagFlip()
+    }
     if(this.props.flag == false) {
       clearInterval(this.timer)
       
       // record to db
-      checkNewRecord (this.props.level, this.props.username, this.state.time)
+      checkNewRecord (this.props.level, this.props.username, this.state.time-gotItTime)
 
       // console.log ("props level: " + this.props.level)
       // levelup to db
@@ -132,9 +140,18 @@ class Timer extends React.Component {
     let resume = (this.state.time != 0 && !this.state.isOn) ?
       <button onClick={this.startTimer}>resume</button> :
       null
+    let minute = (gotItTime == 0) ?
+      "00" :
+      pad(Math.floor(((this.state.time-gotItTime)/1000)/60), 2)
+    let second = (gotItTime == 0) ?
+      "00" :
+      pad(Math.floor(((this.state.time-gotItTime)/1000)%60), 2)
+    let millisecond = (gotItTime == 0) ?
+      "00" :
+      pad(Math.floor(((this.state.time-gotItTime)%1000)/10), 2)
     return(
       <div className="timer__container" >
-          <p style={pStyle}>{pad(Math.floor((this.state.time/1000)/60), 2)} : {pad(Math.floor((this.state.time/1000)%60), 2)} : {pad(Math.floor((this.state.time%1000)/10), 2)}</p>
+          <p style={pStyle}>{minute} : {second} : {millisecond}</p>
         {/*<div className="timer__action">
           {start}
           {stop}
