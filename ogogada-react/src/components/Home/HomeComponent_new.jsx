@@ -30,6 +30,7 @@ class HomeComponent extends React.Component {
             pw: "",
             level: "",
             hovered: false,
+            opacity: 1,
         };
         this.state = this.props.location.state;
         this.routeChange = this.routeChange.bind(this);
@@ -124,7 +125,10 @@ class HomeComponent extends React.Component {
         }
     }
 
-
+    mouseEnter() {
+        console.log('mouse enter')
+        this.setState({opacity: 0.5})
+    }
     setHover() {
         //console.log("setHover ", this.state.hovered);
         this.setState({hovered : !this.state.hovered});
@@ -145,6 +149,8 @@ class HomeComponent extends React.Component {
         })
     }
 
+
+
     render() {
         // console.log ("[render]")
         // console.log("home props: ", this.props);
@@ -154,7 +160,9 @@ class HomeComponent extends React.Component {
         // console.log("x1, y1: ", x1.toString() + "," + y1.toString() + ",63");
         //console.log (imageMapper)
         return (                
-                <div className = "home"> 
+                <div className = "home"
+                onMouseDown={()=> this.setState({opacity: 1})} onMouseUp={()=>this.setState({opacity: 0})}
+                > 
                     <div className = "home-id">
                             {this.state.id}
                             
@@ -163,72 +171,71 @@ class HomeComponent extends React.Component {
                             {"level: " + this.state.level}
 
                     </div>
-                    <ReactHoverObserver>
-                        <div className = {this.state.hovered ? "home-rank" : "home-rank-hover"}
-                        onMouseOver={()=>this.setState({hovered: !this.state.hovered})} onMouseOut={()=>this.setState({hovered: !this.state.hovered})}
+
+                        <div className={['home-rank', this.state.opacity && 'hover'].join(' ')}
                         >
                             <Image src='/images/rank.png' size="medium" 
                             onClick={() => {this.routeChange({name: "ranking"})}}/>
                         </div>
-                    </ReactHoverObserver>
 
-                    <div className = "home-ladder1">
+
+                    <div className = {['home-ladder1', this.state.opacity && 'hover'].join(' ')}>
                     <Image src='/images/ladder1@3x.png' size="tiny" onClick={() => {this.routeChange({name: "history", level: "1"})}} hidden={this.state.level < 1}/>
                     </div>
-                    <div className = "home-ladder2"> 
+                    <div className = {['home-ladder2', this.state.opacity && 'hover'].join(' ')}>
                     <Image src='/images/ladder2@3x.png' size="small" onClick={() => {this.routeChange({name: "history", level: "2"})}} hidden={this.state.level < 2}/>
                     </div>
-                    <div className = "home-ladder3">
+                    <div className = {['home-ladder3', this.state.opacity && 'hover'].join(' ')}>
                     <Image src='/images/ladder3@3x.png' size="tiny" onClick={() => {this.routeChange({name: "history", level: "3"})}} hidden={this.state.level < 3}/>
                     </div>
-                    <div className = "home-ladder4">
+                    <div className = {['home-ladder4', this.state.opacity && 'hover'].join(' ')}>
                     <Image src='/images/ladder4@3x.png' size="tiny" onClick={() => {this.routeChange({name: "history", level: "4"})}} hidden={this.state.level < 4}/>
                     </div>
-                    <div className = "home-ladder5">
+                    <div className = {['home-ladder5', this.state.opacity && 'hover'].join(' ')}>
                     <Image src='/images/ladder5@3x.png' size="tiny" onClick={() => {this.routeChange({name: "history", level: "5"})}} hidden={this.state.level < 5}/>
                     </div>
-                    <div className = "home-level1">
+                    <div className = {['home-level1', this.state.opacity && 'hover'].join(' ')}>
                     <Image src='/images/level1_yellow@3x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "1"})}} hidden={this.state.level < 1}/>
                     </div>
                     {this.state.level >= 2 &&
-                        <div className = "home-level2">
+                        <div className = {['home-level2', this.state.opacity && 'hover'].join(' ')}>
                         <Image src='/images/level2_yellow@3x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "2"})}}/>
                         </div>
                     }
                     {this.state.level < 2 &&
-                        <div className = "home-level2">
+                        <div className ={['home-level2', this.state.opacity && 'hover'].join(' ')}>
                         <Image src='/images/level2_gray@3x.png' size="tiny"/>
                         </div>
                     }
 
                     {this.state.level >= 3 &&
-                        <div className = "home-level3">
+                        <div className = {['home-level3', this.state.opacity && 'hover'].join(' ')}>
                         <Image src='/images/level3_yellow@3x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "3"})}} />
                         </div>
                     }
                     {this.state.level < 3 &&
-                        <div className = "home-level3">
+                        <div className = {['home-level3', this.state.opacity && 'hover'].join(' ')}>
                         <Image src='/images/level3_gray@3x.png' size="tiny" />
                         </div>
                     }
 
                     {this.state.level >= 4 &&
-                        <div className = "home-level4">
+                        <div className = {['home-level4', this.state.opacity && 'hover'].join(' ')}>
                         <Image src='/images/level4_yellow@3x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "4"})}}/>
                         </div>
                     }
                     {this.state.level < 4 &&
-                        <div className = "home-level4">
+                        <div className = {['home-level4', this.state.opacity && 'hover'].join(' ')}>
                         <Image src='/images/level4_gray@3x.png' size="tiny"  />
                         </div>
                     }
                     {this.state.level >= 5 &&
-                        <div className = "home-level5">
+                        <div className = {['home-level5', this.state.opacity && 'hover'].join(' ')}>
                         <Image src='/images/level5_yellow@4x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "5"})}} />
                         </div>
                     }
                     {this.state.level < 5 &&
-                        <div className = "home-level5">
+                        <div className = {['home-level5', this.state.opacity && 'hover'].join(' ')}>
                         <Image src='/images/level5_gray@4x.png' size="tiny" />
                         </div>
                     }
@@ -242,8 +249,3 @@ class HomeComponent extends React.Component {
 
 
 export default withRouter(windowSize(HomeComponent));
-
-ReactDOM.render(
-    <HomeComponent>World</HomeComponent>,
-    document.getElementById('container')
-  );
