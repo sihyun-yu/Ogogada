@@ -1,8 +1,7 @@
 import React from "react";
 import "../../../../stylesheets/RankingLevel.css"
-import { Image , Button, Header} from 'semantic-ui-react'
+import { Image , Button, Header, Table} from 'semantic-ui-react'
 import firebase from "firebase";
-import src1 from '../../../../assets/ranking_template.png';
 
 function pad(n, width) {
     n = n + '';
@@ -19,21 +18,6 @@ function getRankingsFromDB (level) {
             console.log (myValue)
             return resolve(myValue);
             
-            // var keyList = Object.keys(myValue);
-            // console.log(keyList)
-        //     var myKey = keyList[0]
-        //     console.log("myKey: "+myKey)
-        //     console.log(myValue[myKey]) 
-            
-        //     // make table with current rows
-        //     for(var i=0; i<keyList.length; i++) {
-        //       var myKey = keyList[i];
-        //       addRow(myValue[myKey], myKey);
-        //     }
-            
-        //     if ($('#capital_country_table tr').length == 3) {
-        //       $("#pr3__clear").prop("disabled", true)
-        //     }
         });        
     })
 }
@@ -87,21 +71,37 @@ class RankingLevelComponent extends React.Component {
         const ranking = this.state.data.map(function(item, i) {
             console.log (item["id"])
             var time = pad(Math.floor((item["record"]/1000)/60), 2)+ " : " + pad(Math.floor((item["record"]/1000)%60), 2) + " : "  + pad(Math.floor((item["record"]%1000)/10), 2)
-            return <span className={classNames[i]}>{item["id"]+"   "+time}</span>
+            return <Table.Row> 
+                <Table.Cell>
+                    <Header.Content>
+                    {item["id"]}
+                    </Header.Content>
+                </Table.Cell>
+                <Table.Cell>{time}</Table.Cell>
+                </Table.Row>
         })
         console.log ("ranking level compoenent", this.state.id)
 
         return (
             <div id="rankingLevel"> 
-                    <div className="backButtonDiv">
-                        <Button className="backButton" onClick={() => this.props.history.push({pathname: '../ranking', id: this.state.id})}>Back</Button>
+                    <div style={{"width": "40%"}} id="rankingContainer">
+                        <Table celled striped inverted id="tableContainer">
+                            <Table.Header>
+                            <Table.Row as='h1' size= 'medium' color="brown" id="level">Level {this.props.match.params.id} </Table.Row>
+                            <Table.Row>
+                                <Button className="backButton" onClick={() => this.props.history.push({pathname: '../ranking', id: this.state.id})}>Back</Button>
+                            </Table.Row>
+                            <Table.Row>
+                                <Table.HeaderCell>User ID</Table.HeaderCell>
+                                <Table.HeaderCell>Record</Table.HeaderCell>
+                            </Table.Row>
+                            </Table.Header>
+                            <Table.Body>
+                            {ranking}
+                            </Table.Body>
+                        </Table>
                     </div>
-                    <div><Header as='h1' size= 'medium' color="brown">Level {this.props.match.params.id}</Header></div>
-                    <div id="rankingTemplate" >
-                        
-                        <Image src={src1} alt="hey!" />
-                        {ranking}
-                    </div>
+
                     
             </div>       
         )
