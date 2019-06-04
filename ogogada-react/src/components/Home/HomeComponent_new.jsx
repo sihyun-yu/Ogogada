@@ -8,7 +8,7 @@ import ImageMapper from 'react-image-mapper';
 import "../../stylesheets/Home.css"
 import { Card, Header, Icon, Feed } from 'semantic-ui-react'
 import firebase from "firebase"
-import ReactHoverObserver from 'react-hover-observer';
+
 
 function getUserFromDB (userName) {
     // console.log ("userName: " + userName)
@@ -21,6 +21,17 @@ function getUserFromDB (userName) {
     })
 } 
 
+function getRecFromDB () {
+    return new Promise(function (resolve, reject) {
+        var myValue;
+        firebase.database().ref('/records').once('value', function (snapshot) {
+            myValue = snapshot.val();
+            console.log(myValue);
+            return resolve(myValue)
+        })
+    })
+}
+
 //window.location.reload(true);
 class HomeComponent extends React.Component {
     constructor(props) {
@@ -31,10 +42,12 @@ class HomeComponent extends React.Component {
             level: "",
             hovered: false,
             opacity: 1,
+            record: [],
+            user_record: [],
         };
         this.state = this.props.location.state;
         this.routeChange = this.routeChange.bind(this);
-        this.setHover = this.setHover.bind(this);
+
     }
     /*
     makeMAP (level) {
@@ -125,31 +138,17 @@ class HomeComponent extends React.Component {
         }
     }
 
-    mouseEnter() {
-        console.log('mouse enter')
-        this.setState({opacity: 0.5})
-    }
-    setHover() {
-        //console.log("setHover ", this.state.hovered);
-        this.setState({hovered : !this.state.hovered});
-    }
-
 
     componentWillMount() {
         getUserFromDB (this.state.id).then(res => {
-            this.setState ({ level: res["level"], id: res["id"] }, () => {
+            this.setState ({ level: res["level"], id: res["id"], user_record: res["record"] }, () => {
+            })
+        })
+        getRecFromDB ().then(res => {
+            this.setState ({ record: res }, () => {
             })
         })
     }
-
-    componentDidMount() {
-        getUserFromDB (this.state.id).then(res => {
-            this.setState ({ level: res["level"], id: res["id"] }, () => {
-            })
-        })
-    }
-
-
 
     render() {
         // console.log ("[render]")
@@ -159,6 +158,51 @@ class HomeComponent extends React.Component {
         console.log("home cur leve", this.state.level)
         // console.log("x1, y1: ", x1.toString() + "," + y1.toString() + ",63");
         //console.log (imageMapper)
+        let drawStar = (level) => {
+            let star = "0";
+
+            if (typeof (this.state.record) != 'undefined' && typeof(this.state.user_record) != 'undefined')
+            {
+                //console.log(this.state.record[level])
+                for (var i in this.state.record[level]){
+                    //console.log(this.state.user_record[level-1], this.state.record[level][i]["record"]);
+                    if (this.state.user_record[level-1] == this.state.record[level][i]["record"]
+                    && this.state.id == this.state.record[level][i]["id"]
+                    && this.state.record[level][i]["rank"] <= 3){
+                        star = "3"
+                        const src = '/images/' + star + 'star@3x.png';
+
+                        return <Image src={src} size="tiny"/>
+                    }
+                    else if (
+                        this.state.user_record[level-1] == this.state.record[level][i]["record"]
+                    && this.state.id == this.state.record[level][i]["id"]
+                    && this.state.record[level][i]["rank"] <= 6){
+                        star = "2"
+                        const src = '/images/' + star + 'star@3x.png';
+
+                        return <Image src={src} size="tiny"/>
+                    }
+                    else if (
+                        this.state.user_record[level-1] == this.state.record[level][i]["record"]
+                    && this.state.id == this.state.record[level][i]["id"]
+                    && this.state.record[level][i]["rank"] <= 8
+                    ){
+                        star = "1"
+                        const src = '/images/' + star + 'star@3x.png';
+
+                        return <Image src={src} size="tiny"/>
+                    }
+                    
+                }
+                const src = '/images/' + star + 'star@3x.png';
+
+                return <Image src={src} size="tiny"/>
+                
+                
+            }
+
+        }
         return (                
                 <div className = "home"
                 onMouseDown={()=> this.setState({opacity: 1})} onMouseUp={()=>this.setState({opacity: 0})}
@@ -195,47 +239,56 @@ class HomeComponent extends React.Component {
                     <Image src='/images/ladder5@3x.png' size="tiny" onClick={() => {this.routeChange({name: "history", level: "5"})}} hidden={this.state.level < 5}/>
                     </div>
                     <div className = {['home-level1', this.state.opacity && 'hover'].join(' ')}>
+                    {drawStar(1)}
                     <Image src='/images/level1_yellow@3x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "1"})}} hidden={this.state.level < 1}/>
                     </div>
                     {this.state.level >= 2 &&
                         <div className = {['home-level2', this.state.opacity && 'hover'].join(' ')}>
+                        {drawStar(2)}
                         <Image src='/images/level2_yellow@3x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "2"})}}/>
                         </div>
                     }
                     {this.state.level < 2 &&
                         <div className ={['home-level2', this.state.opacity && 'hover'].join(' ')}>
+                        {drawStar(2)}
                         <Image src='/images/level2_gray@3x.png' size="tiny"/>
                         </div>
                     }
 
                     {this.state.level >= 3 &&
                         <div className = {['home-level3', this.state.opacity && 'hover'].join(' ')}>
+                        {drawStar(3)}
                         <Image src='/images/level3_yellow@3x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "3"})}} />
                         </div>
                     }
                     {this.state.level < 3 &&
                         <div className = {['home-level3', this.state.opacity && 'hover'].join(' ')}>
+                        {drawStar(3)}
                         <Image src='/images/level3_gray@3x.png' size="tiny" />
                         </div>
                     }
 
                     {this.state.level >= 4 &&
                         <div className = {['home-level4', this.state.opacity && 'hover'].join(' ')}>
+                        {drawStar(4)}
                         <Image src='/images/level4_yellow@3x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "4"})}}/>
                         </div>
                     }
                     {this.state.level < 4 &&
                         <div className = {['home-level4', this.state.opacity && 'hover'].join(' ')}>
+                        {drawStar(4)}
                         <Image src='/images/level4_gray@3x.png' size="tiny"  />
                         </div>
                     }
                     {this.state.level >= 5 &&
                         <div className = {['home-level5', this.state.opacity && 'hover'].join(' ')}>
+                        {drawStar(5)}
                         <Image src='/images/level5_yellow@4x.png' size="tiny" onClick={() => {this.routeChange({name: "pos", level: "5"})}} />
                         </div>
                     }
                     {this.state.level < 5 &&
                         <div className = {['home-level5', this.state.opacity && 'hover'].join(' ')}>
+                        {drawStar(5)}
                         <Image src='/images/level5_gray@4x.png' size="tiny" />
                         </div>
                     }
