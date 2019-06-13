@@ -37,6 +37,15 @@ Now, focusing on the tutorial page, we bordered a button with red color with the
 For minor usability issues, which are not related to our solution still important for our interface, we first added BACK button on both tutorial mode and game mode so that users can return back to the home page if they don't want to do the process. To avoid accidental returning, we ask "Are you sure?" after clicking back button. (Denoted as 11 as above figures) Plus, we found that there are two types of users after the game mode via user testing: who want to check their ranking or want to finish next levels quickly. To satisfy all of them, we made a popup after completing the task with selections to move to rank or home. (8 at the above) Finally, at the ranking page, to avoid users to return back to each level to check the task, we briefly explained what the task was at each level and the first place of each level (12, 13 at the above). (699 words)
 
 ### Iteration
+
+During DP8 period we mainly focused on two things. First one is changing UI of home page. Our previous home page design was poor, and there were many people who did not know the existence of the history page, so we chaged the home page disign to solve these problems.
+![](./Images/homepage_before.png)
+The above image is our previous homepage. With our previous design, it is hard to notice that user can have tutorial for each level before doing main game. We change our design to make people clear the main game after tutorial with ladder and door image. Also, after the stage was cleared, we make a new ladder connect to the next door to increase the user's sence of accomplishment.
+
+Second one is bug fix and increasing usability for better end-to-end experience. Our prototype was inconvenient to use. User can proceed our prototype without any bugs if they follow our instructions. However, if user run it in a slightly different way, some bugs came out. Moreover, the tutorial page did not have a description of the task, so user could not figure out what the user was doing, and there was no way to get out of the game and tutorial pages if user wanted to quit. There are also some minor problems such as, hard to distinguish between ice and hot. We fixed these problems so that our prototype worked under any situations, and we also improved visibility, affordability, to makee our prototype easier for users to use without any instructions.
+
+During the iteration, we found that it was very difficult for users to be aware of our intentions, and to make user knowtice our intention it needs to be much more intuitive and easier to do than we think.
+
 ### Individual reflection
 #### Sangmin Lee
 #### Yoonseo Kim
