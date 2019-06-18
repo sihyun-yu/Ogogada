@@ -3,6 +3,10 @@
 ## Team Ogogada
 Sangmin Lee, Yoonseo Kim, Sungha Eom, and Sihyun Yu
 
+### Video
+
+https://www.youtube.com/watch?v=3iQoxJAtwhM
+
 
 ### Final Interface
 #### Representative screenshots 
